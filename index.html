@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DAK — Siege Rankings</title>
+<style>
+:root{
+  --bg:#080c11;--panel:#101720;--panel2:#151e29;--line:#263342;
+  --text:#edf2f7;--muted:#8e9aaa;--accent:#7ca5ff;--good:#6cdda5;--gold:#f4ca67;
+}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(circle at 50% -10%,#172235 0,#0b1017 36%,#080c11 72%);color:var(--text);font:14px/1.5 Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial}
+button,input{font:inherit} button{cursor:pointer}
+.container{max-width:1500px;margin:auto;padding:28px 20px 70px}
+.hero{display:flex;justify-content:space-between;gap:20px;align-items:end;margin-bottom:20px}
+h1{font-size:36px;line-height:1;margin:0 0 8px;letter-spacing:-.04em}
+.subtitle{color:var(--muted)}
+.badge{border:1px solid var(--line);background:#0e151e;padding:7px 11px;border-radius:999px;color:var(--muted)}
+.toolbar{background:rgba(16,23,32,.9);border:1px solid var(--line);border-radius:16px;padding:13px;display:flex;flex-wrap:wrap;gap:10px;align-items:center;position:sticky;top:10px;z-index:20;backdrop-filter:blur(14px)}
+.tabs{display:flex;gap:7px;flex-wrap:wrap}
+.tab{border:1px solid var(--line);background:#131c27;color:var(--text);padding:9px 12px;border-radius:10px}
+.tab.active{background:#243a67;border-color:#4c70b7}
+.search{background:#0b1118;border:1px solid var(--line);color:var(--text);padding:10px 12px;border-radius:10px;min-width:260px;outline:none}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:18px 0}
+.stat{background:rgba(16,23,32,.9);border:1px solid var(--line);border-radius:14px;padding:14px}
+.stat .v{font-size:22px;font-weight:800}.stat .l{font-size:12px;color:var(--muted);margin-top:3px}
+.tableWrap{overflow:auto;border:1px solid var(--line);border-radius:16px;background:rgba(16,23,32,.88)}
+table{width:100%;border-collapse:collapse;min-width:1250px}
+th,td{padding:11px 12px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}
+th:first-child,td:first-child,th:nth-child(2),td:nth-child(2){text-align:left}
+thead th{position:sticky;top:90px;background:#121a24;z-index:10;color:#aeb8c7;font-size:11px;text-transform:uppercase;letter-spacing:.05em;cursor:pointer;user-select:none}
+thead th:hover{color:#fff}
+.sortIcon{opacity:.55;margin-left:5px}
+tbody tr{transition:.12s;background:transparent} tbody tr:hover{background:#17222e;cursor:pointer}
+.playerCell{display:flex;align-items:center;gap:10px}
+.tinyHead{width:32px;height:32px;image-rendering:auto;border-radius:5px;background:#0b1016;object-fit:cover}
+.playerName{font-weight:750}
+.rank{color:var(--muted);width:42px}
+.score{font-weight:850}
+.best{max-width:330px;overflow:hidden;text-overflow:ellipsis;color:#bcc8d6}
+.footer{margin-top:14px;color:var(--muted);font-size:12px}
+#modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.72);z-index:100;padding:20px;overflow:auto}
+.modalBox{max-width:920px;margin:4vh auto;background:#0e151e;border:1px solid var(--line);border-radius:20px;box-shadow:0 24px 80px #000b;overflow:hidden}
+.modalTop{padding:22px;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:16px}
+.bigHead{width:86px;height:86px;border-radius:14px;image-rendering:auto;background:#0a0f15;border:1px solid var(--line)}
+.modalName{font-size:28px;font-weight:850}.modalMeta{color:var(--muted)}
+.close{margin-left:auto;background:#18222e;border:1px solid var(--line);color:#fff;border-radius:10px;padding:8px 11px}
+.modalBody{padding:20px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.metric{background:#131d28;border:1px solid var(--line);border-radius:12px;padding:12px}.metric b{font-size:20px}.metric span{display:block;color:var(--muted);font-size:12px}
+.section{margin-top:20px}.section h3{margin:0 0 9px}
+.history{width:100%;border-collapse:collapse}.history td{border-bottom:1px solid var(--line);padding:8px 4px;text-align:left}
+.link{display:inline-block;margin-top:14px;color:#9ebaff;text-decoration:none;border:1px solid #345487;background:#14243f;border-radius:10px;padding:9px 12px}
+.note{color:var(--muted);font-size:12px;margin-top:12px}
+@media(max-width:950px){.cards{grid-template-columns:repeat(2,1fr)}.grid{grid-template-columns:repeat(2,1fr)}.hero{align-items:flex-start;flex-direction:column}}
+@media(max-width:560px){.cards{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.container{padding-left:12px;padding-right:12px}}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="hero">
+    <div><h1>⚔ DAK Siege Rankings</h1><div class="subtitle">Difficulty Adjusted Kills · Aden · DAK v2.1</div></div>
+    <div id="formulaBadge" class="badge">Загрузка…</div>
+  </div>
+
+  <div class="toolbar">
+    <div id="tabs" class="tabs"></div>
+    <input id="search" class="search" placeholder="🔎 Поиск по нику…">
+  </div>
+
+  <div id="cards" class="cards"></div>
+
+  <div class="tableWrap">
+    <table>
+      <thead><tr>
+        <th data-key="rank">#</th>
+        <th data-key="player">Игрок</th>
+        <th data-key="final_score">Final</th>
+        <th data-key="dak">DAK</th>
+        <th data-key="akd">AKD</th>
+        <th data-key="quality_index">QI</th>
+        <th data-key="kills">Kills</th>
+        <th data-key="deaths">Deaths</th>
+        <th data-key="kd">K/D</th>
+        <th data-key="strength">Strength</th>
+        <th data-key="upset_kills">Upsets</th>
+        <th data-key="farm_affected_kills">Farm</th>
+        <th>Лучшее убийство</th>
+      </tr></thead>
+      <tbody id="body"></tbody>
+    </table>
+  </div>
+
+  <details style="background:#101720;border:1px solid var(--line);border-radius:14px;padding:13px 15px;margin-top:14px">
+    <summary style="cursor:pointer;font-weight:750">Как считается рейтинг</summary>
+    <div style="margin-top:10px;color:#bdc7d3">
+      <p><b>Target Strength</b>: сглаженный KD + поправка на размер выборки, затем percentile внутри осады.</p>
+      <p><b>Kill Value</b> = 1 + 2 × percentile<sup>1.4</sup>.</p>
+      <p><b>Upset</b>: +10% / +20% / +35% при преимуществе силы цели ≥20 / ≥30 / ≥50 процентных пунктов.</p>
+      <p><b>Farm</b>: повторные убийства одной слабой/средней цели постепенно дешевеют.</p>
+      <p><b>Final</b> = DAK × QualityIndex<sup>0.35</sup>.</p>
+      <p class="note">Нажмите на строку игрока, чтобы открыть карточку. Заголовки таблицы сортируются кликом.</p>
+    </div>
+  </details>
+
+  <div class="footer">Skin preview: NameMC link + внешний Minecraft skin renderer fallback. Статический сайт, без аккаунтов пользователей.</div>
+</div>
+
+<div id="modal">
+  <div class="modalBox">
+    <div class="modalTop">
+      <img id="bigHead" class="bigHead" alt="">
+      <div><div id="modalName" class="modalName">—</div><div id="modalMeta" class="modalMeta">—</div></div>
+      <button class="close" onclick="closeModal()">Закрыть</button>
+    </div>
+    <div id="modalBody" class="modalBody"></div>
+  </div>
+</div>
+
+<script>
+let DATA=null, current="season", sortKey="final_score", sortDir=-1;
+const esc=s=>String(s??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]));
+const fmt=(n,d=2)=>n==null?"∞":Number(n).toFixed(d);
+
+function headUrl(name,size=128){
+  // Reliable public renderer. NameMC is the profile/source link in the card.
+  return `https://mc-heads.net/avatar/${encodeURIComponent(name)}/${size}.png`;
+}
+function nameMcUrl(name){return `https://namemc.com/profile/${encodeURIComponent(name)}`}
+
+async function load(){
+  DATA=await fetch("data/rankings.json").then(r=>r.json());
+  document.getElementById("formulaBadge").textContent=DATA.formula.version;
+  renderTabs(); render();
+}
+function renderTabs(){
+  const root=document.getElementById("tabs");root.innerHTML="";
+  DATA.sieges.forEach(s=>{
+    const b=document.createElement("button");b.className="tab "+(current===s.id?"active":"");b.textContent=s.date;
+    b.onclick=()=>{current=s.id;renderTabs();render()};root.appendChild(b);
+  });
+  const b=document.createElement("button");b.className="tab "+(current==="season"?"active":"");b.textContent="Сезон";
+  b.onclick=()=>{current="season";renderTabs();render()};root.appendChild(b);
+}
+function baseRows(){
+  if(current==="season") return DATA.season_ranking.map(r=>({...r,final_score:r.average_final_score,dak:r.average_dak_per_siege,akd:null,quality_index:null,strength:null,upset_kills:null,farm_affected_kills:null,kd:null}));
+  return DATA.sieges.find(x=>x.id===current).ranking;
+}
+function compare(a,b,key){
+  if(key==="player") return String(a.player).localeCompare(String(b.player));
+  const av=a[key],bv=b[key];
+  if(av==null&&bv==null)return 0;if(av==null)return 1;if(bv==null)return -1;
+  if(typeof av==="string")return av.localeCompare(bv);
+  return av-bv;
+}
+function render(){
+  const q=document.getElementById("search").value.toLowerCase().trim();
+  let rows=baseRows().filter(r=>r.player.toLowerCase().includes(q));
+  rows.sort((a,b)=>compare(a,b,sortKey)*sortDir);
+  const label=current==="season"?"Общий сезон":`${current} · ${DATA.sieges.find(s=>s.id===current).name}`;
+  const eventCount=current==="season"?DATA.sieges.reduce((a,s)=>a+s.event_count,0):DATA.sieges.find(s=>s.id===current).event_count;
+  const top=rows[0];
+  document.getElementById("cards").innerHTML=`
+    <div class="stat"><div class="v">${esc(label)}</div><div class="l">Выбранный период</div></div>
+    <div class="stat"><div class="v">${eventCount}</div><div class="l">учтённых PvP-событий</div></div>
+    <div class="stat"><div class="v">${rows.length}</div><div class="l">игроков в выдаче</div></div>
+    <div class="stat"><div class="v">${top?esc(top.player):"—"}</div><div class="l">лидер текущей сортировки</div></div>`;
+  const order={rank:"#",player:"Игрок",final_score:"Final",dak:"DAK",akd:"AKD",quality_index:"QI",kills:"Kills",deaths:"Deaths",kd:"K/D",strength:"Strength",upset_kills:"Upsets",farm_affected_kills:"Farm"};
+  document.querySelectorAll("thead th[data-key]").forEach(th=>{
+    const key=th.dataset.key;
+    th.innerHTML=esc(order[key])+`<span class="sortIcon">${sortKey===key?(sortDir===1?"↑":"↓"):"↕"}</span>`;
+  });
+  document.getElementById("body").innerHTML=rows.map(r=>{
+    const best=r.best_kill?`${esc(r.best_kill.victim)} · ${fmt(r.best_kill.score)}`:"—";
+    return `<tr onclick='openModal(${JSON.stringify(r.player)})'>
+      <td class="rank">${r.rank??"—"}</td>
+      <td><div class="playerCell"><img class="tinyHead" src="${headUrl(r.player,64)}" loading="lazy" onerror="this.style.visibility='hidden'"><span class="playerName">${esc(r.player)}</span></div></td>
+      <td class="score">${fmt(r.final_score)}</td>
+      <td>${fmt(r.dak)}</td><td>${fmt(r.akd)}</td><td>${fmt(r.quality_index)}</td>
+      <td>${r.kills}</td><td>${r.deaths}</td><td>${fmt(r.kd)}</td><td>${fmt(r.strength)}</td>
+      <td>${r.upset_kills??"—"}</td><td>${r.farm_affected_kills??"—"}</td><td class="best">${best}</td>
+    </tr>`;
+  }).join("");
+}
+document.querySelectorAll("thead th[data-key]").forEach(th=>{
+  th.onclick=()=>{
+    const key=th.dataset.key;
+    if(sortKey===key)sortDir*=-1; else {sortKey=key;sortDir=key==="player"?1:-1}
+    render();
+  };
+});
+function findPlayer(name){return DATA.sieges.flatMap(s=>s.ranking).find(r=>r.player===name)}
+function openModal(name){
+  const allSieges=DATA.sieges;
+  const history=allSieges.map(s=>({s,r:s.ranking.find(x=>x.player===name)})).filter(x=>x.r);
+  const r=(current==="season"?findPlayer(name):DATA.sieges.find(s=>s.id===current).ranking.find(x=>x.player===name)) || history[0]?.r;
+  if(!r)return;
+  document.getElementById("bigHead").src=headUrl(name,172);
+  document.getElementById("modalName").textContent=name;
+  document.getElementById("modalMeta").textContent=`DAK v2.1 · ${history.length} осад`;
+  const season=DATA.season_ranking.find(x=>x.player===name);
+  const bestAll=history.flatMap(x=>x.r.best_kill?[{date:x.s.date,...x.r.best_kill}]:[]).sort((a,b)=>b.score-a.score)[0];
+  document.getElementById("modalBody").innerHTML=`
+    <div class="grid">
+      <div class="metric"><b>${season?fmt(season.average_final_score):fmt(r.final_score)}</b><span>Average Final Score</span></div>
+      <div class="metric"><b>${season?fmt(season.average_dak_per_siege):fmt(r.dak)}</b><span>Average DAK / siege</span></div>
+      <div class="metric"><b>${season?season.kills:r.kills}</b><span>Total kills</span></div>
+      <div class="metric"><b>${season?season.deaths:r.deaths}</b><span>Total deaths</span></div>
+    </div>
+    <div class="section">
+      <h3>История осад</h3>
+      <table class="history"><tbody>${history.map(x=>`<tr><td><b>${esc(x.s.date)}</b></td><td>Final ${fmt(x.r.final_score)}</td><td>DAK ${fmt(x.r.dak)}</td><td>AKD ${fmt(x.r.akd)}</td><td>${x.r.kills} K / ${x.r.deaths} D</td></tr>`).join("")}</tbody></table>
+    </div>
+    <div class="section">
+      <h3>Профиль DAK</h3>
+      <div class="grid">
+        <div class="metric"><b>${fmt(r.akd)}</b><span>AKD</span></div>
+        <div class="metric"><b>${fmt(r.quality_index)}</b><span>Quality Index</span></div>
+        <div class="metric"><b>${r.upset_kills??"—"}</b><span>Upset kills</span></div>
+        <div class="metric"><b>${r.farm_affected_kills??"—"}</b><span>Farm-affected</span></div>
+      </div>
+    </div>
+    <div class="section">
+      <h3>Лучшее убийство</h3>
+      <div class="metric">${bestAll?`<b>${esc(bestAll.victim)}</b> · ${fmt(bestAll.score)}<span>${esc(bestAll.date)} · ${esc(bestAll.time)}</span>`:"—"}</div>
+    </div>
+    <a class="link" href="${nameMcUrl(name)}" target="_blank" rel="noopener noreferrer">Открыть профиль ${esc(name)} на NameMC ↗</a>
+    <div class="note">Изображение головы берётся из публичного Minecraft skin renderer по текущему нику; NameMC используется как профиль игрока и источник для проверки скина/истории. Это позволяет сайту оставаться полностью статическим.</div>
+  `;
+  document.getElementById("modal").style.display="block";
+}
+function closeModal(){document.getElementById("modal").style.display="none"}
+document.getElementById("modal").addEventListener("click",e=>{if(e.target.id==="modal")closeModal()});
+document.getElementById("search").addEventListener("input",render);
+document.addEventListener("keydown",e=>{if(e.key==="Escape")closeModal()});
+load().catch(err=>{document.getElementById("formulaBadge").textContent="Ошибка";console.error(err)});
+</script>
+</body>
+</html>
