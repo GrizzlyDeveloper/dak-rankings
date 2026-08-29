@@ -104,7 +104,21 @@ tbody tr.rank-3:hover{
 .metric{background:#131d28;border:1px solid var(--line);border-radius:12px;padding:12px}.metric b{font-size:20px}.metric span{display:block;color:var(--muted);font-size:12px}
 .section{margin-top:20px}.section h3{margin:0 0 9px}
 .history{width:100%;border-collapse:collapse}.history td{border-bottom:1px solid var(--line);padding:8px 4px;text-align:left}
-.link{display:inline-block;margin-top:14px;color:#9ebaff;text-decoration:none;border:1px solid #345487;background:#14243f;border-radius:10px;padding:9px 12px}
+.profileActions{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.link,.detailButton{display:inline-flex;align-items:center;justify-content:center;gap:7px;color:#9ebaff;text-decoration:none;border:1px solid #345487;background:#14243f;border-radius:10px;padding:9px 12px}
+.detailButton{color:#fff;background:#244270;font-weight:800}
+.inlinePlayer{border:0;background:transparent;color:#9ebaff;padding:0;font:inherit;font-weight:800;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
+.detailPanel{margin-top:14px;background:#101720;border:1px solid var(--line);border-radius:14px;padding:14px}
+.detailPanel[hidden]{display:none}
+.detailTabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+.detailTab{border:1px solid var(--line);background:#131c27;color:var(--text);border-radius:10px;padding:8px 11px}
+.detailTab.active{background:#243a67;border-color:#4c70b7}
+.eventList{display:grid;gap:8px}
+.eventItem{background:#131d28;border:1px solid var(--line);border-radius:10px;padding:10px}
+.eventMeta{display:flex;flex-wrap:wrap;gap:8px;color:#aeb8c7;font-size:12px;margin-bottom:5px}
+.eventTime{color:var(--gold);font-weight:850}
+.eventMessage{color:#d9e2ee;overflow-wrap:anywhere}
+.eventEmpty{color:var(--muted);background:#131d28;border:1px solid var(--line);border-radius:10px;padding:12px}
 .note{color:var(--muted);font-size:12px;margin-top:12px}
 @media(max-width:950px){.cards{grid-template-columns:repeat(2,1fr)}.grid{grid-template-columns:repeat(2,1fr)}.hero{align-items:flex-start;flex-direction:column}}
 @media(max-width:760px){
@@ -163,6 +177,10 @@ tbody tr.rank-3:hover{
   .close{padding:8px 10px}
   .modalBody{padding:14px}
   .grid{grid-template-columns:1fr}
+  .profileActions,.link,.detailButton{width:100%}
+  .detailPanel{padding:10px}
+  .detailTabs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
+  .detailTab{min-width:0;padding:9px 7px}
   .history,.history tbody,.history tr,.history td{display:block;width:100%}
   .history tr{padding:8px 0;border-bottom:1px solid var(--line)}
   .history td{border-bottom:0;padding:2px 0;text-align:left}
@@ -222,6 +240,7 @@ tbody tr.rank-3:hover{
 let DATA=null, current="season", sortKey="season_score", sortDir=-1;
 const esc=s=>String(s??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]));
 const fmt=(n,d=2)=>n==null?"—":Number(n).toFixed(d);
+const EVENT_CACHE=new Map();
 
 function headUrl(name,size=128){
   // Reliable public renderer. NameMC is the profile/source link in the card.
@@ -248,6 +267,33 @@ function playerHistory(name){
 }
 function bestKillFrom(history){
   return history.flatMap(x=>x.r.best_kill?[{date:x.s.date,...x.r.best_kill}]:[]).sort((a,b)=>b.score-a.score)[0] ?? null;
+}
+function hasPlayerProfile(name){
+  return DATA.sieges.some(s=>s.ranking.some(r=>r.player===name));
+}
+function profileLink(name){
+  if(!name) return "—";
+  if(hasPlayerProfile(name)){
+    return `<button class="inlinePlayer" type="button" onclick='event.stopPropagation();openModal(${JSON.stringify(name)})'>${esc(name)}</button>`;
+  }
+  return `<a class="inlinePlayer" href="${nameMcUrl(name)}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">${esc(name)}</a>`;
+}
+function siegeEvents(siege){
+  if(EVENT_CACHE.has(siege.id)) return EVENT_CACHE.get(siege.id);
+  const events=siege.ranking.flatMap(row=>(row.kills_detail||[]).map(kill=>({
+    ...kill,
+    killer:kill.killer || row.player,
+    score:kill.kill_score ?? kill.score ?? 0
+  }))).sort((a,b)=>String(a.time).localeCompare(String(b.time)));
+  EVENT_CACHE.set(siege.id,events);
+  return events;
+}
+function playerEventsForSiege(name,siege){
+  const events=siegeEvents(siege);
+  return {
+    kills:events.filter(e=>e.killer===name),
+    deaths:events.filter(e=>e.victim===name)
+  };
 }
 function seasonRows(){
   return DATA.season_ranking.map(summary=>{
@@ -295,7 +341,7 @@ function playerCell(r){
   return `<div class="playerCell"><img class="tinyHead" src="${headUrl(r.player,64)}" loading="lazy" onerror="this.style.visibility='hidden'"><span class="playerName">${esc(r.player)}</span></div>`;
 }
 function bestKillCell(r){
-  return r.best_kill?`${esc(r.best_kill.victim)} · ${fmt(r.best_kill.score)}`:"—";
+  return r.best_kill?`${profileLink(r.best_kill.victim)} · ${fmt(r.best_kill.score)}`:"—";
 }
 function columns(){
   if(current==="season") return [
@@ -367,6 +413,62 @@ function render(){
   }).join("");
 }
 function findPlayer(name){return DATA.sieges.flatMap(s=>s.ranking).find(r=>r.player===name)}
+function eventItemHtml(event){
+  return `<div class="eventItem">
+    <div class="eventMeta">
+      <span class="eventTime">${esc(event.time)}</span>
+      <span>${profileLink(event.killer)} → ${profileLink(event.victim)}</span>
+      <span>DAK ${fmt(event.score)}</span>
+    </div>
+    <div class="eventMessage">${esc(event.message)}</div>
+  </div>`;
+}
+function eventListHtml(events,emptyText){
+  if(!events.length) return `<div class="eventEmpty">${esc(emptyText)}</div>`;
+  return `<div class="eventList">${events.map(eventItemHtml).join("")}</div>`;
+}
+function siegeDetailsHtml(name,history){
+  if(!history.length) return "";
+  const activeId=current!=="season" && history.some(x=>x.s.id===current) ? current : history[0].s.id;
+  return `<div class="profileActions">
+    <button class="detailButton" type="button" onclick="toggleSiegeDetails(this)">Детальная сводка по осадам</button>
+  </div>
+  <div class="detailPanel" data-detail-root hidden>
+    <div class="detailTabs">${history.map(x=>`<button class="detailTab ${x.s.id===activeId?"active":""}" type="button" data-siege-tab="${esc(x.s.id)}" onclick='setDetailSiege(this,${JSON.stringify(x.s.id)})'>${esc(x.s.date)}</button>`).join("")}</div>
+    ${history.map(x=>{
+      const events=playerEventsForSiege(name,x.s);
+      return `<div class="siegeDetail" data-siege-panel="${esc(x.s.id)}" ${x.s.id===activeId?"":"hidden"}>
+        <div class="grid">
+          <div class="metric"><b>${x.r.kills}</b><span>Kills</span></div>
+          <div class="metric"><b>${x.r.deaths}</b><span>Deaths</span></div>
+          <div class="metric"><b>${fmt(x.r.final_score)}</b><span>Final</span></div>
+          <div class="metric"><b>${fmt(x.r.dak)}</b><span>DAK</span></div>
+        </div>
+        <div class="detailTabs" style="margin-top:12px">
+          <button class="detailTab active" type="button" data-kind-tab="kills" onclick="setDetailKind(this,'kills')">Убийства (${events.kills.length})</button>
+          <button class="detailTab" type="button" data-kind-tab="deaths" onclick="setDetailKind(this,'deaths')">Смерти (${events.deaths.length})</button>
+        </div>
+        <div data-kind-panel="kills">${eventListHtml(events.kills,"Убийств в этой осаде нет.")}</div>
+        <div data-kind-panel="deaths" hidden>${eventListHtml(events.deaths,"Смертей от игроков в этой осаде нет.")}</div>
+      </div>`;
+    }).join("")}
+  </div>`;
+}
+function toggleSiegeDetails(button){
+  const panel=button.parentElement.nextElementSibling;
+  panel.hidden=!panel.hidden;
+  button.textContent=panel.hidden?"Детальная сводка по осадам":"Скрыть детальную сводку";
+}
+function setDetailSiege(button,siegeId){
+  const root=button.closest("[data-detail-root]");
+  root.querySelectorAll("[data-siege-tab]").forEach(tab=>tab.classList.toggle("active",tab.dataset.siegeTab===siegeId));
+  root.querySelectorAll("[data-siege-panel]").forEach(panel=>panel.hidden=panel.dataset.siegePanel!==siegeId);
+}
+function setDetailKind(button,kind){
+  const panel=button.closest("[data-siege-panel]");
+  panel.querySelectorAll("[data-kind-tab]").forEach(tab=>tab.classList.toggle("active",tab.dataset.kindTab===kind));
+  panel.querySelectorAll("[data-kind-panel]").forEach(item=>item.hidden=item.dataset.kindPanel!==kind);
+}
 function openModal(name){
   const history=playerHistory(name);
   const r=(current==="season"?findPlayer(name):DATA.sieges.find(s=>s.id===current).ranking.find(x=>x.player===name)) || history[0]?.r;
@@ -386,6 +488,7 @@ function openModal(name){
     <div class="section">
       <h3>История осад</h3>
       <table class="history"><tbody>${history.map(x=>`<tr><td><b>${esc(x.s.date)}</b></td><td>Final ${fmt(x.r.final_score)}</td><td>DAK ${fmt(x.r.dak)}</td><td>AKD ${fmt(x.r.akd)}</td><td>${x.r.kills} K / ${x.r.deaths} D</td></tr>`).join("")}</tbody></table>
+      ${siegeDetailsHtml(name,history)}
     </div>
     <div class="section">
       <h3>Профиль DAK</h3>
@@ -398,9 +501,11 @@ function openModal(name){
     </div>
     <div class="section">
       <h3>Лучшее убийство</h3>
-      <div class="metric">${bestAll?`<b>${esc(bestAll.victim)}</b> · ${fmt(bestAll.score)}<span>${esc(bestAll.date)} · ${esc(bestAll.time)}</span>`:"—"}</div>
+      <div class="metric">${bestAll?`<b>${profileLink(bestAll.victim)}</b> · ${fmt(bestAll.score)}<span>${esc(bestAll.date)} · ${esc(bestAll.time)}</span>`:"—"}</div>
     </div>
-    <a class="link" href="${nameMcUrl(name)}" target="_blank" rel="noopener noreferrer">Открыть профиль ${esc(name)} на NameMC ↗</a>
+    <div class="profileActions">
+      <a class="link" href="${nameMcUrl(name)}" target="_blank" rel="noopener noreferrer">Открыть профиль ${esc(name)} на NameMC ↗</a>
+    </div>
     <div class="note">Изображение головы берётся из публичного Minecraft skin renderer по текущему нику; NameMC используется как профиль игрока и источник для проверки скина/истории. Это позволяет сайту оставаться полностью статическим.</div>
   `;
   document.getElementById("modal").style.display="block";
