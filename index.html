@@ -107,7 +107,67 @@ tbody tr.rank-3:hover{
 .link{display:inline-block;margin-top:14px;color:#9ebaff;text-decoration:none;border:1px solid #345487;background:#14243f;border-radius:10px;padding:9px 12px}
 .note{color:var(--muted);font-size:12px;margin-top:12px}
 @media(max-width:950px){.cards{grid-template-columns:repeat(2,1fr)}.grid{grid-template-columns:repeat(2,1fr)}.hero{align-items:flex-start;flex-direction:column}}
-@media(max-width:560px){.cards{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.container{padding-left:12px;padding-right:12px}}
+@media(max-width:760px){
+  body{font-size:13px;background:#080c11}
+  .container{padding:18px 12px 44px}
+  h1{font-size:28px;letter-spacing:0}
+  .hero{gap:12px;margin-bottom:14px}
+  .badge{width:100%;border-radius:10px}
+  .toolbar{position:static;border-radius:12px;padding:10px}
+  .tabs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));width:100%}
+  .tab{min-width:0;padding:10px 8px}
+  .search{width:100%;min-width:0}
+  .cards{grid-template-columns:1fr;gap:8px}
+  .stat{border-radius:10px;padding:12px}
+  .stat .v{font-size:19px;line-height:1.2;overflow-wrap:anywhere}
+  .tableWrap{overflow:visible;border:0;border-radius:0;background:transparent}
+  table{display:block;min-width:0}
+  thead{display:none}
+  tbody{display:grid;gap:10px}
+  tbody tr,tbody tr.rank-1,tbody tr.rank-2,tbody tr.rank-3{
+    display:block;
+    border:1px solid var(--line);
+    border-radius:12px;
+    background:rgba(16,23,32,.92);
+    padding:8px 0;
+    overflow:hidden;
+  }
+  tbody tr:hover,tbody tr.rank-1:hover,tbody tr.rank-2:hover,tbody tr.rank-3:hover{background:#131d28}
+  td{
+    display:flex;
+    align-items:flex-start;
+    justify-content:space-between;
+    gap:12px;
+    border-bottom:0;
+    padding:7px 12px;
+    text-align:right;
+    white-space:normal;
+  }
+  td:first-child,td:nth-child(2){text-align:right}
+  td::before{
+    content:attr(data-label);
+    color:var(--muted);
+    font-size:11px;
+    text-transform:uppercase;
+    letter-spacing:.05em;
+    text-align:left;
+    flex:0 0 96px;
+  }
+  .playerCell{justify-content:flex-end;min-width:0}
+  .playerName{overflow-wrap:anywhere}
+  .best{max-width:none;overflow:visible;text-overflow:clip}
+  .modalBox{margin:0 auto;border-radius:14px}
+  .modalTop{padding:16px;align-items:flex-start}
+  .bigHead{width:64px;height:64px;border-radius:10px}
+  .modalName{font-size:22px;overflow-wrap:anywhere}
+  .close{padding:8px 10px}
+  .modalBody{padding:14px}
+  .grid{grid-template-columns:1fr}
+  .history,.history tbody,.history tr,.history td{display:block;width:100%}
+  .history tr{padding:8px 0;border-bottom:1px solid var(--line)}
+  .history td{border-bottom:0;padding:2px 0;text-align:left}
+}
+@media(max-width:420px){.tabs{grid-template-columns:1fr}.modalTop{flex-wrap:wrap}.close{margin-left:0;width:100%}}
 </style>
 </head>
 <body>
@@ -126,21 +186,7 @@ tbody tr.rank-3:hover{
 
   <div class="tableWrap">
     <table>
-      <thead><tr>
-        <th data-key="rank">#</th>
-        <th data-key="player">Игрок</th>
-        <th data-key="final_score">Final</th>
-        <th data-key="dak">DAK</th>
-        <th data-key="akd">AKD</th>
-        <th data-key="quality_index">QI</th>
-        <th data-key="kills">Kills</th>
-        <th data-key="deaths">Deaths</th>
-        <th data-key="kd">K/D</th>
-        <th data-key="strength">Strength</th>
-        <th data-key="upset_kills">Upsets</th>
-        <th data-key="farm_affected_kills">Farm</th>
-        <th>Лучшее убийство</th>
-      </tr></thead>
+      <thead><tr id="headRow"></tr></thead>
       <tbody id="body"></tbody>
     </table>
   </div>
@@ -153,6 +199,7 @@ tbody tr.rank-3:hover{
       <p><b>Upset</b>: +10% / +20% / +35% при преимуществе силы цели ≥20 / ≥30 / ≥50 процентных пунктов.</p>
       <p><b>Farm</b>: повторные убийства одной слабой/средней цели постепенно дешевеют.</p>
       <p><b>Final</b> = DAK × QualityIndex<sup>0.35</sup>.</p>
+      <p><b>Season</b>: сумма Final за все осады сезона. <b>Avg</b>: средний Final за сыгранные осады. Сезонный ранг считается по Season, чтобы игрок с одной удачной осадой не обгонял тех, кто стабильно играет несколько осад.</p>
       <p class="note">Нажмите на строку игрока, чтобы открыть карточку. Заголовки таблицы сортируются кликом.</p>
     </div>
   </details>
@@ -172,9 +219,9 @@ tbody tr.rank-3:hover{
 </div>
 
 <script>
-let DATA=null, current="season", sortKey="final_score", sortDir=-1;
+let DATA=null, current="season", sortKey="season_score", sortDir=-1;
 const esc=s=>String(s??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]));
-const fmt=(n,d=2)=>n==null?"∞":Number(n).toFixed(d);
+const fmt=(n,d=2)=>n==null?"—":Number(n).toFixed(d);
 
 function headUrl(name,size=128){
   // Reliable public renderer. NameMC is the profile/source link in the card.
@@ -191,24 +238,117 @@ function renderTabs(){
   const root=document.getElementById("tabs");root.innerHTML="";
   DATA.sieges.forEach(s=>{
     const b=document.createElement("button");b.className="tab "+(current===s.id?"active":"");b.textContent=s.date;
-    b.onclick=()=>{current=s.id;renderTabs();render()};root.appendChild(b);
+    b.onclick=()=>{current=s.id;sortKey="final_score";sortDir=-1;renderTabs();render()};root.appendChild(b);
   });
   const b=document.createElement("button");b.className="tab "+(current==="season"?"active":"");b.textContent="Сезон";
-  b.onclick=()=>{current="season";renderTabs();render()};root.appendChild(b);
+  b.onclick=()=>{current="season";sortKey="season_score";sortDir=-1;renderTabs();render()};root.appendChild(b);
+}
+function playerHistory(name){
+  return DATA.sieges.map(s=>({s,r:s.ranking.find(x=>x.player===name)})).filter(x=>x.r);
+}
+function bestKillFrom(history){
+  return history.flatMap(x=>x.r.best_kill?[{date:x.s.date,...x.r.best_kill}]:[]).sort((a,b)=>b.score-a.score)[0] ?? null;
+}
+function seasonRows(){
+  return DATA.season_ranking.map(summary=>{
+    const history=playerHistory(summary.player);
+    const appearances=history.length || summary.appearances || 0;
+    const seasonScore=history.reduce((sum,x)=>sum+(x.r.final_score || 0),0);
+    const totalDak=history.reduce((sum,x)=>sum+(x.r.dak || 0),0);
+    const kills=summary.kills ?? history.reduce((sum,x)=>sum+(x.r.kills || 0),0);
+    const deaths=summary.deaths ?? history.reduce((sum,x)=>sum+(x.r.deaths || 0),0);
+    return {
+      ...summary,
+      appearances,
+      season_score:seasonScore,
+      average_score:appearances?seasonScore/appearances:0,
+      total_dak:totalDak,
+      average_dak_per_siege:appearances?totalDak/appearances:0,
+      average_kills:appearances?kills/appearances:0,
+      average_deaths:appearances?deaths/appearances:0,
+      kills,
+      deaths,
+      best_kill:bestKillFrom(history)
+    };
+  }).sort((a,b)=>b.season_score-a.season_score || b.average_score-a.average_score || String(a.player).localeCompare(String(b.player)))
+    .map((row,index)=>({...row,rank:index+1}));
 }
 function baseRows(){
-  if(current==="season") return DATA.season_ranking.map(r=>({...r,final_score:r.average_final_score,dak:r.average_dak_per_siege,akd:null,quality_index:null,strength:null,upset_kills:null,farm_affected_kills:null,kd:null}));
+  if(current==="season") return seasonRows();
   return DATA.sieges.find(x=>x.id===current).ranking;
 }
 function compare(a,b,key){
   if(key==="player") return String(a.player).localeCompare(String(b.player));
+  if(key==="best_kill") return (a.best_kill?.score ?? -1)-(b.best_kill?.score ?? -1);
   const av=a[key],bv=b[key];
   if(av==null&&bv==null)return 0;if(av==null)return 1;if(bv==null)return -1;
   if(typeof av==="string")return av.localeCompare(bv);
   return av-bv;
 }
+function medalFor(rank){
+  return rank === 1 ? "🥇 " : rank === 2 ? "🥈 " : rank === 3 ? "🥉 " : "";
+}
+function rankClassFor(rank){
+  return rank === 1 ? "rank-1" : rank === 2 ? "rank-2" : rank === 3 ? "rank-3" : "";
+}
+function playerCell(r){
+  return `<div class="playerCell"><img class="tinyHead" src="${headUrl(r.player,64)}" loading="lazy" onerror="this.style.visibility='hidden'"><span class="playerName">${esc(r.player)}</span></div>`;
+}
+function bestKillCell(r){
+  return r.best_kill?`${esc(r.best_kill.victim)} · ${fmt(r.best_kill.score)}`:"—";
+}
+function columns(){
+  if(current==="season") return [
+    {key:"rank",label:"#",cls:"rank",value:r=>`${medalFor(r.rank)}${r.rank ?? "—"}`},
+    {key:"player",label:"Игрок",value:playerCell},
+    {key:"season_score",label:"Season",cls:"score",value:r=>fmt(r.season_score)},
+    {key:"average_score",label:"Avg",value:r=>fmt(r.average_score)},
+    {key:"appearances",label:"Осады",value:r=>`${r.appearances}/${DATA.sieges.length}`},
+    {key:"total_dak",label:"Total DAK",value:r=>fmt(r.total_dak)},
+    {key:"average_dak_per_siege",label:"Avg DAK",value:r=>fmt(r.average_dak_per_siege)},
+    {key:"kills",label:"Kills",value:r=>r.kills},
+    {key:"deaths",label:"Deaths",value:r=>r.deaths},
+    {key:"average_kills",label:"Kills avg",value:r=>fmt(r.average_kills)},
+    {key:"best_kill",label:"Лучшее убийство",cls:"best",value:bestKillCell}
+  ];
+  return [
+    {key:"rank",label:"#",cls:"rank",value:r=>`${medalFor(r.rank)}${r.rank ?? "—"}`},
+    {key:"player",label:"Игрок",value:playerCell},
+    {key:"final_score",label:"Final",cls:"score",value:r=>fmt(r.final_score)},
+    {key:"dak",label:"DAK",value:r=>fmt(r.dak)},
+    {key:"akd",label:"AKD",value:r=>fmt(r.akd)},
+    {key:"quality_index",label:"QI",value:r=>fmt(r.quality_index)},
+    {key:"kills",label:"Kills",value:r=>r.kills},
+    {key:"deaths",label:"Deaths",value:r=>r.deaths},
+    {key:"kd",label:"K/D",value:r=>fmt(r.kd)},
+    {key:"strength",label:"Strength",value:r=>fmt(r.strength)},
+    {key:"upset_kills",label:"Upsets",value:r=>r.upset_kills??"—"},
+    {key:"farm_affected_kills",label:"Farm",value:r=>r.farm_affected_kills??"—"},
+    {key:"best_kill",label:"Лучшее убийство",cls:"best",value:bestKillCell}
+  ];
+}
+function ensureSortKey(cols){
+  if(!cols.some(c=>c.key===sortKey)){
+    sortKey=current==="season"?"season_score":"final_score";
+    sortDir=-1;
+  }
+}
+function renderHead(cols){
+  document.getElementById("headRow").innerHTML=cols.map(c=>
+    `<th data-key="${esc(c.key)}">${esc(c.label)}<span class="sortIcon">${sortKey===c.key?(sortDir===1?"↑":"↓"):"↕"}</span></th>`
+  ).join("");
+  document.querySelectorAll("thead th[data-key]").forEach(th=>{
+    th.onclick=()=>{
+      const key=th.dataset.key;
+      if(sortKey===key)sortDir*=-1; else {sortKey=key;sortDir=key==="player"?1:-1}
+      render();
+    };
+  });
+}
 function render(){
   const q=document.getElementById("search").value.toLowerCase().trim();
+  const cols=columns();
+  ensureSortKey(cols);
   let rows=baseRows().filter(r=>r.player.toLowerCase().includes(q));
   rows.sort((a,b)=>compare(a,b,sortKey)*sortDir);
   const label=current==="season"?"Общий сезон":`${current} · ${DATA.sieges.find(s=>s.id===current).name}`;
@@ -219,59 +359,29 @@ function render(){
     <div class="stat"><div class="v">${eventCount}</div><div class="l">учтённых PvP-событий</div></div>
     <div class="stat"><div class="v">${rows.length}</div><div class="l">игроков в выдаче</div></div>
     <div class="stat"><div class="v">${top?esc(top.player):"—"}</div><div class="l">лидер текущей сортировки</div></div>`;
-  const order={rank:"#",player:"Игрок",final_score:"Final",dak:"DAK",akd:"AKD",quality_index:"QI",kills:"Kills",deaths:"Deaths",kd:"K/D",strength:"Strength",upset_kills:"Upsets",farm_affected_kills:"Farm"};
-  document.querySelectorAll("thead th[data-key]").forEach(th=>{
-    const key=th.dataset.key;
-    th.innerHTML=esc(order[key])+`<span class="sortIcon">${sortKey===key?(sortDir===1?"↑":"↓"):"↕"}</span>`;
-  });
+  renderHead(cols);
   document.getElementById("body").innerHTML=rows.map(r=>{
-    const best=r.best_kill?`${esc(r.best_kill.victim)} · ${fmt(r.best_kill.score)}`:"—";
-    const medal =
-  r.rank === 1 ? "🥇 " :
-  r.rank === 2 ? "🥈 " :
-  r.rank === 3 ? "🥉 " :
-  "";
-
-const rankClass =
-  r.rank === 1 ? "rank-1" :
-  r.rank === 2 ? "rank-2" :
-  r.rank === 3 ? "rank-3" :
-  "";
-
-return `<tr class="${rankClass}" onclick='openModal(${JSON.stringify(r.player)})'>
-  <td class="rank">${medal}${r.rank ?? "—"}</td>
-      <td><div class="playerCell"><img class="tinyHead" src="${headUrl(r.player,64)}" loading="lazy" onerror="this.style.visibility='hidden'"><span class="playerName">${esc(r.player)}</span></div></td>
-      <td class="score">${fmt(r.final_score)}</td>
-      <td>${fmt(r.dak)}</td><td>${fmt(r.akd)}</td><td>${fmt(r.quality_index)}</td>
-      <td>${r.kills}</td><td>${r.deaths}</td><td>${fmt(r.kd)}</td><td>${fmt(r.strength)}</td>
-      <td>${r.upset_kills??"—"}</td><td>${r.farm_affected_kills??"—"}</td><td class="best">${best}</td>
-    </tr>`;
+    return `<tr class="${rankClassFor(r.rank)}" onclick='openModal(${JSON.stringify(r.player)})'>${cols.map(c=>
+      `<td class="${c.cls??""}" data-label="${esc(c.label)}">${c.value(r)}</td>`
+    ).join("")}</tr>`;
   }).join("");
 }
-document.querySelectorAll("thead th[data-key]").forEach(th=>{
-  th.onclick=()=>{
-    const key=th.dataset.key;
-    if(sortKey===key)sortDir*=-1; else {sortKey=key;sortDir=key==="player"?1:-1}
-    render();
-  };
-});
 function findPlayer(name){return DATA.sieges.flatMap(s=>s.ranking).find(r=>r.player===name)}
 function openModal(name){
-  const allSieges=DATA.sieges;
-  const history=allSieges.map(s=>({s,r:s.ranking.find(x=>x.player===name)})).filter(x=>x.r);
+  const history=playerHistory(name);
   const r=(current==="season"?findPlayer(name):DATA.sieges.find(s=>s.id===current).ranking.find(x=>x.player===name)) || history[0]?.r;
   if(!r)return;
   document.getElementById("bigHead").src=headUrl(name,172);
   document.getElementById("modalName").textContent=name;
   document.getElementById("modalMeta").textContent=`DAK v2.1 · ${history.length} осад`;
-  const season=DATA.season_ranking.find(x=>x.player===name);
-  const bestAll=history.flatMap(x=>x.r.best_kill?[{date:x.s.date,...x.r.best_kill}]:[]).sort((a,b)=>b.score-a.score)[0];
+  const season=seasonRows().find(x=>x.player===name);
+  const bestAll=bestKillFrom(history);
   document.getElementById("modalBody").innerHTML=`
     <div class="grid">
-      <div class="metric"><b>${season?fmt(season.average_final_score):fmt(r.final_score)}</b><span>Average Final Score</span></div>
-      <div class="metric"><b>${season?fmt(season.average_dak_per_siege):fmt(r.dak)}</b><span>Average DAK / siege</span></div>
-      <div class="metric"><b>${season?season.kills:r.kills}</b><span>Total kills</span></div>
-      <div class="metric"><b>${season?season.deaths:r.deaths}</b><span>Total deaths</span></div>
+      <div class="metric"><b>${season?fmt(season.season_score):fmt(r.final_score)}</b><span>Season score</span></div>
+      <div class="metric"><b>${season?fmt(season.average_score):fmt(r.final_score)}</b><span>Average score</span></div>
+      <div class="metric"><b>${season?`${season.appearances}/${DATA.sieges.length}`:"1"}</b><span>Sieges played</span></div>
+      <div class="metric"><b>${season?`${season.kills} K / ${season.deaths} D`:`${r.kills} K / ${r.deaths} D`}</b><span>Total kills / deaths</span></div>
     </div>
     <div class="section">
       <h3>История осад</h3>
