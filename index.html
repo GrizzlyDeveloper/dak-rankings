@@ -29,10 +29,63 @@ h1{font-size:36px;line-height:1;margin:0 0 8px;letter-spacing:-.04em}
 table{width:100%;border-collapse:collapse;min-width:1250px}
 th,td{padding:11px 12px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}
 th:first-child,td:first-child,th:nth-child(2),td:nth-child(2){text-align:left}
-thead th{position:sticky;top:90px;background:#121a24;z-index:10;color:#aeb8c7;font-size:11px;text-transform:uppercase;letter-spacing:.05em;cursor:pointer;user-select:none}
+thead th{position:sticky;top:0;background:#121a24;z-index:10;color:#aeb8c7;font-size:11px;text-transform:uppercase;letter-spacing:.05em;cursor:pointer;user-select:none}
 thead th:hover{color:#fff}
 .sortIcon{opacity:.55;margin-left:5px}
 tbody tr{transition:.12s;background:transparent} tbody tr:hover{background:#17222e;cursor:pointer}
+  tbody tr.rank-1{
+  background:linear-gradient(
+    90deg,
+    rgba(244,202,103,.24),
+    rgba(244,202,103,.08),
+    transparent
+  );
+}
+
+tbody tr.rank-1:hover{
+  background:linear-gradient(
+    90deg,
+    rgba(244,202,103,.34),
+    rgba(244,202,103,.12),
+    rgba(244,202,103,.04)
+  );
+}
+
+tbody tr.rank-2{
+  background:linear-gradient(
+    90deg,
+    rgba(239,82,82,.22),
+    rgba(239,82,82,.07),
+    transparent
+  );
+}
+
+tbody tr.rank-2:hover{
+  background:linear-gradient(
+    90deg,
+    rgba(239,82,82,.32),
+    rgba(239,82,82,.12),
+    rgba(239,82,82,.04)
+  );
+}
+
+tbody tr.rank-3{
+  background:linear-gradient(
+    90deg,
+    rgba(76,205,126,.22),
+    rgba(76,205,126,.07),
+    transparent
+  );
+}
+
+tbody tr.rank-3:hover{
+  background:linear-gradient(
+    90deg,
+    rgba(76,205,126,.32),
+    rgba(76,205,126,.12),
+    rgba(76,205,126,.04)
+  );
+}
 .playerCell{display:flex;align-items:center;gap:10px}
 .tinyHead{width:32px;height:32px;image-rendering:auto;border-radius:5px;background:#0b1016;object-fit:cover}
 .playerName{font-weight:750}
@@ -173,8 +226,20 @@ function render(){
   });
   document.getElementById("body").innerHTML=rows.map(r=>{
     const best=r.best_kill?`${esc(r.best_kill.victim)} · ${fmt(r.best_kill.score)}`:"—";
-    return `<tr onclick='openModal(${JSON.stringify(r.player)})'>
-      <td class="rank">${r.rank??"—"}</td>
+    const medal =
+  r.rank === 1 ? "🥇 " :
+  r.rank === 2 ? "🥈 " :
+  r.rank === 3 ? "🥉 " :
+  "";
+
+const rankClass =
+  r.rank === 1 ? "rank-1" :
+  r.rank === 2 ? "rank-2" :
+  r.rank === 3 ? "rank-3" :
+  "";
+
+return `<tr class="${rankClass}" onclick='openModal(${JSON.stringify(r.player)})'>
+  <td class="rank">${medal}${r.rank ?? "—"}</td>
       <td><div class="playerCell"><img class="tinyHead" src="${headUrl(r.player,64)}" loading="lazy" onerror="this.style.visibility='hidden'"><span class="playerName">${esc(r.player)}</span></div></td>
       <td class="score">${fmt(r.final_score)}</td>
       <td>${fmt(r.dak)}</td><td>${fmt(r.akd)}</td><td>${fmt(r.quality_index)}</td>
