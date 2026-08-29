@@ -191,7 +191,7 @@ tbody tr.rank-3:hover{
 <body>
 <div class="container">
   <div class="hero">
-    <div><h1>⚔ DAK Siege Rankings</h1><div class="subtitle">Difficulty Adjusted Kills · Aden · DAK v2.1</div></div>
+    <div><h1>⚔ DAK Siege Rankings</h1><div class="subtitle">Difficulty Adjusted Kills · Aden · DAK v2.2</div></div>
     <div id="formulaBadge" class="badge">Загрузка…</div>
   </div>
 
@@ -212,6 +212,7 @@ tbody tr.rank-3:hover{
   <details style="background:#101720;border:1px solid var(--line);border-radius:14px;padding:13px 15px;margin-top:14px">
     <summary style="cursor:pointer;font-weight:750">Как считается рейтинг</summary>
     <div style="margin-top:10px;color:#bdc7d3">
+      <p><b>Deaths</b>: учитываются все ванильные смерти внутри официального окна Aden, включая self, crystal, guards, mobs, fall и environment.</p>
       <p><b>Target Strength</b>: сглаженный KD + поправка на размер выборки, затем percentile внутри осады.</p>
       <p><b>Kill Value</b> = 1 + 2 × percentile<sup>1.4</sup>.</p>
       <p><b>Upset</b>: +10% / +20% / +35% при преимуществе силы цели ≥20 / ≥30 / ≥50 процентных пунктов.</p>
@@ -241,6 +242,7 @@ let DATA=null, current="season", sortKey="season_score", sortDir=-1;
 const esc=s=>String(s??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]));
 const fmt=(n,d=2)=>n==null?"—":Number(n).toFixed(d);
 const EVENT_CACHE=new Map();
+const PLAYER_NAME_RE=/^[A-Za-z0-9_]{2,16}$/;
 
 function headUrl(name,size=128){
   // Reliable public renderer. NameMC is the profile/source link in the card.
@@ -276,6 +278,7 @@ function profileLink(name){
   if(hasPlayerProfile(name)){
     return `<button class="inlinePlayer" type="button" onclick='event.stopPropagation();openModal(${JSON.stringify(name)})'>${esc(name)}</button>`;
   }
+  if(!PLAYER_NAME_RE.test(name)) return esc(name);
   return `<a class="inlinePlayer" href="${nameMcUrl(name)}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">${esc(name)}</a>`;
 }
 function siegeEvents(siege){
@@ -289,10 +292,21 @@ function siegeEvents(siege){
   return events;
 }
 function playerEventsForSiege(name,siege){
+  const row=siege.ranking.find(r=>r.player===name);
   const events=siegeEvents(siege);
+  const scoreByDeath=new Map(events.map(event=>[
+    `${event.time}\u0000${event.killer}\u0000${event.victim}\u0000${event.message}`,
+    event.score
+  ]));
   return {
-    kills:events.filter(e=>e.killer===name),
-    deaths:events.filter(e=>e.victim===name)
+    kills:(row?.kills_detail || events.filter(e=>e.killer===name)).map(event=>({
+      ...event,
+      score:event.kill_score ?? event.score
+    })),
+    deaths:(row?.death_details || events.filter(e=>e.victim===name)).map(event=>({
+      ...event,
+      score:event.kill_score ?? event.score ?? scoreByDeath.get(`${event.time}\u0000${event.killer}\u0000${event.victim}\u0000${event.message}`)
+    }))
   };
 }
 function seasonRows(){
@@ -414,11 +428,12 @@ function render(){
 }
 function findPlayer(name){return DATA.sieges.flatMap(s=>s.ranking).find(r=>r.player===name)}
 function eventItemHtml(event){
+  const score=event.score==null ? "" : `<span>DAK ${fmt(event.score)}</span>`;
   return `<div class="eventItem">
     <div class="eventMeta">
       <span class="eventTime">${esc(event.time)}</span>
       <span>${profileLink(event.killer)} → ${profileLink(event.victim)}</span>
-      <span>DAK ${fmt(event.score)}</span>
+      ${score}
     </div>
     <div class="eventMessage">${esc(event.message)}</div>
   </div>`;
@@ -475,7 +490,7 @@ function openModal(name){
   if(!r)return;
   document.getElementById("bigHead").src=headUrl(name,172);
   document.getElementById("modalName").textContent=name;
-  document.getElementById("modalMeta").textContent=`DAK v2.1 · ${history.length} осад`;
+  document.getElementById("modalMeta").textContent=`${DATA.formula.version} · ${history.length} осад`;
   const season=seasonRows().find(x=>x.player===name);
   const bestAll=bestKillFrom(history);
   document.getElementById("modalBody").innerHTML=`
