@@ -393,7 +393,7 @@ function columns(){
     {key:"player",label:"Игрок",value:playerCell},
     {key:"season_score",label:"Season",cls:"score",value:r=>fmt(r.season_score)},
     {key:"average_score",label:"Avg",value:r=>fmt(r.average_score)},
-    {key:"appearances",label:"Осады",value:r=>`${r.appearances}/${DATA.sieges.length}`},
+    {key:"appearances",label:"Осады",value:r=>`${r.appearances}/${seasonSieges().length}`},
     {key:"total_dak",label:"Total DAK",value:r=>fmt(r.total_dak)},
     {key:"average_dak_per_siege",label:"Avg DAK",value:r=>fmt(r.average_dak_per_siege)},
     {key:"kills",label:"Kills",value:r=>r.kills},
@@ -544,7 +544,7 @@ function openModal(name){
     <div class="grid">
       <div class="metric"><b>${season?fmt(season.season_score):fmt(r.final_score)}</b><span>Season score</span></div>
       <div class="metric"><b>${season?fmt(season.average_score):fmt(r.final_score)}</b><span>Average score</span></div>
-      <div class="metric"><b>${season?`${season.appearances}/${DATA.sieges.length}`:"1"}</b><span>Sieges played</span></div>
+      <div class="metric"><b>${season?`${season.appearances}/${seasonSieges().length}`:"1"}</b><span>Sieges played</span></div>
       <div class="metric"><b>${season?`${season.kills} K / ${season.deaths} D`:`${r.kills} K / ${r.deaths} D`}</b><span>Total kills / deaths</span></div>
     </div>
     <div class="section">
