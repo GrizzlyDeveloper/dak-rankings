@@ -52,7 +52,7 @@ def request_json(base_url, path, cookie):
 
 
 def load_fixture(path):
-    data = json.loads(Path(path).read_text(encoding="utf-8"))
+    data = json.loads(Path(path).read_text(encoding="utf-8-sig"))
     if isinstance(data, list):
         return data
     if "payloads" in data:
@@ -68,7 +68,7 @@ def fetch_payloads(base_url, cookie, month=None, limit=None):
 
     selected = []
     for siege in sieges:
-        siege_date = date_part(siege.get("started_at") or siege.get("date") or siege.get("id"))
+        siege_date = date_part(siege.get("started_at") or siege.get("date"))
         if month and not siege_date.startswith(month):
             continue
         selected.append(siege)

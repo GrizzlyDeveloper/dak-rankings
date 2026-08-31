@@ -393,7 +393,17 @@ def parse_datetime(value):
     if not value:
         return None
     if isinstance(value, (int, float)):
-        return datetime.fromtimestamp(value)
+        candidates = [value]
+        if value > 10_000_000_000:
+            candidates.append(value / 1000)
+        for candidate in candidates:
+            try:
+                parsed = datetime.fromtimestamp(candidate)
+            except (OSError, OverflowError, ValueError):
+                continue
+            if 2000 <= parsed.year <= 2100:
+                return parsed
+        return None
     text = str(value).strip().replace("Z", "+00:00")
     for fmt in ("%Y-%m-%d %H:%M:%S", "%Y-%m-%dT%H:%M:%S", "%Y-%m-%d"):
         try:
@@ -411,7 +421,7 @@ def date_part(value, fallback=""):
     if parsed:
         return parsed.date().isoformat()
     match = re.search(r"\d{4}-\d{2}-\d{2}", str(value or fallback))
-    return match.group(0) if match else fallback
+    return match.group(0) if match else str(fallback)
 
 
 def time_part(value, fallback="00:00:00"):
