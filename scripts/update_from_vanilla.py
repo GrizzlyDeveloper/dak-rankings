@@ -5,7 +5,7 @@ import os
 import sys
 from pathlib import Path
 from urllib.error import HTTPError
-from urllib.parse import urlencode
+from urllib.parse import unquote, urlencode
 from urllib.request import Request, urlopen
 
 from analyze import date_part, report_from_official, write_outputs
@@ -13,16 +13,30 @@ from analyze import date_part, report_from_official, write_outputs
 DEFAULT_BASE_URL = "https://vanilla-game.ru"
 
 
+def cookie_value(cookie, name):
+    for part in cookie.split(";"):
+        key, _, value = part.strip().partition("=")
+        if key == name:
+            return value
+    return ""
+
+
 def request_json(base_url, path, cookie):
     url = base_url.rstrip("/") + path
+    xsrf = cookie_value(cookie, "XSRF-TOKEN")
+    headers = {
+        "Accept": "application/json",
+        "Cookie": cookie,
+        "Origin": base_url.rstrip("/"),
+        "Referer": base_url.rstrip("/") + "/lk/gamer/sieges/",
+        "User-Agent": "Mozilla/5.0 dak-rankings-updater/1.0",
+        "X-Requested-With": "XMLHttpRequest",
+    }
+    if xsrf:
+        headers["X-XSRF-TOKEN"] = unquote(xsrf)
     request = Request(
         url,
-        headers={
-            "Accept": "application/json",
-            "Cookie": cookie,
-            "User-Agent": "dak-rankings-updater/1.0",
-            "X-Requested-With": "XMLHttpRequest",
-        },
+        headers=headers,
     )
     try:
         with urlopen(request, timeout=30) as response:
@@ -84,6 +98,7 @@ def parse_args(argv):
     parser.add_argument("--month", help="Only import sieges from YYYY-MM.")
     parser.add_argument("--limit", type=int, help="Maximum number of sieges to import.")
     parser.add_argument("--input", help="Offline fixture with one payload, payloads[], or a list of payloads.")
+    parser.add_argument("--check-auth", action="store_true", help="Only check access to /lk/sieges.")
     return parser.parse_args(argv)
 
 
@@ -97,6 +112,12 @@ def main(argv=None):
                 "Set VANILLA_GAME_COOKIE before fetching official siege data. "
                 "The cookie must belong to an account that can open /lk/gamer/sieges/."
             )
+        if args.check_auth:
+            index = request_json(args.base_url, "/lk/sieges", args.cookie)
+            sieges = index.get("sieges")
+            count = len(sieges) if isinstance(sieges, list) else 0
+            print(f"Authenticated. /lk/sieges returned {count} sieges.")
+            return 0
         payloads = fetch_payloads(args.base_url, args.cookie, args.month, args.limit)
 
     reports = [report_from_official(payload) for payload in payloads]
