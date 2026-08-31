@@ -1,41 +1,71 @@
 # DAK Siege Rankings
 
-Публичный рейтинг PvP-осад Minecraft на GitHub Pages.
+Public static DAK ranking for Vanilla Game Aden sieges.
 
-## Что умеет сайт
+## What The Site Shows
 
-- вкладки по датам осад;
-- поиск игрока по нику;
-- сортировка по каждому числовому/текстовому параметру таблицы;
-- карточка игрока по клику;
-- история участия в осадах;
-- сезонные показатели;
-- ссылка на профиль NameMC;
-- аватар/голова текущего Minecraft-скина;
-- DAK v2.1.
+- siege tabs by date;
+- a monthly `Season` ranking by total Final score;
+- a separate monthly `Avg` ranking by average Final score per played siege;
+- player search and sortable columns;
+- mobile-friendly player cards;
+- player profile modal with siege history;
+- detailed kill/death summary per siege;
+- clickable best-kill victim names;
+- NameMC profile links and Minecraft head previews.
 
-## Как обновлять раз в неделю — самый простой способ
+## Data Sources
 
-1. В Minecraft сохраняешь новый лог осады.
-2. Запускаешь локальный анализатор (`scripts/analyze.py`) с новым логом.
-3. Получившийся JSON добавляешь в `reports/`.
-4. Обновляешь `data/rankings.json`.
-5. Отправляешь изменения в GitHub (`git push`).
-6. GitHub Actions автоматически публикует сайт.
+Preferred source: the official Vanilla Game siege API used by
+`https://vanilla-game.ru/lk/gamer/sieges/`.
 
-## GitHub Pages
+The updater reads:
 
-Репозиторий должен быть публичным, если используется GitHub Free. В Settings → Pages установи Source = GitHub Actions.
+- `/lk/sieges`
+- `/lk/sieges/kills?siege=<id>`
 
-GitHub Pages публикует статические файлы, поэтому отдельный хостинг/сервер для сайта не нужен.
+Those endpoints require an authenticated account that has access to the siege
+section. Do not commit passwords or cookies. Put the browser session cookie into
+the GitHub repository secret `VANILLA_GAME_COOKIE`.
 
-## Важно про скины
+Local Minecraft logs are still supported as a fallback:
 
-NameMC хорошо подходит как публичный профиль игрока и источник истории скинов. Но статический GitHub Pages JavaScript не должен рассчитывать на произвольный server-side scrape NameMC при открытии страницы: браузерные CORS/кэш/ограничения могут изменяться.
+```bash
+python scripts/analyze.py latest.log 2026-08-29
+```
 
-Поэтому UI:
-- всегда даёт прямую ссылку на NameMC;
-- показывает голову через публичный Minecraft skin renderer;
-- не блокирует таблицу, если внешний сервис изображения недоступен.
+## Automatic Updates
 
-Это намеренно делает сайт устойчивым.
+`.github/workflows/update-rankings.yml` runs every Saturday after the 19:00
+Europe/Paris Aden siege window and can also be started manually from GitHub
+Actions.
+
+For a local official refresh:
+
+```bash
+set VANILLA_GAME_COOKIE=your_cookie_here
+python scripts/update_from_vanilla.py
+```
+
+Optional filters:
+
+```bash
+python scripts/update_from_vanilla.py --month 2026-08
+python scripts/update_from_vanilla.py --limit 5
+```
+
+## Formula
+
+The official API is used as the event source, while this project still computes
+its own DAK score:
+
+- `Season`: monthly sum of Final score, highlighting active and consistent
+  players.
+- `Avg`: separate ranking by average Final score across played sieges.
+- Teamkills marked by the official API count as deaths but do not award DAK kill
+  value.
+- Local-log fallback excludes self, NPC, guard, mob, and environmental kills from
+  DAK kill value.
+
+GitHub Pages deploys the static site from the repository after updates are
+committed.

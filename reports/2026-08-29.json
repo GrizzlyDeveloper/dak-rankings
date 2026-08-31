@@ -2,16 +2,38 @@
   "id": "2026-08-29",
   "date": "2026-08-29",
   "name": "Осада №1",
+  "source": "minecraft_log",
+  "source_meta": {},
   "start_time": "19:00:02",
   "end_time": "19:24:03",
   "duration_minutes": 24,
   "owner": "UNION",
-  "event_count": 314,
-  "death_event_count": 367,
+  "event_count": 312,
+  "death_event_count": 365,
+  "raw_death_event_count": 367,
+  "death_limit_per_player": 10,
+  "ignored_deaths_after_limit": 2,
+  "ignored_deaths_after_limit_detail": [
+    {
+      "time": "19:20:47",
+      "victim": "tvi302",
+      "killer": "kasi133005",
+      "killer_type": "player",
+      "message": "tvi302 was blown up by kasi133005"
+    },
+    {
+      "time": "19:21:44",
+      "victim": "tvi302",
+      "killer": "RUSSIAN_GRIZZLY",
+      "killer_type": "player",
+      "message": "tvi302 was blown up by RUSSIAN_GRIZZLY"
+    }
+  ],
   "ignored_self_kills": 19,
+  "ignored_team_kills": 0,
   "ignored_non_player_deaths": 34,
   "median_adjusted_kd": 0.25,
-  "median_akd": 1.4590709834011557,
+  "median_akd": 1.4725284295707683,
   "ranking": [
     {
       "player": "errorrNull",
@@ -21,16 +43,16 @@
       "adjusted_kd": 11.75,
       "strength": 9.767241379310343,
       "strength_percentile": 0.9824561403508771,
-      "dak": 72.2155496762337,
-      "akd": 1.5699032538311675,
-      "quality_index": 1.0623964115544877,
-      "final_score": 73.76171904538553,
+      "dak": 72.06189633870105,
+      "akd": 1.5665629638848053,
+      "quality_index": 1.052455797548877,
+      "final_score": 73.36299270689186,
       "upset_kills": 0,
       "farm_affected_kills": 19,
       "best_kill": {
         "victim": "RUSSIAN_GRIZZLY",
-        "score": 2.6648043569432796,
-        "base_value": 2.6648043569432796,
+        "score": 2.618377044898664,
+        "base_value": 2.618377044898664,
         "upset_multiplier": 1.0,
         "farm_multiplier": 1.0,
         "time": "19:20:55",
@@ -43,12 +65,12 @@
           "killer": "errorrNull",
           "message": "lookonol2001 was smashed by errorrNull with [Аметистовая булава]",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.12280701754385964,
-          "base_kill_value": 1.1061554886384592,
+          "victim_percentile": 0.10526315789473684,
+          "base_kill_value": 1.0855493961179234,
           "upset_multiplier": 1.0,
           "farm_multiplier": 1.0,
           "target_repeat_count": 2,
-          "kill_score": 1.1061554886384592
+          "kill_score": 1.0855493961179234
         },
         {
           "time": "19:01:15",
@@ -56,12 +78,12 @@
           "killer": "errorrNull",
           "message": "VALL228 was doomed to fall by errorrNull",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.07017543859649122,
-          "base_kill_value": 1.0484941314766847,
+          "victim_percentile": 0.05263157894736842,
+          "base_kill_value": 1.0324171592377243,
           "upset_multiplier": 1.0,
           "farm_multiplier": 0.5,
           "target_repeat_count": 6,
-          "kill_score": 0.5242470657383423
+          "kill_score": 0.5162085796188621
         },
         {
           "time": "19:02:00",
@@ -121,12 +143,12 @@
           "killer": "errorrNull",
           "message": "VALL228 was smashed by errorrNull with [Аметистовая булава]",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.07017543859649122,
-          "base_kill_value": 1.0484941314766847,
+          "victim_percentile": 0.05263157894736842,
+          "base_kill_value": 1.0324171592377243,
           "upset_multiplier": 1.0,
           "farm_multiplier": 0.5,
           "target_repeat_count": 6,
-          "kill_score": 0.5242470657383423
+          "kill_score": 0.5162085796188621
         },
         {
           "time": "19:04:48",
@@ -225,12 +247,12 @@
           "killer": "errorrNull",
           "message": "VALL228 was blown up by errorrNull",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.07017543859649122,
-          "base_kill_value": 1.0484941314766847,
+          "victim_percentile": 0.05263157894736842,
+          "base_kill_value": 1.0324171592377243,
           "upset_multiplier": 1.0,
           "farm_multiplier": 0.5,
           "target_repeat_count": 6,
-          "kill_score": 0.5242470657383423
+          "kill_score": 0.5162085796188621
         },
         {
           "time": "19:07:04",
@@ -238,12 +260,12 @@
           "killer": "errorrNull",
           "message": "VALL228 was smashed by errorrNull with [Аметистовая булава]",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.07017543859649122,
-          "base_kill_value": 1.0484941314766847,
+          "victim_percentile": 0.05263157894736842,
+          "base_kill_value": 1.0324171592377243,
           "upset_multiplier": 1.0,
           "farm_multiplier": 0.5,
           "target_repeat_count": 6,
-          "kill_score": 0.5242470657383423
+          "kill_score": 0.5162085796188621
         },
         {
           "time": "19:08:56",
@@ -251,12 +273,12 @@
           "killer": "errorrNull",
           "message": "lookonol2001 was smashed by errorrNull with [Аметистовая булава]",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.12280701754385964,
-          "base_kill_value": 1.1061554886384592,
+          "victim_percentile": 0.10526315789473684,
+          "base_kill_value": 1.0855493961179234,
           "upset_multiplier": 1.0,
           "farm_multiplier": 1.0,
           "target_repeat_count": 2,
-          "kill_score": 1.1061554886384592
+          "kill_score": 1.0855493961179234
         },
         {
           "time": "19:09:09",
@@ -277,12 +299,12 @@
           "killer": "errorrNull",
           "message": "VALL228 was smashed by errorrNull with [Аметистовая булава]",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.07017543859649122,
-          "base_kill_value": 1.0484941314766847,
+          "victim_percentile": 0.05263157894736842,
+          "base_kill_value": 1.0324171592377243,
           "upset_multiplier": 1.0,
           "farm_multiplier": 0.5,
           "target_repeat_count": 6,
-          "kill_score": 0.5242470657383423
+          "kill_score": 0.5162085796188621
         },
         {
           "time": "19:09:59",
@@ -303,12 +325,12 @@
           "killer": "errorrNull",
           "message": "VALL228 was blown up by errorrNull",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.07017543859649122,
-          "base_kill_value": 1.0484941314766847,
+          "victim_percentile": 0.05263157894736842,
+          "base_kill_value": 1.0324171592377243,
           "upset_multiplier": 1.0,
           "farm_multiplier": 0.5,
           "target_repeat_count": 6,
-          "kill_score": 0.5242470657383423
+          "kill_score": 0.5162085796188621
         },
         {
           "time": "19:11:23",
@@ -536,13 +558,13 @@
           "victim": "RUSSIAN_GRIZZLY",
           "killer": "errorrNull",
           "message": "RUSSIAN_GRIZZLY was blown up by errorrNull",
-          "victim_strength": 2.2,
-          "victim_percentile": 0.8771929824561403,
-          "base_kill_value": 2.6648043569432796,
+          "victim_strength": 2.0,
+          "victim_percentile": 0.8596491228070176,
+          "base_kill_value": 2.618377044898664,
           "upset_multiplier": 1.0,
           "farm_multiplier": 1.0,
           "target_repeat_count": 1,
-          "kill_score": 2.6648043569432796
+          "kill_score": 2.618377044898664
         },
         {
           "time": "19:21:20",
@@ -550,12 +572,12 @@
           "killer": "errorrNull",
           "message": "alkinik was blown up by errorrNull",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.08771929824561403,
-          "base_kill_value": 1.0662770552067824,
+          "victim_percentile": 0.07017543859649122,
+          "base_kill_value": 1.0484941314766847,
           "upset_multiplier": 1.0,
           "farm_multiplier": 1.0,
           "target_repeat_count": 1,
-          "kill_score": 1.0662770552067824
+          "kill_score": 1.0484941314766847
         },
         {
           "time": "19:21:29",
@@ -662,10 +684,10 @@
       "adjusted_kd": 10.75,
       "strength": 8.805555555555555,
       "strength_percentile": 0.9649122807017544,
-      "dak": 59.10157339516032,
-      "akd": 1.4071803189323886,
-      "quality_index": 0.9712750846194146,
-      "final_score": 58.501746235973634,
+      "dak": 58.84930805348103,
+      "akd": 1.401174001273358,
+      "quality_index": 0.9608615890204577,
+      "final_score": 58.032683350324284,
       "upset_kills": 0,
       "farm_affected_kills": 20,
       "best_kill": {
@@ -684,12 +706,12 @@
           "killer": "EI_Shadow",
           "message": "ptr_MOON_rtp was smashed by EI_Shadow with [ꯢ𝒴႔ℴϐ𝒶 𝐸𝐼_𝒮𝒽𝒶𝒹𝑜𝓌]",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.15789473684210525,
-          "base_kill_value": 1.1509192752459152,
+          "victim_percentile": 0.14035087719298245,
+          "base_kill_value": 1.1279767802190923,
           "upset_multiplier": 1.0,
           "farm_multiplier": 1.0,
           "target_repeat_count": 1,
-          "kill_score": 1.1509192752459152
+          "kill_score": 1.1279767802190923
         },
         {
           "time": "19:13:09",
@@ -697,12 +719,12 @@
           "killer": "EI_Shadow",
           "message": "Riddars was blown up by EI_Shadow",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.05263157894736842,
-          "base_kill_value": 1.0324171592377243,
+          "victim_percentile": 0.03508771929824561,
+          "base_kill_value": 1.018375839614436,
           "upset_multiplier": 1.0,
           "farm_multiplier": 0.9,
           "target_repeat_count": 3,
-          "kill_score": 0.9291754433139519
+          "kill_score": 0.9165382556529924
         },
         {
           "time": "19:13:51",
@@ -749,12 +771,12 @@
           "killer": "EI_Shadow",
           "message": "richman8 was blown up by EI_Shadow",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.17543859649122806,
-          "base_kill_value": 1.1749061972961623,
+          "victim_percentile": 0.15789473684210525,
+          "base_kill_value": 1.1509192752459152,
           "upset_multiplier": 1.0,
           "farm_multiplier": 0.75,
           "target_repeat_count": 4,
-          "kill_score": 0.8811796479721217
+          "kill_score": 0.8631894564344365
         },
         {
           "time": "19:14:47",
@@ -788,12 +810,12 @@
           "killer": "EI_Shadow",
           "message": "shadow_uzi was blown up by EI_Shadow",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.19298245614035087,
-          "base_kill_value": 1.1998733800871098,
+          "victim_percentile": 0.17543859649122806,
+          "base_kill_value": 1.1749061972961623,
           "upset_multiplier": 1.0,
           "farm_multiplier": 1.0,
           "target_repeat_count": 1,
-          "kill_score": 1.1998733800871098
+          "kill_score": 1.1749061972961623
         },
         {
           "time": "19:15:43",
@@ -801,12 +823,12 @@
           "killer": "EI_Shadow",
           "message": "richman8 was blown up by EI_Shadow",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.17543859649122806,
-          "base_kill_value": 1.1749061972961623,
+          "victim_percentile": 0.15789473684210525,
+          "base_kill_value": 1.1509192752459152,
           "upset_multiplier": 1.0,
           "farm_multiplier": 0.75,
           "target_repeat_count": 4,
-          "kill_score": 0.8811796479721217
+          "kill_score": 0.8631894564344365
         },
         {
           "time": "19:16:11",
@@ -853,12 +875,12 @@
           "killer": "EI_Shadow",
           "message": "alkinik was blown up by EI_Shadow",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.08771929824561403,
-          "base_kill_value": 1.0662770552067824,
+          "victim_percentile": 0.07017543859649122,
+          "base_kill_value": 1.0484941314766847,
           "upset_multiplier": 1.0,
           "farm_multiplier": 1.0,
           "target_repeat_count": 2,
-          "kill_score": 1.0662770552067824
+          "kill_score": 1.0484941314766847
         },
         {
           "time": "19:17:06",
@@ -879,12 +901,12 @@
           "killer": "EI_Shadow",
           "message": "Riddars was blown up by EI_Shadow",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.05263157894736842,
-          "base_kill_value": 1.0324171592377243,
+          "victim_percentile": 0.03508771929824561,
+          "base_kill_value": 1.018375839614436,
           "upset_multiplier": 1.0,
           "farm_multiplier": 0.9,
           "target_repeat_count": 3,
-          "kill_score": 0.9291754433139519
+          "kill_score": 0.9165382556529924
         },
         {
           "time": "19:17:32",
@@ -905,12 +927,12 @@
           "killer": "EI_Shadow",
           "message": "alkinik was blown up by EI_Shadow",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.08771929824561403,
-          "base_kill_value": 1.0662770552067824,
+          "victim_percentile": 0.07017543859649122,
+          "base_kill_value": 1.0484941314766847,
           "upset_multiplier": 1.0,
           "farm_multiplier": 1.0,
           "target_repeat_count": 2,
-          "kill_score": 1.0662770552067824
+          "kill_score": 1.0484941314766847
         },
         {
           "time": "19:18:51",
@@ -931,12 +953,12 @@
           "killer": "EI_Shadow",
           "message": "macintosh1 was blown up by EI_Shadow",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.14035087719298245,
-          "base_kill_value": 1.1279767802190923,
+          "victim_percentile": 0.12280701754385964,
+          "base_kill_value": 1.1061554886384592,
           "upset_multiplier": 1.0,
           "farm_multiplier": 0.9,
           "target_repeat_count": 3,
-          "kill_score": 1.0151791021971832
+          "kill_score": 0.9955399397746133
         },
         {
           "time": "19:19:27",
@@ -970,12 +992,12 @@
           "killer": "EI_Shadow",
           "message": "macintosh1 was blown up by EI_Shadow",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.14035087719298245,
-          "base_kill_value": 1.1279767802190923,
+          "victim_percentile": 0.12280701754385964,
+          "base_kill_value": 1.1061554886384592,
           "upset_multiplier": 1.0,
           "farm_multiplier": 0.9,
           "target_repeat_count": 3,
-          "kill_score": 1.0151791021971832
+          "kill_score": 0.9955399397746133
         },
         {
           "time": "19:20:19",
@@ -996,12 +1018,12 @@
           "killer": "EI_Shadow",
           "message": "Riddars was blown up by EI_Shadow",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.05263157894736842,
-          "base_kill_value": 1.0324171592377243,
+          "victim_percentile": 0.03508771929824561,
+          "base_kill_value": 1.018375839614436,
           "upset_multiplier": 1.0,
           "farm_multiplier": 0.9,
           "target_repeat_count": 3,
-          "kill_score": 0.9291754433139519
+          "kill_score": 0.9165382556529924
         },
         {
           "time": "19:20:27",
@@ -1035,12 +1057,12 @@
           "killer": "EI_Shadow",
           "message": "richman8 was blown up by EI_Shadow",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.17543859649122806,
-          "base_kill_value": 1.1749061972961623,
+          "victim_percentile": 0.15789473684210525,
+          "base_kill_value": 1.1509192752459152,
           "upset_multiplier": 1.0,
           "farm_multiplier": 0.75,
           "target_repeat_count": 4,
-          "kill_score": 0.8811796479721217
+          "kill_score": 0.8631894564344365
         },
         {
           "time": "19:21:04",
@@ -1113,12 +1135,12 @@
           "killer": "EI_Shadow",
           "message": "macintosh1 was blown up by EI_Shadow",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.14035087719298245,
-          "base_kill_value": 1.1279767802190923,
+          "victim_percentile": 0.12280701754385964,
+          "base_kill_value": 1.1061554886384592,
           "upset_multiplier": 1.0,
           "farm_multiplier": 0.9,
           "target_repeat_count": 3,
-          "kill_score": 1.0151791021971832
+          "kill_score": 0.9955399397746133
         },
         {
           "time": "19:22:42",
@@ -1178,12 +1200,12 @@
           "killer": "EI_Shadow",
           "message": "richman8 was blown up by EI_Shadow",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.17543859649122806,
-          "base_kill_value": 1.1749061972961623,
+          "victim_percentile": 0.15789473684210525,
+          "base_kill_value": 1.1509192752459152,
           "upset_multiplier": 1.0,
           "farm_multiplier": 0.75,
           "target_repeat_count": 4,
-          "kill_score": 0.8811796479721217
+          "kill_score": 0.8631894564344365
         },
         {
           "time": "19:23:38",
@@ -1251,10 +1273,10 @@
       "adjusted_kd": 10.5,
       "strength": 8.566037735849058,
       "strength_percentile": 0.9473684210526315,
-      "dak": 58.277422664864936,
-      "akd": 1.4214005528015838,
-      "quality_index": 0.979244278035133,
-      "final_score": 57.85117731767615,
+      "dak": 58.14706901990187,
+      "akd": 1.4182211956073627,
+      "quality_index": 0.970351162097152,
+      "final_score": 57.537760483755044,
       "upset_kills": 0,
       "farm_affected_kills": 18,
       "best_kill": {
@@ -1312,12 +1334,12 @@
           "killer": "AKATOIII",
           "message": "richman8 was blown up by AKATOIII",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.17543859649122806,
-          "base_kill_value": 1.1749061972961623,
+          "victim_percentile": 0.15789473684210525,
+          "base_kill_value": 1.1509192752459152,
           "upset_multiplier": 1.0,
           "farm_multiplier": 0.9,
           "target_repeat_count": 3,
-          "kill_score": 1.0574155775665461
+          "kill_score": 1.0358273477213238
         },
         {
           "time": "19:06:08",
@@ -1403,12 +1425,12 @@
           "killer": "AKATOIII",
           "message": "shadow_uzi was doomed to fall by AKATOIII",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.19298245614035087,
-          "base_kill_value": 1.1998733800871098,
+          "victim_percentile": 0.17543859649122806,
+          "base_kill_value": 1.1749061972961623,
           "upset_multiplier": 1.0,
           "farm_multiplier": 1.0,
           "target_repeat_count": 1,
-          "kill_score": 1.1998733800871098
+          "kill_score": 1.1749061972961623
         },
         {
           "time": "19:08:20",
@@ -1442,12 +1464,12 @@
           "killer": "AKATOIII",
           "message": "macintosh1 was blown up by AKATOIII",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.14035087719298245,
-          "base_kill_value": 1.1279767802190923,
+          "victim_percentile": 0.12280701754385964,
+          "base_kill_value": 1.1061554886384592,
           "upset_multiplier": 1.0,
           "farm_multiplier": 1.0,
           "target_repeat_count": 1,
-          "kill_score": 1.1279767802190923
+          "kill_score": 1.1061554886384592
         },
         {
           "time": "19:10:09",
@@ -1455,12 +1477,12 @@
           "killer": "AKATOIII",
           "message": "richman8 was blown up by AKATOIII",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.17543859649122806,
-          "base_kill_value": 1.1749061972961623,
+          "victim_percentile": 0.15789473684210525,
+          "base_kill_value": 1.1509192752459152,
           "upset_multiplier": 1.0,
           "farm_multiplier": 0.9,
           "target_repeat_count": 3,
-          "kill_score": 1.0574155775665461
+          "kill_score": 1.0358273477213238
         },
         {
           "time": "19:11:11",
@@ -1494,12 +1516,12 @@
           "killer": "AKATOIII",
           "message": "Den4ikdd was blown up by AKATOIII",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.017543859649122806,
-          "base_kill_value": 1.0069631411317848,
+          "victim_percentile": 0.0,
+          "base_kill_value": 1.0,
           "upset_multiplier": 1.0,
           "farm_multiplier": 0.9,
           "target_repeat_count": 3,
-          "kill_score": 0.9062668270186063
+          "kill_score": 0.9
         },
         {
           "time": "19:11:32",
@@ -1611,12 +1633,12 @@
           "killer": "AKATOIII",
           "message": "Den4ikdd was blown up by AKATOIII",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.017543859649122806,
-          "base_kill_value": 1.0069631411317848,
+          "victim_percentile": 0.0,
+          "base_kill_value": 1.0,
           "upset_multiplier": 1.0,
           "farm_multiplier": 0.9,
           "target_repeat_count": 3,
-          "kill_score": 0.9062668270186063
+          "kill_score": 0.9
         },
         {
           "time": "19:16:00",
@@ -1650,12 +1672,12 @@
           "killer": "AKATOIII",
           "message": "Den4ikdd was blown up by AKATOIII",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.017543859649122806,
-          "base_kill_value": 1.0069631411317848,
+          "victim_percentile": 0.0,
+          "base_kill_value": 1.0,
           "upset_multiplier": 1.0,
           "farm_multiplier": 0.9,
           "target_repeat_count": 3,
-          "kill_score": 0.9062668270186063
+          "kill_score": 0.9
         },
         {
           "time": "19:17:09",
@@ -1689,12 +1711,12 @@
           "killer": "AKATOIII",
           "message": "richman8 was blown up by AKATOIII",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.17543859649122806,
-          "base_kill_value": 1.1749061972961623,
+          "victim_percentile": 0.15789473684210525,
+          "base_kill_value": 1.1509192752459152,
           "upset_multiplier": 1.0,
           "farm_multiplier": 0.9,
           "target_repeat_count": 3,
-          "kill_score": 1.0574155775665461
+          "kill_score": 1.0358273477213238
         },
         {
           "time": "19:19:15",
@@ -1827,10 +1849,10 @@
       "adjusted_kd": 15.0,
       "strength": 11.217948717948717,
       "strength_percentile": 1.0,
-      "dak": 44.511115877719554,
-      "akd": 1.53486606474895,
-      "quality_index": 1.0386276238414334,
-      "final_score": 45.10549323116928,
+      "dak": 44.79810739537193,
+      "akd": 1.5447623239783423,
+      "quality_index": 1.0364762961056537,
+      "final_score": 45.36338433069977,
       "upset_kills": 0,
       "farm_affected_kills": 6,
       "best_kill": {
@@ -1849,12 +1871,12 @@
           "killer": "MeGaXoPoH",
           "message": "Den4ikdd was smashed by MeGaXoPoH with [Сильность]",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.017543859649122806,
-          "base_kill_value": 1.0069631411317848,
+          "victim_percentile": 0.0,
+          "base_kill_value": 1.0,
           "upset_multiplier": 1.0,
           "farm_multiplier": 1.0,
           "target_repeat_count": 1,
-          "kill_score": 1.0069631411317848
+          "kill_score": 1.0
         },
         {
           "time": "19:01:06",
@@ -1888,12 +1910,12 @@
           "killer": "MeGaXoPoH",
           "message": "ptr_MOON_rtp was smashed by MeGaXoPoH with [Сильность]",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.15789473684210525,
-          "base_kill_value": 1.1509192752459152,
+          "victim_percentile": 0.14035087719298245,
+          "base_kill_value": 1.1279767802190923,
           "upset_multiplier": 1.0,
           "farm_multiplier": 1.0,
           "target_repeat_count": 1,
-          "kill_score": 1.1509192752459152
+          "kill_score": 1.1279767802190923
         },
         {
           "time": "19:01:36",
@@ -1901,12 +1923,12 @@
           "killer": "MeGaXoPoH",
           "message": "daratel was smashed by MeGaXoPoH with [Сильность]",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.10526315789473684,
-          "base_kill_value": 1.0855493961179234,
+          "victim_percentile": 0.08771929824561403,
+          "base_kill_value": 1.0662770552067824,
           "upset_multiplier": 1.0,
           "farm_multiplier": 0.9,
           "target_repeat_count": 3,
-          "kill_score": 0.9769944565061311
+          "kill_score": 0.9596493496861042
         },
         {
           "time": "19:02:18",
@@ -1940,12 +1962,12 @@
           "killer": "MeGaXoPoH",
           "message": "Funny_Survivaler was smashed by MeGaXoPoH with [Сильность]",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.03508771929824561,
-          "base_kill_value": 1.018375839614436,
+          "victim_percentile": 0.017543859649122806,
+          "base_kill_value": 1.0069631411317848,
           "upset_multiplier": 1.0,
           "farm_multiplier": 0.9,
           "target_repeat_count": 3,
-          "kill_score": 0.9165382556529924
+          "kill_score": 0.9062668270186063
         },
         {
           "time": "19:06:28",
@@ -1966,25 +1988,25 @@
           "killer": "MeGaXoPoH",
           "message": "Funny_Survivaler was smashed by MeGaXoPoH with [Сильность]",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.03508771929824561,
-          "base_kill_value": 1.018375839614436,
+          "victim_percentile": 0.017543859649122806,
+          "base_kill_value": 1.0069631411317848,
           "upset_multiplier": 1.0,
           "farm_multiplier": 0.9,
           "target_repeat_count": 3,
-          "kill_score": 0.9165382556529924
+          "kill_score": 0.9062668270186063
         },
         {
           "time": "19:06:53",
           "victim": "tvi302",
           "killer": "MeGaXoPoH",
           "message": "tvi302 was smashed by MeGaXoPoH with [Сильность]",
-          "victim_strength": 0.1525974025974026,
-          "victim_percentile": 0.0,
-          "base_kill_value": 1.0,
+          "victim_strength": 0.16666666666666666,
+          "victim_percentile": 0.19298245614035087,
+          "base_kill_value": 1.1998733800871098,
           "upset_multiplier": 1.0,
           "farm_multiplier": 1.0,
           "target_repeat_count": 2,
-          "kill_score": 1.0
+          "kill_score": 1.1998733800871098
         },
         {
           "time": "19:08:23",
@@ -2031,12 +2053,12 @@
           "killer": "MeGaXoPoH",
           "message": "daratel was smashed by MeGaXoPoH with [Сильность]",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.10526315789473684,
-          "base_kill_value": 1.0855493961179234,
+          "victim_percentile": 0.08771929824561403,
+          "base_kill_value": 1.0662770552067824,
           "upset_multiplier": 1.0,
           "farm_multiplier": 0.9,
           "target_repeat_count": 3,
-          "kill_score": 0.9769944565061311
+          "kill_score": 0.9596493496861042
         },
         {
           "time": "19:12:44",
@@ -2044,12 +2066,12 @@
           "killer": "MeGaXoPoH",
           "message": "Funny_Survivaler was smashed by MeGaXoPoH with [Сильность]",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.03508771929824561,
-          "base_kill_value": 1.018375839614436,
+          "victim_percentile": 0.017543859649122806,
+          "base_kill_value": 1.0069631411317848,
           "upset_multiplier": 1.0,
           "farm_multiplier": 0.9,
           "target_repeat_count": 3,
-          "kill_score": 0.9165382556529924
+          "kill_score": 0.9062668270186063
         },
         {
           "time": "19:13:19",
@@ -2083,12 +2105,12 @@
           "killer": "MeGaXoPoH",
           "message": "daratel was smashed by MeGaXoPoH with [Сильность]",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.10526315789473684,
-          "base_kill_value": 1.0855493961179234,
+          "victim_percentile": 0.08771929824561403,
+          "base_kill_value": 1.0662770552067824,
           "upset_multiplier": 1.0,
           "farm_multiplier": 0.9,
           "target_repeat_count": 3,
-          "kill_score": 0.9769944565061311
+          "kill_score": 0.9596493496861042
         },
         {
           "time": "19:14:19",
@@ -2160,13 +2182,13 @@
           "victim": "tvi302",
           "killer": "MeGaXoPoH",
           "message": "tvi302 was smashed by MeGaXoPoH with [Сильность]",
-          "victim_strength": 0.1525974025974026,
-          "victim_percentile": 0.0,
-          "base_kill_value": 1.0,
+          "victim_strength": 0.16666666666666666,
+          "victim_percentile": 0.19298245614035087,
+          "base_kill_value": 1.1998733800871098,
           "upset_multiplier": 1.0,
           "farm_multiplier": 1.0,
           "target_repeat_count": 2,
-          "kill_score": 1.0
+          "kill_score": 1.1998733800871098
         },
         {
           "time": "19:17:09",
@@ -2226,22 +2248,22 @@
     },
     {
       "player": "kasi133005",
-      "kills": 30,
+      "kills": 29,
       "deaths": 2,
-      "kd": 15.0,
-      "adjusted_kd": 7.75,
-      "strength": 5.9642857142857135,
+      "kd": 14.5,
+      "adjusted_kd": 7.5,
+      "strength": 5.7317073170731705,
       "strength_percentile": 0.9298245614035088,
-      "dak": 44.47047353770876,
-      "akd": 1.4823491179236254,
-      "quality_index": 1.0119655596543737,
-      "final_score": 44.6559939518342,
+      "dak": 43.209530187149596,
+      "akd": 1.4899837995568825,
+      "quality_index": 1.0088145219009608,
+      "final_score": 43.34245511895107,
       "upset_kills": 0,
       "farm_affected_kills": 6,
       "best_kill": {
         "victim": "RUSSIAN_GRIZZLY",
-        "score": 2.6648043569432796,
-        "base_value": 2.6648043569432796,
+        "score": 2.618377044898664,
+        "base_value": 2.618377044898664,
         "upset_multiplier": 1.0,
         "farm_multiplier": 1.0,
         "time": "19:24:03",
@@ -2254,12 +2276,12 @@
           "killer": "kasi133005",
           "message": "ptr_MOON_rtp was blown up by kasi133005",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.15789473684210525,
-          "base_kill_value": 1.1509192752459152,
+          "victim_percentile": 0.14035087719298245,
+          "base_kill_value": 1.1279767802190923,
           "upset_multiplier": 1.0,
           "farm_multiplier": 0.9,
           "target_repeat_count": 3,
-          "kill_score": 1.0358273477213238
+          "kill_score": 1.0151791021971832
         },
         {
           "time": "19:03:47",
@@ -2267,12 +2289,12 @@
           "killer": "kasi133005",
           "message": "richman8 was blown up by kasi133005",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.17543859649122806,
-          "base_kill_value": 1.1749061972961623,
+          "victim_percentile": 0.15789473684210525,
+          "base_kill_value": 1.1509192752459152,
           "upset_multiplier": 1.0,
           "farm_multiplier": 1.0,
           "target_repeat_count": 2,
-          "kill_score": 1.1749061972961623
+          "kill_score": 1.1509192752459152
         },
         {
           "time": "19:05:11",
@@ -2280,12 +2302,12 @@
           "killer": "kasi133005",
           "message": "ptr_MOON_rtp was blown up by kasi133005",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.15789473684210525,
-          "base_kill_value": 1.1509192752459152,
+          "victim_percentile": 0.14035087719298245,
+          "base_kill_value": 1.1279767802190923,
           "upset_multiplier": 1.0,
           "farm_multiplier": 0.9,
           "target_repeat_count": 3,
-          "kill_score": 1.0358273477213238
+          "kill_score": 1.0151791021971832
         },
         {
           "time": "19:05:32",
@@ -2306,12 +2328,12 @@
           "killer": "kasi133005",
           "message": "shadow_uzi was blown up by kasi133005",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.19298245614035087,
-          "base_kill_value": 1.1998733800871098,
+          "victim_percentile": 0.17543859649122806,
+          "base_kill_value": 1.1749061972961623,
           "upset_multiplier": 1.0,
           "farm_multiplier": 1.0,
           "target_repeat_count": 2,
-          "kill_score": 1.1998733800871098
+          "kill_score": 1.1749061972961623
         },
         {
           "time": "19:06:20",
@@ -2332,12 +2354,12 @@
           "killer": "kasi133005",
           "message": "ptr_MOON_rtp was blown up by kasi133005",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.15789473684210525,
-          "base_kill_value": 1.1509192752459152,
+          "victim_percentile": 0.14035087719298245,
+          "base_kill_value": 1.1279767802190923,
           "upset_multiplier": 1.0,
           "farm_multiplier": 0.9,
           "target_repeat_count": 3,
-          "kill_score": 1.0358273477213238
+          "kill_score": 1.0151791021971832
         },
         {
           "time": "19:10:27",
@@ -2345,12 +2367,12 @@
           "killer": "kasi133005",
           "message": "Den4ikdd was blown up by kasi133005",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.017543859649122806,
-          "base_kill_value": 1.0069631411317848,
+          "victim_percentile": 0.0,
+          "base_kill_value": 1.0,
           "upset_multiplier": 1.0,
           "farm_multiplier": 0.9,
           "target_repeat_count": 3,
-          "kill_score": 0.9062668270186063
+          "kill_score": 0.9
         },
         {
           "time": "19:10:29",
@@ -2371,12 +2393,12 @@
           "killer": "kasi133005",
           "message": "shadow_uzi was blown up by kasi133005",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.19298245614035087,
-          "base_kill_value": 1.1998733800871098,
+          "victim_percentile": 0.17543859649122806,
+          "base_kill_value": 1.1749061972961623,
           "upset_multiplier": 1.0,
           "farm_multiplier": 1.0,
           "target_repeat_count": 2,
-          "kill_score": 1.1998733800871098
+          "kill_score": 1.1749061972961623
         },
         {
           "time": "19:12:20",
@@ -2384,12 +2406,12 @@
           "killer": "kasi133005",
           "message": "Den4ikdd was blown up by kasi133005",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.017543859649122806,
-          "base_kill_value": 1.0069631411317848,
+          "victim_percentile": 0.0,
+          "base_kill_value": 1.0,
           "upset_multiplier": 1.0,
           "farm_multiplier": 0.9,
           "target_repeat_count": 3,
-          "kill_score": 0.9062668270186063
+          "kill_score": 0.9
         },
         {
           "time": "19:13:28",
@@ -2449,12 +2471,12 @@
           "killer": "kasi133005",
           "message": "Den4ikdd was blown up by kasi133005",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.017543859649122806,
-          "base_kill_value": 1.0069631411317848,
+          "victim_percentile": 0.0,
+          "base_kill_value": 1.0,
           "upset_multiplier": 1.0,
           "farm_multiplier": 0.9,
           "target_repeat_count": 3,
-          "kill_score": 0.9062668270186063
+          "kill_score": 0.9
         },
         {
           "time": "19:18:44",
@@ -2488,25 +2510,12 @@
           "killer": "kasi133005",
           "message": "richman8 was blown up by kasi133005",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.17543859649122806,
-          "base_kill_value": 1.1749061972961623,
+          "victim_percentile": 0.15789473684210525,
+          "base_kill_value": 1.1509192752459152,
           "upset_multiplier": 1.0,
           "farm_multiplier": 1.0,
           "target_repeat_count": 2,
-          "kill_score": 1.1749061972961623
-        },
-        {
-          "time": "19:20:47",
-          "victim": "tvi302",
-          "killer": "kasi133005",
-          "message": "tvi302 was blown up by kasi133005",
-          "victim_strength": 0.1525974025974026,
-          "victim_percentile": 0.0,
-          "base_kill_value": 1.0,
-          "upset_multiplier": 1.0,
-          "farm_multiplier": 1.0,
-          "target_repeat_count": 1,
-          "kill_score": 1.0
+          "kill_score": 1.1509192752459152
         },
         {
           "time": "19:20:57",
@@ -2514,12 +2523,12 @@
           "killer": "kasi133005",
           "message": "Riddars was blown up by kasi133005",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.05263157894736842,
-          "base_kill_value": 1.0324171592377243,
+          "victim_percentile": 0.03508771929824561,
+          "base_kill_value": 1.018375839614436,
           "upset_multiplier": 1.0,
           "farm_multiplier": 1.0,
           "target_repeat_count": 1,
-          "kill_score": 1.0324171592377243
+          "kill_score": 1.018375839614436
         },
         {
           "time": "19:21:32",
@@ -2579,12 +2588,12 @@
           "killer": "kasi133005",
           "message": "macintosh1 was blown up by kasi133005",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.14035087719298245,
-          "base_kill_value": 1.1279767802190923,
+          "victim_percentile": 0.12280701754385964,
+          "base_kill_value": 1.1061554886384592,
           "upset_multiplier": 1.0,
           "farm_multiplier": 1.0,
           "target_repeat_count": 1,
-          "kill_score": 1.1279767802190923
+          "kill_score": 1.1061554886384592
         },
         {
           "time": "19:23:39",
@@ -2630,13 +2639,13 @@
           "victim": "RUSSIAN_GRIZZLY",
           "killer": "kasi133005",
           "message": "RUSSIAN_GRIZZLY was blown up by kasi133005",
-          "victim_strength": 2.2,
-          "victim_percentile": 0.8771929824561403,
-          "base_kill_value": 2.6648043569432796,
+          "victim_strength": 2.0,
+          "victim_percentile": 0.8596491228070176,
+          "base_kill_value": 2.618377044898664,
           "upset_multiplier": 1.0,
           "farm_multiplier": 1.0,
           "target_repeat_count": 1,
-          "kill_score": 2.6648043569432796
+          "kill_score": 2.618377044898664
         }
       ],
       "death_details": [
@@ -2665,10 +2674,10 @@
       "adjusted_kd": 7.5,
       "strength": 5.7317073170731705,
       "strength_percentile": 0.9122807017543859,
-      "dak": 43.157716039576435,
-      "akd": 1.4881971048129805,
-      "quality_index": 1.0148436130926934,
-      "final_score": 43.380858882025365,
+      "dak": 43.02082247852609,
+      "akd": 1.483476637190555,
+      "quality_index": 1.0055285689113231,
+      "final_score": 43.10391861145667,
       "upset_kills": 0,
       "farm_affected_kills": 6,
       "best_kill": {
@@ -2687,19 +2696,19 @@
           "killer": "Blazerlords",
           "message": "daratel was smashed by Blazerlords with [Молот Венца]",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.10526315789473684,
-          "base_kill_value": 1.0855493961179234,
+          "victim_percentile": 0.08771929824561403,
+          "base_kill_value": 1.0662770552067824,
           "upset_multiplier": 1.0,
           "farm_multiplier": 1.0,
           "target_repeat_count": 1,
-          "kill_score": 1.0855493961179234
+          "kill_score": 1.0662770552067824
         },
         {
           "time": "19:09:56",
           "victim": "kasi133005",
           "killer": "Blazerlords",
           "message": "kasi133005 was blown up by Blazerlords",
-          "victim_strength": 5.9642857142857135,
+          "victim_strength": 5.7317073170731705,
           "victim_percentile": 0.9298245614035088,
           "base_kill_value": 2.8063063769875356,
           "upset_multiplier": 1.0,
@@ -2752,12 +2761,12 @@
           "killer": "Blazerlords",
           "message": "Riddars was blown up by Blazerlords",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.05263157894736842,
-          "base_kill_value": 1.0324171592377243,
+          "victim_percentile": 0.03508771929824561,
+          "base_kill_value": 1.018375839614436,
           "upset_multiplier": 1.0,
           "farm_multiplier": 1.0,
           "target_repeat_count": 2,
-          "kill_score": 1.0324171592377243
+          "kill_score": 1.018375839614436
         },
         {
           "time": "19:12:36",
@@ -2804,12 +2813,12 @@
           "killer": "Blazerlords",
           "message": "shadow_uzi was blown up by Blazerlords",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.19298245614035087,
-          "base_kill_value": 1.1998733800871098,
+          "victim_percentile": 0.17543859649122806,
+          "base_kill_value": 1.1749061972961623,
           "upset_multiplier": 1.0,
           "farm_multiplier": 1.0,
           "target_repeat_count": 2,
-          "kill_score": 1.1998733800871098
+          "kill_score": 1.1749061972961623
         },
         {
           "time": "19:15:11",
@@ -2921,12 +2930,12 @@
           "killer": "Blazerlords",
           "message": "macintosh1 was blown up by Blazerlords",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.14035087719298245,
-          "base_kill_value": 1.1279767802190923,
+          "victim_percentile": 0.12280701754385964,
+          "base_kill_value": 1.1061554886384592,
           "upset_multiplier": 1.0,
           "farm_multiplier": 1.0,
           "target_repeat_count": 1,
-          "kill_score": 1.1279767802190923
+          "kill_score": 1.1061554886384592
         },
         {
           "time": "19:16:33",
@@ -2960,12 +2969,12 @@
           "killer": "Blazerlords",
           "message": "alkinik was blown up by Blazerlords using [Пожиратель Бездны]",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.08771929824561403,
-          "base_kill_value": 1.0662770552067824,
+          "victim_percentile": 0.07017543859649122,
+          "base_kill_value": 1.0484941314766847,
           "upset_multiplier": 1.0,
           "farm_multiplier": 1.0,
           "target_repeat_count": 1,
-          "kill_score": 1.0662770552067824
+          "kill_score": 1.0484941314766847
         },
         {
           "time": "19:20:48",
@@ -2999,12 +3008,12 @@
           "killer": "Blazerlords",
           "message": "shadow_uzi was blown up by Blazerlords",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.19298245614035087,
-          "base_kill_value": 1.1998733800871098,
+          "victim_percentile": 0.17543859649122806,
+          "base_kill_value": 1.1749061972961623,
           "upset_multiplier": 1.0,
           "farm_multiplier": 1.0,
           "target_repeat_count": 2,
-          "kill_score": 1.1998733800871098
+          "kill_score": 1.1749061972961623
         },
         {
           "time": "19:21:40",
@@ -3038,12 +3047,12 @@
           "killer": "Blazerlords",
           "message": "Riddars was blown up by Blazerlords",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.05263157894736842,
-          "base_kill_value": 1.0324171592377243,
+          "victim_percentile": 0.03508771929824561,
+          "base_kill_value": 1.018375839614436,
           "upset_multiplier": 1.0,
           "farm_multiplier": 1.0,
           "target_repeat_count": 2,
-          "kill_score": 1.0324171592377243
+          "kill_score": 1.018375839614436
         },
         {
           "time": "19:21:56",
@@ -3085,10 +3094,10 @@
       "adjusted_kd": 7.666666666666667,
       "strength": 5.4191919191919204,
       "strength_percentile": 0.8947368421052632,
-      "dak": 33.74652421215724,
-      "akd": 1.53393291873442,
-      "quality_index": 1.0352742129252999,
-      "final_score": 34.158472155279135,
+      "dak": 33.81741163224964,
+      "akd": 1.5371550741931654,
+      "quality_index": 1.0301731479580665,
+      "final_score": 34.17109869584045,
       "upset_kills": 0,
       "farm_affected_kills": 6,
       "best_kill": {
@@ -3146,12 +3155,12 @@
           "killer": "ya_rebenok",
           "message": "daratel was smashed by ya_rebenok",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.10526315789473684,
-          "base_kill_value": 1.0855493961179234,
+          "victim_percentile": 0.08771929824561403,
+          "base_kill_value": 1.0662770552067824,
           "upset_multiplier": 1.0,
           "farm_multiplier": 1.0,
           "target_repeat_count": 2,
-          "kill_score": 1.0855493961179234
+          "kill_score": 1.0662770552067824
         },
         {
           "time": "19:04:34",
@@ -3172,12 +3181,12 @@
           "killer": "ya_rebenok",
           "message": "lookonol2001 was blown up by ya_rebenok",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.12280701754385964,
-          "base_kill_value": 1.1061554886384592,
+          "victim_percentile": 0.10526315789473684,
+          "base_kill_value": 1.0855493961179234,
           "upset_multiplier": 1.0,
           "farm_multiplier": 1.0,
           "target_repeat_count": 1,
-          "kill_score": 1.1061554886384592
+          "kill_score": 1.0855493961179234
         },
         {
           "time": "19:05:04",
@@ -3185,12 +3194,12 @@
           "killer": "ya_rebenok",
           "message": "daratel was blown up by ya_rebenok",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.10526315789473684,
-          "base_kill_value": 1.0855493961179234,
+          "victim_percentile": 0.08771929824561403,
+          "base_kill_value": 1.0662770552067824,
           "upset_multiplier": 1.0,
           "farm_multiplier": 1.0,
           "target_repeat_count": 2,
-          "kill_score": 1.0855493961179234
+          "kill_score": 1.0662770552067824
         },
         {
           "time": "19:05:35",
@@ -3211,12 +3220,12 @@
           "killer": "ya_rebenok",
           "message": "alkinik was blown up by ya_rebenok",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.08771929824561403,
-          "base_kill_value": 1.0662770552067824,
+          "victim_percentile": 0.07017543859649122,
+          "base_kill_value": 1.0484941314766847,
           "upset_multiplier": 1.0,
           "farm_multiplier": 0.9,
           "target_repeat_count": 3,
-          "kill_score": 0.9596493496861042
+          "kill_score": 0.9436447183290162
         },
         {
           "time": "19:09:37",
@@ -3250,12 +3259,12 @@
           "killer": "ya_rebenok",
           "message": "alkinik was blown up by ya_rebenok",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.08771929824561403,
-          "base_kill_value": 1.0662770552067824,
+          "victim_percentile": 0.07017543859649122,
+          "base_kill_value": 1.0484941314766847,
           "upset_multiplier": 1.0,
           "farm_multiplier": 0.9,
           "target_repeat_count": 3,
-          "kill_score": 0.9596493496861042
+          "kill_score": 0.9436447183290162
         },
         {
           "time": "19:13:00",
@@ -3276,12 +3285,12 @@
           "killer": "ya_rebenok",
           "message": "alkinik was blown up by ya_rebenok",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.08771929824561403,
-          "base_kill_value": 1.0662770552067824,
+          "victim_percentile": 0.07017543859649122,
+          "base_kill_value": 1.0484941314766847,
           "upset_multiplier": 1.0,
           "farm_multiplier": 0.9,
           "target_repeat_count": 3,
-          "kill_score": 0.9596493496861042
+          "kill_score": 0.9436447183290162
         },
         {
           "time": "19:13:19",
@@ -3301,13 +3310,13 @@
           "victim": "tvi302",
           "killer": "ya_rebenok",
           "message": "tvi302 was smashed by ya_rebenok",
-          "victim_strength": 0.1525974025974026,
-          "victim_percentile": 0.0,
-          "base_kill_value": 1.0,
+          "victim_strength": 0.16666666666666666,
+          "victim_percentile": 0.19298245614035087,
+          "base_kill_value": 1.1998733800871098,
           "upset_multiplier": 1.0,
           "farm_multiplier": 1.0,
           "target_repeat_count": 1,
-          "kill_score": 1.0
+          "kill_score": 1.1998733800871098
         },
         {
           "time": "19:18:11",
@@ -3315,12 +3324,12 @@
           "killer": "ya_rebenok",
           "message": "macintosh1 was blown up by ya_rebenok",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.14035087719298245,
-          "base_kill_value": 1.1279767802190923,
+          "victim_percentile": 0.12280701754385964,
+          "base_kill_value": 1.1061554886384592,
           "upset_multiplier": 1.0,
           "farm_multiplier": 1.0,
           "target_repeat_count": 1,
-          "kill_score": 1.1279767802190923
+          "kill_score": 1.1061554886384592
         },
         {
           "time": "19:18:37",
@@ -3401,16 +3410,16 @@
     },
     {
       "player": "RUSSIAN_GRIZZLY",
-      "kills": 13,
+      "kills": 12,
       "deaths": 2,
-      "kd": 6.5,
-      "adjusted_kd": 3.5,
-      "strength": 2.2,
-      "strength_percentile": 0.8771929824561403,
-      "dak": 18.935302683067288,
-      "akd": 1.45656174485133,
-      "quality_index": 0.9990279669163273,
-      "final_score": 18.92885863764855,
+      "kd": 6.0,
+      "adjusted_kd": 3.25,
+      "strength": 2.0,
+      "strength_percentile": 0.8596491228070176,
+      "dak": 18.053881274811072,
+      "akd": 1.504490106234256,
+      "quality_index": 1.0118392565239163,
+      "final_score": 18.12840586764057,
       "upset_kills": 0,
       "farm_affected_kills": 0,
       "best_kill": {
@@ -3428,13 +3437,13 @@
           "victim": "tvi302",
           "killer": "RUSSIAN_GRIZZLY",
           "message": "tvi302 was blown up by RUSSIAN_GRIZZLY",
-          "victim_strength": 0.1525974025974026,
-          "victim_percentile": 0.0,
-          "base_kill_value": 1.0,
+          "victim_strength": 0.16666666666666666,
+          "victim_percentile": 0.19298245614035087,
+          "base_kill_value": 1.1998733800871098,
           "upset_multiplier": 1.0,
           "farm_multiplier": 1.0,
-          "target_repeat_count": 2,
-          "kill_score": 1.0
+          "target_repeat_count": 1,
+          "kill_score": 1.1998733800871098
         },
         {
           "time": "19:05:02",
@@ -3455,12 +3464,12 @@
           "killer": "RUSSIAN_GRIZZLY",
           "message": "shadow_uzi was smashed by RUSSIAN_GRIZZLY",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.19298245614035087,
-          "base_kill_value": 1.1998733800871098,
+          "victim_percentile": 0.17543859649122806,
+          "base_kill_value": 1.1749061972961623,
           "upset_multiplier": 1.0,
           "farm_multiplier": 1.0,
           "target_repeat_count": 1,
-          "kill_score": 1.1998733800871098
+          "kill_score": 1.1749061972961623
         },
         {
           "time": "19:07:55",
@@ -3481,12 +3490,12 @@
           "killer": "RUSSIAN_GRIZZLY",
           "message": "daratel was blown up by RUSSIAN_GRIZZLY",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.10526315789473684,
-          "base_kill_value": 1.0855493961179234,
+          "victim_percentile": 0.08771929824561403,
+          "base_kill_value": 1.0662770552067824,
           "upset_multiplier": 1.0,
           "farm_multiplier": 1.0,
           "target_repeat_count": 2,
-          "kill_score": 1.0855493961179234
+          "kill_score": 1.0662770552067824
         },
         {
           "time": "19:08:51",
@@ -3507,12 +3516,12 @@
           "killer": "RUSSIAN_GRIZZLY",
           "message": "daratel was blown up by RUSSIAN_GRIZZLY",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.10526315789473684,
-          "base_kill_value": 1.0855493961179234,
+          "victim_percentile": 0.08771929824561403,
+          "base_kill_value": 1.0662770552067824,
           "upset_multiplier": 1.0,
           "farm_multiplier": 1.0,
           "target_repeat_count": 2,
-          "kill_score": 1.0855493961179234
+          "kill_score": 1.0662770552067824
         },
         {
           "time": "19:15:39",
@@ -3567,30 +3576,17 @@
           "kill_score": 1.852533727012341
         },
         {
-          "time": "19:21:44",
-          "victim": "tvi302",
-          "killer": "RUSSIAN_GRIZZLY",
-          "message": "tvi302 was blown up by RUSSIAN_GRIZZLY",
-          "victim_strength": 0.1525974025974026,
-          "victim_percentile": 0.0,
-          "base_kill_value": 1.0,
-          "upset_multiplier": 1.0,
-          "farm_multiplier": 1.0,
-          "target_repeat_count": 2,
-          "kill_score": 1.0
-        },
-        {
           "time": "19:21:54",
           "victim": "alkinik",
           "killer": "RUSSIAN_GRIZZLY",
           "message": "alkinik was smashed by RUSSIAN_GRIZZLY",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.08771929824561403,
-          "base_kill_value": 1.0662770552067824,
+          "victim_percentile": 0.07017543859649122,
+          "base_kill_value": 1.0484941314766847,
           "upset_multiplier": 1.0,
           "farm_multiplier": 1.0,
           "target_repeat_count": 1,
-          "kill_score": 1.0662770552067824
+          "kill_score": 1.0484941314766847
         }
       ],
       "death_details": [
@@ -3618,11 +3614,11 @@
       "kd": null,
       "adjusted_kd": 4.5,
       "strength": 2.138888888888889,
-      "strength_percentile": 0.8596491228070176,
-      "dak": 13.326689566796457,
-      "akd": 1.665836195849557,
-      "quality_index": 1.0629823024530682,
-      "final_score": 13.61464724448448,
+      "strength_percentile": 0.8771929824561403,
+      "dak": 13.483812840362521,
+      "akd": 1.6854766050453152,
+      "quality_index": 1.064272873544337,
+      "final_score": 13.781016834923163,
       "upset_kills": 0,
       "farm_affected_kills": 0,
       "best_kill": {
@@ -3679,13 +3675,13 @@
           "victim": "tvi302",
           "killer": "fanhua",
           "message": "tvi302 was smashed by fanhua",
-          "victim_strength": 0.1525974025974026,
-          "victim_percentile": 0.0,
-          "base_kill_value": 1.0,
+          "victim_strength": 0.16666666666666666,
+          "victim_percentile": 0.19298245614035087,
+          "base_kill_value": 1.1998733800871098,
           "upset_multiplier": 1.0,
           "farm_multiplier": 1.0,
           "target_repeat_count": 1,
-          "kill_score": 1.0
+          "kill_score": 1.1998733800871098
         },
         {
           "time": "19:17:33",
@@ -3706,12 +3702,12 @@
           "killer": "fanhua",
           "message": "shadow_uzi was smashed by fanhua",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.19298245614035087,
-          "base_kill_value": 1.1998733800871098,
+          "victim_percentile": 0.17543859649122806,
+          "base_kill_value": 1.1749061972961623,
           "upset_multiplier": 1.0,
           "farm_multiplier": 1.0,
           "target_repeat_count": 1,
-          "kill_score": 1.1998733800871098
+          "kill_score": 1.1749061972961623
         },
         {
           "time": "19:18:53",
@@ -3719,12 +3715,12 @@
           "killer": "fanhua",
           "message": "alkinik was smashed by fanhua",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.08771929824561403,
-          "base_kill_value": 1.0662770552067824,
+          "victim_percentile": 0.07017543859649122,
+          "base_kill_value": 1.0484941314766847,
           "upset_multiplier": 1.0,
           "farm_multiplier": 1.0,
           "target_repeat_count": 1,
-          "kill_score": 1.0662770552067824
+          "kill_score": 1.0484941314766847
         },
         {
           "time": "19:21:47",
@@ -3751,10 +3747,10 @@
       "adjusted_kd": 0.7777777777777778,
       "strength": 0.5483091787439613,
       "strength_percentile": 0.8245614035087719,
-      "dak": 10.446929166469037,
-      "akd": 1.7411548610781729,
-      "quality_index": 1.0724991829268653,
-      "final_score": 10.70600864059533,
+      "dak": 10.393177550965671,
+      "akd": 1.7321962584942785,
+      "quality_index": 1.0661280515138851,
+      "final_score": 10.628736151966448,
       "upset_kills": 0,
       "farm_affected_kills": 0,
       "best_kill": {
@@ -3786,12 +3782,12 @@
           "killer": "_s_Shtani_x_",
           "message": "Den4ikdd was blown up by _s_Shtani_x_",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.017543859649122806,
-          "base_kill_value": 1.0069631411317848,
+          "victim_percentile": 0.0,
+          "base_kill_value": 1.0,
           "upset_multiplier": 1.0,
           "farm_multiplier": 1.0,
           "target_repeat_count": 1,
-          "kill_score": 1.0069631411317848
+          "kill_score": 1.0
         },
         {
           "time": "19:11:09",
@@ -3799,12 +3795,12 @@
           "killer": "_s_Shtani_x_",
           "message": "shadow_uzi was blown up by _s_Shtani_x_",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.19298245614035087,
-          "base_kill_value": 1.1998733800871098,
+          "victim_percentile": 0.17543859649122806,
+          "base_kill_value": 1.1749061972961623,
           "upset_multiplier": 1.0,
           "farm_multiplier": 1.0,
           "target_repeat_count": 1,
-          "kill_score": 1.1998733800871098
+          "kill_score": 1.1749061972961623
         },
         {
           "time": "19:13:39",
@@ -3838,12 +3834,12 @@
           "killer": "_s_Shtani_x_",
           "message": "macintosh1 was slain by _s_Shtani_x_",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.14035087719298245,
-          "base_kill_value": 1.1279767802190923,
+          "victim_percentile": 0.12280701754385964,
+          "base_kill_value": 1.1061554886384592,
           "upset_multiplier": 1.0,
           "farm_multiplier": 1.0,
           "target_repeat_count": 1,
-          "kill_score": 1.1279767802190923
+          "kill_score": 1.1061554886384592
         }
       ],
       "death_details": [
@@ -3907,10 +3903,10 @@
       "adjusted_kd": 1.5,
       "strength": 0.7647058823529412,
       "strength_percentile": 0.8421052631578947,
-      "dak": 8.267540316859893,
-      "akd": 1.6535080633719788,
-      "quality_index": 1.04442029258864,
-      "final_score": 8.394265029143927,
+      "dak": 8.230556502209783,
+      "akd": 1.6461113004419565,
+      "quality_index": 1.0392936094102636,
+      "final_score": 8.342334325659614,
       "upset_kills": 0,
       "farm_affected_kills": 0,
       "best_kill": {
@@ -3942,12 +3938,12 @@
           "killer": "cherepavice",
           "message": "Riddars was smashed by cherepavice",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.05263157894736842,
-          "base_kill_value": 1.0324171592377243,
+          "victim_percentile": 0.03508771929824561,
+          "base_kill_value": 1.018375839614436,
           "upset_multiplier": 1.0,
           "farm_multiplier": 1.0,
           "target_repeat_count": 1,
-          "kill_score": 1.0324171592377243
+          "kill_score": 1.018375839614436
         },
         {
           "time": "19:11:21",
@@ -3955,12 +3951,12 @@
           "killer": "cherepavice",
           "message": "ptr_MOON_rtp was smashed by cherepavice",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.15789473684210525,
-          "base_kill_value": 1.1509192752459152,
+          "victim_percentile": 0.14035087719298245,
+          "base_kill_value": 1.1279767802190923,
           "upset_multiplier": 1.0,
           "farm_multiplier": 1.0,
           "target_repeat_count": 1,
-          "kill_score": 1.1509192752459152
+          "kill_score": 1.1279767802190923
         },
         {
           "time": "19:12:40",
@@ -4015,10 +4011,10 @@
       "adjusted_kd": 0.5,
       "strength": 0.368421052631579,
       "strength_percentile": 0.7894736842105263,
-      "dak": 5.651577339972435,
-      "akd": 1.883859113324145,
-      "quality_index": 1.0671852371114399,
-      "final_score": 5.781674105573161,
+      "dak": 5.632304999061294,
+      "akd": 1.8774349996870978,
+      "quality_index": 1.0634554660152742,
+      "final_score": 5.754901865584159,
       "upset_kills": 0,
       "farm_affected_kills": 0,
       "best_kill": {
@@ -4063,12 +4059,12 @@
           "killer": "Akeno2k",
           "message": "daratel was slain by Akeno2k",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.10526315789473684,
-          "base_kill_value": 1.0855493961179234,
+          "victim_percentile": 0.08771929824561403,
+          "base_kill_value": 1.0662770552067824,
           "upset_multiplier": 1.0,
           "farm_multiplier": 1.0,
           "target_repeat_count": 1,
-          "kill_score": 1.0855493961179234
+          "kill_score": 1.0662770552067824
         }
       ],
       "death_details": [
@@ -4118,6 +4114,157 @@
       "rank": 12
     },
     {
+      "player": "Tema_Tema_123",
+      "kills": 4,
+      "deaths": 10,
+      "kd": 0.4,
+      "adjusted_kd": 0.4166666666666667,
+      "strength": 0.3472222222222222,
+      "strength_percentile": 0.7368421052631579,
+      "dak": 5.582716141839504,
+      "akd": 1.395679035459876,
+      "quality_index": 0.9850889332219076,
+      "final_score": 5.553438290322193,
+      "upset_kills": 0,
+      "farm_affected_kills": 0,
+      "best_kill": {
+        "victim": "SOUPVisual",
+        "score": 1.6664504796800659,
+        "base_value": 1.6664504796800659,
+        "upset_multiplier": 1.0,
+        "farm_multiplier": 1.0,
+        "time": "19:07:26",
+        "message": "SOUPVisual was smashed by Tema_Tema_123 with [qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq]"
+      },
+      "kills_detail": [
+        {
+          "time": "19:01:48",
+          "victim": "GGWka",
+          "killer": "Tema_Tema_123",
+          "message": "GGWka was slain by Tema_Tema_123 using [-ezzqqqqqq-ezz]",
+          "victim_strength": 0.25,
+          "victim_percentile": 0.43859649122807015,
+          "base_kill_value": 1.6308428859544049,
+          "upset_multiplier": 1.0,
+          "farm_multiplier": 1.0,
+          "target_repeat_count": 1,
+          "kill_score": 1.6308428859544049
+        },
+        {
+          "time": "19:03:15",
+          "victim": "lookonol2001",
+          "killer": "Tema_Tema_123",
+          "message": "lookonol2001 was slain by Tema_Tema_123 using [-ezzqqqqqq-ezz]",
+          "victim_strength": 0.16666666666666666,
+          "victim_percentile": 0.10526315789473684,
+          "base_kill_value": 1.0855493961179234,
+          "upset_multiplier": 1.0,
+          "farm_multiplier": 1.0,
+          "target_repeat_count": 1,
+          "kill_score": 1.0855493961179234
+        },
+        {
+          "time": "19:07:26",
+          "victim": "SOUPVisual",
+          "killer": "Tema_Tema_123",
+          "message": "SOUPVisual was smashed by Tema_Tema_123 with [qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq]",
+          "victim_strength": 0.25,
+          "victim_percentile": 0.45614035087719296,
+          "base_kill_value": 1.6664504796800659,
+          "upset_multiplier": 1.0,
+          "farm_multiplier": 1.0,
+          "target_repeat_count": 1,
+          "kill_score": 1.6664504796800659
+        },
+        {
+          "time": "19:11:13",
+          "victim": "tvi302",
+          "killer": "Tema_Tema_123",
+          "message": "tvi302 was smashed by Tema_Tema_123 with [qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq]",
+          "victim_strength": 0.16666666666666666,
+          "victim_percentile": 0.19298245614035087,
+          "base_kill_value": 1.1998733800871098,
+          "upset_multiplier": 1.0,
+          "farm_multiplier": 1.0,
+          "target_repeat_count": 1,
+          "kill_score": 1.1998733800871098
+        }
+      ],
+      "death_details": [
+        {
+          "time": "19:06:37",
+          "victim": "Tema_Tema_123",
+          "killer": "AKATOIII",
+          "killer_type": "player",
+          "message": "Tema_Tema_123 was blown up by AKATOIII"
+        },
+        {
+          "time": "19:12:42",
+          "victim": "Tema_Tema_123",
+          "killer": "[Intentional Game Design]",
+          "killer_type": "non_player",
+          "message": "Tema_Tema_123 was killed by [Intentional Game Design]"
+        },
+        {
+          "time": "19:14:19",
+          "victim": "Tema_Tema_123",
+          "killer": "MeGaXoPoH",
+          "killer_type": "player",
+          "message": "Tema_Tema_123 was smashed by MeGaXoPoH with [Сильность]"
+        },
+        {
+          "time": "19:15:19",
+          "victim": "Tema_Tema_123",
+          "killer": "Tema_Tema_123",
+          "killer_type": "self",
+          "message": "Tema_Tema_123 was blown up by Tema_Tema_123"
+        },
+        {
+          "time": "19:15:39",
+          "victim": "Tema_Tema_123",
+          "killer": "MeGaXoPoH",
+          "killer_type": "player",
+          "message": "Tema_Tema_123 was smashed by MeGaXoPoH with [Сильность]"
+        },
+        {
+          "time": "19:16:20",
+          "victim": "Tema_Tema_123",
+          "killer": "Страж клана jojo",
+          "killer_type": "non_player",
+          "message": "Tema_Tema_123 was shot by Страж клана jojo"
+        },
+        {
+          "time": "19:16:37",
+          "victim": "Tema_Tema_123",
+          "killer": "errorrNull",
+          "killer_type": "player",
+          "message": "Tema_Tema_123 was smashed by errorrNull with [Аметистовая булава]"
+        },
+        {
+          "time": "19:16:53",
+          "victim": "Tema_Tema_123",
+          "killer": "errorrNull",
+          "killer_type": "player",
+          "message": "Tema_Tema_123 was smashed by errorrNull with [Аметистовая булава]"
+        },
+        {
+          "time": "19:16:57",
+          "victim": "Tema_Tema_123",
+          "killer": "errorrNull",
+          "killer_type": "player",
+          "message": "Tema_Tema_123 was smashed by errorrNull with [Аметистовая булава]"
+        },
+        {
+          "time": "19:19:54",
+          "victim": "Tema_Tema_123",
+          "killer": "Страж клана Seal",
+          "killer_type": "non_player",
+          "message": "Tema_Tema_123 was shot by Страж клана Seal"
+        }
+      ],
+      "rank": 13
+    },
+    {
       "player": "Vovan1910",
       "kills": 4,
       "deaths": 10,
@@ -4125,10 +4272,10 @@
       "adjusted_kd": 0.4166666666666667,
       "strength": 0.3472222222222222,
       "strength_percentile": 0.7543859649122807,
-      "dak": 5.495794124136992,
-      "akd": 1.373948531034248,
-      "quality_index": 0.9833313793825392,
-      "final_score": 5.463556263883524,
+      "dak": 5.47285162911017,
+      "akd": 1.3682129072775424,
+      "quality_index": 0.9797596879337607,
+      "final_score": 5.433823437848941,
       "upset_kills": 0,
       "farm_affected_kills": 0,
       "best_kill": {
@@ -4160,12 +4307,12 @@
           "killer": "Vovan1910",
           "message": "ptr_MOON_rtp was blown up by Vovan1910",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.15789473684210525,
-          "base_kill_value": 1.1509192752459152,
+          "victim_percentile": 0.14035087719298245,
+          "base_kill_value": 1.1279767802190923,
           "upset_multiplier": 1.0,
           "farm_multiplier": 1.0,
           "target_repeat_count": 1,
-          "kill_score": 1.1509192752459152
+          "kill_score": 1.1279767802190923
         },
         {
           "time": "19:11:33",
@@ -4266,157 +4413,6 @@
           "message": "Vovan1910 was blown up by Vovan1910"
         }
       ],
-      "rank": 13
-    },
-    {
-      "player": "Tema_Tema_123",
-      "kills": 4,
-      "deaths": 10,
-      "kd": 0.4,
-      "adjusted_kd": 0.4166666666666667,
-      "strength": 0.3472222222222222,
-      "strength_percentile": 0.7368421052631579,
-      "dak": 5.40344885427293,
-      "akd": 1.3508622135682324,
-      "quality_index": 0.9788106324280627,
-      "final_score": 5.36309614205013,
-      "upset_kills": 0,
-      "farm_affected_kills": 0,
-      "best_kill": {
-        "victim": "SOUPVisual",
-        "score": 1.6664504796800659,
-        "base_value": 1.6664504796800659,
-        "upset_multiplier": 1.0,
-        "farm_multiplier": 1.0,
-        "time": "19:07:26",
-        "message": "SOUPVisual was smashed by Tema_Tema_123 with [qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq]"
-      },
-      "kills_detail": [
-        {
-          "time": "19:01:48",
-          "victim": "GGWka",
-          "killer": "Tema_Tema_123",
-          "message": "GGWka was slain by Tema_Tema_123 using [-ezzqqqqqq-ezz]",
-          "victim_strength": 0.25,
-          "victim_percentile": 0.43859649122807015,
-          "base_kill_value": 1.6308428859544049,
-          "upset_multiplier": 1.0,
-          "farm_multiplier": 1.0,
-          "target_repeat_count": 1,
-          "kill_score": 1.6308428859544049
-        },
-        {
-          "time": "19:03:15",
-          "victim": "lookonol2001",
-          "killer": "Tema_Tema_123",
-          "message": "lookonol2001 was slain by Tema_Tema_123 using [-ezzqqqqqq-ezz]",
-          "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.12280701754385964,
-          "base_kill_value": 1.1061554886384592,
-          "upset_multiplier": 1.0,
-          "farm_multiplier": 1.0,
-          "target_repeat_count": 1,
-          "kill_score": 1.1061554886384592
-        },
-        {
-          "time": "19:07:26",
-          "victim": "SOUPVisual",
-          "killer": "Tema_Tema_123",
-          "message": "SOUPVisual was smashed by Tema_Tema_123 with [qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq]",
-          "victim_strength": 0.25,
-          "victim_percentile": 0.45614035087719296,
-          "base_kill_value": 1.6664504796800659,
-          "upset_multiplier": 1.0,
-          "farm_multiplier": 1.0,
-          "target_repeat_count": 1,
-          "kill_score": 1.6664504796800659
-        },
-        {
-          "time": "19:11:13",
-          "victim": "tvi302",
-          "killer": "Tema_Tema_123",
-          "message": "tvi302 was smashed by Tema_Tema_123 with [qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq]",
-          "victim_strength": 0.1525974025974026,
-          "victim_percentile": 0.0,
-          "base_kill_value": 1.0,
-          "upset_multiplier": 1.0,
-          "farm_multiplier": 1.0,
-          "target_repeat_count": 1,
-          "kill_score": 1.0
-        }
-      ],
-      "death_details": [
-        {
-          "time": "19:06:37",
-          "victim": "Tema_Tema_123",
-          "killer": "AKATOIII",
-          "killer_type": "player",
-          "message": "Tema_Tema_123 was blown up by AKATOIII"
-        },
-        {
-          "time": "19:12:42",
-          "victim": "Tema_Tema_123",
-          "killer": "[Intentional Game Design]",
-          "killer_type": "non_player",
-          "message": "Tema_Tema_123 was killed by [Intentional Game Design]"
-        },
-        {
-          "time": "19:14:19",
-          "victim": "Tema_Tema_123",
-          "killer": "MeGaXoPoH",
-          "killer_type": "player",
-          "message": "Tema_Tema_123 was smashed by MeGaXoPoH with [Сильность]"
-        },
-        {
-          "time": "19:15:19",
-          "victim": "Tema_Tema_123",
-          "killer": "Tema_Tema_123",
-          "killer_type": "self",
-          "message": "Tema_Tema_123 was blown up by Tema_Tema_123"
-        },
-        {
-          "time": "19:15:39",
-          "victim": "Tema_Tema_123",
-          "killer": "MeGaXoPoH",
-          "killer_type": "player",
-          "message": "Tema_Tema_123 was smashed by MeGaXoPoH with [Сильность]"
-        },
-        {
-          "time": "19:16:20",
-          "victim": "Tema_Tema_123",
-          "killer": "Страж клана jojo",
-          "killer_type": "non_player",
-          "message": "Tema_Tema_123 was shot by Страж клана jojo"
-        },
-        {
-          "time": "19:16:37",
-          "victim": "Tema_Tema_123",
-          "killer": "errorrNull",
-          "killer_type": "player",
-          "message": "Tema_Tema_123 was smashed by errorrNull with [Аметистовая булава]"
-        },
-        {
-          "time": "19:16:53",
-          "victim": "Tema_Tema_123",
-          "killer": "errorrNull",
-          "killer_type": "player",
-          "message": "Tema_Tema_123 was smashed by errorrNull with [Аметистовая булава]"
-        },
-        {
-          "time": "19:16:57",
-          "victim": "Tema_Tema_123",
-          "killer": "errorrNull",
-          "killer_type": "player",
-          "message": "Tema_Tema_123 was smashed by errorrNull with [Аметистовая булава]"
-        },
-        {
-          "time": "19:19:54",
-          "victim": "Tema_Tema_123",
-          "killer": "Страж клана Seal",
-          "killer_type": "non_player",
-          "message": "Tema_Tema_123 was shot by Страж клана Seal"
-        }
-      ],
       "rank": 14
     },
     {
@@ -4427,10 +4423,10 @@
       "adjusted_kd": 0.3333333333333333,
       "strength": 0.2971014492753623,
       "strength_percentile": 0.6491228070175439,
-      "dak": 4.604310046258789,
-      "akd": 1.5347700154195962,
-      "quality_index": 1.0119726919304157,
-      "final_score": 4.623529556018194,
+      "dak": 4.563097861217717,
+      "akd": 1.5210326204059055,
+      "quality_index": 1.0076013981009326,
+      "final_score": 4.575208067676064,
       "upset_kills": 0,
       "farm_affected_kills": 0,
       "best_kill": {
@@ -4449,12 +4445,12 @@
           "killer": "Yaroslav526742",
           "message": "lookonol2001 was smashed by Yaroslav526742",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.12280701754385964,
-          "base_kill_value": 1.1061554886384592,
+          "victim_percentile": 0.10526315789473684,
+          "base_kill_value": 1.0855493961179234,
           "upset_multiplier": 1.0,
           "farm_multiplier": 1.0,
           "target_repeat_count": 2,
-          "kill_score": 1.1061554886384592
+          "kill_score": 1.0855493961179234
         },
         {
           "time": "19:03:35",
@@ -4462,12 +4458,12 @@
           "killer": "Yaroslav526742",
           "message": "lookonol2001 was smashed by Yaroslav526742",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.12280701754385964,
-          "base_kill_value": 1.1061554886384592,
+          "victim_percentile": 0.10526315789473684,
+          "base_kill_value": 1.0855493961179234,
           "upset_multiplier": 1.0,
           "farm_multiplier": 1.0,
           "target_repeat_count": 2,
-          "kill_score": 1.1061554886384592
+          "kill_score": 1.0855493961179234
         },
         {
           "time": "19:09:58",
@@ -4565,10 +4561,10 @@
       "adjusted_kd": 0.8333333333333334,
       "strength": 0.5092592592592593,
       "strength_percentile": 0.8070175438596491,
-      "dak": 4.501366363018908,
-      "akd": 1.125341590754727,
-      "quality_index": 0.934649337745331,
-      "final_score": 4.396138913219191,
+      "dak": 4.451462432191699,
+      "akd": 1.1128656080479247,
+      "quality_index": 0.9302147217766533,
+      "final_score": 4.3401709471804395,
       "upset_kills": 0,
       "farm_affected_kills": 0,
       "best_kill": {
@@ -4587,12 +4583,12 @@
           "killer": "ExJar",
           "message": "Riddars was slain by ExJar using [Клинок Нексуса]",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.05263157894736842,
-          "base_kill_value": 1.0324171592377243,
+          "victim_percentile": 0.03508771929824561,
+          "base_kill_value": 1.018375839614436,
           "upset_multiplier": 1.0,
           "farm_multiplier": 1.0,
           "target_repeat_count": 2,
-          "kill_score": 1.0324171592377243
+          "kill_score": 1.018375839614436
         },
         {
           "time": "19:22:11",
@@ -4600,12 +4596,12 @@
           "killer": "ExJar",
           "message": "macintosh1 was slain by ExJar using [Клинок Нексуса]",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.14035087719298245,
-          "base_kill_value": 1.1279767802190923,
+          "victim_percentile": 0.12280701754385964,
+          "base_kill_value": 1.1061554886384592,
           "upset_multiplier": 1.0,
           "farm_multiplier": 1.0,
           "target_repeat_count": 1,
-          "kill_score": 1.1279767802190923
+          "kill_score": 1.1061554886384592
         },
         {
           "time": "19:23:38",
@@ -4613,12 +4609,12 @@
           "killer": "ExJar",
           "message": "Riddars was slain by ExJar using [Клинок Нексуса]",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.05263157894736842,
-          "base_kill_value": 1.0324171592377243,
+          "victim_percentile": 0.03508771929824561,
+          "base_kill_value": 1.018375839614436,
           "upset_multiplier": 1.0,
           "farm_multiplier": 1.0,
           "target_repeat_count": 2,
-          "kill_score": 1.0324171592377243
+          "kill_score": 1.018375839614436
         },
         {
           "time": "19:23:43",
@@ -4674,20 +4670,20 @@
       "adjusted_kd": 0.4166666666666667,
       "strength": 0.3472222222222222,
       "strength_percentile": 0.7719298245614035,
-      "dak": 4.260805108753603,
-      "akd": 1.0652012771884007,
-      "quality_index": 0.922872702524211,
-      "final_score": 4.142774552838382,
+      "dak": 4.403389331560681,
+      "akd": 1.1008473328901702,
+      "quality_index": 0.9278828191571457,
+      "final_score": 4.289529733500783,
       "upset_kills": 0,
       "farm_affected_kills": 0,
       "best_kill": {
-        "victim": "lookonol2001",
-        "score": 1.1061554886384592,
-        "base_value": 1.1061554886384592,
+        "victim": "tvi302",
+        "score": 1.1998733800871098,
+        "base_value": 1.1998733800871098,
         "upset_multiplier": 1.0,
         "farm_multiplier": 1.0,
-        "time": "19:08:17",
-        "message": "lookonol2001 was slain by maksmgn18 using [qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq]"
+        "time": "19:11:56",
+        "message": "tvi302 was doomed to fall by maksmgn18 using [qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq]"
       },
       "kills_detail": [
         {
@@ -4696,12 +4692,12 @@
           "killer": "maksmgn18",
           "message": "lookonol2001 was slain by maksmgn18 using [qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq]",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.12280701754385964,
-          "base_kill_value": 1.1061554886384592,
+          "victim_percentile": 0.10526315789473684,
+          "base_kill_value": 1.0855493961179234,
           "upset_multiplier": 1.0,
           "farm_multiplier": 1.0,
           "target_repeat_count": 2,
-          "kill_score": 1.1061554886384592
+          "kill_score": 1.0855493961179234
         },
         {
           "time": "19:08:35",
@@ -4709,12 +4705,12 @@
           "killer": "maksmgn18",
           "message": "lookonol2001 was slain by maksmgn18 using [qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq]",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.12280701754385964,
-          "base_kill_value": 1.1061554886384592,
+          "victim_percentile": 0.10526315789473684,
+          "base_kill_value": 1.0855493961179234,
           "upset_multiplier": 1.0,
           "farm_multiplier": 1.0,
           "target_repeat_count": 2,
-          "kill_score": 1.1061554886384592
+          "kill_score": 1.0855493961179234
         },
         {
           "time": "19:09:32",
@@ -4722,25 +4718,25 @@
           "killer": "maksmgn18",
           "message": "VALL228 was blown up by maksmgn18",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.07017543859649122,
-          "base_kill_value": 1.0484941314766847,
+          "victim_percentile": 0.05263157894736842,
+          "base_kill_value": 1.0324171592377243,
           "upset_multiplier": 1.0,
           "farm_multiplier": 1.0,
           "target_repeat_count": 1,
-          "kill_score": 1.0484941314766847
+          "kill_score": 1.0324171592377243
         },
         {
           "time": "19:11:56",
           "victim": "tvi302",
           "killer": "maksmgn18",
           "message": "tvi302 was doomed to fall by maksmgn18 using [qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq]",
-          "victim_strength": 0.1525974025974026,
-          "victim_percentile": 0.0,
-          "base_kill_value": 1.0,
+          "victim_strength": 0.16666666666666666,
+          "victim_percentile": 0.19298245614035087,
+          "base_kill_value": 1.1998733800871098,
           "upset_multiplier": 1.0,
           "farm_multiplier": 1.0,
           "target_repeat_count": 1,
-          "kill_score": 1.0
+          "kill_score": 1.1998733800871098
         }
       ],
       "death_details": [
@@ -4825,10 +4821,10 @@
       "adjusted_kd": 0.36363636363636365,
       "strength": 0.3119834710743802,
       "strength_percentile": 0.7017543859649122,
-      "dak": 3.7795691094503097,
-      "akd": 1.25985636981677,
-      "quality_index": 0.9684918666344154,
-      "final_score": 3.7374542319157675,
+      "dak": 3.7519998757979893,
+      "akd": 1.2506666252659964,
+      "quality_index": 0.9652306353559436,
+      "final_score": 3.7058146977296413,
       "upset_kills": 0,
       "farm_affected_kills": 0,
       "best_kill": {
@@ -4847,12 +4843,12 @@
           "killer": "GenshinImpact777",
           "message": "lookonol2001 was slain by GenshinImpact777",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.12280701754385964,
-          "base_kill_value": 1.1061554886384592,
+          "victim_percentile": 0.10526315789473684,
+          "base_kill_value": 1.0855493961179234,
           "upset_multiplier": 1.0,
           "farm_multiplier": 1.0,
           "target_repeat_count": 1,
-          "kill_score": 1.1061554886384592
+          "kill_score": 1.0855493961179234
         },
         {
           "time": "19:13:51",
@@ -4860,12 +4856,12 @@
           "killer": "GenshinImpact777",
           "message": "Den4ikdd was slain by GenshinImpact777",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.017543859649122806,
-          "base_kill_value": 1.0069631411317848,
+          "victim_percentile": 0.0,
+          "base_kill_value": 1.0,
           "upset_multiplier": 1.0,
           "farm_multiplier": 1.0,
           "target_repeat_count": 1,
-          "kill_score": 1.0069631411317848
+          "kill_score": 1.0
         },
         {
           "time": "19:14:02",
@@ -4958,8 +4954,8 @@
       "strength_percentile": 0.7192982456140351,
       "dak": 2.891176231935818,
       "akd": 1.445588115967909,
-      "quality_index": 0.9984598798840001,
-      "final_score": 2.889616985665733,
+      "quality_index": 0.9969507873824535,
+      "final_score": 2.888087635185443,
       "upset_kills": 0,
       "farm_affected_kills": 0,
       "best_kill": {
@@ -5041,8 +5037,8 @@
       "strength_percentile": 0.5087719298245614,
       "dak": 2.7199769854501334,
       "akd": 1.3599884927250667,
-      "quality_index": 0.9886820116129508,
-      "final_score": 2.709162470264152,
+      "quality_index": 0.9872622791083105,
+      "final_score": 2.707800223502657,
       "upset_kills": 0,
       "farm_affected_kills": 0,
       "best_kill": {
@@ -5157,6 +5153,131 @@
       "rank": 20
     },
     {
+      "player": "SOUPVisual",
+      "kills": 2,
+      "deaths": 10,
+      "kd": 0.2,
+      "adjusted_kd": 0.25,
+      "strength": 0.25,
+      "strength_percentile": 0.45614035087719296,
+      "dak": 2.480019394147928,
+      "akd": 1.240009697073964,
+      "quality_index": 0.9736825983766595,
+      "final_score": 2.4569774469234322,
+      "upset_kills": 0,
+      "farm_affected_kills": 0,
+      "best_kill": {
+        "victim": "dzeshikoya",
+        "score": 1.280146014060818,
+        "base_value": 1.280146014060818,
+        "upset_multiplier": 1.0,
+        "farm_multiplier": 1.0,
+        "time": "19:09:34",
+        "message": "dzeshikoya was burned to a crisp while fighting SOUPVisual"
+      },
+      "kills_detail": [
+        {
+          "time": "19:09:34",
+          "victim": "dzeshikoya",
+          "killer": "SOUPVisual",
+          "message": "dzeshikoya was burned to a crisp while fighting SOUPVisual",
+          "victim_strength": 0.17464114832535887,
+          "victim_percentile": 0.24561403508771928,
+          "base_kill_value": 1.280146014060818,
+          "upset_multiplier": 1.0,
+          "farm_multiplier": 1.0,
+          "target_repeat_count": 1,
+          "kill_score": 1.280146014060818
+        },
+        {
+          "time": "19:12:12",
+          "victim": "tvi302",
+          "killer": "SOUPVisual",
+          "message": "tvi302 was slain by SOUPVisual using [Hero Sword]",
+          "victim_strength": 0.16666666666666666,
+          "victim_percentile": 0.19298245614035087,
+          "base_kill_value": 1.1998733800871098,
+          "upset_multiplier": 1.0,
+          "farm_multiplier": 1.0,
+          "target_repeat_count": 1,
+          "kill_score": 1.1998733800871098
+        }
+      ],
+      "death_details": [
+        {
+          "time": "19:02:09",
+          "victim": "SOUPVisual",
+          "killer": "ya_rebenok",
+          "killer_type": "player",
+          "message": "SOUPVisual was smashed by ya_rebenok"
+        },
+        {
+          "time": "19:02:18",
+          "victim": "SOUPVisual",
+          "killer": "MeGaXoPoH",
+          "killer_type": "player",
+          "message": "SOUPVisual was smashed by MeGaXoPoH with [Сильность]"
+        },
+        {
+          "time": "19:05:02",
+          "victim": "SOUPVisual",
+          "killer": "RUSSIAN_GRIZZLY",
+          "killer_type": "player",
+          "message": "SOUPVisual was blown up by RUSSIAN_GRIZZLY"
+        },
+        {
+          "time": "19:07:26",
+          "victim": "SOUPVisual",
+          "killer": "Tema_Tema_123",
+          "killer_type": "player",
+          "message": "SOUPVisual was smashed by Tema_Tema_123 with [qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq]"
+        },
+        {
+          "time": "19:10:54",
+          "victim": "SOUPVisual",
+          "killer": "SOUPVisual",
+          "killer_type": "self",
+          "message": "SOUPVisual was blown up by SOUPVisual using [Hero Sword]"
+        },
+        {
+          "time": "19:11:23",
+          "victim": "SOUPVisual",
+          "killer": "errorrNull",
+          "killer_type": "player",
+          "message": "SOUPVisual was smashed by errorrNull with [Аметистовая булава]"
+        },
+        {
+          "time": "19:11:27",
+          "victim": "SOUPVisual",
+          "killer": "Страж клана ORDEN",
+          "killer_type": "non_player",
+          "message": "SOUPVisual was blown up by Страж клана ORDEN"
+        },
+        {
+          "time": "19:11:33",
+          "victim": "SOUPVisual",
+          "killer": "Vovan1910",
+          "killer_type": "player",
+          "message": "SOUPVisual was blown up by Vovan1910"
+        },
+        {
+          "time": "19:12:51",
+          "victim": "SOUPVisual",
+          "killer": "fanhua",
+          "killer_type": "player",
+          "message": "SOUPVisual was smashed by fanhua"
+        },
+        {
+          "time": "19:14:02",
+          "victim": "SOUPVisual",
+          "killer": "GenshinImpact777",
+          "killer_type": "player",
+          "message": "SOUPVisual was blown up by GenshinImpact777"
+        }
+      ],
+      "rank": 21
+    },
+    {
       "player": "Ytka_228344",
       "kills": 2,
       "deaths": 10,
@@ -5164,10 +5285,10 @@
       "adjusted_kd": 0.25,
       "strength": 0.25,
       "strength_percentile": 0.49122807017543857,
-      "dak": 2.4310652893067335,
-      "akd": 1.2155326446533667,
-      "quality_index": 0.9721811182688211,
-      "final_score": 2.407177615407984,
+      "dak": 2.4081227942799104,
+      "akd": 1.2040613971399552,
+      "quality_index": 0.9696138257797996,
+      "final_score": 2.382254787433837,
       "upset_kills": 0,
       "farm_affected_kills": 0,
       "best_kill": {
@@ -5186,12 +5307,12 @@
           "killer": "Ytka_228344",
           "message": "ptr_MOON_rtp was smashed by Ytka_228344 with [✟Ꮶᗣᖘᗣ ᕼᙓᘜᙓᙅᕼᗣᖆ✟]",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.15789473684210525,
-          "base_kill_value": 1.1509192752459152,
+          "victim_percentile": 0.14035087719298245,
+          "base_kill_value": 1.1279767802190923,
           "upset_multiplier": 1.0,
           "farm_multiplier": 1.0,
           "target_repeat_count": 1,
-          "kill_score": 1.1509192752459152
+          "kill_score": 1.1279767802190923
         },
         {
           "time": "19:19:36",
@@ -5279,131 +5400,6 @@
           "message": "Ytka_228344 was killed by [Intentional Game Design]"
         }
       ],
-      "rank": 21
-    },
-    {
-      "player": "SOUPVisual",
-      "kills": 2,
-      "deaths": 10,
-      "kd": 0.2,
-      "adjusted_kd": 0.25,
-      "strength": 0.25,
-      "strength_percentile": 0.45614035087719296,
-      "dak": 2.280146014060818,
-      "akd": 1.140073007030409,
-      "quality_index": 0.9635615196245,
-      "final_score": 2.250714794292058,
-      "upset_kills": 0,
-      "farm_affected_kills": 0,
-      "best_kill": {
-        "victim": "dzeshikoya",
-        "score": 1.280146014060818,
-        "base_value": 1.280146014060818,
-        "upset_multiplier": 1.0,
-        "farm_multiplier": 1.0,
-        "time": "19:09:34",
-        "message": "dzeshikoya was burned to a crisp while fighting SOUPVisual"
-      },
-      "kills_detail": [
-        {
-          "time": "19:09:34",
-          "victim": "dzeshikoya",
-          "killer": "SOUPVisual",
-          "message": "dzeshikoya was burned to a crisp while fighting SOUPVisual",
-          "victim_strength": 0.17464114832535887,
-          "victim_percentile": 0.24561403508771928,
-          "base_kill_value": 1.280146014060818,
-          "upset_multiplier": 1.0,
-          "farm_multiplier": 1.0,
-          "target_repeat_count": 1,
-          "kill_score": 1.280146014060818
-        },
-        {
-          "time": "19:12:12",
-          "victim": "tvi302",
-          "killer": "SOUPVisual",
-          "message": "tvi302 was slain by SOUPVisual using [Hero Sword]",
-          "victim_strength": 0.1525974025974026,
-          "victim_percentile": 0.0,
-          "base_kill_value": 1.0,
-          "upset_multiplier": 1.0,
-          "farm_multiplier": 1.0,
-          "target_repeat_count": 1,
-          "kill_score": 1.0
-        }
-      ],
-      "death_details": [
-        {
-          "time": "19:02:09",
-          "victim": "SOUPVisual",
-          "killer": "ya_rebenok",
-          "killer_type": "player",
-          "message": "SOUPVisual was smashed by ya_rebenok"
-        },
-        {
-          "time": "19:02:18",
-          "victim": "SOUPVisual",
-          "killer": "MeGaXoPoH",
-          "killer_type": "player",
-          "message": "SOUPVisual was smashed by MeGaXoPoH with [Сильность]"
-        },
-        {
-          "time": "19:05:02",
-          "victim": "SOUPVisual",
-          "killer": "RUSSIAN_GRIZZLY",
-          "killer_type": "player",
-          "message": "SOUPVisual was blown up by RUSSIAN_GRIZZLY"
-        },
-        {
-          "time": "19:07:26",
-          "victim": "SOUPVisual",
-          "killer": "Tema_Tema_123",
-          "killer_type": "player",
-          "message": "SOUPVisual was smashed by Tema_Tema_123 with [qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq]"
-        },
-        {
-          "time": "19:10:54",
-          "victim": "SOUPVisual",
-          "killer": "SOUPVisual",
-          "killer_type": "self",
-          "message": "SOUPVisual was blown up by SOUPVisual using [Hero Sword]"
-        },
-        {
-          "time": "19:11:23",
-          "victim": "SOUPVisual",
-          "killer": "errorrNull",
-          "killer_type": "player",
-          "message": "SOUPVisual was smashed by errorrNull with [Аметистовая булава]"
-        },
-        {
-          "time": "19:11:27",
-          "victim": "SOUPVisual",
-          "killer": "Страж клана ORDEN",
-          "killer_type": "non_player",
-          "message": "SOUPVisual was blown up by Страж клана ORDEN"
-        },
-        {
-          "time": "19:11:33",
-          "victim": "SOUPVisual",
-          "killer": "Vovan1910",
-          "killer_type": "player",
-          "message": "SOUPVisual was blown up by Vovan1910"
-        },
-        {
-          "time": "19:12:51",
-          "victim": "SOUPVisual",
-          "killer": "fanhua",
-          "killer_type": "player",
-          "message": "SOUPVisual was smashed by fanhua"
-        },
-        {
-          "time": "19:14:02",
-          "victim": "SOUPVisual",
-          "killer": "GenshinImpact777",
-          "killer_type": "player",
-          "message": "SOUPVisual was blown up by GenshinImpact777"
-        }
-      ],
       "rank": 22
     },
     {
@@ -5416,8 +5412,8 @@
       "strength_percentile": 0.43859649122807015,
       "dak": 2.0510628806205933,
       "akd": 2.0510628806205933,
-      "quality_index": 1.0368847340629832,
-      "final_score": 2.077230272464025,
+      "quality_index": 1.0357168255283604,
+      "final_score": 2.076411072188168,
       "upset_kills": 0,
       "farm_affected_kills": 0,
       "best_kill": {
@@ -5500,8 +5496,8 @@
       "strength_percentile": 0.5964912280701754,
       "dak": 2.0104165703145584,
       "akd": 2.0104165703145584,
-      "quality_index": 1.0343522190854617,
-      "final_score": 2.034323485230724,
+      "quality_index": 1.033207455220442,
+      "final_score": 2.033535184737593,
       "upset_kills": 0,
       "farm_affected_kills": 0,
       "best_kill": {
@@ -5577,8 +5573,8 @@
       "strength_percentile": 0.6666666666666666,
       "dak": 1.7765374312817865,
       "akd": 1.7765374312817865,
-      "quality_index": 1.0197801111113123,
-      "final_score": 1.7887582532375834,
+      "quality_index": 1.018768521828665,
+      "final_score": 1.7881370160531473,
       "upset_kills": 0,
       "farm_affected_kills": 0,
       "best_kill": {
@@ -5633,8 +5629,8 @@
       "strength_percentile": 0.6842105263157895,
       "dak": 1.5958005998408114,
       "akd": 1.5958005998408114,
-      "quality_index": 1.0085190955562031,
-      "final_score": 1.6005456594705776,
+      "quality_index": 1.0076104207624073,
+      "final_score": 1.6000407800318956,
       "upset_kills": 0,
       "farm_affected_kills": 0,
       "best_kill": {
@@ -5689,8 +5685,8 @@
       "strength_percentile": 0.6140350877192983,
       "dak": 1.4942107755712457,
       "akd": 1.4942107755712457,
-      "quality_index": 1.0021894250500896,
-      "final_score": 1.4953549736784368,
+      "quality_index": 1.0013385971530984,
+      "final_score": 1.4949105224437484,
       "upset_kills": 0,
       "farm_affected_kills": 0,
       "best_kill": {
@@ -5759,8 +5755,8 @@
       "strength_percentile": 0.3333333333333333,
       "dak": 1.4615802219509817,
       "akd": 1.4615802219509817,
-      "quality_index": 1.000156340985486,
-      "final_score": 1.4616601945999421,
+      "quality_index": 0.9993240934559824,
+      "final_score": 1.4612343838964899,
       "upset_kills": 0,
       "farm_affected_kills": 0,
       "best_kill": {
@@ -5871,8 +5867,8 @@
       "strength_percentile": 0.3157894736842105,
       "dak": 1.280146014060818,
       "akd": 1.280146014060818,
-      "quality_index": 0.9888518745909465,
-      "final_score": 1.275132875029856,
+      "quality_index": 0.988122938647777,
+      "final_score": 1.2748038070029737,
       "upset_kills": 0,
       "farm_affected_kills": 0,
       "best_kill": {
@@ -5974,6 +5970,118 @@
       "rank": 29
     },
     {
+      "player": "pianoblock94",
+      "kills": 1,
+      "deaths": 10,
+      "kd": 0.1,
+      "adjusted_kd": 0.16666666666666666,
+      "strength": 0.20634920634920634,
+      "strength_percentile": 0.3508771929824561,
+      "dak": 1.1998733800871098,
+      "akd": 1.1998733800871098,
+      "quality_index": 0.9831671686722152,
+      "final_score": 1.1927653024320755,
+      "upset_kills": 0,
+      "farm_affected_kills": 0,
+      "best_kill": {
+        "victim": "tvi302",
+        "score": 1.1998733800871098,
+        "base_value": 1.1998733800871098,
+        "upset_multiplier": 1.0,
+        "farm_multiplier": 1.0,
+        "time": "19:15:41",
+        "message": "tvi302 was slain by pianoblock94 using [Меч пива блока]"
+      },
+      "kills_detail": [
+        {
+          "time": "19:15:41",
+          "victim": "tvi302",
+          "killer": "pianoblock94",
+          "message": "tvi302 was slain by pianoblock94 using [Меч пива блока]",
+          "victim_strength": 0.16666666666666666,
+          "victim_percentile": 0.19298245614035087,
+          "base_kill_value": 1.1998733800871098,
+          "upset_multiplier": 1.0,
+          "farm_multiplier": 1.0,
+          "target_repeat_count": 1,
+          "kill_score": 1.1998733800871098
+        }
+      ],
+      "death_details": [
+        {
+          "time": "19:12:36",
+          "victim": "pianoblock94",
+          "killer": "Blazerlords",
+          "killer_type": "player",
+          "message": "pianoblock94 was blown up by Blazerlords"
+        },
+        {
+          "time": "19:13:01",
+          "victim": "pianoblock94",
+          "killer": "ZION",
+          "killer_type": "player",
+          "message": "pianoblock94 was blown up by ZION using [взрывная штучка]"
+        },
+        {
+          "time": "19:14:11",
+          "victim": "pianoblock94",
+          "killer": "chitandarniy",
+          "killer_type": "player",
+          "message": "pianoblock94 was slain by chitandarniy using [ORDEN on top]"
+        },
+        {
+          "time": "19:15:43",
+          "victim": "pianoblock94",
+          "killer": "[Intentional Game Design]",
+          "killer_type": "non_player",
+          "message": "pianoblock94 was killed by [Intentional Game Design]"
+        },
+        {
+          "time": "19:16:44",
+          "victim": "pianoblock94",
+          "killer": "errorrNull",
+          "killer_type": "player",
+          "message": "pianoblock94 was smashed by errorrNull with [Аметистовая булава]"
+        },
+        {
+          "time": "19:17:09",
+          "victim": "pianoblock94",
+          "killer": "MeGaXoPoH",
+          "killer_type": "player",
+          "message": "pianoblock94 was smashed by MeGaXoPoH with [Сильность]"
+        },
+        {
+          "time": "19:18:51",
+          "victim": "pianoblock94",
+          "killer": "EI_Shadow",
+          "killer_type": "player",
+          "message": "pianoblock94 was blown up by EI_Shadow"
+        },
+        {
+          "time": "19:19:17",
+          "victim": "pianoblock94",
+          "killer": "AKATOIII",
+          "killer_type": "player",
+          "message": "pianoblock94 was blown up by AKATOIII"
+        },
+        {
+          "time": "19:21:12",
+          "victim": "pianoblock94",
+          "killer": "EI_Shadow",
+          "killer_type": "player",
+          "message": "pianoblock94 was blown up by EI_Shadow"
+        },
+        {
+          "time": "19:21:40",
+          "victim": "pianoblock94",
+          "killer": "Blazerlords",
+          "killer_type": "player",
+          "message": "pianoblock94 was blown up by Blazerlords"
+        }
+      ],
+      "rank": 30
+    },
+    {
       "player": "pulmenb",
       "kills": 1,
       "deaths": 10,
@@ -5981,16 +6089,16 @@
       "adjusted_kd": 0.16666666666666666,
       "strength": 0.20634920634920634,
       "strength_percentile": 0.3684210526315789,
-      "dak": 1.1279767802190923,
-      "akd": 1.1279767802190923,
-      "quality_index": 0.9793707959660825,
-      "final_score": 1.119777306992433,
+      "dak": 1.1061554886384592,
+      "akd": 1.1061554886384592,
+      "quality_index": 0.977381332458515,
+      "final_score": 1.097333385802811,
       "upset_kills": 0,
       "farm_affected_kills": 0,
       "best_kill": {
         "victim": "macintosh1",
-        "score": 1.1279767802190923,
-        "base_value": 1.1279767802190923,
+        "score": 1.1061554886384592,
+        "base_value": 1.1061554886384592,
         "upset_multiplier": 1.0,
         "farm_multiplier": 1.0,
         "time": "19:01:10",
@@ -6003,12 +6111,12 @@
           "killer": "pulmenb",
           "message": "macintosh1 was smashed by pulmenb",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.14035087719298245,
-          "base_kill_value": 1.1279767802190923,
+          "victim_percentile": 0.12280701754385964,
+          "base_kill_value": 1.1061554886384592,
           "upset_multiplier": 1.0,
           "farm_multiplier": 1.0,
           "target_repeat_count": 1,
-          "kill_score": 1.1279767802190923
+          "kill_score": 1.1061554886384592
         }
       ],
       "death_details": [
@@ -6083,7 +6191,7 @@
           "message": "pulmenb was blown up by Blazerlords"
         }
       ],
-      "rank": 30
+      "rank": 31
     },
     {
       "player": "Papa_Romana",
@@ -6093,16 +6201,16 @@
       "adjusted_kd": 0.4,
       "strength": 0.29285714285714287,
       "strength_percentile": 0.631578947368421,
-      "dak": 1.0324171592377243,
-      "akd": 1.0324171592377243,
-      "quality_index": 0.9734168441913832,
-      "final_score": 1.0227272180765674,
+      "dak": 1.018375839614436,
+      "akd": 1.018375839614436,
+      "quality_index": 0.9719621039174272,
+      "final_score": 1.0082897533433033,
       "upset_kills": 0,
       "farm_affected_kills": 0,
       "best_kill": {
         "victim": "Riddars",
-        "score": 1.0324171592377243,
-        "base_value": 1.0324171592377243,
+        "score": 1.018375839614436,
+        "base_value": 1.018375839614436,
         "upset_multiplier": 1.0,
         "farm_multiplier": 1.0,
         "time": "19:22:53",
@@ -6115,12 +6223,12 @@
           "killer": "Papa_Romana",
           "message": "Riddars was blown up by Papa_Romana",
           "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.05263157894736842,
-          "base_kill_value": 1.0324171592377243,
+          "victim_percentile": 0.03508771929824561,
+          "base_kill_value": 1.018375839614436,
           "upset_multiplier": 1.0,
           "farm_multiplier": 1.0,
           "target_repeat_count": 1,
-          "kill_score": 1.0324171592377243
+          "kill_score": 1.018375839614436
         }
       ],
       "death_details": [
@@ -6144,118 +6252,6 @@
           "killer": "GGWka",
           "killer_type": "player",
           "message": "Papa_Romana was smashed by GGWka with [Булава]"
-        }
-      ],
-      "rank": 31
-    },
-    {
-      "player": "pianoblock94",
-      "kills": 1,
-      "deaths": 10,
-      "kd": 0.1,
-      "adjusted_kd": 0.16666666666666666,
-      "strength": 0.20634920634920634,
-      "strength_percentile": 0.3508771929824561,
-      "dak": 1.0,
-      "akd": 1.0,
-      "quality_index": 0.971397055908508,
-      "final_score": 0.9898944151088932,
-      "upset_kills": 0,
-      "farm_affected_kills": 0,
-      "best_kill": {
-        "victim": "tvi302",
-        "score": 1.0,
-        "base_value": 1.0,
-        "upset_multiplier": 1.0,
-        "farm_multiplier": 1.0,
-        "time": "19:15:41",
-        "message": "tvi302 was slain by pianoblock94 using [Меч пива блока]"
-      },
-      "kills_detail": [
-        {
-          "time": "19:15:41",
-          "victim": "tvi302",
-          "killer": "pianoblock94",
-          "message": "tvi302 was slain by pianoblock94 using [Меч пива блока]",
-          "victim_strength": 0.1525974025974026,
-          "victim_percentile": 0.0,
-          "base_kill_value": 1.0,
-          "upset_multiplier": 1.0,
-          "farm_multiplier": 1.0,
-          "target_repeat_count": 1,
-          "kill_score": 1.0
-        }
-      ],
-      "death_details": [
-        {
-          "time": "19:12:36",
-          "victim": "pianoblock94",
-          "killer": "Blazerlords",
-          "killer_type": "player",
-          "message": "pianoblock94 was blown up by Blazerlords"
-        },
-        {
-          "time": "19:13:01",
-          "victim": "pianoblock94",
-          "killer": "ZION",
-          "killer_type": "player",
-          "message": "pianoblock94 was blown up by ZION using [взрывная штучка]"
-        },
-        {
-          "time": "19:14:11",
-          "victim": "pianoblock94",
-          "killer": "chitandarniy",
-          "killer_type": "player",
-          "message": "pianoblock94 was slain by chitandarniy using [ORDEN on top]"
-        },
-        {
-          "time": "19:15:43",
-          "victim": "pianoblock94",
-          "killer": "[Intentional Game Design]",
-          "killer_type": "non_player",
-          "message": "pianoblock94 was killed by [Intentional Game Design]"
-        },
-        {
-          "time": "19:16:44",
-          "victim": "pianoblock94",
-          "killer": "errorrNull",
-          "killer_type": "player",
-          "message": "pianoblock94 was smashed by errorrNull with [Аметистовая булава]"
-        },
-        {
-          "time": "19:17:09",
-          "victim": "pianoblock94",
-          "killer": "MeGaXoPoH",
-          "killer_type": "player",
-          "message": "pianoblock94 was smashed by MeGaXoPoH with [Сильность]"
-        },
-        {
-          "time": "19:18:51",
-          "victim": "pianoblock94",
-          "killer": "EI_Shadow",
-          "killer_type": "player",
-          "message": "pianoblock94 was blown up by EI_Shadow"
-        },
-        {
-          "time": "19:19:17",
-          "victim": "pianoblock94",
-          "killer": "AKATOIII",
-          "killer_type": "player",
-          "message": "pianoblock94 was blown up by AKATOIII"
-        },
-        {
-          "time": "19:21:12",
-          "victim": "pianoblock94",
-          "killer": "EI_Shadow",
-          "killer_type": "player",
-          "message": "pianoblock94 was blown up by EI_Shadow"
-        },
-        {
-          "time": "19:21:40",
-          "victim": "pianoblock94",
-          "killer": "Blazerlords",
-          "killer_type": "player",
-          "message": "pianoblock94 was blown up by Blazerlords"
         }
       ],
       "rank": 32
@@ -6398,7 +6394,7 @@
       "kd": 0.0,
       "adjusted_kd": 0.08333333333333333,
       "strength": 0.16666666666666666,
-      "strength_percentile": 0.017543859649122806,
+      "strength_percentile": 0.0,
       "dak": 0,
       "akd": 0.0,
       "quality_index": 0.0,
@@ -6597,7 +6593,7 @@
       "kd": 0.0,
       "adjusted_kd": 0.08333333333333333,
       "strength": 0.16666666666666666,
-      "strength_percentile": 0.03508771929824561,
+      "strength_percentile": 0.017543859649122806,
       "dak": 0,
       "akd": 0.0,
       "quality_index": 0.0,
@@ -6811,7 +6807,7 @@
       "kd": 0.0,
       "adjusted_kd": 0.08333333333333333,
       "strength": 0.16666666666666666,
-      "strength_percentile": 0.05263157894736842,
+      "strength_percentile": 0.03508771929824561,
       "dak": 0,
       "akd": 0.0,
       "quality_index": 0.0,
@@ -6997,7 +6993,7 @@
       "kd": 0.0,
       "adjusted_kd": 0.08333333333333333,
       "strength": 0.16666666666666666,
-      "strength_percentile": 0.07017543859649122,
+      "strength_percentile": 0.05263157894736842,
       "dak": 0,
       "akd": 0.0,
       "quality_index": 0.0,
@@ -7087,7 +7083,7 @@
       "kd": 0.0,
       "adjusted_kd": 0.08333333333333333,
       "strength": 0.16666666666666666,
-      "strength_percentile": 0.08771929824561403,
+      "strength_percentile": 0.07017543859649122,
       "dak": 0,
       "akd": 0.0,
       "quality_index": 0.0,
@@ -7177,7 +7173,7 @@
       "kd": 0.0,
       "adjusted_kd": 0.08333333333333333,
       "strength": 0.16666666666666666,
-      "strength_percentile": 0.10526315789473684,
+      "strength_percentile": 0.08771929824561403,
       "dak": 0,
       "akd": 0.0,
       "quality_index": 0.0,
@@ -7418,7 +7414,7 @@
       "kd": 0.0,
       "adjusted_kd": 0.08333333333333333,
       "strength": 0.16666666666666666,
-      "strength_percentile": 0.12280701754385964,
+      "strength_percentile": 0.10526315789473684,
       "dak": 0,
       "akd": 0.0,
       "quality_index": 0.0,
@@ -7508,7 +7504,7 @@
       "kd": 0.0,
       "adjusted_kd": 0.08333333333333333,
       "strength": 0.16666666666666666,
-      "strength_percentile": 0.14035087719298245,
+      "strength_percentile": 0.12280701754385964,
       "dak": 0,
       "akd": 0.0,
       "quality_index": 0.0,
@@ -7598,7 +7594,7 @@
       "kd": 0.0,
       "adjusted_kd": 0.08333333333333333,
       "strength": 0.16666666666666666,
-      "strength_percentile": 0.15789473684210525,
+      "strength_percentile": 0.14035087719298245,
       "dak": 0,
       "akd": 0.0,
       "quality_index": 0.0,
@@ -7688,7 +7684,7 @@
       "kd": 0.0,
       "adjusted_kd": 0.08333333333333333,
       "strength": 0.16666666666666666,
-      "strength_percentile": 0.17543859649122806,
+      "strength_percentile": 0.15789473684210525,
       "dak": 0,
       "akd": 0.0,
       "quality_index": 0.0,
@@ -7778,7 +7774,7 @@
       "kd": 0.0,
       "adjusted_kd": 0.08333333333333333,
       "strength": 0.16666666666666666,
-      "strength_percentile": 0.19298245614035087,
+      "strength_percentile": 0.17543859649122806,
       "dak": 0,
       "akd": 0.0,
       "quality_index": 0.0,
@@ -7864,11 +7860,11 @@
     {
       "player": "tvi302",
       "kills": 0,
-      "deaths": 12,
+      "deaths": 10,
       "kd": 0.0,
-      "adjusted_kd": 0.07142857142857142,
-      "strength": 0.1525974025974026,
-      "strength_percentile": 0.0,
+      "adjusted_kd": 0.08333333333333333,
+      "strength": 0.16666666666666666,
+      "strength_percentile": 0.19298245614035087,
       "dak": 0,
       "akd": 0.0,
       "quality_index": 0.0,
@@ -7947,20 +7943,6 @@
           "killer": "MeGaXoPoH",
           "killer_type": "player",
           "message": "tvi302 was smashed by MeGaXoPoH with [Сильность]"
-        },
-        {
-          "time": "19:20:47",
-          "victim": "tvi302",
-          "killer": "kasi133005",
-          "killer_type": "player",
-          "message": "tvi302 was blown up by kasi133005"
-        },
-        {
-          "time": "19:21:44",
-          "victim": "tvi302",
-          "killer": "RUSSIAN_GRIZZLY",
-          "killer_type": "player",
-          "message": "tvi302 was blown up by RUSSIAN_GRIZZLY"
         }
       ],
       "rank": 56

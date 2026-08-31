@@ -191,7 +191,7 @@ tbody tr.rank-3:hover{
 <body>
 <div class="container">
   <div class="hero">
-    <div><h1>⚔ DAK Siege Rankings</h1><div class="subtitle">Difficulty Adjusted Kills · Aden · DAK v2.2</div></div>
+    <div><h1>⚔ DAK Siege Rankings</h1><div class="subtitle">Difficulty Adjusted Kills · Aden · DAK v2.3</div></div>
     <div id="formulaBadge" class="badge">Загрузка…</div>
   </div>
 
@@ -212,13 +212,14 @@ tbody tr.rank-3:hover{
   <details style="background:#101720;border:1px solid var(--line);border-radius:14px;padding:13px 15px;margin-top:14px">
     <summary style="cursor:pointer;font-weight:750">Как считается рейтинг</summary>
     <div style="margin-top:10px;color:#bdc7d3">
-      <p><b>Deaths</b>: учитываются все ванильные смерти внутри официального окна Aden, включая self, crystal, guards, mobs, fall и environment.</p>
+      <p><b>Source</b>: основной источник — официальный журнал Vanilla Game `/lk/sieges`; локальные Minecraft-логи остаются fallback-режимом для ручного пересчёта.</p>
+      <p><b>Deaths</b>: в официальном режиме смерти берутся из серверного журнала участников осады; в fallback-режиме учитываются ванильные смерти внутри официального окна Aden до лимита 10 смертей игрока за осаду.</p>
       <p><b>Target Strength</b>: сглаженный KD + поправка на размер выборки, затем percentile внутри осады.</p>
       <p><b>Kill Value</b> = 1 + 2 × percentile<sup>1.4</sup>.</p>
       <p><b>Upset</b>: +10% / +20% / +35% при преимуществе силы цели ≥20 / ≥30 / ≥50 процентных пунктов.</p>
       <p><b>Farm</b>: повторные убийства одной слабой/средней цели постепенно дешевеют.</p>
       <p><b>Final</b> = DAK × QualityIndex<sup>0.35</sup>.</p>
-      <p><b>Season</b>: сумма Final за все осады сезона. <b>Avg</b>: средний Final за сыгранные осады. Сезонный ранг считается по Season, чтобы игрок с одной удачной осадой не обгонял тех, кто стабильно играет несколько осад.</p>
+      <p><b>Season</b>: месячная сумма Final за осады выбранного месяца. <b>Avg</b>: отдельный рейтинг по среднему Final за сыгранные осады этого же месяца.</p>
       <p class="note">Нажмите на строку игрока, чтобы открыть карточку. Заголовки таблицы сортируются кликом.</p>
     </div>
   </details>
@@ -261,11 +262,32 @@ function renderTabs(){
     const b=document.createElement("button");b.className="tab "+(current===s.id?"active":"");b.textContent=s.date;
     b.onclick=()=>{current=s.id;sortKey="final_score";sortDir=-1;renderTabs();render()};root.appendChild(b);
   });
-  const b=document.createElement("button");b.className="tab "+(current==="season"?"active":"");b.textContent="Сезон";
-  b.onclick=()=>{current="season";sortKey="season_score";sortDir=-1;renderTabs();render()};root.appendChild(b);
+  const season=currentSeason();
+  const seasonButton=document.createElement("button");
+  seasonButton.className="tab "+(current==="season"?"active":"");
+  seasonButton.textContent=season?.label?`Сезон ${season.label}`:"Сезон";
+  seasonButton.onclick=()=>{current="season";sortKey="season_score";sortDir=-1;renderTabs();render()};
+  root.appendChild(seasonButton);
+  const avgButton=document.createElement("button");
+  avgButton.className="tab "+(current==="avg"?"active":"");
+  avgButton.textContent=season?.label?`Avg ${season.label}`:"Avg";
+  avgButton.onclick=()=>{current="avg";sortKey="average_score";sortDir=-1;renderTabs();render()};
+  root.appendChild(avgButton);
 }
 function playerHistory(name){
   return DATA.sieges.map(s=>({s,r:s.ranking.find(x=>x.player===name)})).filter(x=>x.r);
+}
+function currentSeason(){
+  if(DATA.seasons?.length){
+    return DATA.seasons.find(s=>s.id===DATA.current_season) || DATA.seasons[0];
+  }
+  return null;
+}
+function seasonSieges(){
+  const season=currentSeason();
+  if(!season?.siege_ids) return DATA.sieges;
+  const ids=new Set(season.siege_ids);
+  return DATA.sieges.filter(s=>ids.has(s.id));
 }
 function bestKillFrom(history){
   return history.flatMap(x=>x.r.best_kill?[{date:x.s.date,...x.r.best_kill}]:[]).sort((a,b)=>b.score-a.score)[0] ?? null;
@@ -309,9 +331,14 @@ function playerEventsForSiege(name,siege){
     }))
   };
 }
-function seasonRows(){
-  return DATA.season_ranking.map(summary=>{
-    const history=playerHistory(summary.player);
+function seasonRows(mode="season"){
+  const season=currentSeason();
+  const summaries=mode==="avg"
+    ? (season?.average_ranking || DATA.average_ranking || DATA.season_ranking)
+    : (season?.season_ranking || DATA.season_ranking);
+  const sieges=seasonSieges();
+  return summaries.map(summary=>{
+    const history=sieges.map(s=>({s,r:s.ranking.find(x=>x.player===summary.player)})).filter(x=>x.r);
     const appearances=history.length || summary.appearances || 0;
     const seasonScore=history.reduce((sum,x)=>sum+(x.r.final_score || 0),0);
     const totalDak=history.reduce((sum,x)=>sum+(x.r.dak || 0),0);
@@ -330,11 +357,14 @@ function seasonRows(){
       deaths,
       best_kill:bestKillFrom(history)
     };
-  }).sort((a,b)=>b.season_score-a.season_score || b.average_score-a.average_score || String(a.player).localeCompare(String(b.player)))
+  }).sort((a,b)=>mode==="avg"
+    ? b.average_score-a.average_score || b.season_score-a.season_score || String(a.player).localeCompare(String(b.player))
+    : b.season_score-a.season_score || b.average_score-a.average_score || String(a.player).localeCompare(String(b.player)))
     .map((row,index)=>({...row,rank:index+1}));
 }
 function baseRows(){
-  if(current==="season") return seasonRows();
+  if(current==="season") return seasonRows("season");
+  if(current==="avg") return seasonRows("avg");
   return DATA.sieges.find(x=>x.id===current).ranking;
 }
 function compare(a,b,key){
@@ -371,6 +401,19 @@ function columns(){
     {key:"average_kills",label:"Kills avg",value:r=>fmt(r.average_kills)},
     {key:"best_kill",label:"Лучшее убийство",cls:"best",value:bestKillCell}
   ];
+  if(current==="avg") return [
+    {key:"rank",label:"#",cls:"rank",value:r=>`${medalFor(r.rank)}${r.rank ?? "—"}`},
+    {key:"player",label:"Игрок",value:playerCell},
+    {key:"average_score",label:"Avg",cls:"score",value:r=>fmt(r.average_score)},
+    {key:"season_score",label:"Season",value:r=>fmt(r.season_score)},
+    {key:"appearances",label:"Осады",value:r=>`${r.appearances}/${seasonSieges().length}`},
+    {key:"average_dak_per_siege",label:"Avg DAK",value:r=>fmt(r.average_dak_per_siege)},
+    {key:"average_kills",label:"Kills avg",value:r=>fmt(r.average_kills)},
+    {key:"average_deaths",label:"Deaths avg",value:r=>fmt(r.average_deaths)},
+    {key:"kills",label:"Kills",value:r=>r.kills},
+    {key:"deaths",label:"Deaths",value:r=>r.deaths},
+    {key:"best_kill",label:"Лучшее убийство",cls:"best",value:bestKillCell}
+  ];
   return [
     {key:"rank",label:"#",cls:"rank",value:r=>`${medalFor(r.rank)}${r.rank ?? "—"}`},
     {key:"player",label:"Игрок",value:playerCell},
@@ -389,7 +432,7 @@ function columns(){
 }
 function ensureSortKey(cols){
   if(!cols.some(c=>c.key===sortKey)){
-    sortKey=current==="season"?"season_score":"final_score";
+    sortKey=current==="avg"?"average_score":current==="season"?"season_score":"final_score";
     sortDir=-1;
   }
 }
@@ -411,8 +454,12 @@ function render(){
   ensureSortKey(cols);
   let rows=baseRows().filter(r=>r.player.toLowerCase().includes(q));
   rows.sort((a,b)=>compare(a,b,sortKey)*sortDir);
-  const label=current==="season"?"Общий сезон":`${current} · ${DATA.sieges.find(s=>s.id===current).name}`;
-  const eventCount=current==="season"?DATA.sieges.reduce((a,s)=>a+s.event_count,0):DATA.sieges.find(s=>s.id===current).event_count;
+  const season=currentSeason();
+  const aggregate=current==="season"||current==="avg";
+  const label=aggregate
+    ? `${current==="avg"?"Avg":"Сезон"} ${season?.label || DATA.current_season || ""}`.trim()
+    : `${current} · ${DATA.sieges.find(s=>s.id===current).name}`;
+  const eventCount=aggregate?seasonSieges().reduce((a,s)=>a+s.event_count,0):DATA.sieges.find(s=>s.id===current).event_count;
   const top=rows[0];
   document.getElementById("cards").innerHTML=`
     <div class="stat"><div class="v">${esc(label)}</div><div class="l">Выбранный период</div></div>
@@ -486,12 +533,12 @@ function setDetailKind(button,kind){
 }
 function openModal(name){
   const history=playerHistory(name);
-  const r=(current==="season"?findPlayer(name):DATA.sieges.find(s=>s.id===current).ranking.find(x=>x.player===name)) || history[0]?.r;
+  const r=(current==="season"||current==="avg"?findPlayer(name):DATA.sieges.find(s=>s.id===current).ranking.find(x=>x.player===name)) || history[0]?.r;
   if(!r)return;
   document.getElementById("bigHead").src=headUrl(name,172);
   document.getElementById("modalName").textContent=name;
   document.getElementById("modalMeta").textContent=`${DATA.formula.version} · ${history.length} осад`;
-  const season=seasonRows().find(x=>x.player===name);
+  const season=seasonRows("season").find(x=>x.player===name);
   const bestAll=bestKillFrom(history);
   document.getElementById("modalBody").innerHTML=`
     <div class="grid">

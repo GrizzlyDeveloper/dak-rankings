@@ -2,16 +2,31 @@
   "id": "2026-08-22",
   "date": "2026-08-22",
   "name": "Осада №2",
+  "source": "minecraft_log",
+  "source_meta": {},
   "start_time": "19:00:15",
   "end_time": "19:23:17",
   "duration_minutes": 23,
   "owner": "NIGMA",
   "event_count": 303,
-  "death_event_count": 344,
-  "ignored_self_kills": 15,
+  "death_event_count": 343,
+  "raw_death_event_count": 344,
+  "death_limit_per_player": 10,
+  "ignored_deaths_after_limit": 1,
+  "ignored_deaths_after_limit_detail": [
+    {
+      "time": "19:22:40",
+      "victim": "VALL228",
+      "killer": "VALL228",
+      "killer_type": "self",
+      "message": "VALL228 was blown up by VALL228"
+    }
+  ],
+  "ignored_self_kills": 14,
+  "ignored_team_kills": 0,
   "ignored_non_player_deaths": 26,
   "median_adjusted_kd": 0.25,
-  "median_akd": 1.605402123184577,
+  "median_akd": 1.6040783954997866,
   "ranking": [
     {
       "player": "AKATOIII",
@@ -21,10 +36,10 @@
       "adjusted_kd": 12.0,
       "strength": 9.445652173913045,
       "strength_percentile": 0.9821428571428571,
-      "dak": 62.910155018570464,
-      "akd": 1.7974330005305847,
-      "quality_index": 1.0930342291753172,
-      "final_score": 64.89968250347404,
+      "dak": 62.8519110004397,
+      "akd": 1.7957688857268486,
+      "quality_index": 1.0929459582076624,
+      "final_score": 64.83776377126262,
       "upset_kills": 0,
       "farm_affected_kills": 6,
       "best_kill": {
@@ -407,12 +422,12 @@
           "killer": "AKATOIII",
           "message": "DanteMenelay was blown up by AKATOIII",
           "victim_strength": 0.203125,
-          "victim_percentile": 0.26785714285714285,
-          "base_kill_value": 1.31629659781464,
+          "victim_percentile": 0.25,
+          "base_kill_value": 1.2871745887492587,
           "upset_multiplier": 1.0,
           "farm_multiplier": 1.0,
           "target_repeat_count": 2,
-          "kill_score": 1.31629659781464
+          "kill_score": 1.2871745887492587
         },
         {
           "time": "19:21:05",
@@ -472,12 +487,12 @@
           "killer": "AKATOIII",
           "message": "DanteMenelay was blown up by AKATOIII",
           "victim_strength": 0.203125,
-          "victim_percentile": 0.26785714285714285,
-          "base_kill_value": 1.31629659781464,
+          "victim_percentile": 0.25,
+          "base_kill_value": 1.2871745887492587,
           "upset_multiplier": 1.0,
           "farm_multiplier": 1.0,
           "target_repeat_count": 2,
-          "kill_score": 1.31629659781464
+          "kill_score": 1.2871745887492587
         },
         {
           "time": "19:22:09",
@@ -512,10 +527,10 @@
       "adjusted_kd": 14.666666666666666,
       "strength": 11.996913580246911,
       "strength_percentile": 1.0,
-      "dak": 65.04321503463821,
-      "akd": 1.512632907782284,
-      "quality_index": 0.9531172976740625,
-      "final_score": 63.95922945180061,
+      "dak": 64.87485706082617,
+      "akd": 1.508717606065725,
+      "quality_index": 0.9517678263910885,
+      "final_score": 63.7620499092293,
       "upset_kills": 0,
       "farm_affected_kills": 19,
       "best_kill": {
@@ -586,12 +601,12 @@
           "killer": "kasi133005",
           "message": "richman8 was blown up by kasi133005",
           "victim_strength": 0.203125,
-          "victim_percentile": 0.2857142857142857,
-          "base_kill_value": 1.3462061142598074,
+          "victim_percentile": 0.26785714285714285,
+          "base_kill_value": 1.31629659781464,
           "upset_multiplier": 1.0,
           "farm_multiplier": 0.6,
           "target_repeat_count": 5,
-          "kill_score": 0.8077236685558844
+          "kill_score": 0.789777958688784
         },
         {
           "time": "19:12:14",
@@ -742,12 +757,12 @@
           "killer": "kasi133005",
           "message": "DanteMenelay was blown up by kasi133005",
           "victim_strength": 0.203125,
-          "victim_percentile": 0.26785714285714285,
-          "base_kill_value": 1.31629659781464,
+          "victim_percentile": 0.25,
+          "base_kill_value": 1.2871745887492587,
           "upset_multiplier": 1.0,
           "farm_multiplier": 0.9,
           "target_repeat_count": 3,
-          "kill_score": 1.184666938033176
+          "kill_score": 1.158457129874333
         },
         {
           "time": "19:17:13",
@@ -781,12 +796,12 @@
           "killer": "kasi133005",
           "message": "richman8 was blown up by kasi133005",
           "victim_strength": 0.203125,
-          "victim_percentile": 0.2857142857142857,
-          "base_kill_value": 1.3462061142598074,
+          "victim_percentile": 0.26785714285714285,
+          "base_kill_value": 1.31629659781464,
           "upset_multiplier": 1.0,
           "farm_multiplier": 0.6,
           "target_repeat_count": 5,
-          "kill_score": 0.8077236685558844
+          "kill_score": 0.789777958688784
         },
         {
           "time": "19:17:58",
@@ -833,12 +848,12 @@
           "killer": "kasi133005",
           "message": "richman8 was blown up by kasi133005",
           "victim_strength": 0.203125,
-          "victim_percentile": 0.2857142857142857,
-          "base_kill_value": 1.3462061142598074,
+          "victim_percentile": 0.26785714285714285,
+          "base_kill_value": 1.31629659781464,
           "upset_multiplier": 1.0,
           "farm_multiplier": 0.6,
           "target_repeat_count": 5,
-          "kill_score": 0.8077236685558844
+          "kill_score": 0.789777958688784
         },
         {
           "time": "19:18:30",
@@ -963,12 +978,12 @@
           "killer": "kasi133005",
           "message": "richman8 was blown up by kasi133005",
           "victim_strength": 0.203125,
-          "victim_percentile": 0.2857142857142857,
-          "base_kill_value": 1.3462061142598074,
+          "victim_percentile": 0.26785714285714285,
+          "base_kill_value": 1.31629659781464,
           "upset_multiplier": 1.0,
           "farm_multiplier": 0.6,
           "target_repeat_count": 5,
-          "kill_score": 0.8077236685558844
+          "kill_score": 0.789777958688784
         },
         {
           "time": "19:21:38",
@@ -1002,12 +1017,12 @@
           "killer": "kasi133005",
           "message": "DanteMenelay was blown up by kasi133005",
           "victim_strength": 0.203125,
-          "victim_percentile": 0.26785714285714285,
-          "base_kill_value": 1.31629659781464,
+          "victim_percentile": 0.25,
+          "base_kill_value": 1.2871745887492587,
           "upset_multiplier": 1.0,
           "farm_multiplier": 0.9,
           "target_repeat_count": 3,
-          "kill_score": 1.184666938033176
+          "kill_score": 1.158457129874333
         },
         {
           "time": "19:21:46",
@@ -1054,12 +1069,12 @@
           "killer": "kasi133005",
           "message": "DanteMenelay was blown up by kasi133005",
           "victim_strength": 0.203125,
-          "victim_percentile": 0.26785714285714285,
-          "base_kill_value": 1.31629659781464,
+          "victim_percentile": 0.25,
+          "base_kill_value": 1.2871745887492587,
           "upset_multiplier": 1.0,
           "farm_multiplier": 0.9,
           "target_repeat_count": 3,
-          "kill_score": 1.184666938033176
+          "kill_score": 1.158457129874333
         },
         {
           "time": "19:23:03",
@@ -1080,12 +1095,12 @@
           "killer": "kasi133005",
           "message": "richman8 was blown up by kasi133005",
           "victim_strength": 0.203125,
-          "victim_percentile": 0.2857142857142857,
-          "base_kill_value": 1.3462061142598074,
+          "victim_percentile": 0.26785714285714285,
+          "base_kill_value": 1.31629659781464,
           "upset_multiplier": 1.0,
           "farm_multiplier": 0.6,
           "target_repeat_count": 5,
-          "kill_score": 0.8077236685558844
+          "kill_score": 0.789777958688784
         }
       ],
       "death_details": [
@@ -1107,10 +1122,10 @@
       "adjusted_kd": 9.0,
       "strength": 6.635135135135135,
       "strength_percentile": 0.9642857142857143,
-      "dak": 38.495969657429036,
-      "akd": 1.4806142175934245,
-      "quality_index": 0.943861667316272,
-      "final_score": 37.72534198189649,
+      "dak": 38.555001182939584,
+      "akd": 1.4828846608822916,
+      "quality_index": 0.9454335844305254,
+      "final_score": 37.805203464518,
       "upset_kills": 0,
       "farm_affected_kills": 5,
       "best_kill": {
@@ -1128,13 +1143,13 @@
           "victim": "VALL228",
           "killer": "lasterothXIII",
           "message": "VALL228 was smashed by lasterothXIII",
-          "victim_strength": 0.19755244755244755,
-          "victim_percentile": 0.25,
-          "base_kill_value": 1.2871745887492587,
+          "victim_strength": 0.20634920634920634,
+          "victim_percentile": 0.32142857142857145,
+          "base_kill_value": 1.4082707484931691,
           "upset_multiplier": 1.0,
           "farm_multiplier": 1.0,
           "target_repeat_count": 1,
-          "kill_score": 1.2871745887492587
+          "kill_score": 1.4082707484931691
         },
         {
           "time": "19:01:21",
@@ -1181,12 +1196,12 @@
           "killer": "lasterothXIII",
           "message": "KPEKEP_1 was smashed by lasterothXIII",
           "victim_strength": 0.20634920634920634,
-          "victim_percentile": 0.30357142857142855,
-          "base_kill_value": 1.3768731935332081,
+          "victim_percentile": 0.2857142857142857,
+          "base_kill_value": 1.3462061142598074,
           "upset_multiplier": 1.0,
           "farm_multiplier": 1.0,
           "target_repeat_count": 1,
-          "kill_score": 1.3768731935332081
+          "kill_score": 1.3462061142598074
         },
         {
           "time": "19:03:58",
@@ -1259,12 +1274,12 @@
           "killer": "lasterothXIII",
           "message": "Rennsurax was blown up by lasterothXIII",
           "victim_strength": 0.20634920634920634,
-          "victim_percentile": 0.32142857142857145,
-          "base_kill_value": 1.4082707484931691,
+          "victim_percentile": 0.30357142857142855,
+          "base_kill_value": 1.3768731935332081,
           "upset_multiplier": 1.0,
           "farm_multiplier": 1.0,
           "target_repeat_count": 1,
-          "kill_score": 1.4082707484931691
+          "kill_score": 1.3768731935332081
         },
         {
           "time": "19:06:52",
@@ -1481,10 +1496,10 @@
       "adjusted_kd": 6.833333333333333,
       "strength": 5.614197530864198,
       "strength_percentile": 0.9464285714285714,
-      "dak": 40.52998921469902,
-      "akd": 1.0132497303674755,
-      "quality_index": 0.7049200898563803,
-      "final_score": 35.86125210051419,
+      "dak": 40.68017420979548,
+      "akd": 1.017004355244887,
+      "quality_index": 0.7072093025368709,
+      "final_score": 36.035005421149116,
       "upset_kills": 0,
       "farm_affected_kills": 35,
       "best_kill": {
@@ -1580,13 +1595,13 @@
           "victim": "VALL228",
           "killer": "errorrNull",
           "message": "VALL228 was smashed by errorrNull with [Аметистовая булава]",
-          "victim_strength": 0.19755244755244755,
-          "victim_percentile": 0.25,
-          "base_kill_value": 1.2871745887492587,
+          "victim_strength": 0.20634920634920634,
+          "victim_percentile": 0.32142857142857145,
+          "base_kill_value": 1.4082707484931691,
           "upset_multiplier": 1.0,
           "farm_multiplier": 0.9,
           "target_repeat_count": 3,
-          "kill_score": 1.158457129874333
+          "kill_score": 1.2674436736438524
         },
         {
           "time": "19:03:10",
@@ -1594,12 +1609,12 @@
           "killer": "errorrNull",
           "message": "KPEKEP_1 was smashed by errorrNull with [Аметистовая булава]",
           "victim_strength": 0.20634920634920634,
-          "victim_percentile": 0.30357142857142855,
-          "base_kill_value": 1.3768731935332081,
+          "victim_percentile": 0.2857142857142857,
+          "base_kill_value": 1.3462061142598074,
           "upset_multiplier": 1.0,
           "farm_multiplier": 0.75,
           "target_repeat_count": 4,
-          "kill_score": 1.0326548951499062
+          "kill_score": 1.0096545856948556
         },
         {
           "time": "19:03:28",
@@ -1607,12 +1622,12 @@
           "killer": "errorrNull",
           "message": "KPEKEP_1 was smashed by errorrNull with [Аметистовая булава]",
           "victim_strength": 0.20634920634920634,
-          "victim_percentile": 0.30357142857142855,
-          "base_kill_value": 1.3768731935332081,
+          "victim_percentile": 0.2857142857142857,
+          "base_kill_value": 1.3462061142598074,
           "upset_multiplier": 1.0,
           "farm_multiplier": 0.75,
           "target_repeat_count": 4,
-          "kill_score": 1.0326548951499062
+          "kill_score": 1.0096545856948556
         },
         {
           "time": "19:05:01",
@@ -1645,26 +1660,26 @@
           "victim": "VALL228",
           "killer": "errorrNull",
           "message": "VALL228 was doomed to fall by errorrNull using [Аметистовые крылья]",
-          "victim_strength": 0.19755244755244755,
-          "victim_percentile": 0.25,
-          "base_kill_value": 1.2871745887492587,
+          "victim_strength": 0.20634920634920634,
+          "victim_percentile": 0.32142857142857145,
+          "base_kill_value": 1.4082707484931691,
           "upset_multiplier": 1.0,
           "farm_multiplier": 0.9,
           "target_repeat_count": 3,
-          "kill_score": 1.158457129874333
+          "kill_score": 1.2674436736438524
         },
         {
           "time": "19:05:37",
           "victim": "VALL228",
           "killer": "errorrNull",
           "message": "VALL228 was smashed by errorrNull with [Аметистовая булава]",
-          "victim_strength": 0.19755244755244755,
-          "victim_percentile": 0.25,
-          "base_kill_value": 1.2871745887492587,
+          "victim_strength": 0.20634920634920634,
+          "victim_percentile": 0.32142857142857145,
+          "base_kill_value": 1.4082707484931691,
           "upset_multiplier": 1.0,
           "farm_multiplier": 0.9,
           "target_repeat_count": 3,
-          "kill_score": 1.158457129874333
+          "kill_score": 1.2674436736438524
         },
         {
           "time": "19:07:17",
@@ -1672,12 +1687,12 @@
           "killer": "errorrNull",
           "message": "KPEKEP_1 was smashed by errorrNull with [Аметистовая булава]",
           "victim_strength": 0.20634920634920634,
-          "victim_percentile": 0.30357142857142855,
-          "base_kill_value": 1.3768731935332081,
+          "victim_percentile": 0.2857142857142857,
+          "base_kill_value": 1.3462061142598074,
           "upset_multiplier": 1.0,
           "farm_multiplier": 0.75,
           "target_repeat_count": 4,
-          "kill_score": 1.0326548951499062
+          "kill_score": 1.0096545856948556
         },
         {
           "time": "19:07:50",
@@ -1698,12 +1713,12 @@
           "killer": "errorrNull",
           "message": "KPEKEP_1 was blown up by errorrNull",
           "victim_strength": 0.20634920634920634,
-          "victim_percentile": 0.30357142857142855,
-          "base_kill_value": 1.3768731935332081,
+          "victim_percentile": 0.2857142857142857,
+          "base_kill_value": 1.3462061142598074,
           "upset_multiplier": 1.0,
           "farm_multiplier": 0.75,
           "target_repeat_count": 4,
-          "kill_score": 1.0326548951499062
+          "kill_score": 1.0096545856948556
         },
         {
           "time": "19:10:11",
@@ -1737,12 +1752,12 @@
           "killer": "errorrNull",
           "message": "Rennsurax was smashed by errorrNull with [Аметистовая булава]",
           "victim_strength": 0.20634920634920634,
-          "victim_percentile": 0.32142857142857145,
-          "base_kill_value": 1.4082707484931691,
+          "victim_percentile": 0.30357142857142855,
+          "base_kill_value": 1.3768731935332081,
           "upset_multiplier": 1.0,
           "farm_multiplier": 0.9,
           "target_repeat_count": 3,
-          "kill_score": 1.2674436736438524
+          "kill_score": 1.2391858741798873
         },
         {
           "time": "19:13:30",
@@ -1750,12 +1765,12 @@
           "killer": "errorrNull",
           "message": "Rennsurax was smashed by errorrNull with [Аметистовая булава]",
           "victim_strength": 0.20634920634920634,
-          "victim_percentile": 0.32142857142857145,
-          "base_kill_value": 1.4082707484931691,
+          "victim_percentile": 0.30357142857142855,
+          "base_kill_value": 1.3768731935332081,
           "upset_multiplier": 1.0,
           "farm_multiplier": 0.9,
           "target_repeat_count": 3,
-          "kill_score": 1.2674436736438524
+          "kill_score": 1.2391858741798873
         },
         {
           "time": "19:13:52",
@@ -1763,12 +1778,12 @@
           "killer": "errorrNull",
           "message": "Rennsurax was doomed to fall by errorrNull",
           "victim_strength": 0.20634920634920634,
-          "victim_percentile": 0.32142857142857145,
-          "base_kill_value": 1.4082707484931691,
+          "victim_percentile": 0.30357142857142855,
+          "base_kill_value": 1.3768731935332081,
           "upset_multiplier": 1.0,
           "farm_multiplier": 0.9,
           "target_repeat_count": 3,
-          "kill_score": 1.2674436736438524
+          "kill_score": 1.2391858741798873
         },
         {
           "time": "19:14:29",
@@ -2058,10 +2073,10 @@
       "adjusted_kd": 5.4,
       "strength": 4.079487179487179,
       "strength_percentile": 0.9107142857142857,
-      "dak": 36.62097988983271,
-      "akd": 1.4084992265320273,
-      "quality_index": 0.9114192976770799,
-      "final_score": 35.45123243659423,
+      "dak": 36.6486138603833,
+      "akd": 1.4095620715532038,
+      "quality_index": 0.9124207319708787,
+      "final_score": 35.49162252382818,
       "upset_kills": 0,
       "farm_affected_kills": 8,
       "best_kill": {
@@ -2144,13 +2159,13 @@
           "victim": "VALL228",
           "killer": "GeLioS",
           "message": "VALL228 was blown up by GeLioS using [Union win]",
-          "victim_strength": 0.19755244755244755,
-          "victim_percentile": 0.25,
-          "base_kill_value": 1.2871745887492587,
+          "victim_strength": 0.20634920634920634,
+          "victim_percentile": 0.32142857142857145,
+          "base_kill_value": 1.4082707484931691,
           "upset_multiplier": 1.0,
           "farm_multiplier": 1.0,
           "target_repeat_count": 1,
-          "kill_score": 1.2871745887492587
+          "kill_score": 1.4082707484931691
         },
         {
           "time": "19:08:04",
@@ -2210,12 +2225,12 @@
           "killer": "GeLioS",
           "message": "Rennsurax was blown up by GeLioS using [Union win]",
           "victim_strength": 0.20634920634920634,
-          "victim_percentile": 0.32142857142857145,
-          "base_kill_value": 1.4082707484931691,
+          "victim_percentile": 0.30357142857142855,
+          "base_kill_value": 1.3768731935332081,
           "upset_multiplier": 1.0,
           "farm_multiplier": 1.0,
           "target_repeat_count": 2,
-          "kill_score": 1.4082707484931691
+          "kill_score": 1.3768731935332081
         },
         {
           "time": "19:08:42",
@@ -2249,12 +2264,12 @@
           "killer": "GeLioS",
           "message": "KPEKEP_1 was blown up by GeLioS using [Union win]",
           "victim_strength": 0.20634920634920634,
-          "victim_percentile": 0.30357142857142855,
-          "base_kill_value": 1.3768731935332081,
+          "victim_percentile": 0.2857142857142857,
+          "base_kill_value": 1.3462061142598074,
           "upset_multiplier": 1.0,
           "farm_multiplier": 1.0,
           "target_repeat_count": 1,
-          "kill_score": 1.3768731935332081
+          "kill_score": 1.3462061142598074
         },
         {
           "time": "19:10:50",
@@ -2366,12 +2381,12 @@
           "killer": "GeLioS",
           "message": "Rennsurax was blown up by GeLioS using [Union win]",
           "victim_strength": 0.20634920634920634,
-          "victim_percentile": 0.32142857142857145,
-          "base_kill_value": 1.4082707484931691,
+          "victim_percentile": 0.30357142857142855,
+          "base_kill_value": 1.3768731935332081,
           "upset_multiplier": 1.0,
           "farm_multiplier": 1.0,
           "target_repeat_count": 2,
-          "kill_score": 1.4082707484931691
+          "kill_score": 1.3768731935332081
         },
         {
           "time": "19:17:23",
@@ -2446,10 +2461,10 @@
       "adjusted_kd": 6.25,
       "strength": 4.583333333333333,
       "strength_percentile": 0.9285714285714286,
-      "dak": 29.603184444129102,
-      "akd": 1.2334660185053792,
-      "quality_index": 0.8364626974617856,
-      "final_score": 27.809599435168863,
+      "dak": 29.724280603873012,
+      "akd": 1.238511691828042,
+      "quality_index": 0.839130627487592,
+      "final_score": 27.954498336816073,
       "upset_kills": 0,
       "farm_affected_kills": 11,
       "best_kill": {
@@ -2545,13 +2560,13 @@
           "victim": "VALL228",
           "killer": "MeGaXoPoH",
           "message": "VALL228 was smashed by MeGaXoPoH with [Сильность]",
-          "victim_strength": 0.19755244755244755,
-          "victim_percentile": 0.25,
-          "base_kill_value": 1.2871745887492587,
+          "victim_strength": 0.20634920634920634,
+          "victim_percentile": 0.32142857142857145,
+          "base_kill_value": 1.4082707484931691,
           "upset_multiplier": 1.0,
           "farm_multiplier": 1.0,
           "target_repeat_count": 1,
-          "kill_score": 1.2871745887492587
+          "kill_score": 1.4082707484931691
         },
         {
           "time": "19:10:29",
@@ -2801,10 +2816,10 @@
       "adjusted_kd": 1.875,
       "strength": 1.3333333333333333,
       "strength_percentile": 0.8392857142857143,
-      "dak": 24.97491470863437,
-      "akd": 1.7839224791881692,
-      "quality_index": 1.0648665358239693,
-      "final_score": 25.5303827919625,
+      "dak": 24.914338112915804,
+      "akd": 1.779595579493986,
+      "quality_index": 1.0638279427513366,
+      "final_score": 25.4597621260427,
       "upset_kills": 0,
       "farm_affected_kills": 0,
       "best_kill": {
@@ -2823,12 +2838,12 @@
           "killer": "JoinNigma",
           "message": "KPEKEP_1 was blown up by JoinNigma",
           "victim_strength": 0.20634920634920634,
-          "victim_percentile": 0.30357142857142855,
-          "base_kill_value": 1.3768731935332081,
+          "victim_percentile": 0.2857142857142857,
+          "base_kill_value": 1.3462061142598074,
           "upset_multiplier": 1.0,
           "farm_multiplier": 1.0,
           "target_repeat_count": 1,
-          "kill_score": 1.3768731935332081
+          "kill_score": 1.3462061142598074
         },
         {
           "time": "19:09:57",
@@ -2953,12 +2968,12 @@
           "killer": "JoinNigma",
           "message": "richman8 was blown up by JoinNigma",
           "victim_strength": 0.203125,
-          "victim_percentile": 0.2857142857142857,
-          "base_kill_value": 1.3462061142598074,
+          "victim_percentile": 0.26785714285714285,
+          "base_kill_value": 1.31629659781464,
           "upset_multiplier": 1.0,
           "farm_multiplier": 1.0,
           "target_repeat_count": 1,
-          "kill_score": 1.3462061142598074
+          "kill_score": 1.31629659781464
         },
         {
           "time": "19:19:56",
@@ -3054,10 +3069,10 @@
       "adjusted_kd": 4.4,
       "strength": 3.179411764705883,
       "strength_percentile": 0.8928571428571429,
-      "dak": 24.47515268550831,
-      "akd": 1.1654834612146814,
-      "quality_index": 0.8143708595688133,
-      "final_score": 22.777874120413536,
+      "dak": 24.533453735332298,
+      "akd": 1.1682597016824903,
+      "quality_index": 0.815949133645444,
+      "final_score": 22.847609686945525,
       "upset_kills": 0,
       "farm_affected_kills": 6,
       "best_kill": {
@@ -3154,12 +3169,12 @@
           "killer": "Zarenit",
           "message": "Rennsurax was smashed by Zarenit with [Сокрушитель надежд]",
           "victim_strength": 0.20634920634920634,
-          "victim_percentile": 0.32142857142857145,
-          "base_kill_value": 1.4082707484931691,
+          "victim_percentile": 0.30357142857142855,
+          "base_kill_value": 1.3768731935332081,
           "upset_multiplier": 1.0,
           "farm_multiplier": 1.0,
           "target_repeat_count": 2,
-          "kill_score": 1.4082707484931691
+          "kill_score": 1.3768731935332081
         },
         {
           "time": "19:07:36",
@@ -3231,13 +3246,13 @@
           "victim": "VALL228",
           "killer": "Zarenit",
           "message": "VALL228 was smashed by Zarenit with [Сокрушитель надежд]",
-          "victim_strength": 0.19755244755244755,
-          "victim_percentile": 0.25,
-          "base_kill_value": 1.2871745887492587,
+          "victim_strength": 0.20634920634920634,
+          "victim_percentile": 0.32142857142857145,
+          "base_kill_value": 1.4082707484931691,
           "upset_multiplier": 1.0,
           "farm_multiplier": 1.0,
           "target_repeat_count": 1,
-          "kill_score": 1.2871745887492587
+          "kill_score": 1.4082707484931691
         },
         {
           "time": "19:09:19",
@@ -3271,12 +3286,12 @@
           "killer": "Zarenit",
           "message": "Rennsurax was smashed by Zarenit with [Сокрушитель надежд]",
           "victim_strength": 0.20634920634920634,
-          "victim_percentile": 0.32142857142857145,
-          "base_kill_value": 1.4082707484931691,
+          "victim_percentile": 0.30357142857142855,
+          "base_kill_value": 1.3768731935332081,
           "upset_multiplier": 1.0,
           "farm_multiplier": 1.0,
           "target_repeat_count": 2,
-          "kill_score": 1.4082707484931691
+          "kill_score": 1.3768731935332081
         },
         {
           "time": "19:11:21",
@@ -3377,10 +3392,10 @@
       "adjusted_kd": 4.0,
       "strength": 2.2954545454545454,
       "strength_percentile": 0.875,
-      "dak": 18.612977935757602,
-      "akd": 1.6920889032506912,
-      "quality_index": 1.0282841042323647,
-      "final_score": 18.795568032403878,
+      "dak": 18.582310856484202,
+      "akd": 1.6893009869531093,
+      "quality_index": 1.0278293163053729,
+      "final_score": 18.76169498419408,
       "upset_kills": 0,
       "farm_affected_kills": 0,
       "best_kill": {
@@ -3399,12 +3414,12 @@
           "killer": "RUSSIAN_GRIZZLY",
           "message": "KPEKEP_1 was slain by RUSSIAN_GRIZZLY",
           "victim_strength": 0.20634920634920634,
-          "victim_percentile": 0.30357142857142855,
-          "base_kill_value": 1.3768731935332081,
+          "victim_percentile": 0.2857142857142857,
+          "base_kill_value": 1.3462061142598074,
           "upset_multiplier": 1.0,
           "farm_multiplier": 1.0,
           "target_repeat_count": 1,
-          "kill_score": 1.3768731935332081
+          "kill_score": 1.3462061142598074
         },
         {
           "time": "19:06:38",
@@ -3556,10 +3571,10 @@
       "adjusted_kd": 1.3333333333333333,
       "strength": 0.9464285714285715,
       "strength_percentile": 0.8214285714285714,
-      "dak": 17.600611860623484,
-      "akd": 1.600055623693044,
-      "quality_index": 0.9982555477457871,
-      "final_score": 17.589859562783367,
+      "dak": 17.571489851558102,
+      "akd": 1.5974081683234638,
+      "quality_index": 0.9978218467808474,
+      "final_score": 17.55808466836099,
       "upset_kills": 0,
       "farm_affected_kills": 0,
       "best_kill": {
@@ -3708,12 +3723,12 @@
           "killer": "KoTiKPrime",
           "message": "DanteMenelay was blown up by KoTiKPrime",
           "victim_strength": 0.203125,
-          "victim_percentile": 0.26785714285714285,
-          "base_kill_value": 1.31629659781464,
+          "victim_percentile": 0.25,
+          "base_kill_value": 1.2871745887492587,
           "upset_multiplier": 1.0,
           "farm_multiplier": 1.0,
           "target_repeat_count": 1,
-          "kill_score": 1.31629659781464
+          "kill_score": 1.2871745887492587
         }
       ],
       "death_details": [
@@ -3779,8 +3794,8 @@
       "strength_percentile": 0.8571428571428571,
       "dak": 14.559408699196517,
       "akd": 1.8199260873995646,
-      "quality_index": 1.059389471783194,
-      "final_score": 14.85638740251688,
+      "quality_index": 1.059805248783444,
+      "final_score": 14.85842787471717,
       "upset_kills": 0,
       "farm_affected_kills": 0,
       "best_kill": {
@@ -3911,8 +3926,8 @@
       "strength_percentile": 0.8035714285714286,
       "dak": 12.726727197996109,
       "akd": 1.8181038854280156,
-      "quality_index": 1.054555227818618,
-      "final_score": 12.96555166532435,
+      "quality_index": 1.0549400472937394,
+      "final_score": 12.967207417216148,
       "upset_kills": 0,
       "farm_affected_kills": 0,
       "best_kill": {
@@ -4094,8 +4109,8 @@
       "strength_percentile": 0.7857142857142857,
       "dak": 8.335610534192364,
       "akd": 1.389268422365394,
-      "quality_index": 0.9495141207073917,
-      "final_score": 8.185833645097675,
+      "quality_index": 0.9497819182956461,
+      "final_score": 8.186641617242914,
       "upset_kills": 0,
       "farm_affected_kills": 0,
       "best_kill": {
@@ -4257,8 +4272,8 @@
       "strength_percentile": 0.6428571428571429,
       "dak": 6.551328516867801,
       "akd": 2.183776172289267,
-      "quality_index": 1.0831386308023645,
-      "final_score": 6.737034845487603,
+      "quality_index": 1.0833976758265986,
+      "final_score": 6.737598735358843,
       "upset_kills": 1,
       "farm_affected_kills": 0,
       "best_kill": {
@@ -4395,8 +4410,8 @@
       "strength_percentile": 0.75,
       "dak": 4.950835419665457,
       "akd": 1.650278473221819,
-      "quality_index": 1.0064507705753385,
-      "final_score": 4.961989914302645,
+      "quality_index": 1.0066465307601566,
+      "final_score": 4.962327689922516,
       "upset_kills": 0,
       "farm_affected_kills": 0,
       "best_kill": {
@@ -4491,8 +4506,8 @@
       "strength_percentile": 0.35714285714285715,
       "dak": 3.718638439113017,
       "akd": 3.718638439113017,
-      "quality_index": 1.1196662129585606,
-      "final_score": 3.8686991212639037,
+      "quality_index": 1.1198399852381729,
+      "final_score": 3.8689092585020246,
       "upset_kills": 1,
       "farm_affected_kills": 0,
       "best_kill": {
@@ -4603,8 +4618,8 @@
       "strength_percentile": 0.7678571428571429,
       "dak": 3.592039909790331,
       "akd": 1.7960199548951654,
-      "quality_index": 1.019789209295059,
-      "final_score": 3.6167608883474136,
+      "quality_index": 1.0199430775883385,
+      "final_score": 3.6169518759913055,
       "upset_kills": 0,
       "farm_affected_kills": 0,
       "best_kill": {
@@ -4655,16 +4670,16 @@
       "adjusted_kd": 0.4,
       "strength": 0.3285714285714286,
       "strength_percentile": 0.7142857142857143,
-      "dak": 3.5875651619675573,
-      "akd": 1.1958550539891857,
-      "quality_index": 0.9411294773084418,
-      "final_score": 3.5121825411705965,
+      "dak": 3.5561676070075965,
+      "akd": 1.1853892023358654,
+      "quality_index": 0.9397656727321462,
+      "final_score": 3.4796781310365295,
       "upset_kills": 0,
       "farm_affected_kills": 0,
       "best_kill": {
         "victim": "Rennsurax",
-        "score": 1.4082707484931691,
-        "base_value": 1.4082707484931691,
+        "score": 1.3768731935332081,
+        "base_value": 1.3768731935332081,
         "upset_multiplier": 1.0,
         "farm_multiplier": 1.0,
         "time": "19:04:09",
@@ -4690,12 +4705,12 @@
           "killer": "_s_Shtani_x_",
           "message": "Rennsurax was smashed by _s_Shtani_x_",
           "victim_strength": 0.20634920634920634,
-          "victim_percentile": 0.32142857142857145,
-          "base_kill_value": 1.4082707484931691,
+          "victim_percentile": 0.30357142857142855,
+          "base_kill_value": 1.3768731935332081,
           "upset_multiplier": 1.0,
           "farm_multiplier": 1.0,
           "target_repeat_count": 1,
-          "kill_score": 1.4082707484931691
+          "kill_score": 1.3768731935332081
         },
         {
           "time": "19:08:48",
@@ -4781,8 +4796,8 @@
       "strength_percentile": 0.5,
       "dak": 3.1907765478717183,
       "akd": 3.1907765478717183,
-      "quality_index": 1.0897749826149075,
-      "final_score": 3.2882458688971883,
+      "quality_index": 1.0899240878649972,
+      "final_score": 3.2884033284879557,
       "upset_kills": 1,
       "farm_affected_kills": 0,
       "best_kill": {
@@ -4865,8 +4880,8 @@
       "strength_percentile": 0.7321428571428571,
       "dak": 3.0661421772748367,
       "akd": 1.5330710886374184,
-      "quality_index": 0.992490870511238,
-      "final_score": 3.058064008812191,
+      "quality_index": 0.9926222114973123,
+      "final_score": 3.0582056435197753,
       "upset_kills": 0,
       "farm_affected_kills": 0,
       "best_kill": {
@@ -4948,8 +4963,8 @@
       "strength_percentile": 0.5357142857142857,
       "dak": 2.9616186616136186,
       "akd": 1.4808093308068093,
-      "quality_index": 0.9870652560524195,
-      "final_score": 2.948154171225488,
+      "quality_index": 0.9871921196787299,
+      "final_score": 2.9482867858289756,
       "upset_kills": 0,
       "farm_affected_kills": 0,
       "best_kill": {
@@ -5064,6 +5079,110 @@
       "rank": 21
     },
     {
+      "player": "ImASteve20",
+      "kills": 2,
+      "deaths": 7,
+      "kd": 0.2857142857142857,
+      "adjusted_kd": 0.3333333333333333,
+      "strength": 0.2894736842105263,
+      "strength_percentile": 0.625,
+      "dak": 2.8165414969863383,
+      "akd": 1.4082707484931691,
+      "quality_index": 0.9796552288678708,
+      "final_score": 2.796351721536113,
+      "upset_kills": 0,
+      "farm_affected_kills": 0,
+      "best_kill": {
+        "victim": "VALL228",
+        "score": 1.4082707484931691,
+        "base_value": 1.4082707484931691,
+        "upset_multiplier": 1.0,
+        "farm_multiplier": 1.0,
+        "time": "19:07:51",
+        "message": "VALL228 was smashed by ImASteve20"
+      },
+      "kills_detail": [
+        {
+          "time": "19:07:51",
+          "victim": "VALL228",
+          "killer": "ImASteve20",
+          "message": "VALL228 was smashed by ImASteve20",
+          "victim_strength": 0.20634920634920634,
+          "victim_percentile": 0.32142857142857145,
+          "base_kill_value": 1.4082707484931691,
+          "upset_multiplier": 1.0,
+          "farm_multiplier": 1.0,
+          "target_repeat_count": 2,
+          "kill_score": 1.4082707484931691
+        },
+        {
+          "time": "19:08:33",
+          "victim": "VALL228",
+          "killer": "ImASteve20",
+          "message": "VALL228 was smashed by ImASteve20",
+          "victim_strength": 0.20634920634920634,
+          "victim_percentile": 0.32142857142857145,
+          "base_kill_value": 1.4082707484931691,
+          "upset_multiplier": 1.0,
+          "farm_multiplier": 1.0,
+          "target_repeat_count": 2,
+          "kill_score": 1.4082707484931691
+        }
+      ],
+      "death_details": [
+        {
+          "time": "19:10:11",
+          "victim": "ImASteve20",
+          "killer": "errorrNull",
+          "killer_type": "player",
+          "message": "ImASteve20 was blown up by errorrNull"
+        },
+        {
+          "time": "19:14:31",
+          "victim": "ImASteve20",
+          "killer": "RUSSIAN_GRIZZLY",
+          "killer_type": "player",
+          "message": "ImASteve20 was blown up by RUSSIAN_GRIZZLY"
+        },
+        {
+          "time": "19:18:28",
+          "victim": "ImASteve20",
+          "killer": "AKATOIII",
+          "killer_type": "player",
+          "message": "ImASteve20 was blown up by AKATOIII"
+        },
+        {
+          "time": "19:18:39",
+          "victim": "ImASteve20",
+          "killer": "errorrNull",
+          "killer_type": "player",
+          "message": "ImASteve20 was smashed by errorrNull with [Аметистовая булава]"
+        },
+        {
+          "time": "19:19:11",
+          "victim": "ImASteve20",
+          "killer": "errorrNull",
+          "killer_type": "player",
+          "message": "ImASteve20 was blown up by errorrNull"
+        },
+        {
+          "time": "19:20:35",
+          "victim": "ImASteve20",
+          "killer": "GeLioS",
+          "killer_type": "player",
+          "message": "ImASteve20 was blown up by GeLioS using [Union win]"
+        },
+        {
+          "time": "19:21:03",
+          "victim": "ImASteve20",
+          "killer": "errorrNull",
+          "killer_type": "player",
+          "message": "ImASteve20 was slain by errorrNull using [Аметистовый меч]"
+        }
+      ],
+      "rank": 22
+    },
+    {
       "player": "www23",
       "kills": 1,
       "deaths": 6,
@@ -5073,8 +5192,8 @@
       "strength_percentile": 0.5535714285714286,
       "dak": 2.7197834686983473,
       "akd": 2.7197834686983473,
-      "quality_index": 1.0631040619566061,
-      "final_score": 2.7786628318533997,
+      "quality_index": 1.0632311576614308,
+      "final_score": 2.778779095012439,
       "upset_kills": 1,
       "farm_affected_kills": 0,
       "best_kill": {
@@ -5145,110 +5264,6 @@
           "message": "www23 was blown up by kasi133005"
         }
       ],
-      "rank": 22
-    },
-    {
-      "player": "ImASteve20",
-      "kills": 2,
-      "deaths": 7,
-      "kd": 0.2857142857142857,
-      "adjusted_kd": 0.3333333333333333,
-      "strength": 0.2894736842105263,
-      "strength_percentile": 0.625,
-      "dak": 2.5743491774985174,
-      "akd": 1.2871745887492587,
-      "quality_index": 0.9669628427420558,
-      "final_score": 2.5442564143970903,
-      "upset_kills": 0,
-      "farm_affected_kills": 0,
-      "best_kill": {
-        "victim": "VALL228",
-        "score": 1.2871745887492587,
-        "base_value": 1.2871745887492587,
-        "upset_multiplier": 1.0,
-        "farm_multiplier": 1.0,
-        "time": "19:07:51",
-        "message": "VALL228 was smashed by ImASteve20"
-      },
-      "kills_detail": [
-        {
-          "time": "19:07:51",
-          "victim": "VALL228",
-          "killer": "ImASteve20",
-          "message": "VALL228 was smashed by ImASteve20",
-          "victim_strength": 0.19755244755244755,
-          "victim_percentile": 0.25,
-          "base_kill_value": 1.2871745887492587,
-          "upset_multiplier": 1.0,
-          "farm_multiplier": 1.0,
-          "target_repeat_count": 2,
-          "kill_score": 1.2871745887492587
-        },
-        {
-          "time": "19:08:33",
-          "victim": "VALL228",
-          "killer": "ImASteve20",
-          "message": "VALL228 was smashed by ImASteve20",
-          "victim_strength": 0.19755244755244755,
-          "victim_percentile": 0.25,
-          "base_kill_value": 1.2871745887492587,
-          "upset_multiplier": 1.0,
-          "farm_multiplier": 1.0,
-          "target_repeat_count": 2,
-          "kill_score": 1.2871745887492587
-        }
-      ],
-      "death_details": [
-        {
-          "time": "19:10:11",
-          "victim": "ImASteve20",
-          "killer": "errorrNull",
-          "killer_type": "player",
-          "message": "ImASteve20 was blown up by errorrNull"
-        },
-        {
-          "time": "19:14:31",
-          "victim": "ImASteve20",
-          "killer": "RUSSIAN_GRIZZLY",
-          "killer_type": "player",
-          "message": "ImASteve20 was blown up by RUSSIAN_GRIZZLY"
-        },
-        {
-          "time": "19:18:28",
-          "victim": "ImASteve20",
-          "killer": "AKATOIII",
-          "killer_type": "player",
-          "message": "ImASteve20 was blown up by AKATOIII"
-        },
-        {
-          "time": "19:18:39",
-          "victim": "ImASteve20",
-          "killer": "errorrNull",
-          "killer_type": "player",
-          "message": "ImASteve20 was smashed by errorrNull with [Аметистовая булава]"
-        },
-        {
-          "time": "19:19:11",
-          "victim": "ImASteve20",
-          "killer": "errorrNull",
-          "killer_type": "player",
-          "message": "ImASteve20 was blown up by errorrNull"
-        },
-        {
-          "time": "19:20:35",
-          "victim": "ImASteve20",
-          "killer": "GeLioS",
-          "killer_type": "player",
-          "message": "ImASteve20 was blown up by GeLioS using [Union win]"
-        },
-        {
-          "time": "19:21:03",
-          "victim": "ImASteve20",
-          "killer": "errorrNull",
-          "killer_type": "player",
-          "message": "ImASteve20 was slain by errorrNull using [Аметистовый меч]"
-        }
-      ],
       "rank": 23
     },
     {
@@ -5261,8 +5276,8 @@
       "strength_percentile": 0.6964285714285714,
       "dak": 2.2486788211678155,
       "akd": 2.2486788211678155,
-      "quality_index": 1.0364268235179943,
-      "final_score": 2.277015333051707,
+      "quality_index": 1.0365319044639556,
+      "final_score": 2.2770961318718315,
       "upset_kills": 0,
       "farm_affected_kills": 0,
       "best_kill": {
@@ -5310,8 +5325,8 @@
       "strength_percentile": 0.42857142857142855,
       "dak": 1.9538635945429843,
       "akd": 1.9538635945429843,
-      "quality_index": 1.0197323244566276,
-      "final_score": 1.9672719791832052,
+      "quality_index": 1.0198236286628404,
+      "final_score": 1.9673336279526263,
       "upset_kills": 0,
       "farm_affected_kills": 0,
       "best_kill": {
@@ -5408,8 +5423,8 @@
       "strength_percentile": 0.5892857142857143,
       "dak": 1.8347117259339396,
       "akd": 1.8347117259339396,
-      "quality_index": 1.0129851127151352,
-      "final_score": 1.8430151642990091,
+      "quality_index": 1.013070848944744,
+      "final_score": 1.8430697584762208,
       "upset_kills": 0,
       "farm_affected_kills": 0,
       "best_kill": {
@@ -5485,8 +5500,8 @@
       "strength_percentile": 0.6607142857142857,
       "dak": 1.6466700836229728,
       "akd": 1.6466700836229728,
-      "quality_index": 1.0023368804070627,
-      "final_score": 1.6480158869102008,
+      "quality_index": 1.0024138294352851,
+      "final_score": 1.6480601669530281,
       "upset_kills": 0,
       "farm_affected_kills": 0,
       "best_kill": {
@@ -5526,8 +5541,8 @@
       "strength_percentile": 0.6785714285714286,
       "dak": 1.6466700836229728,
       "akd": 1.6466700836229728,
-      "quality_index": 1.0023368804070627,
-      "final_score": 1.6480158869102008,
+      "quality_index": 1.0024138294352851,
+      "final_score": 1.6480601669530281,
       "upset_kills": 0,
       "farm_affected_kills": 0,
       "best_kill": {
@@ -5567,8 +5582,8 @@
       "strength_percentile": 0.375,
       "dak": 1.6107486226761096,
       "akd": 1.6107486226761096,
-      "quality_index": 1.0003027561763511,
-      "final_score": 1.610919288317401,
+      "quality_index": 1.0003780265917537,
+      "final_score": 1.6109617135324834,
       "upset_kills": 0,
       "farm_affected_kills": 0,
       "best_kill": {
@@ -5672,8 +5687,8 @@
       "strength_percentile": 0.6071428571428571,
       "dak": 1.258873413940712,
       "akd": 1.258873413940712,
-      "quality_index": 0.9803771220454288,
-      "final_score": 1.250171720224606,
+      "quality_index": 0.9804359493034335,
+      "final_score": 1.250197975385479,
       "upset_kills": 0,
       "farm_affected_kills": 0,
       "best_kill": {
@@ -5739,11 +5754,11 @@
       "kd": 0.1,
       "adjusted_kd": 0.16666666666666666,
       "strength": 0.20634920634920634,
-      "strength_percentile": 0.32142857142857145,
+      "strength_percentile": 0.30357142857142855,
       "dak": 1.1547056842781742,
       "akd": 1.1547056842781742,
-      "quality_index": 0.9744784169989321,
-      "final_score": 1.1443044382179028,
+      "quality_index": 0.974532376490376,
+      "final_score": 1.1443266149440965,
       "upset_kills": 0,
       "farm_affected_kills": 0,
       "best_kill": {
@@ -5851,11 +5866,11 @@
       "kd": 0.1,
       "adjusted_kd": 0.16666666666666666,
       "strength": 0.20634920634920634,
-      "strength_percentile": 0.30357142857142855,
+      "strength_percentile": 0.2857142857142857,
       "dak": 1.0332304723439387,
       "akd": 1.0332304723439387,
-      "quality_index": 0.9675996413168466,
-      "final_score": 1.0213878810739885,
+      "quality_index": 0.967647924261662,
+      "final_score": 1.0214057192216008,
       "upset_kills": 0,
       "farm_affected_kills": 0,
       "best_kill": {
@@ -5959,15 +5974,15 @@
     {
       "player": "VALL228",
       "kills": 1,
-      "deaths": 11,
-      "kd": 0.09090909090909091,
-      "adjusted_kd": 0.15384615384615385,
-      "strength": 0.19755244755244755,
-      "strength_percentile": 0.25,
+      "deaths": 10,
+      "kd": 0.1,
+      "adjusted_kd": 0.16666666666666666,
+      "strength": 0.20634920634920634,
+      "strength_percentile": 0.32142857142857145,
       "dak": 1.0,
       "akd": 1.0,
-      "quality_index": 0.9657178996724077,
-      "final_score": 0.98786499939379,
+      "quality_index": 0.9657646297545217,
+      "final_score": 0.9878817297456955,
       "upset_kills": 0,
       "farm_affected_kills": 0,
       "best_kill": {
@@ -6064,13 +6079,6 @@
           "killer": "MeGaXoPoH",
           "killer_type": "player",
           "message": "VALL228 was smashed by MeGaXoPoH with [Сильность]"
-        },
-        {
-          "time": "19:22:40",
-          "victim": "VALL228",
-          "killer": "VALL228",
-          "killer_type": "self",
-          "message": "VALL228 was blown up by VALL228"
         }
       ],
       "rank": 33
@@ -6085,8 +6093,8 @@
       "strength_percentile": 0.3392857142857143,
       "dak": 1.0,
       "akd": 1.0,
-      "quality_index": 0.9657178996724077,
-      "final_score": 0.98786499939379,
+      "quality_index": 0.9657646297545217,
+      "final_score": 0.9878817297456955,
       "upset_kills": 0,
       "farm_affected_kills": 0,
       "best_kill": {
@@ -6284,7 +6292,7 @@
       "kd": 0.0,
       "adjusted_kd": 0.125,
       "strength": 0.203125,
-      "strength_percentile": 0.26785714285714285,
+      "strength_percentile": 0.25,
       "dak": 0,
       "akd": 0.0,
       "quality_index": 0.0,
@@ -7657,7 +7665,7 @@
       "kd": 0.0,
       "adjusted_kd": 0.125,
       "strength": 0.203125,
-      "strength_percentile": 0.2857142857142857,
+      "strength_percentile": 0.26785714285714285,
       "dak": 0,
       "akd": 0.0,
       "quality_index": 0.0,

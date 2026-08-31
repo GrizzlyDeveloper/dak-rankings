@@ -1,16 +1,19 @@
 #!/usr/bin/env python3
 import json
+import gzip
 import math
 import re
 import statistics
 import sys
+from datetime import datetime
 from collections import Counter, defaultdict
 from pathlib import Path
 
 MC_NAME = re.compile(r"^[A-Za-z0-9_]{2,16}$")
+SIEGE_DEATH_LIMIT = 10
 CHAT_LINE = re.compile(r"^\[(?P<time>\d\d:\d\d:\d\d)\].*\[System\] \[CHAT\] (?P<message>.*)$")
-SIEGE_START = re.compile(r"\[Осада\] Осада замка Aden началась! Продолжительность: (?P<minutes>\d+) минут")
-SIEGE_END = re.compile(r"\[Осада\] Осада замка Aden завершена! Владелец: (?P<owner>\S+)")
+SIEGE_START = re.compile(r"\[.*?\].*Aden.*:\s*(?P<minutes>\d+)\D*$")
+SIEGE_END = re.compile(r"\[.*?\].*Aden.*:\s*(?P<owner>\S+)\s*$")
 BY_PLAYERISH = re.compile(
     r"^(?P<victim>[A-Za-z0-9_]{2,16}) was "
     r"(?P<verb>killed|smashed|blown up|slain|shot|doomed to fall) by (?P<killer>.+)$"
@@ -94,6 +97,14 @@ def death_event(time, victim, killer, killer_type, message):
     }
 
 
+def read_log_lines(log_path):
+    path = Path(log_path)
+    if path.suffix == ".gz":
+        with gzip.open(path, "rt", encoding="utf-8", errors="replace") as handle:
+            return handle.read().splitlines()
+    return path.read_text(encoding="utf-8", errors="replace").splitlines()
+
+
 def extract_siege(log_path, siege_date):
     start = None
     end = None
@@ -101,7 +112,7 @@ def extract_siege(log_path, siege_date):
     owner = None
     death_events = []
 
-    for line in Path(log_path).read_text(encoding="utf-8", errors="replace").splitlines():
+    for line in read_log_lines(log_path):
         match = CHAT_LINE.match(line)
         if not match:
             continue
@@ -132,7 +143,31 @@ def extract_siege(log_path, siege_date):
         event for event in death_events
         if seconds(start) <= seconds(event["time"]) <= seconds(end)
     ]
-    return build_report(siege_date, start, end, duration, owner, death_events)
+    raw_death_event_count = len(death_events)
+    death_events, ignored_after_limit = apply_death_limit(death_events)
+    return build_report(
+        siege_date,
+        start,
+        end,
+        duration,
+        owner,
+        death_events,
+        raw_death_event_count,
+        ignored_after_limit,
+    )
+
+
+def apply_death_limit(death_events):
+    counts = Counter()
+    kept = []
+    ignored = []
+    for event in death_events:
+        counts[event["victim"]] += 1
+        if counts[event["victim"]] <= SIEGE_DEATH_LIMIT:
+            kept.append(event)
+        else:
+            ignored.append(event)
+    return kept, ignored
 
 
 def percentile_map(values):
@@ -177,10 +212,29 @@ def median(values, default=0.0):
     return statistics.median(values) if values else default
 
 
-def build_report(siege_date, start, end, duration, owner, death_events):
+def is_scored_kill(event):
+    return (
+        event["killer_type"] == "player"
+        and event["killer"] != event["victim"]
+        and not event.get("teamkill")
+    )
+
+
+def build_report(
+    siege_date,
+    start,
+    end,
+    duration,
+    owner,
+    death_events,
+    raw_death_event_count,
+    ignored_after_limit,
+    source="minecraft_log",
+    source_meta=None,
+):
     scored_kills = [
         event for event in death_events
-        if event["killer_type"] == "player" and event["killer"] != event["victim"]
+        if is_scored_kill(event)
     ]
     players = set()
     for event in death_events:
@@ -221,7 +275,7 @@ def build_report(siege_date, start, end, duration, owner, death_events):
             upset_counts[event["killer"]] += 1
         if farm < 1:
             farm_counts[event["killer"]] += 1
-        kills_detail[event["killer"]].append({
+        detail = {
             "time": event["time"],
             "victim": event["victim"],
             "killer": event["killer"],
@@ -233,7 +287,24 @@ def build_report(siege_date, start, end, duration, owner, death_events):
             "farm_multiplier": farm,
             "target_repeat_count": repeats,
             "kill_score": score,
-        })
+        }
+        for key in (
+            "cause",
+            "weapon",
+            "distance",
+            "killer_clan",
+            "victim_clan",
+            "teamkill",
+            "official_final_score",
+            "official_base_score",
+            "official_repeat_mult",
+            "official_resistance_mult",
+            "official_id",
+            "ts",
+        ):
+            if key in event:
+                detail[key] = event[key]
+        kills_detail[event["killer"]].append(detail)
 
     dak = {player: sum(kill["kill_score"] for kill in kills_detail[player]) for player in players}
     akd_values = [dak[player] / kills[player] for player in players if kills[player] > 0]
@@ -279,13 +350,20 @@ def build_report(siege_date, start, end, duration, owner, death_events):
         "id": siege_date,
         "date": siege_date,
         "name": f"Осада {siege_date}",
+        "source": source,
+        "source_meta": source_meta or {},
         "start_time": start,
         "end_time": end,
         "duration_minutes": duration,
         "owner": owner,
         "event_count": len(scored_kills),
         "death_event_count": len(death_events),
+        "raw_death_event_count": raw_death_event_count,
+        "death_limit_per_player": SIEGE_DEATH_LIMIT,
+        "ignored_deaths_after_limit": len(ignored_after_limit),
+        "ignored_deaths_after_limit_detail": ignored_after_limit,
         "ignored_self_kills": sum(1 for event in death_events if event["killer_type"] == "self"),
+        "ignored_team_kills": sum(1 for event in death_events if event.get("teamkill")),
         "ignored_non_player_deaths": sum(1 for event in death_events if event["killer_type"] in {"environment", "non_player"}),
         "median_adjusted_kd": median_adjusted,
         "median_akd": median_akd,
@@ -296,7 +374,7 @@ def build_report(siege_date, start, end, duration, owner, death_events):
 def best_kill(kill):
     if not kill:
         return None
-    return {
+    result = {
         "victim": kill["victim"],
         "score": kill["kill_score"],
         "base_value": kill["base_kill_value"],
@@ -305,11 +383,62 @@ def best_kill(kill):
         "time": kill["time"],
         "message": kill["message"],
     }
+    for key in ("cause", "weapon", "distance", "victim_clan", "teamkill", "official_final_score"):
+        if key in kill:
+            result[key] = kill[key]
+    return result
 
 
-def build_season(reports):
+def parse_datetime(value):
+    if not value:
+        return None
+    if isinstance(value, (int, float)):
+        return datetime.fromtimestamp(value)
+    text = str(value).strip().replace("Z", "+00:00")
+    for fmt in ("%Y-%m-%d %H:%M:%S", "%Y-%m-%dT%H:%M:%S", "%Y-%m-%d"):
+        try:
+            return datetime.strptime(text[:len(fmt)], fmt)
+        except ValueError:
+            pass
+    try:
+        return datetime.fromisoformat(text)
+    except ValueError:
+        return None
+
+
+def date_part(value, fallback=""):
+    parsed = parse_datetime(value)
+    if parsed:
+        return parsed.date().isoformat()
+    match = re.search(r"\d{4}-\d{2}-\d{2}", str(value or fallback))
+    return match.group(0) if match else fallback
+
+
+def time_part(value, fallback="00:00:00"):
+    parsed = parse_datetime(value)
+    if parsed:
+        return parsed.strftime("%H:%M:%S")
+    match = re.search(r"\b\d{2}:\d{2}:\d{2}\b", str(value or ""))
+    return match.group(0) if match else fallback
+
+
+def month_id(report):
+    return report["date"][:7]
+
+
+def month_label(month):
+    names = {
+        "01": "January", "02": "February", "03": "March", "04": "April",
+        "05": "May", "06": "June", "07": "July", "08": "August",
+        "09": "September", "10": "October", "11": "November", "12": "December",
+    }
+    year, mon = month.split("-", 1)
+    return f"{names.get(mon, mon)} {year}"
+
+
+def build_player_summary(reports):
     players = sorted({row["player"] for report in reports for row in report["ranking"]})
-    season = []
+    summaries = []
     for player in players:
         rows = [
             row for report in reports
@@ -319,7 +448,7 @@ def build_season(reports):
         appearances = len(rows)
         total_dak = sum(row["dak"] for row in rows)
         total_final = sum(row["final_score"] for row in rows)
-        season.append({
+        summaries.append({
             "player": player,
             "appearances": appearances,
             "total_dak": total_dak,
@@ -329,35 +458,142 @@ def build_season(reports):
             "deaths": sum(row["deaths"] for row in rows),
             "_season_score": total_final,
         })
-    season.sort(key=lambda row: (-row["_season_score"], -row["average_final_score"], row["player"]))
-    for index, row in enumerate(season, 1):
+    return summaries
+
+
+def rank_summary_rows(rows, mode):
+    if mode == "average":
+        rows.sort(key=lambda row: (-row["average_final_score"], -row["_season_score"], row["player"]))
+    else:
+        rows.sort(key=lambda row: (-row["_season_score"], -row["average_final_score"], row["player"]))
+    for index, row in enumerate(rows, 1):
         row["rank"] = index
         del row["_season_score"]
-    return season
+    return rows
+
+
+def build_season(reports):
+    return rank_summary_rows(build_player_summary(reports), "season")
+
+
+def build_average(reports):
+    return rank_summary_rows(build_player_summary(reports), "average")
+
+
+def build_seasons(reports):
+    seasons = []
+    for month in sorted({month_id(report) for report in reports}, reverse=True):
+        month_reports = [report for report in reports if month_id(report) == month]
+        seasons.append({
+            "id": month,
+            "label": month_label(month),
+            "siege_ids": [report["id"] for report in month_reports],
+            "siege_count": len(month_reports),
+            "event_count": sum(report["event_count"] for report in month_reports),
+            "death_event_count": sum(report["death_event_count"] for report in month_reports),
+            "season_ranking": build_season(month_reports),
+            "average_ranking": build_average(month_reports),
+        })
+    return seasons
+
+
+def official_message(row):
+    killer = row.get("killer") or "unknown"
+    victim = row.get("victim") or "unknown"
+    details = [str(row[key]) for key in ("cause", "weapon") if row.get(key)]
+    suffix = f" ({', '.join(details)})" if details else ""
+    return f"{victim} was killed by {killer}{suffix}"
+
+
+def official_event(row):
+    victim = row.get("victim")
+    killer = row.get("killer")
+    if not victim or not killer:
+        return None
+    event = {
+        "time": time_part(row.get("ts") or row.get("created_at") or row.get("time")),
+        "victim": victim,
+        "killer": killer,
+        "killer_type": "self" if killer == victim else "player",
+        "message": row.get("message") or official_message(row),
+        "source": "vanilla_game",
+    }
+    mapping = {
+        "id": "official_id",
+        "ts": "ts",
+        "cause": "cause",
+        "weapon": "weapon",
+        "distance": "distance",
+        "killer_clan": "killer_clan",
+        "victim_clan": "victim_clan",
+        "teamkill": "teamkill",
+        "final_score": "official_final_score",
+        "base_score": "official_base_score",
+        "repeat_mult": "official_repeat_mult",
+        "resistance_mult": "official_resistance_mult",
+    }
+    for source_key, target_key in mapping.items():
+        if source_key in row:
+            event[target_key] = row[source_key]
+    return event
+
+
+def report_from_official(payload):
+    siege = payload.get("siege") or {}
+    rows = payload.get("rows") or []
+    siege_id = str(siege.get("id") or payload.get("id") or date_part(siege.get("started_at")))
+    siege_date = date_part(siege.get("started_at") or siege.get("date") or siege_id, siege_id[:10])
+    start = time_part(siege.get("started_at"))
+    end = time_part(siege.get("finished_at") or siege.get("ended_at"), start)
+    events = [event for event in (official_event(row) for row in rows) if event]
+    report = build_report(
+        siege_date,
+        start,
+        end,
+        None,
+        payload.get("winner") or siege.get("winner") or siege.get("owner"),
+        events,
+        len(events),
+        [],
+        source="vanilla_game_api",
+        source_meta={
+            "siege_id": siege_id,
+            "castle_id": siege.get("castle_id"),
+            "castle_name": siege.get("castle_name"),
+            "official_totals": payload.get("totals"),
+            "official_top_count": len(payload.get("top") or []),
+        },
+    )
+    report["id"] = siege_date if siege_id == siege_date else f"{siege_date}-{siege_id}"
+    return report
 
 
 def rankings_document(reports):
+    seasons = build_seasons(reports)
+    current_season = seasons[0]["id"] if seasons else ""
     return {
-        "schema_version": "2.2",
+        "schema_version": "2.3",
         "system": "DAK — Difficulty Adjusted Kills",
         "generated_at": reports[0]["date"] if reports else "",
-        "scope": "Aden siege only; all vanilla death messages inside the official siege window are recorded.",
+        "scope": "Aden siege only. Official Vanilla Game siege API is preferred; local logs are supported as a fallback.",
         "parsing": {
             "counted": [
-                "player-attributed vanilla deaths, excluding self-kills, count as DAK kills",
-                "all vanilla deaths inside the Aden siege window count as deaths"
+                "official siege API kill rows count as participant deaths",
+                "player-attributed non-teamkill deaths count as DAK kills",
+                "local-log fallback counts vanilla deaths inside the Aden siege window until the per-player siege death limit"
             ],
             "excluded_from_dak_kills": [
                 "self-kills",
+                "same-clan teamkills when the official API marks teamkill=true",
                 "NPC/guard/skeleton/golem/environmental kills",
                 "deaths without an identifiable player killer"
             ]
         },
         "formula": {
-            "version": "DAK v2.2",
+            "version": "DAK v2.3",
             "target_strength": {
-                "adjusted_kd": "(DAK-counted kills + 1) / (all vanilla deaths + 2)",
-                "reliability": "N / (N + 10), where N = DAK-counted kills + all vanilla deaths",
+                "adjusted_kd": "(DAK-counted kills + 1) / (counted siege deaths + 2)",
+                "reliability": "N / (N + 10), where N = DAK-counted kills + counted siege deaths",
                 "strength": "reliability * AdjustedKD + (1 - reliability) * siege_median_AdjustedKD",
                 "percentile": "rank percentile within the siege"
             },
@@ -375,11 +611,37 @@ def rankings_document(reports):
             "dak": "sum(KillValue * UpsetMultiplier * FarmMultiplier)",
             "quality_index": "1 + (K / (K + 10)) * (AKD / median_AKD - 1)",
             "final_score": "DAK * QualityIndex^0.35",
-            "design_note": "Deaths include self, NPC, guard, mob, fall, crystal, and other vanilla death messages. Only player-attributed non-self deaths earn DAK kill value."
+            "season": "monthly sum of Final for all sieges in the selected month",
+            "average_score": "average Final per played siege in the selected month",
+            "design_note": "Season and Avg are separate rankings: Season rewards monthly activity and consistency, Avg shows the best average result per played siege."
         },
         "sieges": reports,
-        "season_ranking": build_season(reports),
+        "current_season": current_season,
+        "seasons": seasons,
+        "season_ranking": seasons[0]["season_ranking"] if seasons else [],
+        "average_ranking": seasons[0]["average_ranking"] if seasons else [],
     }
+
+
+def write_outputs(reports, root=None):
+    root = Path(root) if root else Path(__file__).resolve().parents[1]
+    reports.sort(key=lambda report: report["date"], reverse=True)
+    for index, report in enumerate(reports, 1):
+        report["name"] = f"Осада №{index}"
+
+    reports_dir = root / "reports"
+    reports_dir.mkdir(exist_ok=True)
+    for old_report in reports_dir.glob("*.json"):
+        old_report.unlink()
+    for report in reports:
+        (reports_dir / f"{report['id']}.json").write_text(
+            json.dumps(report, ensure_ascii=False, indent=2) + "\n",
+            encoding="utf-8",
+        )
+    (root / "data" / "rankings.json").write_text(
+        json.dumps(rankings_document(reports), ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
 
 
 def main():
@@ -391,22 +653,7 @@ def main():
         extract_siege(log_path, siege_date)
         for log_path, siege_date in zip(sys.argv[1::2], sys.argv[2::2])
     ]
-    reports.sort(key=lambda report: report["date"], reverse=True)
-    for index, report in enumerate(reports, 1):
-        report["name"] = f"Осада №{index}"
-
-    root = Path(__file__).resolve().parents[1]
-    reports_dir = root / "reports"
-    reports_dir.mkdir(exist_ok=True)
-    for report in reports:
-        (reports_dir / f"{report['id']}.json").write_text(
-            json.dumps(report, ensure_ascii=False, indent=2) + "\n",
-            encoding="utf-8",
-        )
-    (root / "data" / "rankings.json").write_text(
-        json.dumps(rankings_document(reports), ensure_ascii=False, indent=2) + "\n",
-        encoding="utf-8",
-    )
+    write_outputs(reports)
     return 0
 
 
