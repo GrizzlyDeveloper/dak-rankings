@@ -120,6 +120,7 @@ tbody tr.rank-3:hover{
 .eventItem{background:#131d28;border:1px solid var(--line);border-radius:10px;padding:10px}
 .eventMeta{display:flex;flex-wrap:wrap;gap:8px;color:#aeb8c7;font-size:12px;margin-bottom:5px}
 .eventTime{color:var(--gold);font-weight:850}
+.teamkillBadge{display:inline-flex;align-items:center;border:1px solid rgba(244,202,103,.45);background:rgba(244,202,103,.12);color:#ffd98a;border-radius:999px;padding:1px 7px;font-weight:850}
 .eventMessage{color:#d9e2ee;overflow-wrap:anywhere}
 .eventEmpty{color:var(--muted);background:#131d28;border:1px solid var(--line);border-radius:10px;padding:12px}
 .note{color:var(--muted);font-size:12px;margin-top:12px}
@@ -201,7 +202,8 @@ tbody tr.rank-3:hover{
   </div>
 
   <div class="toolbar">
-    <label class="viewPicker" for="viewSelect"><span>Период</span><select id="viewSelect" class="viewSelect"></select></label>
+    <label class="viewPicker" for="seasonSelect"><span>Сезон</span><select id="seasonSelect" class="viewSelect"></select></label>
+    <label class="viewPicker" for="viewSelect"><span>Рейтинг</span><select id="viewSelect" class="viewSelect"></select></label>
     <input id="search" class="search" placeholder="🔎 Поиск по нику…">
   </div>
 
@@ -266,42 +268,57 @@ function optionLabel(prefix,season){
   return season?.label ? `${prefix} ${season.label}` : prefix;
 }
 function currentViewValue(){
-  if(current==="season") return `season:${selectedSeasonId || currentSeason()?.id || ""}`;
-  if(current==="avg") return `avg:${selectedSeasonId || currentSeason()?.id || ""}`;
+  if(current==="season") return "total";
+  if(current==="avg") return "average";
   return `siege:${current}`;
 }
 function seasonForSiege(siegeId){
   return DATA.seasons?.find(season=>season.siege_ids?.includes(siegeId)) || null;
 }
 function renderTabs(){
-  const select=document.getElementById("viewSelect");
-  select.innerHTML="";
+  const seasonSelect=document.getElementById("seasonSelect");
+  const viewSelect=document.getElementById("viewSelect");
+  seasonSelect.innerHTML="";
+  viewSelect.innerHTML="";
   const seasons=DATA.seasons?.length ? DATA.seasons : [];
   seasons.forEach(season=>{
-    const group=document.createElement("optgroup");
-    group.label=season.label || season.id;
-    const seasonOption=new Option(optionLabel("Сезон",season),`season:${season.id}`);
-    const avgOption=new Option(optionLabel("Avg",season),`avg:${season.id}`);
-    group.append(seasonOption,avgOption);
-    DATA.sieges.filter(s=>season.siege_ids?.includes(s.id)).forEach(siege=>{
-      group.append(new Option(`${siege.date} · ${siege.name}`,`siege:${siege.id}`));
-    });
-    select.appendChild(group);
+    seasonSelect.appendChild(new Option(season.label || season.id,season.id));
   });
-  const knownSieges=new Set(seasons.flatMap(season=>season.siege_ids || []));
-  DATA.sieges.filter(siege=>!knownSieges.has(siege.id)).forEach(siege=>{
-    select.appendChild(new Option(`${siege.date} · ${siege.name}`,`siege:${siege.id}`));
+  const season=currentSeason();
+  const sieges=season?.siege_ids
+    ? DATA.sieges.filter(siege=>season.siege_ids.includes(siege.id))
+    : DATA.sieges;
+  viewSelect.appendChild(new Option("Total · сумма сезона","total"));
+  viewSelect.appendChild(new Option("Average · средний результат","average"));
+  sieges.forEach(siege=>{
+    viewSelect.appendChild(new Option(`${siege.date} · ${siege.name}`,`siege:${siege.id}`));
   });
-  select.value=currentViewValue();
-  select.onchange=()=>{
-    const [type,value]=select.value.split(":");
-    if(type==="season" || type==="avg"){
-      current=type;
-      selectedSeasonId=value || DATA.current_season;
-      sortKey=type==="avg"?"average_score":"season_score";
+  seasonSelect.value=selectedSeasonId || season?.id || "";
+  if(!Array.from(viewSelect.options).some(option=>option.value===currentViewValue())){
+    current="season";
+    sortKey="season_score";
+  }
+  viewSelect.value=currentViewValue();
+  seasonSelect.onchange=()=>{
+    selectedSeasonId=seasonSelect.value;
+    if(current!=="season" && current!=="avg"){
+      current="season";
+      sortKey="season_score";
+    }
+    sortDir=-1;
+    renderTabs();
+    render();
+  };
+  viewSelect.onchange=()=>{
+    if(viewSelect.value==="total"){
+      current="season";
+      sortKey="season_score";
+    }else if(viewSelect.value==="average"){
+      current="avg";
+      sortKey="average_score";
     }else{
+      const [,value]=viewSelect.value.split(":");
       current=value;
-      selectedSeasonId=seasonForSiege(value)?.id || selectedSeasonId;
       sortKey="final_score";
     }
     sortDir=-1;
@@ -522,7 +539,7 @@ function render(){
 function findPlayer(name){return DATA.sieges.flatMap(s=>s.ranking).find(r=>r.player===name)}
 function eventItemHtml(event){
   const score=event.score==null ? "" : `<span>DAK ${fmt(event.score)}</span>`;
-  const teamkill=event.teamkill ? `<span class="eventTime">свой</span>` : "";
+  const teamkill=event.teamkill ? `<span class="teamkillBadge">По своим</span>` : "";
   return `<div class="eventItem">
     <div class="eventMeta">
       <span class="eventTime">${esc(event.time)}</span>
