@@ -74,4 +74,6 @@ its own DAK score:
   DAK kill value.
 
 GitHub Pages deploys the static site from the repository after updates are
-committed.
+committed. The Pages workflow also listens for successful automatic ranking
+updates, because commits made by `github-actions[bot]` do not reliably trigger
+normal push-based workflows.

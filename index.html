@@ -11,16 +11,19 @@
 }
 *{box-sizing:border-box}
 body{margin:0;background:radial-gradient(circle at 50% -10%,#172235 0,#0b1017 36%,#080c11 72%);color:var(--text);font:14px/1.5 Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial}
-button,input{font:inherit} button{cursor:pointer}
+button,input,select{font:inherit} button{cursor:pointer}
 .container{max-width:1500px;margin:auto;padding:28px 20px 70px}
 .hero{display:flex;justify-content:space-between;gap:20px;align-items:end;margin-bottom:20px}
 h1{font-size:36px;line-height:1;margin:0 0 8px;letter-spacing:-.04em}
 .subtitle{color:var(--muted)}
 .badge{border:1px solid var(--line);background:#0e151e;padding:7px 11px;border-radius:999px;color:var(--muted)}
 .toolbar{background:rgba(16,23,32,.9);border:1px solid var(--line);border-radius:16px;padding:13px;display:flex;flex-wrap:wrap;gap:10px;align-items:center;position:sticky;top:10px;z-index:20;backdrop-filter:blur(14px)}
-.tabs{display:flex;gap:7px;flex-wrap:wrap}
-.tab{border:1px solid var(--line);background:#131c27;color:var(--text);padding:9px 12px;border-radius:10px}
-.tab.active{background:#243a67;border-color:#4c70b7}
+.viewPicker,.detailSelectWrap{display:flex;align-items:center;gap:8px;color:var(--muted);font-size:12px}
+.viewPicker span,.detailSelectWrap span{font-weight:800;text-transform:uppercase;letter-spacing:.05em}
+.viewSelect,.detailSelect{appearance:none;background:#131c27;color:var(--text);border:1px solid var(--line);border-radius:10px;padding:10px 38px 10px 12px;min-width:270px;outline:none;background-image:linear-gradient(45deg,transparent 50%,#9ebaff 50%),linear-gradient(135deg,#9ebaff 50%,transparent 50%);background-position:calc(100% - 18px) 50%,calc(100% - 13px) 50%;background-size:5px 5px;background-repeat:no-repeat}
+.viewSelect:focus,.detailSelect:focus{border-color:#4c70b7;box-shadow:0 0 0 3px rgba(76,112,183,.25)}
+.detailSelectWrap{margin-bottom:12px}
+.detailSelect{min-width:220px}
 .search{background:#0b1118;border:1px solid var(--line);color:var(--text);padding:10px 12px;border-radius:10px;min-width:260px;outline:none}
 .cards{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:18px 0}
 .stat{background:rgba(16,23,32,.9);border:1px solid var(--line);border-radius:14px;padding:14px}
@@ -128,8 +131,8 @@ tbody tr.rank-3:hover{
   .hero{gap:12px;margin-bottom:14px}
   .badge{width:100%;border-radius:10px}
   .toolbar{position:static;border-radius:12px;padding:10px}
-  .tabs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));width:100%}
-  .tab{min-width:0;padding:10px 8px}
+  .viewPicker{width:100%;display:grid;gap:6px}
+  .viewSelect{width:100%;min-width:0}
   .search{width:100%;min-width:0}
   .cards{grid-template-columns:1fr;gap:8px}
   .stat{border-radius:10px;padding:12px}
@@ -179,13 +182,15 @@ tbody tr.rank-3:hover{
   .grid{grid-template-columns:1fr}
   .profileActions,.link,.detailButton{width:100%}
   .detailPanel{padding:10px}
+  .detailSelectWrap{display:grid;gap:6px}
+  .detailSelect{width:100%;min-width:0}
   .detailTabs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
   .detailTab{min-width:0;padding:9px 7px}
   .history,.history tbody,.history tr,.history td{display:block;width:100%}
   .history tr{padding:8px 0;border-bottom:1px solid var(--line)}
   .history td{border-bottom:0;padding:2px 0;text-align:left}
 }
-@media(max-width:420px){.tabs{grid-template-columns:1fr}.modalTop{flex-wrap:wrap}.close{margin-left:0;width:100%}}
+@media(max-width:420px){.modalTop{flex-wrap:wrap}.close{margin-left:0;width:100%}}
 </style>
 </head>
 <body>
@@ -196,7 +201,7 @@ tbody tr.rank-3:hover{
   </div>
 
   <div class="toolbar">
-    <div id="tabs" class="tabs"></div>
+    <label class="viewPicker" for="viewSelect"><span>Период</span><select id="viewSelect" class="viewSelect"></select></label>
     <input id="search" class="search" placeholder="🔎 Поиск по нику…">
   </div>
 
@@ -239,7 +244,7 @@ tbody tr.rank-3:hover{
 </div>
 
 <script>
-let DATA=null, current="season", sortKey="season_score", sortDir=-1;
+let DATA=null, current="season", selectedSeasonId=null, sortKey="season_score", sortDir=-1;
 const esc=s=>String(s??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]));
 const fmt=(n,d=2)=>n==null?"—":Number(n).toFixed(d);
 const EVENT_CACHE=new Map();
@@ -253,33 +258,63 @@ function nameMcUrl(name){return `https://namemc.com/profile/${encodeURIComponent
 
 async function load(){
   DATA=await fetch("data/rankings.json").then(r=>r.json());
+  selectedSeasonId=DATA.current_season || DATA.seasons?.[0]?.id || null;
   document.getElementById("formulaBadge").textContent=DATA.formula.version;
   renderTabs(); render();
 }
+function optionLabel(prefix,season){
+  return season?.label ? `${prefix} ${season.label}` : prefix;
+}
+function currentViewValue(){
+  if(current==="season") return `season:${selectedSeasonId || currentSeason()?.id || ""}`;
+  if(current==="avg") return `avg:${selectedSeasonId || currentSeason()?.id || ""}`;
+  return `siege:${current}`;
+}
+function seasonForSiege(siegeId){
+  return DATA.seasons?.find(season=>season.siege_ids?.includes(siegeId)) || null;
+}
 function renderTabs(){
-  const root=document.getElementById("tabs");root.innerHTML="";
-  DATA.sieges.forEach(s=>{
-    const b=document.createElement("button");b.className="tab "+(current===s.id?"active":"");b.textContent=s.date;
-    b.onclick=()=>{current=s.id;sortKey="final_score";sortDir=-1;renderTabs();render()};root.appendChild(b);
+  const select=document.getElementById("viewSelect");
+  select.innerHTML="";
+  const seasons=DATA.seasons?.length ? DATA.seasons : [];
+  seasons.forEach(season=>{
+    const group=document.createElement("optgroup");
+    group.label=season.label || season.id;
+    const seasonOption=new Option(optionLabel("Сезон",season),`season:${season.id}`);
+    const avgOption=new Option(optionLabel("Avg",season),`avg:${season.id}`);
+    group.append(seasonOption,avgOption);
+    DATA.sieges.filter(s=>season.siege_ids?.includes(s.id)).forEach(siege=>{
+      group.append(new Option(`${siege.date} · ${siege.name}`,`siege:${siege.id}`));
+    });
+    select.appendChild(group);
   });
-  const season=currentSeason();
-  const seasonButton=document.createElement("button");
-  seasonButton.className="tab "+(current==="season"?"active":"");
-  seasonButton.textContent=season?.label?`Сезон ${season.label}`:"Сезон";
-  seasonButton.onclick=()=>{current="season";sortKey="season_score";sortDir=-1;renderTabs();render()};
-  root.appendChild(seasonButton);
-  const avgButton=document.createElement("button");
-  avgButton.className="tab "+(current==="avg"?"active":"");
-  avgButton.textContent=season?.label?`Avg ${season.label}`:"Avg";
-  avgButton.onclick=()=>{current="avg";sortKey="average_score";sortDir=-1;renderTabs();render()};
-  root.appendChild(avgButton);
+  const knownSieges=new Set(seasons.flatMap(season=>season.siege_ids || []));
+  DATA.sieges.filter(siege=>!knownSieges.has(siege.id)).forEach(siege=>{
+    select.appendChild(new Option(`${siege.date} · ${siege.name}`,`siege:${siege.id}`));
+  });
+  select.value=currentViewValue();
+  select.onchange=()=>{
+    const [type,value]=select.value.split(":");
+    if(type==="season" || type==="avg"){
+      current=type;
+      selectedSeasonId=value || DATA.current_season;
+      sortKey=type==="avg"?"average_score":"season_score";
+    }else{
+      current=value;
+      selectedSeasonId=seasonForSiege(value)?.id || selectedSeasonId;
+      sortKey="final_score";
+    }
+    sortDir=-1;
+    renderTabs();
+    render();
+  };
 }
 function playerHistory(name){
   return DATA.sieges.map(s=>({s,r:s.ranking.find(x=>x.player===name)})).filter(x=>x.r);
 }
 function currentSeason(){
   if(DATA.seasons?.length){
-    return DATA.seasons.find(s=>s.id===DATA.current_season) || DATA.seasons[0];
+    return DATA.seasons.find(s=>s.id===selectedSeasonId) || DATA.seasons.find(s=>s.id===DATA.current_season) || DATA.seasons[0];
   }
   return null;
 }
@@ -466,10 +501,11 @@ function render(){
   rows.sort((a,b)=>compare(a,b,sortKey)*sortDir);
   const season=currentSeason();
   const aggregate=current==="season"||current==="avg";
+  const selectedSiege=aggregate?null:DATA.sieges.find(s=>s.id===current);
   const label=aggregate
     ? `${current==="avg"?"Avg":"Сезон"} ${season?.label || DATA.current_season || ""}`.trim()
-    : `${current} · ${DATA.sieges.find(s=>s.id===current).name}`;
-  const eventCount=aggregate?seasonSieges().reduce((a,s)=>a+s.event_count,0):DATA.sieges.find(s=>s.id===current).event_count;
+    : `${selectedSiege?.date || current} · ${selectedSiege?.name || "Осада"}`;
+  const eventCount=aggregate?seasonSieges().reduce((a,s)=>a+s.event_count,0):selectedSiege?.event_count;
   const top=rows[0];
   document.getElementById("cards").innerHTML=`
     <div class="stat"><div class="v">${esc(label)}</div><div class="l">Выбранный период</div></div>
@@ -508,7 +544,7 @@ function siegeDetailsHtml(name,history){
     <button class="detailButton" type="button" onclick="toggleSiegeDetails(this)">Детальная сводка по осадам</button>
   </div>
   <div class="detailPanel" data-detail-root hidden>
-    <div class="detailTabs">${history.map(x=>`<button class="detailTab ${x.s.id===activeId?"active":""}" type="button" data-siege-tab="${esc(x.s.id)}" onclick='setDetailSiege(this,${JSON.stringify(x.s.id)})'>${esc(x.s.date)}</button>`).join("")}</div>
+    <label class="detailSelectWrap"><span>Осада</span><select class="detailSelect" onchange="setDetailSiegeSelect(this)">${history.map(x=>`<option value="${esc(x.s.id)}" ${x.s.id===activeId?"selected":""}>${esc(x.s.date)} · ${esc(x.s.name)}</option>`).join("")}</select></label>
     ${history.map(x=>{
       const events=playerEventsForSiege(name,x.s);
       return `<div class="siegeDetail" data-siege-panel="${esc(x.s.id)}" ${x.s.id===activeId?"":"hidden"}>
@@ -535,9 +571,9 @@ function toggleSiegeDetails(button){
   panel.hidden=!panel.hidden;
   button.textContent=panel.hidden?"Детальная сводка по осадам":"Скрыть детальную сводку";
 }
-function setDetailSiege(button,siegeId){
-  const root=button.closest("[data-detail-root]");
-  root.querySelectorAll("[data-siege-tab]").forEach(tab=>tab.classList.toggle("active",tab.dataset.siegeTab===siegeId));
+function setDetailSiegeSelect(select){
+  const root=select.closest("[data-detail-root]");
+  const siegeId=select.value;
   root.querySelectorAll("[data-siege-panel]").forEach(panel=>panel.hidden=panel.dataset.siegePanel!==siegeId);
 }
 function setDetailKind(button,kind){
