@@ -34,6 +34,7 @@
     {
       "player": "AKATOIII",
       "kills": 36,
+      "team_kills": 1,
       "deaths": 1,
       "kd": 36.0,
       "adjusted_kd": 12.333333333333334,
@@ -888,31 +889,6 @@
         },
         {
           "time": "19:22:08",
-          "victim": "DanteMenelay",
-          "killer": "AKATOIII",
-          "message": "DanteMenelay was killed by AKATOIII (ENTITY_EXPLOSION, END_CRYSTAL)",
-          "victim_strength": 0.203125,
-          "victim_percentile": 0.28,
-          "base_kill_value": 1.3365512744995331,
-          "upset_multiplier": 1.0,
-          "farm_multiplier": 1.0,
-          "target_repeat_count": 2,
-          "kill_score": 1.3365512744995331,
-          "cause": "ENTITY_EXPLOSION",
-          "weapon": "END_CRYSTAL",
-          "distance": 10.1,
-          "killer_clan": "glore",
-          "victim_clan": "union",
-          "teamkill": false,
-          "official_final_score": 3,
-          "official_base_score": 4,
-          "official_repeat_mult": 0.75,
-          "official_resistance_mult": 1,
-          "official_id": 2729,
-          "ts": 1787419328597
-        },
-        {
-          "time": "19:22:08",
           "victim": "JoinNigma",
           "killer": "AKATOIII",
           "message": "JoinNigma was killed by AKATOIII (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -935,6 +911,31 @@
           "official_resistance_mult": 0.6512749091497199,
           "official_id": 2728,
           "ts": 1787419328596
+        },
+        {
+          "time": "19:22:08",
+          "victim": "DanteMenelay",
+          "killer": "AKATOIII",
+          "message": "DanteMenelay was killed by AKATOIII (ENTITY_EXPLOSION, END_CRYSTAL)",
+          "victim_strength": 0.203125,
+          "victim_percentile": 0.28,
+          "base_kill_value": 1.3365512744995331,
+          "upset_multiplier": 1.0,
+          "farm_multiplier": 1.0,
+          "target_repeat_count": 2,
+          "kill_score": 1.3365512744995331,
+          "cause": "ENTITY_EXPLOSION",
+          "weapon": "END_CRYSTAL",
+          "distance": 10.1,
+          "killer_clan": "glore",
+          "victim_clan": "union",
+          "teamkill": false,
+          "official_final_score": 3,
+          "official_base_score": 4,
+          "official_repeat_mult": 0.75,
+          "official_resistance_mult": 1,
+          "official_id": 2729,
+          "ts": 1787419328597
         },
         {
           "time": "19:22:09",
@@ -960,6 +961,28 @@
           "official_resistance_mult": 0.4,
           "official_id": 2730,
           "ts": 1787419329640
+        }
+      ],
+      "team_kill_details": [
+        {
+          "time": "19:18:28",
+          "victim": "KoTiKPrime",
+          "killer": "AKATOIII",
+          "killer_type": "player",
+          "message": "KoTiKPrime was killed by AKATOIII (ENTITY_EXPLOSION, END_CRYSTAL)",
+          "source": "vanilla_game",
+          "official_id": 2665,
+          "ts": 1787419108641,
+          "cause": "ENTITY_EXPLOSION",
+          "weapon": "END_CRYSTAL",
+          "distance": 2.9,
+          "killer_clan": "glore",
+          "victim_clan": "glore",
+          "teamkill": true,
+          "official_final_score": 4,
+          "official_base_score": 4,
+          "official_repeat_mult": 1,
+          "official_resistance_mult": 1
         }
       ],
       "death_details": [
@@ -989,6 +1012,7 @@
     {
       "player": "kasi133005",
       "kills": 43,
+      "team_kills": 0,
       "deaths": 1,
       "kd": 43.0,
       "adjusted_kd": 14.666666666666666,
@@ -1468,31 +1492,6 @@
         },
         {
           "time": "19:17:16",
-          "victim": "richman8",
-          "killer": "kasi133005",
-          "message": "richman8 was killed by kasi133005 (ENTITY_EXPLOSION, END_CRYSTAL)",
-          "victim_strength": 0.203125,
-          "victim_percentile": 0.3,
-          "base_kill_value": 1.3706805103404471,
-          "upset_multiplier": 1.0,
-          "farm_multiplier": 0.6,
-          "target_repeat_count": 5,
-          "kill_score": 0.8224083062042683,
-          "cause": "ENTITY_EXPLOSION",
-          "weapon": "END_CRYSTAL",
-          "distance": 4.1,
-          "killer_clan": "glore",
-          "victim_clan": "nigma",
-          "teamkill": false,
-          "official_final_score": 4,
-          "official_base_score": 4,
-          "official_repeat_mult": 1,
-          "official_resistance_mult": 0.9865929497740631,
-          "official_id": 2650,
-          "ts": 1787419036010
-        },
-        {
-          "time": "19:17:16",
           "victim": "Riddars",
           "killer": "kasi133005",
           "message": "Riddars was killed by kasi133005 (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -1515,6 +1514,31 @@
           "official_resistance_mult": 1,
           "official_id": 2649,
           "ts": 1787419036008
+        },
+        {
+          "time": "19:17:16",
+          "victim": "richman8",
+          "killer": "kasi133005",
+          "message": "richman8 was killed by kasi133005 (ENTITY_EXPLOSION, END_CRYSTAL)",
+          "victim_strength": 0.203125,
+          "victim_percentile": 0.3,
+          "base_kill_value": 1.3706805103404471,
+          "upset_multiplier": 1.0,
+          "farm_multiplier": 0.6,
+          "target_repeat_count": 5,
+          "kill_score": 0.8224083062042683,
+          "cause": "ENTITY_EXPLOSION",
+          "weapon": "END_CRYSTAL",
+          "distance": 4.1,
+          "killer_clan": "glore",
+          "victim_clan": "nigma",
+          "teamkill": false,
+          "official_final_score": 4,
+          "official_base_score": 4,
+          "official_repeat_mult": 1,
+          "official_resistance_mult": 0.9865929497740631,
+          "official_id": 2650,
+          "ts": 1787419036010
         },
         {
           "time": "19:17:58",
@@ -1968,31 +1992,6 @@
         },
         {
           "time": "19:22:14",
-          "victim": "mislend",
-          "killer": "kasi133005",
-          "message": "mislend was killed by kasi133005 (ENTITY_EXPLOSION, END_CRYSTAL)",
-          "victim_strength": 0.19281045751633988,
-          "victim_percentile": 0.26,
-          "base_kill_value": 1.303384006834472,
-          "upset_multiplier": 1.0,
-          "farm_multiplier": 0.75,
-          "target_repeat_count": 4,
-          "kill_score": 0.977538005125854,
-          "cause": "ENTITY_EXPLOSION",
-          "weapon": "END_CRYSTAL",
-          "distance": 9.4,
-          "killer_clan": "glore",
-          "victim_clan": "union",
-          "teamkill": false,
-          "official_final_score": 4,
-          "official_base_score": 4,
-          "official_repeat_mult": 1,
-          "official_resistance_mult": 1,
-          "official_id": 2732,
-          "ts": 1787419334303
-        },
-        {
-          "time": "19:22:14",
           "victim": "_s_Shtani_x_",
           "killer": "kasi133005",
           "message": "_s_Shtani_x_ was killed by kasi133005 (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -2015,6 +2014,31 @@
           "official_resistance_mult": 0.6321197647629634,
           "official_id": 2731,
           "ts": 1787419334302
+        },
+        {
+          "time": "19:22:14",
+          "victim": "mislend",
+          "killer": "kasi133005",
+          "message": "mislend was killed by kasi133005 (ENTITY_EXPLOSION, END_CRYSTAL)",
+          "victim_strength": 0.19281045751633988,
+          "victim_percentile": 0.26,
+          "base_kill_value": 1.303384006834472,
+          "upset_multiplier": 1.0,
+          "farm_multiplier": 0.75,
+          "target_repeat_count": 4,
+          "kill_score": 0.977538005125854,
+          "cause": "ENTITY_EXPLOSION",
+          "weapon": "END_CRYSTAL",
+          "distance": 9.4,
+          "killer_clan": "glore",
+          "victim_clan": "union",
+          "teamkill": false,
+          "official_final_score": 4,
+          "official_base_score": 4,
+          "official_repeat_mult": 1,
+          "official_resistance_mult": 1,
+          "official_id": 2732,
+          "ts": 1787419334303
         },
         {
           "time": "19:22:59",
@@ -2092,6 +2116,7 @@
           "ts": 1787419393304
         }
       ],
+      "team_kill_details": [],
       "death_details": [
         {
           "time": "19:17:24",
@@ -2119,6 +2144,7 @@
     {
       "player": "lasterothXIII",
       "kills": 27,
+      "team_kills": 0,
       "deaths": 1,
       "kd": 27.0,
       "adjusted_kd": 9.333333333333334,
@@ -2822,6 +2848,7 @@
           "ts": 1787419251580
         }
       ],
+      "team_kill_details": [],
       "death_details": [
         {
           "time": "19:14:21",
@@ -2849,6 +2876,7 @@
     {
       "player": "errorrNull",
       "kills": 40,
+      "team_kills": 0,
       "deaths": 1,
       "kd": 40.0,
       "adjusted_kd": 13.666666666666666,
@@ -2866,14 +2894,14 @@
         "base_value": 1.8881641381656675,
         "upset_multiplier": 1.0,
         "farm_multiplier": 0.9,
-        "time": "19:05:38",
+        "time": "19:03:06",
         "message": "VALL228 was killed by errorrNull (ENTITY_ATTACK, MACE)",
         "cause": "ENTITY_ATTACK",
         "weapon": "MACE",
-        "distance": 1.4,
+        "distance": 2.7,
         "victim_clan": "r1h",
         "teamkill": false,
-        "official_final_score": 1
+        "official_final_score": 4
       },
       "kills_detail": [
         {
@@ -3877,6 +3905,7 @@
           "ts": 1787419263492
         }
       ],
+      "team_kill_details": [],
       "death_details": [
         {
           "time": "19:22:59",
@@ -3904,6 +3933,7 @@
     {
       "player": "GeLioS",
       "kills": 26,
+      "team_kills": 0,
       "deaths": 3,
       "kd": 8.666666666666666,
       "adjusted_kd": 5.4,
@@ -4083,31 +4113,6 @@
         },
         {
           "time": "19:08:04",
-          "victim": "GenshinImpact777",
-          "killer": "GeLioS",
-          "message": "GenshinImpact777 was killed by GeLioS (ENTITY_EXPLOSION, END_CRYSTAL)",
-          "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.04,
-          "base_kill_value": 1.0220756745833794,
-          "upset_multiplier": 1.0,
-          "farm_multiplier": 1.0,
-          "target_repeat_count": 2,
-          "kill_score": 1.0220756745833794,
-          "cause": "ENTITY_EXPLOSION",
-          "weapon": "END_CRYSTAL",
-          "distance": 8.4,
-          "killer_clan": "union",
-          "victim_clan": "aka47",
-          "teamkill": false,
-          "official_final_score": 1,
-          "official_base_score": 4,
-          "official_repeat_mult": 0.75,
-          "official_resistance_mult": 0.4,
-          "official_id": 2499,
-          "ts": 1787418484976
-        },
-        {
-          "time": "19:08:04",
           "victim": "bad1bunny",
           "killer": "GeLioS",
           "message": "bad1bunny was killed by GeLioS (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -4130,6 +4135,31 @@
           "official_resistance_mult": 0.5207134380858033,
           "official_id": 2498,
           "ts": 1787418484974
+        },
+        {
+          "time": "19:08:04",
+          "victim": "GenshinImpact777",
+          "killer": "GeLioS",
+          "message": "GenshinImpact777 was killed by GeLioS (ENTITY_EXPLOSION, END_CRYSTAL)",
+          "victim_strength": 0.16666666666666666,
+          "victim_percentile": 0.04,
+          "base_kill_value": 1.0220756745833794,
+          "upset_multiplier": 1.0,
+          "farm_multiplier": 1.0,
+          "target_repeat_count": 2,
+          "kill_score": 1.0220756745833794,
+          "cause": "ENTITY_EXPLOSION",
+          "weapon": "END_CRYSTAL",
+          "distance": 8.4,
+          "killer_clan": "union",
+          "victim_clan": "aka47",
+          "teamkill": false,
+          "official_final_score": 1,
+          "official_base_score": 4,
+          "official_repeat_mult": 0.75,
+          "official_resistance_mult": 0.4,
+          "official_id": 2499,
+          "ts": 1787418484976
         },
         {
           "time": "19:08:04",
@@ -4283,31 +4313,6 @@
         },
         {
           "time": "19:10:51",
-          "victim": "varrr4",
-          "killer": "GeLioS",
-          "message": "varrr4 was killed by GeLioS (ENTITY_EXPLOSION, END_CRYSTAL)",
-          "victim_strength": 0.16666666666666666,
-          "victim_percentile": 0.16,
-          "base_kill_value": 1.1537439275496233,
-          "upset_multiplier": 1.0,
-          "farm_multiplier": 0.6,
-          "target_repeat_count": 5,
-          "kill_score": 0.692246356529774,
-          "cause": "ENTITY_EXPLOSION",
-          "weapon": "END_CRYSTAL",
-          "distance": 8.9,
-          "killer_clan": "union",
-          "victim_clan": "aka47",
-          "teamkill": false,
-          "official_final_score": 1,
-          "official_base_score": 4,
-          "official_repeat_mult": 0.5,
-          "official_resistance_mult": 0.4,
-          "official_id": 2543,
-          "ts": 1787418651899
-        },
-        {
-          "time": "19:10:51",
           "victim": "SOUPVisual",
           "killer": "GeLioS",
           "message": "SOUPVisual was killed by GeLioS (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -4330,6 +4335,31 @@
           "official_resistance_mult": 0.4443191132635091,
           "official_id": 2542,
           "ts": 1787418651249
+        },
+        {
+          "time": "19:10:51",
+          "victim": "varrr4",
+          "killer": "GeLioS",
+          "message": "varrr4 was killed by GeLioS (ENTITY_EXPLOSION, END_CRYSTAL)",
+          "victim_strength": 0.16666666666666666,
+          "victim_percentile": 0.16,
+          "base_kill_value": 1.1537439275496233,
+          "upset_multiplier": 1.0,
+          "farm_multiplier": 0.6,
+          "target_repeat_count": 5,
+          "kill_score": 0.692246356529774,
+          "cause": "ENTITY_EXPLOSION",
+          "weapon": "END_CRYSTAL",
+          "distance": 8.9,
+          "killer_clan": "union",
+          "victim_clan": "aka47",
+          "teamkill": false,
+          "official_final_score": 1,
+          "official_base_score": 4,
+          "official_repeat_mult": 0.5,
+          "official_resistance_mult": 0.4,
+          "official_id": 2543,
+          "ts": 1787418651899
         },
         {
           "time": "19:11:03",
@@ -4582,6 +4612,7 @@
           "ts": 1787419236342
         }
       ],
+      "team_kill_details": [],
       "death_details": [
         {
           "time": "19:06:47",
@@ -4649,6 +4680,7 @@
     {
       "player": "MeGaXoPoH",
       "kills": 26,
+      "team_kills": 0,
       "deaths": 2,
       "kd": 13.0,
       "adjusted_kd": 6.75,
@@ -5327,6 +5359,7 @@
           "ts": 1787419379162
         }
       ],
+      "team_kill_details": [],
       "death_details": [
         {
           "time": "19:15:52",
@@ -5374,6 +5407,7 @@
     {
       "player": "Zarenit",
       "kills": 21,
+      "team_kills": 0,
       "deaths": 3,
       "kd": 7.0,
       "adjusted_kd": 4.4,
@@ -5927,6 +5961,7 @@
           "ts": 1787419159558
         }
       ],
+      "team_kill_details": [],
       "death_details": [
         {
           "time": "19:18:19",
@@ -5994,6 +6029,7 @@
     {
       "player": "JoinNigma",
       "kills": 12,
+      "team_kills": 3,
       "deaths": 5,
       "kd": 2.4,
       "adjusted_kd": 1.8571428571428572,
@@ -6322,6 +6358,68 @@
           "ts": 1787419327639
         }
       ],
+      "team_kill_details": [
+        {
+          "time": "19:19:22",
+          "victim": "_s_Shtani_x_",
+          "killer": "JoinNigma",
+          "killer_type": "player",
+          "message": "_s_Shtani_x_ was killed by JoinNigma (ENTITY_EXPLOSION, END_CRYSTAL)",
+          "source": "vanilla_game",
+          "official_id": 2681,
+          "ts": 1787419162646,
+          "cause": "ENTITY_EXPLOSION",
+          "weapon": "END_CRYSTAL",
+          "distance": 8.3,
+          "killer_clan": "nigma",
+          "victim_clan": "nigma",
+          "teamkill": true,
+          "official_final_score": 4,
+          "official_base_score": 4,
+          "official_repeat_mult": 1,
+          "official_resistance_mult": 1
+        },
+        {
+          "time": "19:19:23",
+          "victim": "richman8",
+          "killer": "JoinNigma",
+          "killer_type": "player",
+          "message": "richman8 was killed by JoinNigma (ENTITY_EXPLOSION, END_CRYSTAL)",
+          "source": "vanilla_game",
+          "official_id": 2684,
+          "ts": 1787419163243,
+          "cause": "ENTITY_EXPLOSION",
+          "weapon": "END_CRYSTAL",
+          "distance": 9.1,
+          "killer_clan": "nigma",
+          "victim_clan": "nigma",
+          "teamkill": true,
+          "official_final_score": 4,
+          "official_base_score": 4,
+          "official_repeat_mult": 1,
+          "official_resistance_mult": 1
+        },
+        {
+          "time": "19:19:56",
+          "victim": "KellJ",
+          "killer": "JoinNigma",
+          "killer_type": "player",
+          "message": "KellJ was killed by JoinNigma (ENTITY_EXPLOSION, END_CRYSTAL)",
+          "source": "vanilla_game",
+          "official_id": 2687,
+          "ts": 1787419196845,
+          "cause": "ENTITY_EXPLOSION",
+          "weapon": "END_CRYSTAL",
+          "distance": 9.6,
+          "killer_clan": "nigma",
+          "victim_clan": "nigma",
+          "teamkill": true,
+          "official_final_score": 4,
+          "official_base_score": 4,
+          "official_repeat_mult": 1,
+          "official_resistance_mult": 1
+        }
+      ],
       "death_details": [
         {
           "time": "19:12:34",
@@ -6429,6 +6527,7 @@
     {
       "player": "RUSSIAN_GRIZZLY",
       "kills": 12,
+      "team_kills": 0,
       "deaths": 1,
       "kd": 12.0,
       "adjusted_kd": 4.333333333333333,
@@ -6446,14 +6545,14 @@
         "base_value": 2.4633761661674445,
         "upset_multiplier": 1.0,
         "farm_multiplier": 1.0,
-        "time": "19:20:03",
+        "time": "19:15:53",
         "message": "JoinNigma was killed by RUSSIAN_GRIZZLY (ENTITY_EXPLOSION, END_CRYSTAL)",
         "cause": "ENTITY_EXPLOSION",
         "weapon": "END_CRYSTAL",
-        "distance": 2.1,
+        "distance": 6.2,
         "victim_clan": "nigma",
         "teamkill": false,
-        "official_final_score": 3
+        "official_final_score": 4
       },
       "kills_detail": [
         {
@@ -6757,6 +6856,7 @@
           "ts": 1787419361989
         }
       ],
+      "team_kill_details": [],
       "death_details": [
         {
           "time": "19:14:56",
@@ -6784,6 +6884,7 @@
     {
       "player": "KoTiKPrime",
       "kills": 12,
+      "team_kills": 0,
       "deaths": 4,
       "kd": 3.0,
       "adjusted_kd": 2.1666666666666665,
@@ -7112,6 +7213,7 @@
           "ts": 1787419209493
         }
       ],
+      "team_kill_details": [],
       "death_details": [
         {
           "time": "19:04:29",
@@ -7199,6 +7301,7 @@
     {
       "player": "Blazerlords",
       "kills": 8,
+      "team_kills": 1,
       "deaths": 0,
       "kd": null,
       "adjusted_kd": 4.5,
@@ -7427,12 +7530,35 @@
           "ts": 1787419243343
         }
       ],
+      "team_kill_details": [
+        {
+          "time": "19:14:28",
+          "victim": "mislend",
+          "killer": "Blazerlords",
+          "killer_type": "player",
+          "message": "mislend was killed by Blazerlords (BLOCK_EXPLOSION, NETHERITE_SWORD)",
+          "source": "vanilla_game",
+          "official_id": 2592,
+          "ts": 1787418868698,
+          "cause": "BLOCK_EXPLOSION",
+          "weapon": "NETHERITE_SWORD",
+          "distance": 9.6,
+          "killer_clan": "union",
+          "victim_clan": "union",
+          "teamkill": true,
+          "official_final_score": 4,
+          "official_base_score": 4,
+          "official_repeat_mult": 1,
+          "official_resistance_mult": 1
+        }
+      ],
       "death_details": [],
       "rank": 11
     },
     {
       "player": "ya_rebenok",
       "kills": 6,
+      "team_kills": 1,
       "deaths": 7,
       "kd": 0.8571428571428571,
       "adjusted_kd": 0.7777777777777778,
@@ -7611,6 +7737,28 @@
           "ts": 1787419322051
         }
       ],
+      "team_kill_details": [
+        {
+          "time": "19:17:14",
+          "victim": "FilonsckyBack",
+          "killer": "ya_rebenok",
+          "killer_type": "player",
+          "message": "FilonsckyBack was killed by ya_rebenok (ENTITY_EXPLOSION, END_CRYSTAL)",
+          "source": "vanilla_game",
+          "official_id": 2647,
+          "ts": 1787419034247,
+          "cause": "ENTITY_EXPLOSION",
+          "weapon": "END_CRYSTAL",
+          "distance": 4.6,
+          "killer_clan": "silv",
+          "victim_clan": "silv",
+          "teamkill": true,
+          "official_final_score": 4,
+          "official_base_score": 4,
+          "official_repeat_mult": 1,
+          "official_resistance_mult": 1
+        }
+      ],
       "death_details": [
         {
           "time": "19:05:56",
@@ -7758,6 +7906,7 @@
     {
       "player": "Sega_son",
       "kills": 4,
+      "team_kills": 0,
       "deaths": 9,
       "kd": 0.4444444444444444,
       "adjusted_kd": 0.45454545454545453,
@@ -7886,6 +8035,7 @@
           "ts": 1787419319137
         }
       ],
+      "team_kill_details": [],
       "death_details": [
         {
           "time": "19:07:31",
@@ -8073,6 +8223,7 @@
     {
       "player": "ExJar",
       "kills": 3,
+      "team_kills": 0,
       "deaths": 4,
       "kd": 0.75,
       "adjusted_kd": 0.6666666666666666,
@@ -8176,6 +8327,7 @@
           "ts": 1787419047141
         }
       ],
+      "team_kill_details": [],
       "death_details": [
         {
           "time": "19:07:41",
@@ -8263,6 +8415,7 @@
     {
       "player": "tvi302",
       "kills": 1,
+      "team_kills": 0,
       "deaths": 9,
       "kd": 0.1111111111111111,
       "adjusted_kd": 0.18181818181818182,
@@ -8316,6 +8469,7 @@
           "ts": 1787418407540
         }
       ],
+      "team_kill_details": [],
       "death_details": [
         {
           "time": "19:02:35",
@@ -8503,6 +8657,7 @@
     {
       "player": "ImASteve20",
       "kills": 2,
+      "team_kills": 0,
       "deaths": 7,
       "kd": 0.2857142857142857,
       "adjusted_kd": 0.3333333333333333,
@@ -8520,14 +8675,14 @@
         "base_value": 1.8881641381656675,
         "upset_multiplier": 1.0,
         "farm_multiplier": 1.0,
-        "time": "19:08:34",
+        "time": "19:07:52",
         "message": "VALL228 was killed by ImASteve20 (ENTITY_ATTACK, MACE)",
         "cause": "ENTITY_ATTACK",
         "weapon": "MACE",
-        "distance": 3.7,
+        "distance": 2.2,
         "victim_clan": "r1h",
         "teamkill": false,
-        "official_final_score": 1
+        "official_final_score": 4
       },
       "kills_detail": [
         {
@@ -8581,6 +8736,7 @@
           "ts": 1787418514051
         }
       ],
+      "team_kill_details": [],
       "death_details": [
         {
           "time": "19:10:11",
@@ -8728,6 +8884,7 @@
     {
       "player": "_s_Shtani_x_",
       "kills": 3,
+      "team_kills": 0,
       "deaths": 8,
       "kd": 0.375,
       "adjusted_kd": 0.4,
@@ -8831,6 +8988,7 @@
           "ts": 1787418529437
         }
       ],
+      "team_kill_details": [],
       "death_details": [
         {
           "time": "19:14:43",
@@ -8998,6 +9156,7 @@
     {
       "player": "pianoblock94",
       "kills": 2,
+      "team_kills": 4,
       "deaths": 6,
       "kd": 0.3333333333333333,
       "adjusted_kd": 0.375,
@@ -9074,6 +9233,88 @@
           "official_resistance_mult": 1,
           "official_id": 2699,
           "ts": 1787419229750
+        }
+      ],
+      "team_kill_details": [
+        {
+          "time": "19:12:08",
+          "victim": "ptr_MOON_rtp",
+          "killer": "pianoblock94",
+          "killer_type": "player",
+          "message": "ptr_MOON_rtp was killed by pianoblock94 (ENTITY_ATTACK, MACE)",
+          "source": "vanilla_game",
+          "official_id": 2560,
+          "ts": 1787418728205,
+          "cause": "ENTITY_ATTACK",
+          "weapon": "MACE",
+          "distance": 4.7,
+          "killer_clan": "orden",
+          "victim_clan": "orden",
+          "teamkill": true,
+          "official_final_score": 4,
+          "official_base_score": 4,
+          "official_repeat_mult": 1,
+          "official_resistance_mult": 1
+        },
+        {
+          "time": "19:12:18",
+          "victim": "ptr_MOON_rtp",
+          "killer": "pianoblock94",
+          "killer_type": "player",
+          "message": "ptr_MOON_rtp was killed by pianoblock94 (ENTITY_ATTACK, MACE)",
+          "source": "vanilla_game",
+          "official_id": 2565,
+          "ts": 1787418738699,
+          "cause": "ENTITY_ATTACK",
+          "weapon": "MACE",
+          "distance": 1.8,
+          "killer_clan": "orden",
+          "victim_clan": "orden",
+          "teamkill": true,
+          "official_final_score": 3,
+          "official_base_score": 4,
+          "official_repeat_mult": 0.75,
+          "official_resistance_mult": 1
+        },
+        {
+          "time": "19:12:20",
+          "victim": "Romar323",
+          "killer": "pianoblock94",
+          "killer_type": "player",
+          "message": "Romar323 was killed by pianoblock94 (ENTITY_ATTACK, MACE)",
+          "source": "vanilla_game",
+          "official_id": 2566,
+          "ts": 1787418740900,
+          "cause": "ENTITY_ATTACK",
+          "weapon": "MACE",
+          "distance": 2.6,
+          "killer_clan": "orden",
+          "victim_clan": "orden",
+          "teamkill": true,
+          "official_final_score": 4,
+          "official_base_score": 4,
+          "official_repeat_mult": 1,
+          "official_resistance_mult": 1
+        },
+        {
+          "time": "19:14:37",
+          "victim": "V1chy_",
+          "killer": "pianoblock94",
+          "killer_type": "player",
+          "message": "V1chy_ was killed by pianoblock94 (ENTITY_ATTACK, MACE)",
+          "source": "vanilla_game",
+          "official_id": 2597,
+          "ts": 1787418877442,
+          "cause": "ENTITY_ATTACK",
+          "weapon": "MACE",
+          "distance": 2.6,
+          "killer_clan": "orden",
+          "victim_clan": "orden",
+          "teamkill": true,
+          "official_final_score": 4,
+          "official_base_score": 4,
+          "official_repeat_mult": 1,
+          "official_resistance_mult": 1
         }
       ],
       "death_details": [
@@ -9203,6 +9444,7 @@
     {
       "player": "cherepavice",
       "kills": 2,
+      "team_kills": 0,
       "deaths": 4,
       "kd": 0.5,
       "adjusted_kd": 0.5,
@@ -9281,6 +9523,7 @@
           "ts": 1787419112836
         }
       ],
+      "team_kill_details": [],
       "death_details": [
         {
           "time": "19:11:37",
@@ -9368,6 +9611,7 @@
     {
       "player": "lorenro2325",
       "kills": 1,
+      "team_kills": 0,
       "deaths": 6,
       "kd": 0.16666666666666666,
       "adjusted_kd": 0.25,
@@ -9421,6 +9665,7 @@
           "ts": 1787418896797
         }
       ],
+      "team_kill_details": [],
       "death_details": [
         {
           "time": "19:06:52",
@@ -9548,6 +9793,7 @@
     {
       "player": "shadow_uzi",
       "kills": 2,
+      "team_kills": 0,
       "deaths": 7,
       "kd": 0.2857142857142857,
       "adjusted_kd": 0.3333333333333333,
@@ -9626,6 +9872,7 @@
           "ts": 1787418901795
         }
       ],
+      "team_kill_details": [],
       "death_details": [
         {
           "time": "19:11:50",
@@ -9773,6 +10020,7 @@
     {
       "player": "www23",
       "kills": 1,
+      "team_kills": 0,
       "deaths": 6,
       "kd": 0.16666666666666666,
       "adjusted_kd": 0.25,
@@ -9826,6 +10074,7 @@
           "ts": 1787418956386
         }
       ],
+      "team_kill_details": [],
       "death_details": [
         {
           "time": "19:03:52",
@@ -9953,6 +10202,7 @@
     {
       "player": "Dok_Si",
       "kills": 1,
+      "team_kills": 0,
       "deaths": 1,
       "kd": 1.0,
       "adjusted_kd": 0.6666666666666666,
@@ -10006,6 +10256,7 @@
           "ts": 1787419271288
         }
       ],
+      "team_kill_details": [],
       "death_details": [
         {
           "time": "19:16:02",
@@ -10033,6 +10284,7 @@
     {
       "player": "pulmenb",
       "kills": 1,
+      "team_kills": 0,
       "deaths": 5,
       "kd": 0.2,
       "adjusted_kd": 0.2857142857142857,
@@ -10086,6 +10338,7 @@
           "ts": 1787419015851
         }
       ],
+      "team_kill_details": [],
       "death_details": [
         {
           "time": "19:09:13",
@@ -10193,6 +10446,7 @@
     {
       "player": "VALL228",
       "kills": 2,
+      "team_kills": 0,
       "deaths": 9,
       "kd": 0.2222222222222222,
       "adjusted_kd": 0.2727272727272727,
@@ -10210,11 +10464,11 @@
         "base_value": 1.0,
         "upset_multiplier": 1.0,
         "farm_multiplier": 1.0,
-        "time": "19:06:47",
-        "message": "Clean4ik was killed by VALL228 (THORNS, NETHERITE_SWORD)",
-        "cause": "THORNS",
+        "time": "19:02:32",
+        "message": "Clean4ik was killed by VALL228 (PROJECTILE, NETHERITE_SWORD)",
+        "cause": "PROJECTILE",
         "weapon": "NETHERITE_SWORD",
-        "distance": 1.4,
+        "distance": 2.8,
         "victim_clan": "seal",
         "teamkill": false,
         "official_final_score": 2
@@ -10271,6 +10525,7 @@
           "ts": 1787418407547
         }
       ],
+      "team_kill_details": [],
       "death_details": [
         {
           "time": "19:01:05",
@@ -10458,6 +10713,7 @@
     {
       "player": "bad1bunny",
       "kills": 1,
+      "team_kills": 0,
       "deaths": 8,
       "kd": 0.125,
       "adjusted_kd": 0.2,
@@ -10511,6 +10767,7 @@
           "ts": 1787418891249
         }
       ],
+      "team_kill_details": [],
       "death_details": [
         {
           "time": "19:07:10",
@@ -10678,6 +10935,7 @@
     {
       "player": "silver",
       "kills": 1,
+      "team_kills": 0,
       "deaths": 10,
       "kd": 0.1,
       "adjusted_kd": 0.16666666666666666,
@@ -10731,6 +10989,7 @@
           "ts": 1787418923293
         }
       ],
+      "team_kill_details": [],
       "death_details": [
         {
           "time": "19:05:52",
@@ -10938,6 +11197,7 @@
     {
       "player": "AmIAngel",
       "kills": 1,
+      "team_kills": 0,
       "deaths": 4,
       "kd": 0.25,
       "adjusted_kd": 0.3333333333333333,
@@ -10991,6 +11251,7 @@
           "ts": 1787419101041
         }
       ],
+      "team_kill_details": [],
       "death_details": [
         {
           "time": "19:05:19",
@@ -11078,6 +11339,7 @@
     {
       "player": "KPEKEP_1",
       "kills": 1,
+      "team_kills": 0,
       "deaths": 8,
       "kd": 0.125,
       "adjusted_kd": 0.2,
@@ -11131,6 +11393,7 @@
           "ts": 1787418629625
         }
       ],
+      "team_kill_details": [],
       "death_details": [
         {
           "time": "19:02:56",
@@ -11298,6 +11561,7 @@
     {
       "player": "Rennsurax",
       "kills": 1,
+      "team_kills": 0,
       "deaths": 9,
       "kd": 0.1111111111111111,
       "adjusted_kd": 0.18181818181818182,
@@ -11351,6 +11615,7 @@
           "ts": 1787418435242
         }
       ],
+      "team_kill_details": [],
       "death_details": [
         {
           "time": "19:04:09",
@@ -11538,6 +11803,7 @@
     {
       "player": "Vovan1910",
       "kills": 1,
+      "team_kills": 0,
       "deaths": 10,
       "kd": 0.1,
       "adjusted_kd": 0.16666666666666666,
@@ -11591,6 +11857,7 @@
           "ts": 1787418119743
         }
       ],
+      "team_kill_details": [],
       "death_details": [
         {
           "time": "19:01:21",
@@ -11798,6 +12065,7 @@
     {
       "player": "Clean4ik",
       "kills": 0,
+      "team_kills": 0,
       "deaths": 10,
       "kd": 0.0,
       "adjusted_kd": 0.08333333333333333,
@@ -11811,6 +12079,7 @@
       "farm_affected_kills": 0,
       "best_kill": null,
       "kills_detail": [],
+      "team_kill_details": [],
       "death_details": [
         {
           "time": "19:00:45",
@@ -12018,6 +12287,7 @@
     {
       "player": "DanteMenelay",
       "kills": 0,
+      "team_kills": 0,
       "deaths": 6,
       "kd": 0.0,
       "adjusted_kd": 0.125,
@@ -12031,6 +12301,7 @@
       "farm_affected_kills": 0,
       "best_kill": null,
       "kills_detail": [],
+      "team_kill_details": [],
       "death_details": [
         {
           "time": "19:16:23",
@@ -12158,6 +12429,7 @@
     {
       "player": "FilonsckyBack",
       "kills": 0,
+      "team_kills": 0,
       "deaths": 10,
       "kd": 0.0,
       "adjusted_kd": 0.08333333333333333,
@@ -12171,6 +12443,7 @@
       "farm_affected_kills": 0,
       "best_kill": null,
       "kills_detail": [],
+      "team_kill_details": [],
       "death_details": [
         {
           "time": "19:02:30",
@@ -12378,6 +12651,7 @@
     {
       "player": "GenshinImpact777",
       "kills": 0,
+      "team_kills": 0,
       "deaths": 10,
       "kd": 0.0,
       "adjusted_kd": 0.08333333333333333,
@@ -12391,6 +12665,7 @@
       "farm_affected_kills": 0,
       "best_kill": null,
       "kills_detail": [],
+      "team_kill_details": [],
       "death_details": [
         {
           "time": "19:02:29",
@@ -12598,6 +12873,7 @@
     {
       "player": "KellJ",
       "kills": 0,
+      "team_kills": 0,
       "deaths": 4,
       "kd": 0.0,
       "adjusted_kd": 0.16666666666666666,
@@ -12611,6 +12887,7 @@
       "farm_affected_kills": 0,
       "best_kill": null,
       "kills_detail": [],
+      "team_kill_details": [],
       "death_details": [
         {
           "time": "19:14:34",
@@ -12698,6 +12975,7 @@
     {
       "player": "NeSheikhYT",
       "kills": 0,
+      "team_kills": 0,
       "deaths": 3,
       "kd": 0.0,
       "adjusted_kd": 0.2,
@@ -12711,6 +12989,7 @@
       "farm_affected_kills": 0,
       "best_kill": null,
       "kills_detail": [],
+      "team_kill_details": [],
       "death_details": [
         {
           "time": "19:03:31",
@@ -12778,6 +13057,7 @@
     {
       "player": "Raud_Vaim",
       "kills": 0,
+      "team_kills": 0,
       "deaths": 4,
       "kd": 0.0,
       "adjusted_kd": 0.16666666666666666,
@@ -12791,6 +13071,7 @@
       "farm_affected_kills": 0,
       "best_kill": null,
       "kills_detail": [],
+      "team_kill_details": [],
       "death_details": [
         {
           "time": "19:15:30",
@@ -12878,6 +13159,7 @@
     {
       "player": "Riddars",
       "kills": 0,
+      "team_kills": 0,
       "deaths": 7,
       "kd": 0.0,
       "adjusted_kd": 0.1111111111111111,
@@ -12891,6 +13173,7 @@
       "farm_affected_kills": 0,
       "best_kill": null,
       "kills_detail": [],
+      "team_kill_details": [],
       "death_details": [
         {
           "time": "19:14:44",
@@ -13038,6 +13321,7 @@
     {
       "player": "Romar323",
       "kills": 0,
+      "team_kills": 0,
       "deaths": 7,
       "kd": 0.0,
       "adjusted_kd": 0.1111111111111111,
@@ -13051,6 +13335,7 @@
       "farm_affected_kills": 0,
       "best_kill": null,
       "kills_detail": [],
+      "team_kill_details": [],
       "death_details": [
         {
           "time": "19:08:49",
@@ -13198,6 +13483,7 @@
     {
       "player": "SOUPVisual",
       "kills": 0,
+      "team_kills": 0,
       "deaths": 8,
       "kd": 0.0,
       "adjusted_kd": 0.1,
@@ -13211,6 +13497,7 @@
       "farm_affected_kills": 0,
       "best_kill": null,
       "kills_detail": [],
+      "team_kill_details": [],
       "death_details": [
         {
           "time": "19:01:47",
@@ -13378,6 +13665,7 @@
     {
       "player": "Sav_21",
       "kills": 0,
+      "team_kills": 0,
       "deaths": 10,
       "kd": 0.0,
       "adjusted_kd": 0.08333333333333333,
@@ -13391,6 +13679,7 @@
       "farm_affected_kills": 0,
       "best_kill": null,
       "kills_detail": [],
+      "team_kill_details": [],
       "death_details": [
         {
           "time": "19:02:11",
@@ -13598,6 +13887,7 @@
     {
       "player": "TheBuilderHD",
       "kills": 0,
+      "team_kills": 0,
       "deaths": 2,
       "kd": 0.0,
       "adjusted_kd": 0.25,
@@ -13611,6 +13901,7 @@
       "farm_affected_kills": 0,
       "best_kill": null,
       "kills_detail": [],
+      "team_kill_details": [],
       "death_details": [
         {
           "time": "19:05:52",
@@ -13658,6 +13949,7 @@
     {
       "player": "V1chy_",
       "kills": 0,
+      "team_kills": 0,
       "deaths": 7,
       "kd": 0.0,
       "adjusted_kd": 0.1111111111111111,
@@ -13671,6 +13963,7 @@
       "farm_affected_kills": 0,
       "best_kill": null,
       "kills_detail": [],
+      "team_kill_details": [],
       "death_details": [
         {
           "time": "19:08:55",
@@ -13818,6 +14111,7 @@
     {
       "player": "Yaroslav526742",
       "kills": 0,
+      "team_kills": 0,
       "deaths": 10,
       "kd": 0.0,
       "adjusted_kd": 0.08333333333333333,
@@ -13831,6 +14125,7 @@
       "farm_affected_kills": 0,
       "best_kill": null,
       "kills_detail": [],
+      "team_kill_details": [],
       "death_details": [
         {
           "time": "19:05:39",
@@ -14038,6 +14333,7 @@
     {
       "player": "alkinik",
       "kills": 0,
+      "team_kills": 0,
       "deaths": 10,
       "kd": 0.0,
       "adjusted_kd": 0.08333333333333333,
@@ -14051,6 +14347,7 @@
       "farm_affected_kills": 0,
       "best_kill": null,
       "kills_detail": [],
+      "team_kill_details": [],
       "death_details": [
         {
           "time": "19:04:20",
@@ -14258,6 +14555,7 @@
     {
       "player": "francyska00",
       "kills": 0,
+      "team_kills": 0,
       "deaths": 10,
       "kd": 0.0,
       "adjusted_kd": 0.08333333333333333,
@@ -14271,6 +14569,7 @@
       "farm_affected_kills": 0,
       "best_kill": null,
       "kills_detail": [],
+      "team_kill_details": [],
       "death_details": [
         {
           "time": "19:03:59",
@@ -14478,6 +14777,7 @@
     {
       "player": "mislend",
       "kills": 0,
+      "team_kills": 0,
       "deaths": 7,
       "kd": 0.0,
       "adjusted_kd": 0.1111111111111111,
@@ -14491,6 +14791,7 @@
       "farm_affected_kills": 0,
       "best_kill": null,
       "kills_detail": [],
+      "team_kill_details": [],
       "death_details": [
         {
           "time": "19:12:15",
@@ -14638,6 +14939,7 @@
     {
       "player": "ptr_MOON_rtp",
       "kills": 0,
+      "team_kills": 0,
       "deaths": 10,
       "kd": 0.0,
       "adjusted_kd": 0.08333333333333333,
@@ -14651,6 +14953,7 @@
       "farm_affected_kills": 0,
       "best_kill": null,
       "kills_detail": [],
+      "team_kill_details": [],
       "death_details": [
         {
           "time": "19:01:00",
@@ -14858,6 +15161,7 @@
     {
       "player": "richman8",
       "kills": 0,
+      "team_kills": 0,
       "deaths": 6,
       "kd": 0.0,
       "adjusted_kd": 0.125,
@@ -14871,6 +15175,7 @@
       "farm_affected_kills": 0,
       "best_kill": null,
       "kills_detail": [],
+      "team_kill_details": [],
       "death_details": [
         {
           "time": "19:12:15",
@@ -14998,6 +15303,7 @@
     {
       "player": "varrr4",
       "kills": 0,
+      "team_kills": 0,
       "deaths": 10,
       "kd": 0.0,
       "adjusted_kd": 0.08333333333333333,
@@ -15011,6 +15317,7 @@
       "farm_affected_kills": 0,
       "best_kill": null,
       "kills_detail": [],
+      "team_kill_details": [],
       "death_details": [
         {
           "time": "19:06:17",

@@ -60,6 +60,18 @@ def load_fixture(path):
     return [data]
 
 
+def describe_siege(siege):
+    value = siege.get("started_at") or siege.get("date")
+    try:
+        label = date_part(value) if value is not None else "unknown-date"
+    except (TypeError, ValueError, OSError):
+        label = str(value or "unknown-date")
+    siege_id = siege.get("id")
+    if siege_id is None:
+        return label
+    return f"{label} (id={siege_id})"
+
+
 def fetch_payloads(base_url, cookie, month=None, limit=None):
     index = request_json(base_url, "/lk/sieges", cookie)
     sieges = index.get("sieges")
@@ -75,6 +87,11 @@ def fetch_payloads(base_url, cookie, month=None, limit=None):
 
     if limit:
         selected = selected[:limit]
+
+    if selected:
+        print(f"Selected {len(selected)} siege(s). Latest selected: {describe_siege(selected[0])}.")
+    else:
+        print("Selected 0 sieges.")
 
     payloads = []
     for siege in selected:
@@ -117,6 +134,8 @@ def main(argv=None):
             sieges = index.get("sieges")
             count = len(sieges) if isinstance(sieges, list) else 0
             print(f"Authenticated. /lk/sieges returned {count} sieges.")
+            if count:
+                print(f"Latest listed siege: {describe_siege(sieges[0])}.")
             return 0
         payloads = fetch_payloads(args.base_url, args.cookie, args.month, args.limit)
 
@@ -124,7 +143,9 @@ def main(argv=None):
     if not reports:
         raise SystemExit("No siege payloads were imported.")
     write_outputs(reports)
-    print(f"Imported {len(reports)} siege reports from Vanilla Game.")
+    dates = ", ".join(report["date"] for report in reports[:5])
+    suffix = "..." if len(reports) > 5 else ""
+    print(f"Imported {len(reports)} siege reports from Vanilla Game: {dates}{suffix}")
     return 0
 
 

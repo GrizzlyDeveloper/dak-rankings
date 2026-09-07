@@ -11,6 +11,7 @@ Public static DAK ranking for Vanilla Game Aden sieges.
 - mobile-friendly player cards;
 - player profile modal with siege history;
 - detailed kill/death summary per siege;
+- separate `По своим` accounting for official teamkills;
 - clickable best-kill victim names;
 - NameMC profile links and Minecraft head previews.
 
@@ -37,8 +38,9 @@ python scripts/analyze.py latest.log 2026-08-29
 ## Automatic Updates
 
 `.github/workflows/update-rankings.yml` runs every Saturday after the 19:00
-Europe/Paris Aden siege window and can also be started manually from GitHub
-Actions.
+Europe/Paris Aden siege window, then retries on Sunday and Monday morning in
+case the first official API request fails. It can also be started manually from
+GitHub Actions.
 
 For a local official refresh:
 

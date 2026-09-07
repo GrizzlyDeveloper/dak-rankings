@@ -325,6 +325,10 @@ function playerEventsForSiege(name,siege){
       ...event,
       score:event.kill_score ?? event.score
     })),
+    teamKills:(row?.team_kill_details || events.filter(e=>e.killer===name && e.teamkill)).map(event=>({
+      ...event,
+      score:null
+    })),
     deaths:(row?.death_details || events.filter(e=>e.victim===name)).map(event=>({
       ...event,
       score:event.kill_score ?? event.score ?? scoreByDeath.get(`${event.time}\u0000${event.killer}\u0000${event.victim}\u0000${event.message}`)
@@ -343,6 +347,7 @@ function seasonRows(mode="season"){
     const seasonScore=history.reduce((sum,x)=>sum+(x.r.final_score || 0),0);
     const totalDak=history.reduce((sum,x)=>sum+(x.r.dak || 0),0);
     const kills=summary.kills ?? history.reduce((sum,x)=>sum+(x.r.kills || 0),0);
+    const teamKills=summary.team_kills ?? history.reduce((sum,x)=>sum+(x.r.team_kills || 0),0);
     const deaths=summary.deaths ?? history.reduce((sum,x)=>sum+(x.r.deaths || 0),0);
     return {
       ...summary,
@@ -352,8 +357,10 @@ function seasonRows(mode="season"){
       total_dak:totalDak,
       average_dak_per_siege:appearances?totalDak/appearances:0,
       average_kills:appearances?kills/appearances:0,
+      average_team_kills:appearances?teamKills/appearances:0,
       average_deaths:appearances?deaths/appearances:0,
       kills,
+      team_kills:teamKills,
       deaths,
       best_kill:bestKillFrom(history)
     };
@@ -397,6 +404,7 @@ function columns(){
     {key:"total_dak",label:"Total DAK",value:r=>fmt(r.total_dak)},
     {key:"average_dak_per_siege",label:"Avg DAK",value:r=>fmt(r.average_dak_per_siege)},
     {key:"kills",label:"Kills",value:r=>r.kills},
+    {key:"team_kills",label:"По своим",value:r=>r.team_kills??0},
     {key:"deaths",label:"Deaths",value:r=>r.deaths},
     {key:"average_kills",label:"Kills avg",value:r=>fmt(r.average_kills)},
     {key:"best_kill",label:"Лучшее убийство",cls:"best",value:bestKillCell}
@@ -411,6 +419,7 @@ function columns(){
     {key:"average_kills",label:"Kills avg",value:r=>fmt(r.average_kills)},
     {key:"average_deaths",label:"Deaths avg",value:r=>fmt(r.average_deaths)},
     {key:"kills",label:"Kills",value:r=>r.kills},
+    {key:"team_kills",label:"По своим",value:r=>r.team_kills??0},
     {key:"deaths",label:"Deaths",value:r=>r.deaths},
     {key:"best_kill",label:"Лучшее убийство",cls:"best",value:bestKillCell}
   ];
@@ -422,6 +431,7 @@ function columns(){
     {key:"akd",label:"AKD",value:r=>fmt(r.akd)},
     {key:"quality_index",label:"QI",value:r=>fmt(r.quality_index)},
     {key:"kills",label:"Kills",value:r=>r.kills},
+    {key:"team_kills",label:"По своим",value:r=>r.team_kills??0},
     {key:"deaths",label:"Deaths",value:r=>r.deaths},
     {key:"kd",label:"K/D",value:r=>fmt(r.kd)},
     {key:"strength",label:"Strength",value:r=>fmt(r.strength)},
@@ -476,11 +486,13 @@ function render(){
 function findPlayer(name){return DATA.sieges.flatMap(s=>s.ranking).find(r=>r.player===name)}
 function eventItemHtml(event){
   const score=event.score==null ? "" : `<span>DAK ${fmt(event.score)}</span>`;
+  const teamkill=event.teamkill ? `<span class="eventTime">свой</span>` : "";
   return `<div class="eventItem">
     <div class="eventMeta">
       <span class="eventTime">${esc(event.time)}</span>
       <span>${profileLink(event.killer)} → ${profileLink(event.victim)}</span>
       ${score}
+      ${teamkill}
     </div>
     <div class="eventMessage">${esc(event.message)}</div>
   </div>`;
@@ -502,15 +514,17 @@ function siegeDetailsHtml(name,history){
       return `<div class="siegeDetail" data-siege-panel="${esc(x.s.id)}" ${x.s.id===activeId?"":"hidden"}>
         <div class="grid">
           <div class="metric"><b>${x.r.kills}</b><span>Kills</span></div>
+          <div class="metric"><b>${x.r.team_kills??0}</b><span>По своим</span></div>
           <div class="metric"><b>${x.r.deaths}</b><span>Deaths</span></div>
           <div class="metric"><b>${fmt(x.r.final_score)}</b><span>Final</span></div>
-          <div class="metric"><b>${fmt(x.r.dak)}</b><span>DAK</span></div>
         </div>
         <div class="detailTabs" style="margin-top:12px">
           <button class="detailTab active" type="button" data-kind-tab="kills" onclick="setDetailKind(this,'kills')">Убийства (${events.kills.length})</button>
+          <button class="detailTab" type="button" data-kind-tab="teamKills" onclick="setDetailKind(this,'teamKills')">По своим (${events.teamKills.length})</button>
           <button class="detailTab" type="button" data-kind-tab="deaths" onclick="setDetailKind(this,'deaths')">Смерти (${events.deaths.length})</button>
         </div>
         <div data-kind-panel="kills">${eventListHtml(events.kills,"Убийств в этой осаде нет.")}</div>
+        <div data-kind-panel="teamKills" hidden>${eventListHtml(events.teamKills,"Убийств по своим в этой осаде нет.")}</div>
         <div data-kind-panel="deaths" hidden>${eventListHtml(events.deaths,"Смертей от игроков в этой осаде нет.")}</div>
       </div>`;
     }).join("")}
@@ -545,11 +559,11 @@ function openModal(name){
       <div class="metric"><b>${season?fmt(season.season_score):fmt(r.final_score)}</b><span>Season score</span></div>
       <div class="metric"><b>${season?fmt(season.average_score):fmt(r.final_score)}</b><span>Average score</span></div>
       <div class="metric"><b>${season?`${season.appearances}/${seasonSieges().length}`:"1"}</b><span>Sieges played</span></div>
-      <div class="metric"><b>${season?`${season.kills} K / ${season.deaths} D`:`${r.kills} K / ${r.deaths} D`}</b><span>Total kills / deaths</span></div>
+      <div class="metric"><b>${season?`${season.kills} K / ${season.team_kills??0} TK / ${season.deaths} D`:`${r.kills} K / ${r.team_kills??0} TK / ${r.deaths} D`}</b><span>Kills / teamkills / deaths</span></div>
     </div>
     <div class="section">
       <h3>История осад</h3>
-      <table class="history"><tbody>${history.map(x=>`<tr><td><b>${esc(x.s.date)}</b></td><td>Final ${fmt(x.r.final_score)}</td><td>DAK ${fmt(x.r.dak)}</td><td>AKD ${fmt(x.r.akd)}</td><td>${x.r.kills} K / ${x.r.deaths} D</td></tr>`).join("")}</tbody></table>
+      <table class="history"><tbody>${history.map(x=>`<tr><td><b>${esc(x.s.date)}</b></td><td>Final ${fmt(x.r.final_score)}</td><td>DAK ${fmt(x.r.dak)}</td><td>AKD ${fmt(x.r.akd)}</td><td>${x.r.kills} K / ${x.r.team_kills??0} TK / ${x.r.deaths} D</td></tr>`).join("")}</tbody></table>
       ${siegeDetailsHtml(name,history)}
     </div>
     <div class="section">

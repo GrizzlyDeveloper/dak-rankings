@@ -239,10 +239,16 @@ def build_report(
     players = set()
     for event in death_events:
         players.add(event["victim"])
+        if event["killer_type"] in {"player", "self"} and event["killer"]:
+            players.add(event["killer"])
     for event in scored_kills:
         players.add(event["killer"])
 
     kills = Counter(event["killer"] for event in scored_kills)
+    team_kills = Counter(
+        event["killer"] for event in death_events
+        if event.get("teamkill") and event["killer_type"] == "player"
+    )
     deaths = Counter(event["victim"] for event in death_events)
     adjusted = {player: (kills[player] + 1) / (deaths[player] + 2) for player in players}
     median_adjusted = median(list(adjusted.values()), 0.25)
@@ -256,12 +262,15 @@ def build_report(
 
     repeat_counts = Counter((event["killer"], event["victim"]) for event in scored_kills)
     kills_detail = defaultdict(list)
+    team_kill_details = defaultdict(list)
     death_details = defaultdict(list)
     upset_counts = Counter()
     farm_counts = Counter()
 
     for event in death_events:
         death_details[event["victim"]].append(dict(event))
+        if event.get("teamkill") and event["killer_type"] == "player":
+            team_kill_details[event["killer"]].append(dict(event))
 
     for event in scored_kills:
         victim_percentile = strength_percentile.get(event["victim"], 0.0)
@@ -313,6 +322,7 @@ def build_report(
     ranking = []
     for player in players:
         player_kills = kills[player]
+        player_team_kills = team_kills[player]
         player_deaths = deaths[player]
         player_dak = dak[player]
         akd = player_dak / player_kills if player_kills else 0.0
@@ -326,6 +336,7 @@ def build_report(
         ranking.append({
             "player": player,
             "kills": player_kills,
+            "team_kills": player_team_kills,
             "deaths": player_deaths,
             "kd": player_kills / player_deaths if player_deaths else None,
             "adjusted_kd": adjusted[player],
@@ -339,6 +350,7 @@ def build_report(
             "farm_affected_kills": farm_counts[player],
             "best_kill": best_kill(best),
             "kills_detail": sorted(kills_detail[player], key=lambda kill: kill["time"]),
+            "team_kill_details": sorted(team_kill_details[player], key=lambda kill: kill["time"]),
             "death_details": sorted(death_details[player], key=lambda death: death["time"]),
         })
 
@@ -465,6 +477,7 @@ def build_player_summary(reports):
             "average_dak_per_siege": total_dak / appearances if appearances else 0.0,
             "average_final_score": total_final / appearances if appearances else 0.0,
             "kills": sum(row["kills"] for row in rows),
+            "team_kills": sum(row.get("team_kills", 0) for row in rows),
             "deaths": sum(row["deaths"] for row in rows),
             "_season_score": total_final,
         })
