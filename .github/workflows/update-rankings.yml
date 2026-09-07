@@ -28,11 +28,15 @@ jobs:
       - name: Check Vanilla Game auth
         env:
           VANILLA_GAME_COOKIE: ${{ secrets.VANILLA_GAME_COOKIE }}
+          VANILLA_GAME_USERNAME: ${{ secrets.VANILLA_GAME_USERNAME }}
+          VANILLA_GAME_PASSWORD: ${{ secrets.VANILLA_GAME_PASSWORD }}
         run: python scripts/update_from_vanilla.py --check-auth
 
       - name: Fetch Vanilla Game sieges and rebuild rankings
         env:
           VANILLA_GAME_COOKIE: ${{ secrets.VANILLA_GAME_COOKIE }}
+          VANILLA_GAME_USERNAME: ${{ secrets.VANILLA_GAME_USERNAME }}
+          VANILLA_GAME_PASSWORD: ${{ secrets.VANILLA_GAME_PASSWORD }}
         run: python scripts/update_from_vanilla.py
 
       - name: Commit updated data

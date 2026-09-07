@@ -26,8 +26,10 @@ The updater reads:
 - `/lk/sieges/kills?siege=<id>`
 
 Those endpoints require an authenticated account that has access to the siege
-section. Do not commit passwords or cookies. Put the browser session cookie into
-the GitHub repository secret `VANILLA_GAME_COOKIE`.
+section. Do not commit passwords or cookies. Prefer the repository secrets
+`VANILLA_GAME_USERNAME` and `VANILLA_GAME_PASSWORD`; the updater will create a
+fresh session automatically. `VANILLA_GAME_COOKIE` is still supported as a
+manual fallback.
 
 Local Minecraft logs are still supported as a fallback:
 
@@ -45,7 +47,8 @@ GitHub Actions.
 For a local official refresh:
 
 ```bash
-set VANILLA_GAME_COOKIE=your_cookie_here
+set VANILLA_GAME_USERNAME=your_email_or_login
+set VANILLA_GAME_PASSWORD=your_password
 python scripts/update_from_vanilla.py
 ```
 
