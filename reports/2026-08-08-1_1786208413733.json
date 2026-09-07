@@ -1,7 +1,7 @@
 {
   "id": "2026-08-08-1_1786208413733",
   "date": "2026-08-08",
-  "name": "Осада №4",
+  "name": "Осада №5",
   "source": "vanilla_game_api",
   "source_meta": {
     "siege_id": "1_1786208413733",
@@ -15,8 +15,8 @@
     },
     "official_top_count": 15
   },
-  "start_time": "19:00:57",
-  "end_time": "19:24:00",
+  "start_time": "17:00:57",
+  "end_time": "17:24:00",
   "duration_minutes": null,
   "owner": "union",
   "event_count": 244,
@@ -52,18 +52,18 @@
         "base_value": 2.611775278229552,
         "upset_multiplier": 1.0,
         "farm_multiplier": 1.0,
-        "time": "19:04:02",
-        "message": "GeLioS was killed by lasterothXIII (ENTITY_EXPLOSION, END_CRYSTAL)",
-        "cause": "ENTITY_EXPLOSION",
-        "weapon": "END_CRYSTAL",
-        "distance": 2.6,
+        "time": "17:23:22",
+        "message": "GeLioS was killed by lasterothXIII (ENTITY_ATTACK, NETHERITE_SWORD)",
+        "cause": "ENTITY_ATTACK",
+        "weapon": "NETHERITE_SWORD",
+        "distance": 2.5,
         "victim_clan": "union",
         "teamkill": false,
         "official_final_score": 4
       },
       "kills_detail": [
         {
-          "time": "19:04:02",
+          "time": "17:04:02",
           "victim": "GeLioS",
           "killer": "lasterothXIII",
           "message": "GeLioS was killed by lasterothXIII (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -88,7 +88,7 @@
           "ts": 1786208642316
         },
         {
-          "time": "19:04:05",
+          "time": "17:04:05",
           "victim": "WiredAsh067381",
           "killer": "lasterothXIII",
           "message": "WiredAsh067381 was killed by lasterothXIII (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -113,7 +113,7 @@
           "ts": 1786208645569
         },
         {
-          "time": "19:04:57",
+          "time": "17:04:57",
           "victim": "Maxim5509",
           "killer": "lasterothXIII",
           "message": "Maxim5509 was killed by lasterothXIII (ENTITY_EXPLOSION, TOTEM_OF_UNDYING)",
@@ -138,7 +138,7 @@
           "ts": 1786208697316
         },
         {
-          "time": "19:05:50",
+          "time": "17:05:50",
           "victim": "tuhcakorol2010",
           "killer": "lasterothXIII",
           "message": "tuhcakorol2010 was killed by lasterothXIII (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -163,7 +163,7 @@
           "ts": 1786208750114
         },
         {
-          "time": "19:06:34",
+          "time": "17:06:34",
           "victim": "genamin134",
           "killer": "lasterothXIII",
           "message": "genamin134 was killed by lasterothXIII (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -188,7 +188,7 @@
           "ts": 1786208794762
         },
         {
-          "time": "19:07:04",
+          "time": "17:07:04",
           "victim": "WiredAsh067381",
           "killer": "lasterothXIII",
           "message": "WiredAsh067381 was killed by lasterothXIII (ENTITY_EXPLOSION, TOTEM_OF_UNDYING)",
@@ -213,7 +213,7 @@
           "ts": 1786208824720
         },
         {
-          "time": "19:07:50",
+          "time": "17:07:50",
           "victim": "tuhcakorol2010",
           "killer": "lasterothXIII",
           "message": "tuhcakorol2010 was killed by lasterothXIII (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -238,7 +238,7 @@
           "ts": 1786208870516
         },
         {
-          "time": "19:08:07",
+          "time": "17:08:07",
           "victim": "ani_kaa",
           "killer": "lasterothXIII",
           "message": "ani_kaa was killed by lasterothXIII (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -263,7 +263,7 @@
           "ts": 1786208887217
         },
         {
-          "time": "19:09:16",
+          "time": "17:09:16",
           "victim": "Neko_shar1k",
           "killer": "lasterothXIII",
           "message": "Neko_shar1k was killed by lasterothXIII (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -288,7 +288,7 @@
           "ts": 1786208956515
         },
         {
-          "time": "19:09:30",
+          "time": "17:09:30",
           "victim": "Romar323",
           "killer": "lasterothXIII",
           "message": "Romar323 was killed by lasterothXIII (ENTITY_EXPLOSION, TOTEM_OF_UNDYING)",
@@ -313,7 +313,7 @@
           "ts": 1786208970166
         },
         {
-          "time": "19:09:44",
+          "time": "17:09:44",
           "victim": "Yaroslav526742",
           "killer": "lasterothXIII",
           "message": "Yaroslav526742 was killed by lasterothXIII (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -338,7 +338,7 @@
           "ts": 1786208984819
         },
         {
-          "time": "19:09:49",
+          "time": "17:09:49",
           "victim": "GeLioS",
           "killer": "lasterothXIII",
           "message": "GeLioS was killed by lasterothXIII (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -363,7 +363,7 @@
           "ts": 1786208989669
         },
         {
-          "time": "19:10:05",
+          "time": "17:10:05",
           "victim": "varpex",
           "killer": "lasterothXIII",
           "message": "varpex was killed by lasterothXIII (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -388,7 +388,7 @@
           "ts": 1786209005867
         },
         {
-          "time": "19:10:19",
+          "time": "17:10:19",
           "victim": "Neko_shar1k",
           "killer": "lasterothXIII",
           "message": "Neko_shar1k was killed by lasterothXIII (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -413,7 +413,7 @@
           "ts": 1786209019950
         },
         {
-          "time": "19:11:12",
+          "time": "17:11:12",
           "victim": "Neko_shar1k",
           "killer": "lasterothXIII",
           "message": "Neko_shar1k was killed by lasterothXIII (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -438,7 +438,7 @@
           "ts": 1786209072967
         },
         {
-          "time": "19:11:34",
+          "time": "17:11:34",
           "victim": "GGWka",
           "killer": "lasterothXIII",
           "message": "GGWka was killed by lasterothXIII (ENTITY_EXPLOSION, TOTEM_OF_UNDYING)",
@@ -463,7 +463,7 @@
           "ts": 1786209094827
         },
         {
-          "time": "19:11:43",
+          "time": "17:11:43",
           "victim": "SOUPVisual",
           "killer": "lasterothXIII",
           "message": "SOUPVisual was killed by lasterothXIII (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -488,7 +488,7 @@
           "ts": 1786209103623
         },
         {
-          "time": "19:11:59",
+          "time": "17:11:59",
           "victim": "tuhcakorol2010",
           "killer": "lasterothXIII",
           "message": "tuhcakorol2010 was killed by lasterothXIII (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -513,7 +513,7 @@
           "ts": 1786209119169
         },
         {
-          "time": "19:12:08",
+          "time": "17:12:08",
           "victim": "dfkj",
           "killer": "lasterothXIII",
           "message": "dfkj was killed by lasterothXIII (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -538,7 +538,7 @@
           "ts": 1786209128529
         },
         {
-          "time": "19:13:49",
+          "time": "17:13:49",
           "victim": "Suenzon",
           "killer": "lasterothXIII",
           "message": "Suenzon was killed by lasterothXIII (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -563,7 +563,7 @@
           "ts": 1786209229068
         },
         {
-          "time": "19:14:15",
+          "time": "17:14:15",
           "victim": "Maxim5509",
           "killer": "lasterothXIII",
           "message": "Maxim5509 was killed by lasterothXIII (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -588,7 +588,7 @@
           "ts": 1786209255613
         },
         {
-          "time": "19:14:58",
+          "time": "17:14:58",
           "victim": "dfkj",
           "killer": "lasterothXIII",
           "message": "dfkj was killed by lasterothXIII (ENTITY_ATTACK, MACE)",
@@ -613,7 +613,7 @@
           "ts": 1786209298167
         },
         {
-          "time": "19:16:10",
+          "time": "17:16:10",
           "victim": "pulmenb",
           "killer": "lasterothXIII",
           "message": "pulmenb was killed by lasterothXIII (ENTITY_ATTACK, MACE)",
@@ -638,7 +638,7 @@
           "ts": 1786209370964
         },
         {
-          "time": "19:16:26",
+          "time": "17:16:26",
           "victim": "Maxim5509",
           "killer": "lasterothXIII",
           "message": "Maxim5509 was killed by lasterothXIII (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -663,7 +663,7 @@
           "ts": 1786209386417
         },
         {
-          "time": "19:16:40",
+          "time": "17:16:40",
           "victim": "helssing",
           "killer": "lasterothXIII",
           "message": "helssing was killed by lasterothXIII (ENTITY_EXPLOSION, TOTEM_OF_UNDYING)",
@@ -688,7 +688,7 @@
           "ts": 1786209400263
         },
         {
-          "time": "19:17:56",
+          "time": "17:17:56",
           "victim": "francyska00",
           "killer": "lasterothXIII",
           "message": "francyska00 was killed by lasterothXIII (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -713,7 +713,7 @@
           "ts": 1786209476475
         },
         {
-          "time": "19:18:11",
+          "time": "17:18:11",
           "victim": "GeLioS",
           "killer": "lasterothXIII",
           "message": "GeLioS was killed by lasterothXIII (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -738,7 +738,7 @@
           "ts": 1786209491309
         },
         {
-          "time": "19:19:07",
+          "time": "17:19:07",
           "victim": "Waffle_1337",
           "killer": "lasterothXIII",
           "message": "Waffle_1337 was killed by lasterothXIII (ENTITY_EXPLOSION, TOTEM_OF_UNDYING)",
@@ -763,7 +763,7 @@
           "ts": 1786209547616
         },
         {
-          "time": "19:19:24",
+          "time": "17:19:24",
           "victim": "errorrNull",
           "killer": "lasterothXIII",
           "message": "errorrNull was killed by lasterothXIII (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -788,7 +788,7 @@
           "ts": 1786209564976
         },
         {
-          "time": "19:21:13",
+          "time": "17:21:13",
           "victim": "reeliotan",
           "killer": "lasterothXIII",
           "message": "reeliotan was killed by lasterothXIII (ENTITY_ATTACK, MACE)",
@@ -813,7 +813,7 @@
           "ts": 1786209673274
         },
         {
-          "time": "19:21:28",
+          "time": "17:21:28",
           "victim": "Romar323",
           "killer": "lasterothXIII",
           "message": "Romar323 was killed by lasterothXIII (ENTITY_ATTACK, MACE)",
@@ -838,7 +838,7 @@
           "ts": 1786209688119
         },
         {
-          "time": "19:21:48",
+          "time": "17:21:48",
           "victim": "GGWka",
           "killer": "lasterothXIII",
           "message": "GGWka was killed by lasterothXIII (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -863,7 +863,7 @@
           "ts": 1786209708116
         },
         {
-          "time": "19:21:55",
+          "time": "17:21:55",
           "victim": "Romar323",
           "killer": "lasterothXIII",
           "message": "Romar323 was killed by lasterothXIII (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -888,7 +888,7 @@
           "ts": 1786209715222
         },
         {
-          "time": "19:22:13",
+          "time": "17:22:13",
           "victim": "hsyre",
           "killer": "lasterothXIII",
           "message": "hsyre was killed by lasterothXIII (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -913,7 +913,7 @@
           "ts": 1786209733766
         },
         {
-          "time": "19:22:18",
+          "time": "17:22:18",
           "victim": "Raud_Vaim",
           "killer": "lasterothXIII",
           "message": "Raud_Vaim was killed by lasterothXIII (BLOCK_EXPLOSION, NETHERITE_SWORD)",
@@ -938,7 +938,7 @@
           "ts": 1786209738770
         },
         {
-          "time": "19:22:43",
+          "time": "17:22:43",
           "victim": "Raud_Vaim",
           "killer": "lasterothXIII",
           "message": "Raud_Vaim was killed by lasterothXIII (ENTITY_ATTACK, MACE)",
@@ -963,7 +963,7 @@
           "ts": 1786209763775
         },
         {
-          "time": "19:23:06",
+          "time": "17:23:06",
           "victim": "varpex",
           "killer": "lasterothXIII",
           "message": "varpex was killed by lasterothXIII (ENTITY_ATTACK, MACE)",
@@ -988,7 +988,7 @@
           "ts": 1786209786781
         },
         {
-          "time": "19:23:22",
+          "time": "17:23:22",
           "victim": "GeLioS",
           "killer": "lasterothXIII",
           "message": "GeLioS was killed by lasterothXIII (ENTITY_ATTACK, NETHERITE_SWORD)",
@@ -1013,7 +1013,7 @@
           "ts": 1786209802418
         },
         {
-          "time": "19:23:56",
+          "time": "17:23:56",
           "victim": "TheBuilderHD",
           "killer": "lasterothXIII",
           "message": "TheBuilderHD was killed by lasterothXIII (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -1040,7 +1040,7 @@
       ],
       "team_kill_details": [
         {
-          "time": "19:20:44",
+          "time": "17:20:44",
           "victim": "sraf",
           "killer": "lasterothXIII",
           "killer_type": "player",
@@ -1084,18 +1084,18 @@
         "base_value": 2.674801737609741,
         "upset_multiplier": 1.0,
         "farm_multiplier": 1.0,
-        "time": "19:15:42",
+        "time": "17:15:57",
         "message": "xzipu was killed by MeGaXoPoH (ENTITY_ATTACK, MACE)",
         "cause": "ENTITY_ATTACK",
         "weapon": "MACE",
-        "distance": 2,
+        "distance": 2.6,
         "victim_clan": "glore",
         "teamkill": false,
-        "official_final_score": 4
+        "official_final_score": 3
       },
       "kills_detail": [
         {
-          "time": "19:03:32",
+          "time": "17:03:32",
           "victim": "errorrNull",
           "killer": "MeGaXoPoH",
           "message": "errorrNull was killed by MeGaXoPoH (ENTITY_ATTACK, MACE)",
@@ -1120,7 +1120,7 @@
           "ts": 1786208612876
         },
         {
-          "time": "19:05:02",
+          "time": "17:05:02",
           "victim": "helssing",
           "killer": "MeGaXoPoH",
           "message": "helssing was killed by MeGaXoPoH (ENTITY_ATTACK, MACE)",
@@ -1145,7 +1145,7 @@
           "ts": 1786208702330
         },
         {
-          "time": "19:05:05",
+          "time": "17:05:05",
           "victim": "Romar323",
           "killer": "MeGaXoPoH",
           "message": "Romar323 was killed by MeGaXoPoH (ENTITY_ATTACK, MACE)",
@@ -1170,7 +1170,7 @@
           "ts": 1786208705830
         },
         {
-          "time": "19:06:19",
+          "time": "17:06:19",
           "victim": "francyska00",
           "killer": "MeGaXoPoH",
           "message": "francyska00 was killed by MeGaXoPoH (ENTITY_ATTACK, MACE)",
@@ -1195,7 +1195,7 @@
           "ts": 1786208779914
         },
         {
-          "time": "19:07:03",
+          "time": "17:07:03",
           "victim": "Maxim5509",
           "killer": "MeGaXoPoH",
           "message": "Maxim5509 was killed by MeGaXoPoH (ENTITY_ATTACK, MACE)",
@@ -1220,7 +1220,7 @@
           "ts": 1786208823568
         },
         {
-          "time": "19:07:07",
+          "time": "17:07:07",
           "victim": "SOUPVisual",
           "killer": "MeGaXoPoH",
           "message": "SOUPVisual was killed by MeGaXoPoH (ENTITY_ATTACK, MACE)",
@@ -1245,7 +1245,7 @@
           "ts": 1786208827713
         },
         {
-          "time": "19:07:15",
+          "time": "17:07:15",
           "victim": "Sav_21",
           "killer": "MeGaXoPoH",
           "message": "Sav_21 was killed by MeGaXoPoH (ENTITY_ATTACK, MACE)",
@@ -1270,7 +1270,7 @@
           "ts": 1786208835568
         },
         {
-          "time": "19:07:54",
+          "time": "17:07:54",
           "victim": "Maxim5509",
           "killer": "MeGaXoPoH",
           "message": "Maxim5509 was killed by MeGaXoPoH (ENTITY_ATTACK, MACE)",
@@ -1295,7 +1295,7 @@
           "ts": 1786208874381
         },
         {
-          "time": "19:08:05",
+          "time": "17:08:05",
           "victim": "femboychik12331",
           "killer": "MeGaXoPoH",
           "message": "femboychik12331 was killed by MeGaXoPoH (ENTITY_ATTACK, MACE)",
@@ -1320,7 +1320,7 @@
           "ts": 1786208885883
         },
         {
-          "time": "19:08:33",
+          "time": "17:08:33",
           "victim": "dfkj",
           "killer": "MeGaXoPoH",
           "message": "dfkj was killed by MeGaXoPoH (ENTITY_ATTACK, MACE)",
@@ -1345,7 +1345,7 @@
           "ts": 1786208913716
         },
         {
-          "time": "19:08:53",
+          "time": "17:08:53",
           "victim": "WiredAsh067381",
           "killer": "MeGaXoPoH",
           "message": "WiredAsh067381 was killed by MeGaXoPoH (ENTITY_ATTACK, MACE)",
@@ -1370,7 +1370,7 @@
           "ts": 1786208933534
         },
         {
-          "time": "19:08:57",
+          "time": "17:08:57",
           "victim": "NomerOdinNefor",
           "killer": "MeGaXoPoH",
           "message": "NomerOdinNefor was killed by MeGaXoPoH (ENTITY_ATTACK, MACE)",
@@ -1395,7 +1395,7 @@
           "ts": 1786208937417
         },
         {
-          "time": "19:09:24",
+          "time": "17:09:24",
           "victim": "WiredAsh067381",
           "killer": "MeGaXoPoH",
           "message": "WiredAsh067381 was killed by MeGaXoPoH (ENTITY_ATTACK, MACE)",
@@ -1420,7 +1420,7 @@
           "ts": 1786208964566
         },
         {
-          "time": "19:10:44",
+          "time": "17:10:44",
           "victim": "Vovan1910",
           "killer": "MeGaXoPoH",
           "message": "Vovan1910 was killed by MeGaXoPoH (ENTITY_ATTACK, MACE)",
@@ -1445,7 +1445,7 @@
           "ts": 1786209044515
         },
         {
-          "time": "19:11:06",
+          "time": "17:11:06",
           "victim": "tuhcakorol2010",
           "killer": "MeGaXoPoH",
           "message": "tuhcakorol2010 was killed by MeGaXoPoH (ENTITY_ATTACK, MACE)",
@@ -1470,7 +1470,7 @@
           "ts": 1786209066742
         },
         {
-          "time": "19:11:14",
+          "time": "17:11:14",
           "victim": "helssing",
           "killer": "MeGaXoPoH",
           "message": "helssing was killed by MeGaXoPoH (ENTITY_ATTACK, MACE)",
@@ -1495,7 +1495,7 @@
           "ts": 1786209074516
         },
         {
-          "time": "19:11:21",
+          "time": "17:11:21",
           "victim": "helssing",
           "killer": "MeGaXoPoH",
           "message": "helssing was killed by MeGaXoPoH (ENTITY_ATTACK, MACE)",
@@ -1520,7 +1520,7 @@
           "ts": 1786209081616
         },
         {
-          "time": "19:11:47",
+          "time": "17:11:47",
           "victim": "francyska00",
           "killer": "MeGaXoPoH",
           "message": "francyska00 was killed by MeGaXoPoH (ENTITY_ATTACK, MACE)",
@@ -1545,7 +1545,7 @@
           "ts": 1786209107124
         },
         {
-          "time": "19:13:46",
+          "time": "17:13:46",
           "victim": "Xitek0",
           "killer": "MeGaXoPoH",
           "message": "Xitek0 was killed by MeGaXoPoH (ENTITY_ATTACK, MACE)",
@@ -1570,7 +1570,7 @@
           "ts": 1786209226775
         },
         {
-          "time": "19:13:59",
+          "time": "17:13:59",
           "victim": "Waffle_1337",
           "killer": "MeGaXoPoH",
           "message": "Waffle_1337 was killed by MeGaXoPoH (ENTITY_ATTACK, MACE)",
@@ -1595,7 +1595,7 @@
           "ts": 1786209239666
         },
         {
-          "time": "19:14:10",
+          "time": "17:14:10",
           "victim": "Waffle_1337",
           "killer": "MeGaXoPoH",
           "message": "Waffle_1337 was killed by MeGaXoPoH (ENTITY_ATTACK, MACE)",
@@ -1620,7 +1620,7 @@
           "ts": 1786209250616
         },
         {
-          "time": "19:14:44",
+          "time": "17:14:44",
           "victim": "femboychik12331",
           "killer": "MeGaXoPoH",
           "message": "femboychik12331 was killed by MeGaXoPoH (PROJECTILE, NETHERITE_CHESTPLATE)",
@@ -1645,7 +1645,7 @@
           "ts": 1786209284735
         },
         {
-          "time": "19:15:01",
+          "time": "17:15:01",
           "victim": "NomerOdinNefor",
           "killer": "MeGaXoPoH",
           "message": "NomerOdinNefor was killed by MeGaXoPoH (ENTITY_ATTACK, MACE)",
@@ -1670,7 +1670,7 @@
           "ts": 1786209301264
         },
         {
-          "time": "19:15:30",
+          "time": "17:15:30",
           "victim": "femboychik12331",
           "killer": "MeGaXoPoH",
           "message": "femboychik12331 was killed by MeGaXoPoH (ENTITY_ATTACK, MACE)",
@@ -1695,7 +1695,7 @@
           "ts": 1786209330270
         },
         {
-          "time": "19:15:42",
+          "time": "17:15:42",
           "victim": "xzipu",
           "killer": "MeGaXoPoH",
           "message": "xzipu was killed by MeGaXoPoH (ENTITY_ATTACK, MACE)",
@@ -1720,7 +1720,7 @@
           "ts": 1786209342166
         },
         {
-          "time": "19:15:57",
+          "time": "17:15:57",
           "victim": "xzipu",
           "killer": "MeGaXoPoH",
           "message": "xzipu was killed by MeGaXoPoH (ENTITY_ATTACK, MACE)",
@@ -1745,7 +1745,7 @@
           "ts": 1786209357663
         },
         {
-          "time": "19:16:26",
+          "time": "17:16:26",
           "victim": "genamin134",
           "killer": "MeGaXoPoH",
           "message": "genamin134 was killed by MeGaXoPoH (ENTITY_ATTACK, MACE)",
@@ -1770,7 +1770,7 @@
           "ts": 1786209386065
         },
         {
-          "time": "19:17:04",
+          "time": "17:17:04",
           "victim": "Maxim5509",
           "killer": "MeGaXoPoH",
           "message": "Maxim5509 was killed by MeGaXoPoH (ENTITY_ATTACK, MACE)",
@@ -1795,7 +1795,7 @@
           "ts": 1786209424162
         },
         {
-          "time": "19:17:55",
+          "time": "17:17:55",
           "victim": "Vovan1910",
           "killer": "MeGaXoPoH",
           "message": "Vovan1910 was killed by MeGaXoPoH (ENTITY_ATTACK, MACE)",
@@ -1820,7 +1820,7 @@
           "ts": 1786209475171
         },
         {
-          "time": "19:18:00",
+          "time": "17:18:00",
           "victim": "errorrNull",
           "killer": "MeGaXoPoH",
           "message": "errorrNull was killed by MeGaXoPoH (ENTITY_ATTACK, MACE)",
@@ -1845,7 +1845,7 @@
           "ts": 1786209480766
         },
         {
-          "time": "19:18:21",
+          "time": "17:18:21",
           "victim": "shadow_uzi",
           "killer": "MeGaXoPoH",
           "message": "shadow_uzi was killed by MeGaXoPoH (ENTITY_ATTACK, MACE)",
@@ -1870,7 +1870,7 @@
           "ts": 1786209501614
         },
         {
-          "time": "19:18:32",
+          "time": "17:18:32",
           "victim": "Vovan1910",
           "killer": "MeGaXoPoH",
           "message": "Vovan1910 was killed by MeGaXoPoH (ENTITY_ATTACK, MACE)",
@@ -1895,7 +1895,7 @@
           "ts": 1786209512864
         },
         {
-          "time": "19:21:33",
+          "time": "17:21:33",
           "victim": "francyska00",
           "killer": "MeGaXoPoH",
           "message": "francyska00 was killed by MeGaXoPoH (ENTITY_ATTACK, MACE)",
@@ -1920,7 +1920,7 @@
           "ts": 1786209693367
         },
         {
-          "time": "19:22:22",
+          "time": "17:22:22",
           "victim": "francyska00",
           "killer": "MeGaXoPoH",
           "message": "francyska00 was killed by MeGaXoPoH (ENTITY_ATTACK, MACE)",
@@ -1945,7 +1945,7 @@
           "ts": 1786209742322
         },
         {
-          "time": "19:23:20",
+          "time": "17:23:20",
           "victim": "hsyre",
           "killer": "MeGaXoPoH",
           "message": "hsyre was killed by MeGaXoPoH (ENTITY_ATTACK, MACE)",
@@ -1995,7 +1995,7 @@
         "base_value": 2.4878237018109806,
         "upset_multiplier": 1.0,
         "farm_multiplier": 1.0,
-        "time": "19:08:06",
+        "time": "17:08:06",
         "message": "errorrNull was killed by th3ddarkblade (ENTITY_EXPLOSION, END_CRYSTAL)",
         "cause": "ENTITY_EXPLOSION",
         "weapon": "END_CRYSTAL",
@@ -2006,7 +2006,7 @@
       },
       "kills_detail": [
         {
-          "time": "19:00:57",
+          "time": "17:00:57",
           "victim": "MrKnyaz",
           "killer": "th3ddarkblade",
           "message": "MrKnyaz was killed by th3ddarkblade (ENTITY_ATTACK, MACE)",
@@ -2031,7 +2031,7 @@
           "ts": 1786208457521
         },
         {
-          "time": "19:02:55",
+          "time": "17:02:55",
           "victim": "ani_kaa",
           "killer": "th3ddarkblade",
           "message": "ani_kaa was killed by th3ddarkblade (ENTITY_ATTACK, MACE)",
@@ -2056,7 +2056,7 @@
           "ts": 1786208575693
         },
         {
-          "time": "19:03:00",
+          "time": "17:03:00",
           "victim": "MrKnyaz",
           "killer": "th3ddarkblade",
           "message": "MrKnyaz was killed by th3ddarkblade (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -2081,7 +2081,7 @@
           "ts": 1786208580417
         },
         {
-          "time": "19:04:04",
+          "time": "17:04:04",
           "victim": "pulmenb",
           "killer": "th3ddarkblade",
           "message": "pulmenb was killed by th3ddarkblade (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -2106,7 +2106,7 @@
           "ts": 1786208644217
         },
         {
-          "time": "19:05:44",
+          "time": "17:05:44",
           "victim": "ani_kaa",
           "killer": "th3ddarkblade",
           "message": "ani_kaa was killed by th3ddarkblade (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -2131,7 +2131,7 @@
           "ts": 1786208744571
         },
         {
-          "time": "19:06:52",
+          "time": "17:06:52",
           "victim": "Yaroslav526742",
           "killer": "th3ddarkblade",
           "message": "Yaroslav526742 was killed by th3ddarkblade (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -2156,7 +2156,7 @@
           "ts": 1786208812872
         },
         {
-          "time": "19:07:31",
+          "time": "17:07:31",
           "victim": "macintosh1",
           "killer": "th3ddarkblade",
           "message": "macintosh1 was killed by th3ddarkblade (ENTITY_ATTACK, MACE)",
@@ -2181,7 +2181,7 @@
           "ts": 1786208851860
         },
         {
-          "time": "19:07:48",
+          "time": "17:07:48",
           "victim": "MrKnyaz",
           "killer": "th3ddarkblade",
           "message": "MrKnyaz was killed by th3ddarkblade (ENTITY_ATTACK, MACE)",
@@ -2206,7 +2206,7 @@
           "ts": 1786208868544
         },
         {
-          "time": "19:08:06",
+          "time": "17:08:06",
           "victim": "errorrNull",
           "killer": "th3ddarkblade",
           "message": "errorrNull was killed by th3ddarkblade (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -2231,7 +2231,7 @@
           "ts": 1786208886380
         },
         {
-          "time": "19:08:15",
+          "time": "17:08:15",
           "victim": "TheBuilderHD",
           "killer": "th3ddarkblade",
           "message": "TheBuilderHD was killed by th3ddarkblade (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -2256,7 +2256,7 @@
           "ts": 1786208895574
         },
         {
-          "time": "19:09:22",
+          "time": "17:09:22",
           "victim": "SOUPVisual",
           "killer": "th3ddarkblade",
           "message": "SOUPVisual was killed by th3ddarkblade (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -2281,7 +2281,7 @@
           "ts": 1786208962521
         },
         {
-          "time": "19:10:23",
+          "time": "17:10:23",
           "victim": "tuhcakorol2010",
           "killer": "th3ddarkblade",
           "message": "tuhcakorol2010 was killed by th3ddarkblade (ENTITY_ATTACK, MACE)",
@@ -2306,7 +2306,7 @@
           "ts": 1786209023674
         },
         {
-          "time": "19:10:30",
+          "time": "17:10:30",
           "victim": "GGWka",
           "killer": "th3ddarkblade",
           "message": "GGWka was killed by th3ddarkblade (ENTITY_ATTACK, MACE)",
@@ -2331,7 +2331,7 @@
           "ts": 1786209030275
         },
         {
-          "time": "19:10:57",
+          "time": "17:10:57",
           "victim": "MrKnyaz",
           "killer": "th3ddarkblade",
           "message": "MrKnyaz was killed by th3ddarkblade (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -2356,7 +2356,7 @@
           "ts": 1786209057325
         },
         {
-          "time": "19:11:01",
+          "time": "17:11:01",
           "victim": "ani_kaa",
           "killer": "th3ddarkblade",
           "message": "ani_kaa was killed by th3ddarkblade (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -2381,7 +2381,7 @@
           "ts": 1786209061381
         },
         {
-          "time": "19:11:21",
+          "time": "17:11:21",
           "victim": "genamin134",
           "killer": "th3ddarkblade",
           "message": "genamin134 was killed by th3ddarkblade (ENTITY_ATTACK, MACE)",
@@ -2406,7 +2406,7 @@
           "ts": 1786209081828
         },
         {
-          "time": "19:11:38",
+          "time": "17:11:38",
           "victim": "ani_kaa",
           "killer": "th3ddarkblade",
           "message": "ani_kaa was killed by th3ddarkblade (FALL, NETHERITE_CHESTPLATE)",
@@ -2431,7 +2431,7 @@
           "ts": 1786209098480
         },
         {
-          "time": "19:11:58",
+          "time": "17:11:58",
           "victim": "Waffle_1337",
           "killer": "th3ddarkblade",
           "message": "Waffle_1337 was killed by th3ddarkblade (ENTITY_ATTACK, MACE)",
@@ -2456,7 +2456,7 @@
           "ts": 1786209118880
         },
         {
-          "time": "19:12:08",
+          "time": "17:12:08",
           "victim": "MrKnyaz",
           "killer": "th3ddarkblade",
           "message": "MrKnyaz was killed by th3ddarkblade (ENTITY_ATTACK, MACE)",
@@ -2481,7 +2481,7 @@
           "ts": 1786209128928
         },
         {
-          "time": "19:12:30",
+          "time": "17:12:30",
           "victim": "ani_kaa",
           "killer": "th3ddarkblade",
           "message": "ani_kaa was killed by th3ddarkblade (ENTITY_ATTACK, MACE)",
@@ -2506,7 +2506,7 @@
           "ts": 1786209150628
         },
         {
-          "time": "19:14:02",
+          "time": "17:14:02",
           "victim": "femboychik12331",
           "killer": "th3ddarkblade",
           "message": "femboychik12331 was killed by th3ddarkblade (ENTITY_ATTACK, MACE)",
@@ -2531,7 +2531,7 @@
           "ts": 1786209242199
         },
         {
-          "time": "19:14:52",
+          "time": "17:14:52",
           "victim": "genamin134",
           "killer": "th3ddarkblade",
           "message": "genamin134 was killed by th3ddarkblade (ENTITY_ATTACK, MACE)",
@@ -2556,7 +2556,7 @@
           "ts": 1786209292330
         },
         {
-          "time": "19:15:57",
+          "time": "17:15:57",
           "victim": "macintosh1",
           "killer": "th3ddarkblade",
           "message": "macintosh1 was killed by th3ddarkblade (ENTITY_ATTACK, MACE)",
@@ -2581,7 +2581,7 @@
           "ts": 1786209357260
         },
         {
-          "time": "19:16:01",
+          "time": "17:16:01",
           "victim": "pulmenb",
           "killer": "th3ddarkblade",
           "message": "pulmenb was killed by th3ddarkblade (ENTITY_ATTACK, MACE)",
@@ -2606,7 +2606,7 @@
           "ts": 1786209361080
         },
         {
-          "time": "19:16:13",
+          "time": "17:16:13",
           "victim": "hsyre",
           "killer": "th3ddarkblade",
           "message": "hsyre was killed by th3ddarkblade (ENTITY_ATTACK, MACE)",
@@ -2631,7 +2631,7 @@
           "ts": 1786209373530
         },
         {
-          "time": "19:17:50",
+          "time": "17:17:50",
           "victim": "Waffle_1337",
           "killer": "th3ddarkblade",
           "message": "Waffle_1337 was killed by th3ddarkblade (ENTITY_ATTACK, MACE)",
@@ -2656,7 +2656,7 @@
           "ts": 1786209470329
         },
         {
-          "time": "19:20:58",
+          "time": "17:20:58",
           "victim": "genamin134",
           "killer": "th3ddarkblade",
           "message": "genamin134 was killed by th3ddarkblade (FALL, MACE)",
@@ -2681,7 +2681,7 @@
           "ts": 1786209658116
         },
         {
-          "time": "19:21:23",
+          "time": "17:21:23",
           "victim": "shadow_uzi",
           "killer": "th3ddarkblade",
           "message": "shadow_uzi was killed by th3ddarkblade (ENTITY_ATTACK, MACE)",
@@ -2706,7 +2706,7 @@
           "ts": 1786209683034
         },
         {
-          "time": "19:23:10",
+          "time": "17:23:10",
           "victim": "hsyre",
           "killer": "th3ddarkblade",
           "message": "hsyre was killed by th3ddarkblade (ENTITY_ATTACK, MACE)",
@@ -2731,7 +2731,7 @@
           "ts": 1786209790919
         },
         {
-          "time": "19:24:00",
+          "time": "17:24:00",
           "victim": "shadow_uzi",
           "killer": "th3ddarkblade",
           "message": "shadow_uzi was killed by th3ddarkblade (ENTITY_ATTACK, MACE)",
@@ -2759,7 +2759,7 @@
       "team_kill_details": [],
       "death_details": [
         {
-          "time": "19:05:50",
+          "time": "17:05:50",
           "victim": "th3ddarkblade",
           "killer": "AmIAngel",
           "killer_type": "player",
@@ -2779,7 +2779,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:19:26",
+          "time": "17:19:26",
           "victim": "th3ddarkblade",
           "killer": "pulmenb",
           "killer_type": "player",
@@ -2822,18 +2822,18 @@
         "base_value": 2.4878237018109806,
         "upset_multiplier": 1.0,
         "farm_multiplier": 1.0,
-        "time": "19:11:48",
+        "time": "17:12:04",
         "message": "errorrNull was killed by AKATOIII (ENTITY_EXPLOSION, END_CRYSTAL)",
         "cause": "ENTITY_EXPLOSION",
         "weapon": "END_CRYSTAL",
-        "distance": 5.1,
+        "distance": 5.2,
         "victim_clan": "union",
         "teamkill": false,
-        "official_final_score": 4
+        "official_final_score": 3
       },
       "kills_detail": [
         {
-          "time": "19:02:17",
+          "time": "17:02:17",
           "victim": "Karnelss17",
           "killer": "AKATOIII",
           "message": "Karnelss17 was killed by AKATOIII (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -2858,7 +2858,7 @@
           "ts": 1786208537467
         },
         {
-          "time": "19:06:28",
+          "time": "17:06:28",
           "victim": "hsyre",
           "killer": "AKATOIII",
           "message": "hsyre was killed by AKATOIII (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -2883,7 +2883,7 @@
           "ts": 1786208788269
         },
         {
-          "time": "19:08:32",
+          "time": "17:08:32",
           "victim": "Waffle_1337",
           "killer": "AKATOIII",
           "message": "Waffle_1337 was killed by AKATOIII (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -2908,7 +2908,7 @@
           "ts": 1786208912318
         },
         {
-          "time": "19:09:58",
+          "time": "17:09:58",
           "victim": "NomerOdinNefor",
           "killer": "AKATOIII",
           "message": "NomerOdinNefor was killed by AKATOIII (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -2933,7 +2933,7 @@
           "ts": 1786208998424
         },
         {
-          "time": "19:10:23",
+          "time": "17:10:23",
           "victim": "WiredAsh067381",
           "killer": "AKATOIII",
           "message": "WiredAsh067381 was killed by AKATOIII (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -2958,7 +2958,7 @@
           "ts": 1786209023066
         },
         {
-          "time": "19:11:00",
+          "time": "17:11:00",
           "victim": "tuhcakorol2010",
           "killer": "AKATOIII",
           "message": "tuhcakorol2010 was killed by AKATOIII (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -2983,7 +2983,7 @@
           "ts": 1786209060971
         },
         {
-          "time": "19:11:06",
+          "time": "17:11:06",
           "victim": "dfkj",
           "killer": "AKATOIII",
           "message": "dfkj was killed by AKATOIII (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -3008,7 +3008,7 @@
           "ts": 1786209066216
         },
         {
-          "time": "19:11:44",
+          "time": "17:11:44",
           "victim": "WiredAsh067381",
           "killer": "AKATOIII",
           "message": "WiredAsh067381 was killed by AKATOIII (ENTITY_EXPLOSION, NETHERITE_SWORD)",
@@ -3033,7 +3033,7 @@
           "ts": 1786209104819
         },
         {
-          "time": "19:11:48",
+          "time": "17:11:48",
           "victim": "errorrNull",
           "killer": "AKATOIII",
           "message": "errorrNull was killed by AKATOIII (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -3058,7 +3058,7 @@
           "ts": 1786209108422
         },
         {
-          "time": "19:12:04",
+          "time": "17:12:04",
           "victim": "errorrNull",
           "killer": "AKATOIII",
           "message": "errorrNull was killed by AKATOIII (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -3083,7 +3083,7 @@
           "ts": 1786209124466
         },
         {
-          "time": "19:14:16",
+          "time": "17:14:16",
           "victim": "dfkj",
           "killer": "AKATOIII",
           "message": "dfkj was killed by AKATOIII (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -3108,7 +3108,7 @@
           "ts": 1786209256767
         },
         {
-          "time": "19:15:37",
+          "time": "17:15:37",
           "victim": "shadow_uzi",
           "killer": "AKATOIII",
           "message": "shadow_uzi was killed by AKATOIII (ENTITY_EXPLOSION, NETHERITE_SWORD)",
@@ -3133,7 +3133,7 @@
           "ts": 1786209337267
         },
         {
-          "time": "19:15:39",
+          "time": "17:15:39",
           "victim": "Romar323",
           "killer": "AKATOIII",
           "message": "Romar323 was killed by AKATOIII (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -3158,7 +3158,7 @@
           "ts": 1786209339521
         },
         {
-          "time": "19:16:18",
+          "time": "17:16:18",
           "victim": "macintosh1",
           "killer": "AKATOIII",
           "message": "macintosh1 was killed by AKATOIII (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -3183,7 +3183,7 @@
           "ts": 1786209378164
         },
         {
-          "time": "19:16:51",
+          "time": "17:16:51",
           "victim": "pulmenb",
           "killer": "AKATOIII",
           "message": "pulmenb was killed by AKATOIII (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -3208,7 +3208,7 @@
           "ts": 1786209411464
         },
         {
-          "time": "19:18:50",
+          "time": "17:18:50",
           "victim": "shadow_uzi",
           "killer": "AKATOIII",
           "message": "shadow_uzi was killed by AKATOIII (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -3233,7 +3233,7 @@
           "ts": 1786209530317
         },
         {
-          "time": "19:19:16",
+          "time": "17:19:16",
           "victim": "DanteMenelay",
           "killer": "AKATOIII",
           "message": "DanteMenelay was killed by AKATOIII (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -3258,7 +3258,7 @@
           "ts": 1786209556268
         },
         {
-          "time": "19:21:40",
+          "time": "17:21:40",
           "victim": "pulmenb",
           "killer": "AKATOIII",
           "message": "pulmenb was killed by AKATOIII (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -3283,7 +3283,7 @@
           "ts": 1786209700868
         },
         {
-          "time": "19:21:54",
+          "time": "17:21:54",
           "victim": "Karnelss17",
           "killer": "AKATOIII",
           "message": "Karnelss17 was killed by AKATOIII (BLOCK_EXPLOSION, TOTEM_OF_UNDYING)",
@@ -3333,18 +3333,18 @@
         "base_value": 2.133710667222925,
         "upset_multiplier": 1.0,
         "farm_multiplier": 1.0,
-        "time": "19:21:11",
+        "time": "17:22:23",
         "message": "Karnelss17 was killed by Zarenit (ENTITY_ATTACK, MACE)",
         "cause": "ENTITY_ATTACK",
         "weapon": "MACE",
-        "distance": 2,
+        "distance": 2.4,
         "victim_clan": "crnvl",
         "teamkill": false,
-        "official_final_score": 4
+        "official_final_score": 3
       },
       "kills_detail": [
         {
-          "time": "19:03:22",
+          "time": "17:03:22",
           "victim": "francyska00",
           "killer": "Zarenit",
           "message": "francyska00 was killed by Zarenit (ENTITY_ATTACK, MACE)",
@@ -3369,7 +3369,7 @@
           "ts": 1786208602068
         },
         {
-          "time": "19:03:49",
+          "time": "17:03:49",
           "victim": "reeliotan",
           "killer": "Zarenit",
           "message": "reeliotan was killed by Zarenit (ENTITY_ATTACK, MACE)",
@@ -3394,7 +3394,7 @@
           "ts": 1786208629724
         },
         {
-          "time": "19:05:10",
+          "time": "17:05:10",
           "victim": "sraf",
           "killer": "Zarenit",
           "message": "sraf was killed by Zarenit (ENTITY_ATTACK, MACE)",
@@ -3419,7 +3419,7 @@
           "ts": 1786208710975
         },
         {
-          "time": "19:06:17",
+          "time": "17:06:17",
           "victim": "Sav_21",
           "killer": "Zarenit",
           "message": "Sav_21 was killed by Zarenit (ENTITY_ATTACK, MACE)",
@@ -3444,7 +3444,7 @@
           "ts": 1786208777962
         },
         {
-          "time": "19:06:39",
+          "time": "17:06:39",
           "victim": "Sav_21",
           "killer": "Zarenit",
           "message": "Sav_21 was killed by Zarenit (ENTITY_ATTACK, MACE)",
@@ -3469,7 +3469,7 @@
           "ts": 1786208799913
         },
         {
-          "time": "19:06:45",
+          "time": "17:06:45",
           "victim": "Sav_21",
           "killer": "Zarenit",
           "message": "Sav_21 was killed by Zarenit (ENTITY_ATTACK, MACE)",
@@ -3494,7 +3494,7 @@
           "ts": 1786208805818
         },
         {
-          "time": "19:07:06",
+          "time": "17:07:06",
           "victim": "Sav_21",
           "killer": "Zarenit",
           "message": "Sav_21 was killed by Zarenit (ENTITY_ATTACK, MACE)",
@@ -3519,7 +3519,7 @@
           "ts": 1786208826920
         },
         {
-          "time": "19:09:48",
+          "time": "17:09:48",
           "victim": "helssing",
           "killer": "Zarenit",
           "message": "helssing was killed by Zarenit (ENTITY_ATTACK, MACE)",
@@ -3544,7 +3544,7 @@
           "ts": 1786208988815
         },
         {
-          "time": "19:10:07",
+          "time": "17:10:07",
           "victim": "Yaroslav526742",
           "killer": "Zarenit",
           "message": "Yaroslav526742 was killed by Zarenit (ENTITY_ATTACK, MACE)",
@@ -3569,7 +3569,7 @@
           "ts": 1786209007919
         },
         {
-          "time": "19:10:23",
+          "time": "17:10:23",
           "victim": "Yaroslav526742",
           "killer": "Zarenit",
           "message": "Yaroslav526742 was killed by Zarenit (ENTITY_ATTACK, MACE)",
@@ -3594,7 +3594,7 @@
           "ts": 1786209023266
         },
         {
-          "time": "19:11:22",
+          "time": "17:11:22",
           "victim": "Yaroslav526742",
           "killer": "Zarenit",
           "message": "Yaroslav526742 was killed by Zarenit (ENTITY_ATTACK, MACE)",
@@ -3619,7 +3619,7 @@
           "ts": 1786209082668
         },
         {
-          "time": "19:11:44",
+          "time": "17:11:44",
           "victim": "Vovan1910",
           "killer": "Zarenit",
           "message": "Vovan1910 was killed by Zarenit (ENTITY_ATTACK, MACE)",
@@ -3644,7 +3644,7 @@
           "ts": 1786209104669
         },
         {
-          "time": "19:15:18",
+          "time": "17:15:18",
           "victim": "francyska00",
           "killer": "Zarenit",
           "message": "francyska00 was killed by Zarenit (ENTITY_ATTACK, MACE)",
@@ -3669,7 +3669,7 @@
           "ts": 1786209318823
         },
         {
-          "time": "19:16:39",
+          "time": "17:16:39",
           "victim": "tuhcakorol2010",
           "killer": "Zarenit",
           "message": "tuhcakorol2010 was killed by Zarenit (ENTITY_ATTACK, MACE)",
@@ -3694,7 +3694,7 @@
           "ts": 1786209399964
         },
         {
-          "time": "19:18:14",
+          "time": "17:18:14",
           "victim": "Vovan1910",
           "killer": "Zarenit",
           "message": "Vovan1910 was killed by Zarenit (ENTITY_ATTACK, MACE)",
@@ -3719,7 +3719,7 @@
           "ts": 1786209494962
         },
         {
-          "time": "19:18:54",
+          "time": "17:18:54",
           "victim": "Maxim5509",
           "killer": "Zarenit",
           "message": "Maxim5509 was killed by Zarenit (ENTITY_ATTACK, MACE)",
@@ -3744,7 +3744,7 @@
           "ts": 1786209534966
         },
         {
-          "time": "19:19:14",
+          "time": "17:19:14",
           "victim": "francyska00",
           "killer": "Zarenit",
           "message": "francyska00 was killed by Zarenit (ENTITY_ATTACK, MACE)",
@@ -3769,7 +3769,7 @@
           "ts": 1786209554414
         },
         {
-          "time": "19:21:11",
+          "time": "17:21:11",
           "victim": "Karnelss17",
           "killer": "Zarenit",
           "message": "Karnelss17 was killed by Zarenit (ENTITY_ATTACK, MACE)",
@@ -3794,7 +3794,7 @@
           "ts": 1786209671316
         },
         {
-          "time": "19:21:13",
+          "time": "17:21:13",
           "victim": "helssing",
           "killer": "Zarenit",
           "message": "helssing was killed by Zarenit (ENTITY_ATTACK, MACE)",
@@ -3819,7 +3819,7 @@
           "ts": 1786209673719
         },
         {
-          "time": "19:22:23",
+          "time": "17:22:23",
           "victim": "Karnelss17",
           "killer": "Zarenit",
           "message": "Karnelss17 was killed by Zarenit (ENTITY_ATTACK, MACE)",
@@ -3869,7 +3869,7 @@
         "base_value": 2.674801737609741,
         "upset_multiplier": 1.0,
         "farm_multiplier": 1.0,
-        "time": "19:15:35",
+        "time": "17:15:35",
         "message": "xzipu was killed by GeLioS (ENTITY_EXPLOSION, END_CRYSTAL)",
         "cause": "ENTITY_EXPLOSION",
         "weapon": "END_CRYSTAL",
@@ -3880,7 +3880,7 @@
       },
       "kills_detail": [
         {
-          "time": "19:04:41",
+          "time": "17:04:41",
           "victim": "genamin134",
           "killer": "GeLioS",
           "message": "genamin134 was killed by GeLioS (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -3905,7 +3905,7 @@
           "ts": 1786208681671
         },
         {
-          "time": "19:05:00",
+          "time": "17:05:00",
           "victim": "NomerOdinNefor",
           "killer": "GeLioS",
           "message": "NomerOdinNefor was killed by GeLioS (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -3930,7 +3930,7 @@
           "ts": 1786208700432
         },
         {
-          "time": "19:05:19",
+          "time": "17:05:19",
           "victim": "WiredAsh067381",
           "killer": "GeLioS",
           "message": "WiredAsh067381 was killed by GeLioS (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -3955,7 +3955,7 @@
           "ts": 1786208719365
         },
         {
-          "time": "19:05:26",
+          "time": "17:05:26",
           "victim": "SOUPVisual",
           "killer": "GeLioS",
           "message": "SOUPVisual was killed by GeLioS (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -3980,7 +3980,7 @@
           "ts": 1786208726115
         },
         {
-          "time": "19:08:31",
+          "time": "17:08:31",
           "victim": "varpex",
           "killer": "GeLioS",
           "message": "varpex was killed by GeLioS (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -4005,7 +4005,7 @@
           "ts": 1786208911617
         },
         {
-          "time": "19:08:52",
+          "time": "17:08:52",
           "victim": "Sav_21",
           "killer": "GeLioS",
           "message": "Sav_21 was killed by GeLioS (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -4030,7 +4030,7 @@
           "ts": 1786208932269
         },
         {
-          "time": "19:12:36",
+          "time": "17:12:36",
           "victim": "GGWka",
           "killer": "GeLioS",
           "message": "GGWka was killed by GeLioS (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -4055,7 +4055,7 @@
           "ts": 1786209156918
         },
         {
-          "time": "19:12:42",
+          "time": "17:12:42",
           "victim": "genamin134",
           "killer": "GeLioS",
           "message": "genamin134 was killed by GeLioS (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -4080,7 +4080,7 @@
           "ts": 1786209162270
         },
         {
-          "time": "19:13:04",
+          "time": "17:13:04",
           "victim": "Vovan1910",
           "killer": "GeLioS",
           "message": "Vovan1910 was killed by GeLioS (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -4105,7 +4105,7 @@
           "ts": 1786209184919
         },
         {
-          "time": "19:15:35",
+          "time": "17:15:35",
           "victim": "xzipu",
           "killer": "GeLioS",
           "message": "xzipu was killed by GeLioS (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -4130,7 +4130,7 @@
           "ts": 1786209335518
         },
         {
-          "time": "19:17:00",
+          "time": "17:17:00",
           "victim": "Waffle_1337",
           "killer": "GeLioS",
           "message": "Waffle_1337 was killed by GeLioS (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -4155,7 +4155,7 @@
           "ts": 1786209420315
         },
         {
-          "time": "19:17:29",
+          "time": "17:17:29",
           "victim": "helssing",
           "killer": "GeLioS",
           "message": "helssing was killed by GeLioS (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -4180,7 +4180,7 @@
           "ts": 1786209449117
         },
         {
-          "time": "19:19:54",
+          "time": "17:19:54",
           "victim": "genamin134",
           "killer": "GeLioS",
           "message": "genamin134 was killed by GeLioS (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -4205,7 +4205,7 @@
           "ts": 1786209594667
         },
         {
-          "time": "19:21:11",
+          "time": "17:21:11",
           "victim": "Xitek0",
           "killer": "GeLioS",
           "message": "Xitek0 was killed by GeLioS (ENTITY_ATTACK, MACE)",
@@ -4230,7 +4230,7 @@
           "ts": 1786209671217
         },
         {
-          "time": "19:23:19",
+          "time": "17:23:19",
           "victim": "genamin134",
           "killer": "GeLioS",
           "message": "genamin134 was killed by GeLioS (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -4258,7 +4258,7 @@
       "team_kill_details": [],
       "death_details": [
         {
-          "time": "19:04:02",
+          "time": "17:04:02",
           "victim": "GeLioS",
           "killer": "lasterothXIII",
           "killer_type": "player",
@@ -4278,7 +4278,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:09:49",
+          "time": "17:09:49",
           "victim": "GeLioS",
           "killer": "lasterothXIII",
           "killer_type": "player",
@@ -4298,7 +4298,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:18:11",
+          "time": "17:18:11",
           "victim": "GeLioS",
           "killer": "lasterothXIII",
           "killer_type": "player",
@@ -4318,7 +4318,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:23:22",
+          "time": "17:23:22",
           "victim": "GeLioS",
           "killer": "lasterothXIII",
           "killer_type": "player",
@@ -4361,7 +4361,7 @@
         "base_value": 2.4878237018109806,
         "upset_multiplier": 1.0,
         "farm_multiplier": 1.0,
-        "time": "19:08:38",
+        "time": "17:08:38",
         "message": "errorrNull was killed by xzipu (ENTITY_EXPLOSION, END_CRYSTAL)",
         "cause": "ENTITY_EXPLOSION",
         "weapon": "END_CRYSTAL",
@@ -4372,7 +4372,7 @@
       },
       "kills_detail": [
         {
-          "time": "19:01:58",
+          "time": "17:01:58",
           "victim": "GGWka",
           "killer": "xzipu",
           "message": "GGWka was killed by xzipu (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -4397,7 +4397,7 @@
           "ts": 1786208518267
         },
         {
-          "time": "19:02:47",
+          "time": "17:02:47",
           "victim": "shadow_uzi",
           "killer": "xzipu",
           "message": "shadow_uzi was killed by xzipu (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -4422,7 +4422,7 @@
           "ts": 1786208567716
         },
         {
-          "time": "19:03:50",
+          "time": "17:03:50",
           "victim": "SOUPVisual",
           "killer": "xzipu",
           "message": "SOUPVisual was killed by xzipu (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -4447,7 +4447,7 @@
           "ts": 1786208630116
         },
         {
-          "time": "19:04:41",
+          "time": "17:04:41",
           "victim": "SOUPVisual",
           "killer": "xzipu",
           "message": "SOUPVisual was killed by xzipu (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -4472,7 +4472,7 @@
           "ts": 1786208681352
         },
         {
-          "time": "19:04:44",
+          "time": "17:04:44",
           "victim": "WiredAsh067381",
           "killer": "xzipu",
           "message": "WiredAsh067381 was killed by xzipu (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -4497,7 +4497,7 @@
           "ts": 1786208684823
         },
         {
-          "time": "19:05:13",
+          "time": "17:05:13",
           "victim": "Sav_21",
           "killer": "xzipu",
           "message": "Sav_21 was killed by xzipu (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -4522,7 +4522,7 @@
           "ts": 1786208713571
         },
         {
-          "time": "19:05:17",
+          "time": "17:05:17",
           "victim": "Suenzon",
           "killer": "xzipu",
           "message": "Suenzon was killed by xzipu (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -4547,7 +4547,7 @@
           "ts": 1786208717220
         },
         {
-          "time": "19:07:05",
+          "time": "17:07:05",
           "victim": "NomerOdinNefor",
           "killer": "xzipu",
           "message": "NomerOdinNefor was killed by xzipu (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -4572,7 +4572,7 @@
           "ts": 1786208825721
         },
         {
-          "time": "19:08:20",
+          "time": "17:08:20",
           "victim": "Sav_21",
           "killer": "xzipu",
           "message": "Sav_21 was killed by xzipu (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -4597,7 +4597,7 @@
           "ts": 1786208900651
         },
         {
-          "time": "19:08:38",
+          "time": "17:08:38",
           "victim": "errorrNull",
           "killer": "xzipu",
           "message": "errorrNull was killed by xzipu (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -4622,7 +4622,7 @@
           "ts": 1786208918015
         },
         {
-          "time": "19:09:46",
+          "time": "17:09:46",
           "victim": "WiredAsh067381",
           "killer": "xzipu",
           "message": "WiredAsh067381 was killed by xzipu (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -4647,7 +4647,7 @@
           "ts": 1786208986915
         },
         {
-          "time": "19:10:03",
+          "time": "17:10:03",
           "victim": "femboychik12331",
           "killer": "xzipu",
           "message": "femboychik12331 was killed by xzipu (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -4672,7 +4672,7 @@
           "ts": 1786209003419
         },
         {
-          "time": "19:10:04",
+          "time": "17:10:04",
           "victim": "dfkj",
           "killer": "xzipu",
           "message": "dfkj was killed by xzipu (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -4697,7 +4697,7 @@
           "ts": 1786209004916
         },
         {
-          "time": "19:12:59",
+          "time": "17:12:59",
           "victim": "hsyre",
           "killer": "xzipu",
           "message": "hsyre was killed by xzipu (FALL, DIAMOND_PICKAXE)",
@@ -4722,7 +4722,7 @@
           "ts": 1786209179920
         },
         {
-          "time": "19:13:18",
+          "time": "17:13:18",
           "victim": "ani_kaa",
           "killer": "xzipu",
           "message": "ani_kaa was killed by xzipu (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -4747,7 +4747,7 @@
           "ts": 1786209198772
         },
         {
-          "time": "19:13:50",
+          "time": "17:13:50",
           "victim": "AmIAngel",
           "killer": "xzipu",
           "message": "AmIAngel was killed by xzipu (BLOCK_EXPLOSION, TOTEM_OF_UNDYING)",
@@ -4775,7 +4775,7 @@
       "team_kill_details": [],
       "death_details": [
         {
-          "time": "19:15:35",
+          "time": "17:15:35",
           "victim": "xzipu",
           "killer": "GeLioS",
           "killer_type": "player",
@@ -4795,7 +4795,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:15:42",
+          "time": "17:15:42",
           "victim": "xzipu",
           "killer": "MeGaXoPoH",
           "killer_type": "player",
@@ -4815,7 +4815,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:15:57",
+          "time": "17:15:57",
           "victim": "xzipu",
           "killer": "MeGaXoPoH",
           "killer_type": "player",
@@ -4858,7 +4858,7 @@
         "base_value": 1.6587733629321817,
         "upset_multiplier": 1.0,
         "farm_multiplier": 1.0,
-        "time": "19:13:18",
+        "time": "17:13:18",
         "message": "Vovan1910 was killed by errorrNull (ENTITY_ATTACK, MACE)",
         "cause": "ENTITY_ATTACK",
         "weapon": "MACE",
@@ -4869,7 +4869,7 @@
       },
       "kills_detail": [
         {
-          "time": "19:02:03",
+          "time": "17:02:03",
           "victim": "Sav_21",
           "killer": "errorrNull",
           "message": "Sav_21 was killed by errorrNull (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -4894,7 +4894,7 @@
           "ts": 1786208523668
         },
         {
-          "time": "19:02:50",
+          "time": "17:02:50",
           "victim": "SOUPVisual",
           "killer": "errorrNull",
           "message": "SOUPVisual was killed by errorrNull (ENTITY_ATTACK, MACE)",
@@ -4919,7 +4919,7 @@
           "ts": 1786208570411
         },
         {
-          "time": "19:03:26",
+          "time": "17:03:26",
           "victim": "Yaroslav526742",
           "killer": "errorrNull",
           "message": "Yaroslav526742 was killed by errorrNull (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -4944,7 +4944,7 @@
           "ts": 1786208606315
         },
         {
-          "time": "19:05:42",
+          "time": "17:05:42",
           "victim": "WiredAsh067381",
           "killer": "errorrNull",
           "message": "WiredAsh067381 was killed by errorrNull (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -4969,7 +4969,7 @@
           "ts": 1786208742016
         },
         {
-          "time": "19:07:51",
+          "time": "17:07:51",
           "victim": "Yaroslav526742",
           "killer": "errorrNull",
           "message": "Yaroslav526742 was killed by errorrNull (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -4994,7 +4994,7 @@
           "ts": 1786208871916
         },
         {
-          "time": "19:08:36",
+          "time": "17:08:36",
           "victim": "Yaroslav526742",
           "killer": "errorrNull",
           "message": "Yaroslav526742 was killed by errorrNull (ENTITY_ATTACK, MACE)",
@@ -5019,7 +5019,7 @@
           "ts": 1786208916316
         },
         {
-          "time": "19:10:42",
+          "time": "17:10:42",
           "victim": "Xitek0",
           "killer": "errorrNull",
           "message": "Xitek0 was killed by errorrNull (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -5044,7 +5044,7 @@
           "ts": 1786209042769
         },
         {
-          "time": "19:13:18",
+          "time": "17:13:18",
           "victim": "Vovan1910",
           "killer": "errorrNull",
           "message": "Vovan1910 was killed by errorrNull (ENTITY_ATTACK, MACE)",
@@ -5069,7 +5069,7 @@
           "ts": 1786209198125
         },
         {
-          "time": "19:15:31",
+          "time": "17:15:31",
           "victim": "francyska00",
           "killer": "errorrNull",
           "message": "francyska00 was killed by errorrNull (ENTITY_ATTACK, MACE)",
@@ -5094,7 +5094,7 @@
           "ts": 1786209331728
         },
         {
-          "time": "19:15:54",
+          "time": "17:15:54",
           "victim": "dfkj",
           "killer": "errorrNull",
           "message": "dfkj was killed by errorrNull (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -5119,7 +5119,7 @@
           "ts": 1786209354779
         },
         {
-          "time": "19:15:55",
+          "time": "17:15:55",
           "victim": "GGWka",
           "killer": "errorrNull",
           "message": "GGWka was killed by errorrNull (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -5144,7 +5144,7 @@
           "ts": 1786209355782
         },
         {
-          "time": "19:16:09",
+          "time": "17:16:09",
           "victim": "dfkj",
           "killer": "errorrNull",
           "message": "dfkj was killed by errorrNull (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -5169,7 +5169,7 @@
           "ts": 1786209369180
         },
         {
-          "time": "19:16:23",
+          "time": "17:16:23",
           "victim": "tuhcakorol2010",
           "killer": "errorrNull",
           "message": "tuhcakorol2010 was killed by errorrNull (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -5194,7 +5194,7 @@
           "ts": 1786209383482
         },
         {
-          "time": "19:16:28",
+          "time": "17:16:28",
           "victim": "tuhcakorol2010",
           "killer": "errorrNull",
           "message": "tuhcakorol2010 was killed by errorrNull (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -5219,7 +5219,7 @@
           "ts": 1786209388480
         },
         {
-          "time": "19:16:53",
+          "time": "17:16:53",
           "victim": "dfkj",
           "killer": "errorrNull",
           "message": "dfkj was killed by errorrNull (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -5247,7 +5247,7 @@
       "team_kill_details": [],
       "death_details": [
         {
-          "time": "19:03:32",
+          "time": "17:03:32",
           "victim": "errorrNull",
           "killer": "MeGaXoPoH",
           "killer_type": "player",
@@ -5267,7 +5267,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:04:48",
+          "time": "17:04:48",
           "victim": "errorrNull",
           "killer": "Maxim5509",
           "killer_type": "player",
@@ -5287,7 +5287,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:08:06",
+          "time": "17:08:06",
           "victim": "errorrNull",
           "killer": "th3ddarkblade",
           "killer_type": "player",
@@ -5307,7 +5307,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:08:38",
+          "time": "17:08:38",
           "victim": "errorrNull",
           "killer": "xzipu",
           "killer_type": "player",
@@ -5327,7 +5327,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:09:07",
+          "time": "17:09:07",
           "victim": "errorrNull",
           "killer": "varpex",
           "killer_type": "player",
@@ -5347,7 +5347,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:11:48",
+          "time": "17:11:48",
           "victim": "errorrNull",
           "killer": "AKATOIII",
           "killer_type": "player",
@@ -5367,7 +5367,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:12:04",
+          "time": "17:12:04",
           "victim": "errorrNull",
           "killer": "AKATOIII",
           "killer_type": "player",
@@ -5387,7 +5387,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:18:00",
+          "time": "17:18:00",
           "victim": "errorrNull",
           "killer": "MeGaXoPoH",
           "killer_type": "player",
@@ -5407,7 +5407,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:19:24",
+          "time": "17:19:24",
           "victim": "errorrNull",
           "killer": "lasterothXIII",
           "killer_type": "player",
@@ -5450,7 +5450,7 @@
         "base_value": 2.7385133275909537,
         "upset_multiplier": 1.0,
         "farm_multiplier": 1.0,
-        "time": "19:19:26",
+        "time": "17:19:26",
         "message": "th3ddarkblade was killed by pulmenb (ENTITY_ATTACK, MACE)",
         "cause": "ENTITY_ATTACK",
         "weapon": "MACE",
@@ -5461,7 +5461,7 @@
       },
       "kills_detail": [
         {
-          "time": "19:05:57",
+          "time": "17:05:57",
           "victim": "MrKnyaz",
           "killer": "pulmenb",
           "message": "MrKnyaz was killed by pulmenb (ENTITY_ATTACK, NETHERITE_SWORD)",
@@ -5486,7 +5486,7 @@
           "ts": 1786208757769
         },
         {
-          "time": "19:15:49",
+          "time": "17:15:49",
           "victim": "hsyre",
           "killer": "pulmenb",
           "message": "hsyre was killed by pulmenb (ENTITY_ATTACK, MACE)",
@@ -5511,7 +5511,7 @@
           "ts": 1786209349518
         },
         {
-          "time": "19:17:11",
+          "time": "17:17:11",
           "victim": "shadow_uzi",
           "killer": "pulmenb",
           "message": "shadow_uzi was killed by pulmenb (ENTITY_ATTACK, MACE)",
@@ -5536,7 +5536,7 @@
           "ts": 1786209431314
         },
         {
-          "time": "19:18:12",
+          "time": "17:18:12",
           "victim": "Romar323",
           "killer": "pulmenb",
           "message": "Romar323 was killed by pulmenb (ENTITY_ATTACK, MACE)",
@@ -5561,7 +5561,7 @@
           "ts": 1786209492511
         },
         {
-          "time": "19:19:26",
+          "time": "17:19:26",
           "victim": "th3ddarkblade",
           "killer": "pulmenb",
           "message": "th3ddarkblade was killed by pulmenb (ENTITY_ATTACK, MACE)",
@@ -5586,7 +5586,7 @@
           "ts": 1786209566867
         },
         {
-          "time": "19:21:17",
+          "time": "17:21:17",
           "victim": "hsyre",
           "killer": "pulmenb",
           "message": "hsyre was killed by pulmenb (ENTITY_ATTACK, MACE)",
@@ -5614,7 +5614,7 @@
       "team_kill_details": [],
       "death_details": [
         {
-          "time": "19:04:04",
+          "time": "17:04:04",
           "victim": "pulmenb",
           "killer": "th3ddarkblade",
           "killer_type": "player",
@@ -5634,7 +5634,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:16:01",
+          "time": "17:16:01",
           "victim": "pulmenb",
           "killer": "th3ddarkblade",
           "killer_type": "player",
@@ -5654,7 +5654,7 @@
           "official_resistance_mult": 0.4
         },
         {
-          "time": "19:16:10",
+          "time": "17:16:10",
           "victim": "pulmenb",
           "killer": "lasterothXIII",
           "killer_type": "player",
@@ -5674,7 +5674,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:16:51",
+          "time": "17:16:51",
           "victim": "pulmenb",
           "killer": "AKATOIII",
           "killer_type": "player",
@@ -5694,7 +5694,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:20:01",
+          "time": "17:20:01",
           "victim": "pulmenb",
           "killer": "Blazerlords",
           "killer_type": "player",
@@ -5714,7 +5714,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:21:25",
+          "time": "17:21:25",
           "victim": "pulmenb",
           "killer": "AmIAngel",
           "killer_type": "player",
@@ -5734,7 +5734,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:21:40",
+          "time": "17:21:40",
           "victim": "pulmenb",
           "killer": "AKATOIII",
           "killer_type": "player",
@@ -5777,7 +5777,7 @@
         "base_value": 1.9136434130475206,
         "upset_multiplier": 1.0,
         "farm_multiplier": 1.0,
-        "time": "19:12:05",
+        "time": "17:12:05",
         "message": "DanteMenelay was killed by hsyre (ENTITY_ATTACK, MACE)",
         "cause": "ENTITY_ATTACK",
         "weapon": "MACE",
@@ -5788,7 +5788,7 @@
       },
       "kills_detail": [
         {
-          "time": "19:07:39",
+          "time": "17:07:39",
           "victim": "ani_kaa",
           "killer": "hsyre",
           "message": "ani_kaa was killed by hsyre (ENTITY_ATTACK, NETHERITE_SWORD)",
@@ -5813,7 +5813,7 @@
           "ts": 1786208859369
         },
         {
-          "time": "19:08:24",
+          "time": "17:08:24",
           "victim": "MrKnyaz",
           "killer": "hsyre",
           "message": "MrKnyaz was killed by hsyre (ENTITY_ATTACK, NETHERITE_SWORD)",
@@ -5838,7 +5838,7 @@
           "ts": 1786208904367
         },
         {
-          "time": "19:09:38",
+          "time": "17:09:38",
           "victim": "MrKnyaz",
           "killer": "hsyre",
           "message": "MrKnyaz was killed by hsyre (FIRE_TICK, NETHERITE_SWORD)",
@@ -5863,7 +5863,7 @@
           "ts": 1786208978010
         },
         {
-          "time": "19:12:05",
+          "time": "17:12:05",
           "victim": "DanteMenelay",
           "killer": "hsyre",
           "message": "DanteMenelay was killed by hsyre (ENTITY_ATTACK, MACE)",
@@ -5888,7 +5888,7 @@
           "ts": 1786209125370
         },
         {
-          "time": "19:13:50",
+          "time": "17:13:50",
           "victim": "ani_kaa",
           "killer": "hsyre",
           "message": "ani_kaa was killed by hsyre (ENTITY_ATTACK, MACE)",
@@ -5913,7 +5913,7 @@
           "ts": 1786209230767
         },
         {
-          "time": "19:15:33",
+          "time": "17:15:33",
           "victim": "GGWka",
           "killer": "hsyre",
           "message": "GGWka was killed by hsyre (ENTITY_ATTACK, MACE)",
@@ -5938,7 +5938,7 @@
           "ts": 1786209333665
         },
         {
-          "time": "19:21:04",
+          "time": "17:21:04",
           "victim": "Romar323",
           "killer": "hsyre",
           "message": "Romar323 was killed by hsyre (ENTITY_ATTACK, MACE)",
@@ -5963,7 +5963,7 @@
           "ts": 1786209664721
         },
         {
-          "time": "19:22:48",
+          "time": "17:22:48",
           "victim": "genamin134",
           "killer": "hsyre",
           "message": "genamin134 was killed by hsyre (ENTITY_ATTACK, MACE)",
@@ -5988,7 +5988,7 @@
           "ts": 1786209768825
         },
         {
-          "time": "19:22:52",
+          "time": "17:22:52",
           "victim": "shadow_uzi",
           "killer": "hsyre",
           "message": "shadow_uzi was killed by hsyre (ENTITY_ATTACK, MACE)",
@@ -6016,7 +6016,7 @@
       "team_kill_details": [],
       "death_details": [
         {
-          "time": "19:06:28",
+          "time": "17:06:28",
           "victim": "hsyre",
           "killer": "AKATOIII",
           "killer_type": "player",
@@ -6036,7 +6036,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:12:59",
+          "time": "17:12:59",
           "victim": "hsyre",
           "killer": "xzipu",
           "killer_type": "player",
@@ -6056,7 +6056,7 @@
           "official_resistance_mult": 0.4
         },
         {
-          "time": "19:15:49",
+          "time": "17:15:49",
           "victim": "hsyre",
           "killer": "pulmenb",
           "killer_type": "player",
@@ -6076,7 +6076,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:16:13",
+          "time": "17:16:13",
           "victim": "hsyre",
           "killer": "th3ddarkblade",
           "killer_type": "player",
@@ -6096,7 +6096,7 @@
           "official_resistance_mult": 0.4
         },
         {
-          "time": "19:21:17",
+          "time": "17:21:17",
           "victim": "hsyre",
           "killer": "pulmenb",
           "killer_type": "player",
@@ -6116,7 +6116,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:22:13",
+          "time": "17:22:13",
           "victim": "hsyre",
           "killer": "lasterothXIII",
           "killer_type": "player",
@@ -6136,7 +6136,7 @@
           "official_resistance_mult": 0.894000906282001
         },
         {
-          "time": "19:23:10",
+          "time": "17:23:10",
           "victim": "hsyre",
           "killer": "th3ddarkblade",
           "killer_type": "player",
@@ -6156,7 +6156,7 @@
           "official_resistance_mult": 0.4
         },
         {
-          "time": "19:23:20",
+          "time": "17:23:20",
           "victim": "hsyre",
           "killer": "MeGaXoPoH",
           "killer_type": "player",
@@ -6199,7 +6199,7 @@
         "base_value": 1.4295960099848362,
         "upset_multiplier": 1.0,
         "farm_multiplier": 1.0,
-        "time": "19:10:01",
+        "time": "17:10:01",
         "message": "helssing was killed by pianoblock94 (ENTITY_ATTACK, MACE)",
         "cause": "ENTITY_ATTACK",
         "weapon": "MACE",
@@ -6210,7 +6210,7 @@
       },
       "kills_detail": [
         {
-          "time": "19:02:03",
+          "time": "17:02:03",
           "victim": "francyska00",
           "killer": "pianoblock94",
           "message": "francyska00 was killed by pianoblock94 (ENTITY_ATTACK, MACE)",
@@ -6235,7 +6235,7 @@
           "ts": 1786208523766
         },
         {
-          "time": "19:02:13",
+          "time": "17:02:13",
           "victim": "femboychik12331",
           "killer": "pianoblock94",
           "message": "femboychik12331 was killed by pianoblock94 (ENTITY_ATTACK, MACE)",
@@ -6260,7 +6260,7 @@
           "ts": 1786208533217
         },
         {
-          "time": "19:03:19",
+          "time": "17:03:19",
           "victim": "femboychik12331",
           "killer": "pianoblock94",
           "message": "femboychik12331 was killed by pianoblock94 (ENTITY_ATTACK, MACE)",
@@ -6285,7 +6285,7 @@
           "ts": 1786208599522
         },
         {
-          "time": "19:05:23",
+          "time": "17:05:23",
           "victim": "femboychik12331",
           "killer": "pianoblock94",
           "message": "femboychik12331 was killed by pianoblock94 (ENTITY_ATTACK, MACE)",
@@ -6310,7 +6310,7 @@
           "ts": 1786208723865
         },
         {
-          "time": "19:10:01",
+          "time": "17:10:01",
           "victim": "helssing",
           "killer": "pianoblock94",
           "message": "helssing was killed by pianoblock94 (ENTITY_ATTACK, MACE)",
@@ -6335,7 +6335,7 @@
           "ts": 1786209001091
         },
         {
-          "time": "19:17:11",
+          "time": "17:17:11",
           "victim": "Romar323",
           "killer": "pianoblock94",
           "message": "Romar323 was killed by pianoblock94 (ENTITY_ATTACK, MACE)",
@@ -6385,7 +6385,7 @@
         "base_value": 1.6107486226761096,
         "upset_multiplier": 1.0,
         "farm_multiplier": 1.0,
-        "time": "19:10:59",
+        "time": "17:10:59",
         "message": "macintosh1 was killed by Waffle_1337 (ENTITY_ATTACK, MACE)",
         "cause": "ENTITY_ATTACK",
         "weapon": "MACE",
@@ -6396,7 +6396,7 @@
       },
       "kills_detail": [
         {
-          "time": "19:01:19",
+          "time": "17:01:19",
           "victim": "ani_kaa",
           "killer": "Waffle_1337",
           "message": "ani_kaa was killed by Waffle_1337 (ENTITY_ATTACK, MACE)",
@@ -6421,7 +6421,7 @@
           "ts": 1786208479516
         },
         {
-          "time": "19:03:13",
+          "time": "17:03:13",
           "victim": "Sav_21",
           "killer": "Waffle_1337",
           "message": "Sav_21 was killed by Waffle_1337 (ENTITY_ATTACK, MACE)",
@@ -6446,7 +6446,7 @@
           "ts": 1786208593949
         },
         {
-          "time": "19:10:59",
+          "time": "17:10:59",
           "victim": "macintosh1",
           "killer": "Waffle_1337",
           "message": "macintosh1 was killed by Waffle_1337 (ENTITY_ATTACK, MACE)",
@@ -6471,7 +6471,7 @@
           "ts": 1786209059205
         },
         {
-          "time": "19:11:33",
+          "time": "17:11:33",
           "victim": "Suenzon",
           "killer": "Waffle_1337",
           "message": "Suenzon was killed by Waffle_1337 (ENTITY_ATTACK, MACE)",
@@ -6496,7 +6496,7 @@
           "ts": 1786209093473
         },
         {
-          "time": "19:15:57",
+          "time": "17:15:57",
           "victim": "Xitek0",
           "killer": "Waffle_1337",
           "message": "Xitek0 was killed by Waffle_1337 (ENTITY_ATTACK, NETHERITE_SWORD)",
@@ -6524,7 +6524,7 @@
       "team_kill_details": [],
       "death_details": [
         {
-          "time": "19:08:32",
+          "time": "17:08:32",
           "victim": "Waffle_1337",
           "killer": "AKATOIII",
           "killer_type": "player",
@@ -6544,7 +6544,7 @@
           "official_resistance_mult": 0.6277549681918961
         },
         {
-          "time": "19:11:58",
+          "time": "17:11:58",
           "victim": "Waffle_1337",
           "killer": "th3ddarkblade",
           "killer_type": "player",
@@ -6564,7 +6564,7 @@
           "official_resistance_mult": 0.5101254766186079
         },
         {
-          "time": "19:13:59",
+          "time": "17:13:59",
           "victim": "Waffle_1337",
           "killer": "MeGaXoPoH",
           "killer_type": "player",
@@ -6584,7 +6584,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:14:10",
+          "time": "17:14:10",
           "victim": "Waffle_1337",
           "killer": "MeGaXoPoH",
           "killer_type": "player",
@@ -6604,7 +6604,7 @@
           "official_resistance_mult": 0.8958594529579084
         },
         {
-          "time": "19:17:00",
+          "time": "17:17:00",
           "victim": "Waffle_1337",
           "killer": "GeLioS",
           "killer_type": "player",
@@ -6624,7 +6624,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:17:50",
+          "time": "17:17:50",
           "victim": "Waffle_1337",
           "killer": "th3ddarkblade",
           "killer_type": "player",
@@ -6644,7 +6644,7 @@
           "official_resistance_mult": 0.4
         },
         {
-          "time": "19:19:07",
+          "time": "17:19:07",
           "victim": "Waffle_1337",
           "killer": "lasterothXIII",
           "killer_type": "player",
@@ -6687,7 +6687,7 @@
         "base_value": 2.7385133275909537,
         "upset_multiplier": 1.0,
         "farm_multiplier": 1.0,
-        "time": "19:05:50",
+        "time": "17:05:50",
         "message": "th3ddarkblade was killed by AmIAngel (ENTITY_EXPLOSION, CROSSBOW)",
         "cause": "ENTITY_EXPLOSION",
         "weapon": "CROSSBOW",
@@ -6698,7 +6698,7 @@
       },
       "kills_detail": [
         {
-          "time": "19:05:50",
+          "time": "17:05:50",
           "victim": "th3ddarkblade",
           "killer": "AmIAngel",
           "message": "th3ddarkblade was killed by AmIAngel (ENTITY_EXPLOSION, CROSSBOW)",
@@ -6723,7 +6723,7 @@
           "ts": 1786208750055
         },
         {
-          "time": "19:19:30",
+          "time": "17:19:30",
           "victim": "Romar323",
           "killer": "AmIAngel",
           "message": "Romar323 was killed by AmIAngel (FALL, NETHERITE_SWORD)",
@@ -6748,7 +6748,7 @@
           "ts": 1786209570771
         },
         {
-          "time": "19:21:25",
+          "time": "17:21:25",
           "victim": "pulmenb",
           "killer": "AmIAngel",
           "message": "pulmenb was killed by AmIAngel (FLY_INTO_WALL, GOLDEN_APPLE)",
@@ -6776,7 +6776,7 @@
       "team_kill_details": [],
       "death_details": [
         {
-          "time": "19:13:50",
+          "time": "17:13:50",
           "victim": "AmIAngel",
           "killer": "xzipu",
           "killer_type": "player",
@@ -6819,7 +6819,7 @@
         "base_value": 1.9673797703025575,
         "upset_multiplier": 1.0,
         "farm_multiplier": 1.0,
-        "time": "19:09:42",
+        "time": "17:09:42",
         "message": "sraf was killed by genamin134 (ENTITY_ATTACK, MACE)",
         "cause": "ENTITY_ATTACK",
         "weapon": "MACE",
@@ -6830,7 +6830,7 @@
       },
       "kills_detail": [
         {
-          "time": "19:06:02",
+          "time": "17:06:02",
           "victim": "MrKnyaz",
           "killer": "genamin134",
           "message": "MrKnyaz was killed by genamin134 (ENTITY_ATTACK, MACE)",
@@ -6855,7 +6855,7 @@
           "ts": 1786208762574
         },
         {
-          "time": "19:09:42",
+          "time": "17:09:42",
           "victim": "sraf",
           "killer": "genamin134",
           "message": "sraf was killed by genamin134 (ENTITY_ATTACK, MACE)",
@@ -6880,7 +6880,7 @@
           "ts": 1786208982727
         },
         {
-          "time": "19:12:11",
+          "time": "17:12:11",
           "victim": "GGWka",
           "killer": "genamin134",
           "message": "GGWka was killed by genamin134 (ENTITY_ATTACK, MACE)",
@@ -6905,7 +6905,7 @@
           "ts": 1786209131122
         },
         {
-          "time": "19:14:36",
+          "time": "17:14:36",
           "victim": "MrKnyaz",
           "killer": "genamin134",
           "message": "MrKnyaz was killed by genamin134 (ENTITY_ATTACK, MACE)",
@@ -6933,7 +6933,7 @@
       "team_kill_details": [],
       "death_details": [
         {
-          "time": "19:04:41",
+          "time": "17:04:41",
           "victim": "genamin134",
           "killer": "GeLioS",
           "killer_type": "player",
@@ -6953,7 +6953,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:06:34",
+          "time": "17:06:34",
           "victim": "genamin134",
           "killer": "lasterothXIII",
           "killer_type": "player",
@@ -6973,7 +6973,7 @@
           "official_resistance_mult": 0.7439720056123204
         },
         {
-          "time": "19:11:21",
+          "time": "17:11:21",
           "victim": "genamin134",
           "killer": "th3ddarkblade",
           "killer_type": "player",
@@ -6993,7 +6993,7 @@
           "official_resistance_mult": 0.4
         },
         {
-          "time": "19:12:42",
+          "time": "17:12:42",
           "victim": "genamin134",
           "killer": "GeLioS",
           "killer_type": "player",
@@ -7013,7 +7013,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:14:52",
+          "time": "17:14:52",
           "victim": "genamin134",
           "killer": "th3ddarkblade",
           "killer_type": "player",
@@ -7033,7 +7033,7 @@
           "official_resistance_mult": 0.4
         },
         {
-          "time": "19:16:26",
+          "time": "17:16:26",
           "victim": "genamin134",
           "killer": "MeGaXoPoH",
           "killer_type": "player",
@@ -7053,7 +7053,7 @@
           "official_resistance_mult": 0.4
         },
         {
-          "time": "19:19:54",
+          "time": "17:19:54",
           "victim": "genamin134",
           "killer": "GeLioS",
           "killer_type": "player",
@@ -7073,7 +7073,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:20:58",
+          "time": "17:20:58",
           "victim": "genamin134",
           "killer": "th3ddarkblade",
           "killer_type": "player",
@@ -7093,7 +7093,7 @@
           "official_resistance_mult": 0.4
         },
         {
-          "time": "19:22:48",
+          "time": "17:22:48",
           "victim": "genamin134",
           "killer": "hsyre",
           "killer_type": "player",
@@ -7113,7 +7113,7 @@
           "official_resistance_mult": 0.7531828466536743
         },
         {
-          "time": "19:23:19",
+          "time": "17:23:19",
           "victim": "genamin134",
           "killer": "GeLioS",
           "killer_type": "player",
@@ -7156,18 +7156,18 @@
         "base_value": 1.3462061142598074,
         "upset_multiplier": 1.0,
         "farm_multiplier": 1.0,
-        "time": "19:12:12",
+        "time": "17:14:57",
         "message": "Maxim5509 was killed by Karnelss17 (ENTITY_ATTACK, MACE)",
         "cause": "ENTITY_ATTACK",
         "weapon": "MACE",
-        "distance": 3.1,
+        "distance": 4,
         "victim_clan": "orden",
         "teamkill": false,
-        "official_final_score": 2
+        "official_final_score": 1
       },
       "kills_detail": [
         {
-          "time": "19:06:51",
+          "time": "17:06:51",
           "victim": "SOUPVisual",
           "killer": "Karnelss17",
           "message": "SOUPVisual was killed by Karnelss17 (ENTITY_ATTACK, MACE)",
@@ -7192,7 +7192,7 @@
           "ts": 1786208811017
         },
         {
-          "time": "19:12:12",
+          "time": "17:12:12",
           "victim": "Maxim5509",
           "killer": "Karnelss17",
           "message": "Maxim5509 was killed by Karnelss17 (ENTITY_ATTACK, MACE)",
@@ -7217,7 +7217,7 @@
           "ts": 1786209132866
         },
         {
-          "time": "19:12:46",
+          "time": "17:12:46",
           "victim": "dfkj",
           "killer": "Karnelss17",
           "message": "dfkj was killed by Karnelss17 (ENTITY_ATTACK, MACE)",
@@ -7242,7 +7242,7 @@
           "ts": 1786209166020
         },
         {
-          "time": "19:14:57",
+          "time": "17:14:57",
           "victim": "Maxim5509",
           "killer": "Karnelss17",
           "message": "Maxim5509 was killed by Karnelss17 (ENTITY_ATTACK, MACE)",
@@ -7270,7 +7270,7 @@
       "team_kill_details": [],
       "death_details": [
         {
-          "time": "19:02:17",
+          "time": "17:02:17",
           "victim": "Karnelss17",
           "killer": "AKATOIII",
           "killer_type": "player",
@@ -7290,7 +7290,7 @@
           "official_resistance_mult": 0.7237778333822885
         },
         {
-          "time": "19:16:27",
+          "time": "17:16:27",
           "victim": "Karnelss17",
           "killer": "Vovan1910",
           "killer_type": "player",
@@ -7310,7 +7310,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:17:23",
+          "time": "17:17:23",
           "victim": "Karnelss17",
           "killer": "helssing",
           "killer_type": "player",
@@ -7330,7 +7330,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:21:11",
+          "time": "17:21:11",
           "victim": "Karnelss17",
           "killer": "Zarenit",
           "killer_type": "player",
@@ -7350,7 +7350,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:21:54",
+          "time": "17:21:54",
           "victim": "Karnelss17",
           "killer": "AKATOIII",
           "killer_type": "player",
@@ -7370,7 +7370,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:22:23",
+          "time": "17:22:23",
           "victim": "Karnelss17",
           "killer": "Zarenit",
           "killer_type": "player",
@@ -7413,7 +7413,7 @@
         "base_value": 2.4878237018109806,
         "upset_multiplier": 1.0,
         "farm_multiplier": 1.0,
-        "time": "19:09:07",
+        "time": "17:09:07",
         "message": "errorrNull was killed by varpex (ENTITY_EXPLOSION, END_CRYSTAL)",
         "cause": "ENTITY_EXPLOSION",
         "weapon": "END_CRYSTAL",
@@ -7424,7 +7424,7 @@
       },
       "kills_detail": [
         {
-          "time": "19:09:07",
+          "time": "17:09:07",
           "victim": "errorrNull",
           "killer": "varpex",
           "message": "errorrNull was killed by varpex (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -7449,7 +7449,7 @@
           "ts": 1786208947915
         },
         {
-          "time": "19:15:03",
+          "time": "17:15:03",
           "victim": "Suenzon",
           "killer": "varpex",
           "message": "Suenzon was killed by varpex (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -7477,7 +7477,7 @@
       "team_kill_details": [],
       "death_details": [
         {
-          "time": "19:08:31",
+          "time": "17:08:31",
           "victim": "varpex",
           "killer": "GeLioS",
           "killer_type": "player",
@@ -7497,7 +7497,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:10:05",
+          "time": "17:10:05",
           "victim": "varpex",
           "killer": "lasterothXIII",
           "killer_type": "player",
@@ -7517,7 +7517,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:23:06",
+          "time": "17:23:06",
           "victim": "varpex",
           "killer": "lasterothXIII",
           "killer_type": "player",
@@ -7560,7 +7560,7 @@
         "base_value": 2.307336421436621,
         "upset_multiplier": 1.0,
         "farm_multiplier": 1.0,
-        "time": "19:20:01",
+        "time": "17:20:01",
         "message": "pulmenb was killed by Blazerlords (FIRE_TICK, NETHERITE_SWORD)",
         "cause": "FIRE_TICK",
         "weapon": "NETHERITE_SWORD",
@@ -7571,7 +7571,7 @@
       },
       "kills_detail": [
         {
-          "time": "19:13:43",
+          "time": "17:13:43",
           "victim": "Xitek0",
           "killer": "Blazerlords",
           "message": "Xitek0 was killed by Blazerlords (ENTITY_ATTACK, NETHERITE_SWORD)",
@@ -7596,7 +7596,7 @@
           "ts": 1786209223217
         },
         {
-          "time": "19:20:01",
+          "time": "17:20:01",
           "victim": "pulmenb",
           "killer": "Blazerlords",
           "message": "pulmenb was killed by Blazerlords (FIRE_TICK, NETHERITE_SWORD)",
@@ -7646,7 +7646,7 @@
         "base_value": 2.133710667222925,
         "upset_multiplier": 1.1,
         "farm_multiplier": 1.0,
-        "time": "19:16:27",
+        "time": "17:16:27",
         "message": "Karnelss17 was killed by Vovan1910 (ENTITY_EXPLOSION, END_CRYSTAL)",
         "cause": "ENTITY_EXPLOSION",
         "weapon": "END_CRYSTAL",
@@ -7657,7 +7657,7 @@
       },
       "kills_detail": [
         {
-          "time": "19:07:26",
+          "time": "17:07:26",
           "victim": "femboychik12331",
           "killer": "Vovan1910",
           "message": "femboychik12331 was killed by Vovan1910 (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -7682,7 +7682,7 @@
           "ts": 1786208846214
         },
         {
-          "time": "19:16:27",
+          "time": "17:16:27",
           "victim": "Karnelss17",
           "killer": "Vovan1910",
           "message": "Karnelss17 was killed by Vovan1910 (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -7710,7 +7710,7 @@
       "team_kill_details": [],
       "death_details": [
         {
-          "time": "19:10:44",
+          "time": "17:10:44",
           "victim": "Vovan1910",
           "killer": "MeGaXoPoH",
           "killer_type": "player",
@@ -7730,7 +7730,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:11:44",
+          "time": "17:11:44",
           "victim": "Vovan1910",
           "killer": "Zarenit",
           "killer_type": "player",
@@ -7750,7 +7750,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:13:04",
+          "time": "17:13:04",
           "victim": "Vovan1910",
           "killer": "GeLioS",
           "killer_type": "player",
@@ -7770,7 +7770,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:13:18",
+          "time": "17:13:18",
           "victim": "Vovan1910",
           "killer": "errorrNull",
           "killer_type": "player",
@@ -7790,7 +7790,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:17:55",
+          "time": "17:17:55",
           "victim": "Vovan1910",
           "killer": "MeGaXoPoH",
           "killer_type": "player",
@@ -7810,7 +7810,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:18:14",
+          "time": "17:18:14",
           "victim": "Vovan1910",
           "killer": "Zarenit",
           "killer_type": "player",
@@ -7830,7 +7830,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:18:32",
+          "time": "17:18:32",
           "victim": "Vovan1910",
           "killer": "MeGaXoPoH",
           "killer_type": "player",
@@ -7873,7 +7873,7 @@
         "base_value": 2.4878237018109806,
         "upset_multiplier": 1.35,
         "farm_multiplier": 1.0,
-        "time": "19:04:48",
+        "time": "17:04:48",
         "message": "errorrNull was killed by Maxim5509 (FIRE_TICK, NETHERITE_SWORD)",
         "cause": "FIRE_TICK",
         "weapon": "NETHERITE_SWORD",
@@ -7884,7 +7884,7 @@
       },
       "kills_detail": [
         {
-          "time": "19:04:48",
+          "time": "17:04:48",
           "victim": "errorrNull",
           "killer": "Maxim5509",
           "message": "errorrNull was killed by Maxim5509 (FIRE_TICK, NETHERITE_SWORD)",
@@ -7912,7 +7912,7 @@
       "team_kill_details": [],
       "death_details": [
         {
-          "time": "19:04:57",
+          "time": "17:04:57",
           "victim": "Maxim5509",
           "killer": "lasterothXIII",
           "killer_type": "player",
@@ -7932,7 +7932,7 @@
           "official_resistance_mult": 0.45349378486474357
         },
         {
-          "time": "19:07:03",
+          "time": "17:07:03",
           "victim": "Maxim5509",
           "killer": "MeGaXoPoH",
           "killer_type": "player",
@@ -7952,7 +7952,7 @@
           "official_resistance_mult": 0.4
         },
         {
-          "time": "19:07:54",
+          "time": "17:07:54",
           "victim": "Maxim5509",
           "killer": "MeGaXoPoH",
           "killer_type": "player",
@@ -7972,7 +7972,7 @@
           "official_resistance_mult": 0.4
         },
         {
-          "time": "19:12:12",
+          "time": "17:12:12",
           "victim": "Maxim5509",
           "killer": "Karnelss17",
           "killer_type": "player",
@@ -7992,7 +7992,7 @@
           "official_resistance_mult": 0.4
         },
         {
-          "time": "19:14:15",
+          "time": "17:14:15",
           "victim": "Maxim5509",
           "killer": "lasterothXIII",
           "killer_type": "player",
@@ -8012,7 +8012,7 @@
           "official_resistance_mult": 0.7460366156573097
         },
         {
-          "time": "19:14:57",
+          "time": "17:14:57",
           "victim": "Maxim5509",
           "killer": "Karnelss17",
           "killer_type": "player",
@@ -8032,7 +8032,7 @@
           "official_resistance_mult": 0.4
         },
         {
-          "time": "19:16:26",
+          "time": "17:16:26",
           "victim": "Maxim5509",
           "killer": "lasterothXIII",
           "killer_type": "player",
@@ -8052,7 +8052,7 @@
           "official_resistance_mult": 0.6853618696704508
         },
         {
-          "time": "19:17:04",
+          "time": "17:17:04",
           "victim": "Maxim5509",
           "killer": "MeGaXoPoH",
           "killer_type": "player",
@@ -8072,7 +8072,7 @@
           "official_resistance_mult": 0.4
         },
         {
-          "time": "19:18:54",
+          "time": "17:18:54",
           "victim": "Maxim5509",
           "killer": "Zarenit",
           "killer_type": "player",
@@ -8115,7 +8115,7 @@
         "base_value": 1.5179036417049678,
         "upset_multiplier": 1.0,
         "farm_multiplier": 1.0,
-        "time": "19:06:05",
+        "time": "17:06:05",
         "message": "Suenzon was killed by TheBuilderHD (ENTITY_EXPLOSION, END_CRYSTAL)",
         "cause": "ENTITY_EXPLOSION",
         "weapon": "END_CRYSTAL",
@@ -8126,7 +8126,7 @@
       },
       "kills_detail": [
         {
-          "time": "19:06:05",
+          "time": "17:06:05",
           "victim": "Suenzon",
           "killer": "TheBuilderHD",
           "message": "Suenzon was killed by TheBuilderHD (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -8151,7 +8151,7 @@
           "ts": 1786208765394
         },
         {
-          "time": "19:13:41",
+          "time": "17:13:41",
           "victim": "Neko_shar1k",
           "killer": "TheBuilderHD",
           "message": "Neko_shar1k was killed by TheBuilderHD (ENTITY_EXPLOSION, END_CRYSTAL)",
@@ -8179,7 +8179,7 @@
       "team_kill_details": [],
       "death_details": [
         {
-          "time": "19:08:15",
+          "time": "17:08:15",
           "victim": "TheBuilderHD",
           "killer": "th3ddarkblade",
           "killer_type": "player",
@@ -8199,7 +8199,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:23:56",
+          "time": "17:23:56",
           "victim": "TheBuilderHD",
           "killer": "lasterothXIII",
           "killer_type": "player",
@@ -8242,7 +8242,7 @@
         "base_value": 1.4731607938736833,
         "upset_multiplier": 1.0,
         "farm_multiplier": 1.0,
-        "time": "19:21:42",
+        "time": "17:21:42",
         "message": "shadow_uzi was killed by NomerOdinNefor (ENTITY_ATTACK, MACE)",
         "cause": "ENTITY_ATTACK",
         "weapon": "MACE",
@@ -8253,7 +8253,7 @@
       },
       "kills_detail": [
         {
-          "time": "19:13:47",
+          "time": "17:13:47",
           "victim": "Neko_shar1k",
           "killer": "NomerOdinNefor",
           "message": "Neko_shar1k was killed by NomerOdinNefor (ENTITY_EXPLOSION, MACE)",
@@ -8278,7 +8278,7 @@
           "ts": 1786209227064
         },
         {
-          "time": "19:21:42",
+          "time": "17:21:42",
           "victim": "shadow_uzi",
           "killer": "NomerOdinNefor",
           "message": "shadow_uzi was killed by NomerOdinNefor (ENTITY_ATTACK, MACE)",
@@ -8306,7 +8306,7 @@
       "team_kill_details": [],
       "death_details": [
         {
-          "time": "19:05:00",
+          "time": "17:05:00",
           "victim": "NomerOdinNefor",
           "killer": "GeLioS",
           "killer_type": "player",
@@ -8326,7 +8326,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:07:05",
+          "time": "17:07:05",
           "victim": "NomerOdinNefor",
           "killer": "xzipu",
           "killer_type": "player",
@@ -8346,7 +8346,7 @@
           "official_resistance_mult": 0.6472833345333735
         },
         {
-          "time": "19:08:57",
+          "time": "17:08:57",
           "victim": "NomerOdinNefor",
           "killer": "MeGaXoPoH",
           "killer_type": "player",
@@ -8366,7 +8366,7 @@
           "official_resistance_mult": 0.4
         },
         {
-          "time": "19:09:58",
+          "time": "17:09:58",
           "victim": "NomerOdinNefor",
           "killer": "AKATOIII",
           "killer_type": "player",
@@ -8386,7 +8386,7 @@
           "official_resistance_mult": 0.9701485343774159
         },
         {
-          "time": "19:15:01",
+          "time": "17:15:01",
           "victim": "NomerOdinNefor",
           "killer": "MeGaXoPoH",
           "killer_type": "player",
@@ -8429,7 +8429,7 @@
         "base_value": 2.133710667222925,
         "upset_multiplier": 1.2,
         "farm_multiplier": 1.0,
-        "time": "19:17:23",
+        "time": "17:17:23",
         "message": "Karnelss17 was killed by helssing (ENTITY_EXPLOSION, NETHERITE_SWORD)",
         "cause": "ENTITY_EXPLOSION",
         "weapon": "NETHERITE_SWORD",
@@ -8440,7 +8440,7 @@
       },
       "kills_detail": [
         {
-          "time": "19:17:23",
+          "time": "17:17:23",
           "victim": "Karnelss17",
           "killer": "helssing",
           "message": "Karnelss17 was killed by helssing (ENTITY_EXPLOSION, NETHERITE_SWORD)",
@@ -8468,7 +8468,7 @@
       "team_kill_details": [],
       "death_details": [
         {
-          "time": "19:05:02",
+          "time": "17:05:02",
           "victim": "helssing",
           "killer": "MeGaXoPoH",
           "killer_type": "player",
@@ -8488,7 +8488,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:09:48",
+          "time": "17:09:48",
           "victim": "helssing",
           "killer": "Zarenit",
           "killer_type": "player",
@@ -8508,7 +8508,7 @@
           "official_resistance_mult": 0.972479124698374
         },
         {
-          "time": "19:10:01",
+          "time": "17:10:01",
           "victim": "helssing",
           "killer": "pianoblock94",
           "killer_type": "player",
@@ -8528,7 +8528,7 @@
           "official_resistance_mult": 0.7559127577683992
         },
         {
-          "time": "19:11:14",
+          "time": "17:11:14",
           "victim": "helssing",
           "killer": "MeGaXoPoH",
           "killer_type": "player",
@@ -8548,7 +8548,7 @@
           "official_resistance_mult": 0.4
         },
         {
-          "time": "19:11:21",
+          "time": "17:11:21",
           "victim": "helssing",
           "killer": "MeGaXoPoH",
           "killer_type": "player",
@@ -8568,7 +8568,7 @@
           "official_resistance_mult": 0.4
         },
         {
-          "time": "19:16:40",
+          "time": "17:16:40",
           "victim": "helssing",
           "killer": "lasterothXIII",
           "killer_type": "player",
@@ -8588,7 +8588,7 @@
           "official_resistance_mult": 0.652725590162334
         },
         {
-          "time": "19:17:29",
+          "time": "17:17:29",
           "victim": "helssing",
           "killer": "GeLioS",
           "killer_type": "player",
@@ -8608,7 +8608,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:20:35",
+          "time": "17:20:35",
           "victim": "helssing",
           "killer": "reeliotan",
           "killer_type": "player",
@@ -8628,7 +8628,7 @@
           "official_resistance_mult": 0.4
         },
         {
-          "time": "19:21:13",
+          "time": "17:21:13",
           "victim": "helssing",
           "killer": "Zarenit",
           "killer_type": "player",
@@ -8671,18 +8671,18 @@
         "base_value": 1.3065001901792692,
         "upset_multiplier": 1.0,
         "farm_multiplier": 1.0,
-        "time": "19:15:09",
+        "time": "17:19:22",
         "message": "Neko_shar1k was killed by sraf (ENTITY_ATTACK, NETHERITE_SWORD)",
         "cause": "ENTITY_ATTACK",
         "weapon": "NETHERITE_SWORD",
-        "distance": 1.9,
+        "distance": 3.3,
         "victim_clan": "union",
         "teamkill": false,
         "official_final_score": 4
       },
       "kills_detail": [
         {
-          "time": "19:15:09",
+          "time": "17:15:09",
           "victim": "Neko_shar1k",
           "killer": "sraf",
           "message": "Neko_shar1k was killed by sraf (ENTITY_ATTACK, NETHERITE_SWORD)",
@@ -8707,7 +8707,7 @@
           "ts": 1786209309930
         },
         {
-          "time": "19:19:22",
+          "time": "17:19:22",
           "victim": "Neko_shar1k",
           "killer": "sraf",
           "message": "Neko_shar1k was killed by sraf (ENTITY_ATTACK, NETHERITE_SWORD)",
@@ -8735,7 +8735,7 @@
       "team_kill_details": [],
       "death_details": [
         {
-          "time": "19:05:10",
+          "time": "17:05:10",
           "victim": "sraf",
           "killer": "Zarenit",
           "killer_type": "player",
@@ -8755,7 +8755,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:09:42",
+          "time": "17:09:42",
           "victim": "sraf",
           "killer": "genamin134",
           "killer_type": "player",
@@ -8775,7 +8775,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:20:44",
+          "time": "17:20:44",
           "victim": "sraf",
           "killer": "lasterothXIII",
           "killer_type": "player",
@@ -8818,7 +8818,7 @@
         "base_value": 1.757858283255199,
         "upset_multiplier": 1.0,
         "farm_multiplier": 1.0,
-        "time": "19:15:59",
+        "time": "17:15:59",
         "message": "reeliotan was killed by femboychik12331 (ENTITY_ATTACK, MACE)",
         "cause": "ENTITY_ATTACK",
         "weapon": "MACE",
@@ -8829,7 +8829,7 @@
       },
       "kills_detail": [
         {
-          "time": "19:15:59",
+          "time": "17:15:59",
           "victim": "reeliotan",
           "killer": "femboychik12331",
           "message": "reeliotan was killed by femboychik12331 (ENTITY_ATTACK, MACE)",
@@ -8857,7 +8857,7 @@
       "team_kill_details": [],
       "death_details": [
         {
-          "time": "19:02:13",
+          "time": "17:02:13",
           "victim": "femboychik12331",
           "killer": "pianoblock94",
           "killer_type": "player",
@@ -8877,7 +8877,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:03:19",
+          "time": "17:03:19",
           "victim": "femboychik12331",
           "killer": "pianoblock94",
           "killer_type": "player",
@@ -8897,7 +8897,7 @@
           "official_resistance_mult": 0.4
         },
         {
-          "time": "19:05:23",
+          "time": "17:05:23",
           "victim": "femboychik12331",
           "killer": "pianoblock94",
           "killer_type": "player",
@@ -8917,7 +8917,7 @@
           "official_resistance_mult": 0.4
         },
         {
-          "time": "19:07:26",
+          "time": "17:07:26",
           "victim": "femboychik12331",
           "killer": "Vovan1910",
           "killer_type": "player",
@@ -8937,7 +8937,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:08:05",
+          "time": "17:08:05",
           "victim": "femboychik12331",
           "killer": "MeGaXoPoH",
           "killer_type": "player",
@@ -8957,7 +8957,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:10:03",
+          "time": "17:10:03",
           "victim": "femboychik12331",
           "killer": "xzipu",
           "killer_type": "player",
@@ -8977,7 +8977,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:14:02",
+          "time": "17:14:02",
           "victim": "femboychik12331",
           "killer": "th3ddarkblade",
           "killer_type": "player",
@@ -8997,7 +8997,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:14:44",
+          "time": "17:14:44",
           "victim": "femboychik12331",
           "killer": "MeGaXoPoH",
           "killer_type": "player",
@@ -9017,7 +9017,7 @@
           "official_resistance_mult": 0.4
         },
         {
-          "time": "19:15:30",
+          "time": "17:15:30",
           "victim": "femboychik12331",
           "killer": "MeGaXoPoH",
           "killer_type": "player",
@@ -9060,7 +9060,7 @@
         "base_value": 1.4295960099848362,
         "upset_multiplier": 1.0,
         "farm_multiplier": 1.0,
-        "time": "19:20:35",
+        "time": "17:20:35",
         "message": "helssing was killed by reeliotan (ENTITY_ATTACK, NETHERITE_SWORD)",
         "cause": "ENTITY_ATTACK",
         "weapon": "NETHERITE_SWORD",
@@ -9071,7 +9071,7 @@
       },
       "kills_detail": [
         {
-          "time": "19:20:35",
+          "time": "17:20:35",
           "victim": "helssing",
           "killer": "reeliotan",
           "message": "helssing was killed by reeliotan (ENTITY_ATTACK, NETHERITE_SWORD)",
@@ -9099,7 +9099,7 @@
       "team_kill_details": [],
       "death_details": [
         {
-          "time": "19:03:49",
+          "time": "17:03:49",
           "victim": "reeliotan",
           "killer": "Zarenit",
           "killer_type": "player",
@@ -9119,7 +9119,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:15:59",
+          "time": "17:15:59",
           "victim": "reeliotan",
           "killer": "femboychik12331",
           "killer_type": "player",
@@ -9139,7 +9139,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:21:13",
+          "time": "17:21:13",
           "victim": "reeliotan",
           "killer": "lasterothXIII",
           "killer_type": "player",
@@ -9182,7 +9182,7 @@
         "base_value": 1.1627864473101956,
         "upset_multiplier": 1.0,
         "farm_multiplier": 1.0,
-        "time": "19:15:27",
+        "time": "17:15:27",
         "message": "tuhcakorol2010 was killed by shadow_uzi (FIRE_TICK, NETHERITE_SWORD)",
         "cause": "FIRE_TICK",
         "weapon": "NETHERITE_SWORD",
@@ -9193,7 +9193,7 @@
       },
       "kills_detail": [
         {
-          "time": "19:15:27",
+          "time": "17:15:27",
           "victim": "tuhcakorol2010",
           "killer": "shadow_uzi",
           "message": "tuhcakorol2010 was killed by shadow_uzi (FIRE_TICK, NETHERITE_SWORD)",
@@ -9221,7 +9221,7 @@
       "team_kill_details": [],
       "death_details": [
         {
-          "time": "19:02:47",
+          "time": "17:02:47",
           "victim": "shadow_uzi",
           "killer": "xzipu",
           "killer_type": "player",
@@ -9241,7 +9241,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:15:37",
+          "time": "17:15:37",
           "victim": "shadow_uzi",
           "killer": "AKATOIII",
           "killer_type": "player",
@@ -9261,7 +9261,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:17:11",
+          "time": "17:17:11",
           "victim": "shadow_uzi",
           "killer": "pulmenb",
           "killer_type": "player",
@@ -9281,7 +9281,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:18:21",
+          "time": "17:18:21",
           "victim": "shadow_uzi",
           "killer": "MeGaXoPoH",
           "killer_type": "player",
@@ -9301,7 +9301,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:18:50",
+          "time": "17:18:50",
           "victim": "shadow_uzi",
           "killer": "AKATOIII",
           "killer_type": "player",
@@ -9321,7 +9321,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:21:23",
+          "time": "17:21:23",
           "victim": "shadow_uzi",
           "killer": "th3ddarkblade",
           "killer_type": "player",
@@ -9341,7 +9341,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:21:42",
+          "time": "17:21:42",
           "victim": "shadow_uzi",
           "killer": "NomerOdinNefor",
           "killer_type": "player",
@@ -9361,7 +9361,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:22:52",
+          "time": "17:22:52",
           "victim": "shadow_uzi",
           "killer": "hsyre",
           "killer_type": "player",
@@ -9381,7 +9381,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:24:00",
+          "time": "17:24:00",
           "victim": "shadow_uzi",
           "killer": "th3ddarkblade",
           "killer_type": "player",
@@ -9424,7 +9424,7 @@
         "base_value": 1.0106777805038718,
         "upset_multiplier": 1.0,
         "farm_multiplier": 1.0,
-        "time": "19:12:55",
+        "time": "17:12:55",
         "message": "Romar323 was killed by DanteMenelay (ENTITY_EXPLOSION, NETHERITE_SWORD)",
         "cause": "ENTITY_EXPLOSION",
         "weapon": "NETHERITE_SWORD",
@@ -9435,7 +9435,7 @@
       },
       "kills_detail": [
         {
-          "time": "19:12:55",
+          "time": "17:12:55",
           "victim": "Romar323",
           "killer": "DanteMenelay",
           "message": "Romar323 was killed by DanteMenelay (ENTITY_EXPLOSION, NETHERITE_SWORD)",
@@ -9463,7 +9463,7 @@
       "team_kill_details": [],
       "death_details": [
         {
-          "time": "19:12:05",
+          "time": "17:12:05",
           "victim": "DanteMenelay",
           "killer": "hsyre",
           "killer_type": "player",
@@ -9483,7 +9483,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:19:16",
+          "time": "17:19:16",
           "victim": "DanteMenelay",
           "killer": "AKATOIII",
           "killer_type": "player",
@@ -9525,7 +9525,7 @@
       "team_kill_details": [],
       "death_details": [
         {
-          "time": "19:01:58",
+          "time": "17:01:58",
           "victim": "GGWka",
           "killer": "xzipu",
           "killer_type": "player",
@@ -9545,7 +9545,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:10:30",
+          "time": "17:10:30",
           "victim": "GGWka",
           "killer": "th3ddarkblade",
           "killer_type": "player",
@@ -9565,7 +9565,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:11:34",
+          "time": "17:11:34",
           "victim": "GGWka",
           "killer": "lasterothXIII",
           "killer_type": "player",
@@ -9585,7 +9585,7 @@
           "official_resistance_mult": 0.7646868960228231
         },
         {
-          "time": "19:12:11",
+          "time": "17:12:11",
           "victim": "GGWka",
           "killer": "genamin134",
           "killer_type": "player",
@@ -9605,7 +9605,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:12:36",
+          "time": "17:12:36",
           "victim": "GGWka",
           "killer": "GeLioS",
           "killer_type": "player",
@@ -9625,7 +9625,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:15:33",
+          "time": "17:15:33",
           "victim": "GGWka",
           "killer": "hsyre",
           "killer_type": "player",
@@ -9645,7 +9645,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:15:55",
+          "time": "17:15:55",
           "victim": "GGWka",
           "killer": "errorrNull",
           "killer_type": "player",
@@ -9665,7 +9665,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:21:48",
+          "time": "17:21:48",
           "victim": "GGWka",
           "killer": "lasterothXIII",
           "killer_type": "player",
@@ -9707,7 +9707,7 @@
       "team_kill_details": [],
       "death_details": [
         {
-          "time": "19:00:57",
+          "time": "17:00:57",
           "victim": "MrKnyaz",
           "killer": "th3ddarkblade",
           "killer_type": "player",
@@ -9727,7 +9727,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:03:00",
+          "time": "17:03:00",
           "victim": "MrKnyaz",
           "killer": "th3ddarkblade",
           "killer_type": "player",
@@ -9747,7 +9747,7 @@
           "official_resistance_mult": 0.4
         },
         {
-          "time": "19:05:57",
+          "time": "17:05:57",
           "victim": "MrKnyaz",
           "killer": "pulmenb",
           "killer_type": "player",
@@ -9767,7 +9767,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:06:02",
+          "time": "17:06:02",
           "victim": "MrKnyaz",
           "killer": "genamin134",
           "killer_type": "player",
@@ -9787,7 +9787,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:07:48",
+          "time": "17:07:48",
           "victim": "MrKnyaz",
           "killer": "th3ddarkblade",
           "killer_type": "player",
@@ -9807,7 +9807,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:08:24",
+          "time": "17:08:24",
           "victim": "MrKnyaz",
           "killer": "hsyre",
           "killer_type": "player",
@@ -9827,7 +9827,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:09:38",
+          "time": "17:09:38",
           "victim": "MrKnyaz",
           "killer": "hsyre",
           "killer_type": "player",
@@ -9847,7 +9847,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:10:57",
+          "time": "17:10:57",
           "victim": "MrKnyaz",
           "killer": "th3ddarkblade",
           "killer_type": "player",
@@ -9867,7 +9867,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:12:08",
+          "time": "17:12:08",
           "victim": "MrKnyaz",
           "killer": "th3ddarkblade",
           "killer_type": "player",
@@ -9887,7 +9887,7 @@
           "official_resistance_mult": 0.9458339584709117
         },
         {
-          "time": "19:14:36",
+          "time": "17:14:36",
           "victim": "MrKnyaz",
           "killer": "genamin134",
           "killer_type": "player",
@@ -9929,7 +9929,7 @@
       "team_kill_details": [],
       "death_details": [
         {
-          "time": "19:09:16",
+          "time": "17:09:16",
           "victim": "Neko_shar1k",
           "killer": "lasterothXIII",
           "killer_type": "player",
@@ -9949,7 +9949,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:10:19",
+          "time": "17:10:19",
           "victim": "Neko_shar1k",
           "killer": "lasterothXIII",
           "killer_type": "player",
@@ -9969,7 +9969,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:11:12",
+          "time": "17:11:12",
           "victim": "Neko_shar1k",
           "killer": "lasterothXIII",
           "killer_type": "player",
@@ -9989,7 +9989,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:13:41",
+          "time": "17:13:41",
           "victim": "Neko_shar1k",
           "killer": "TheBuilderHD",
           "killer_type": "player",
@@ -10009,7 +10009,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:13:47",
+          "time": "17:13:47",
           "victim": "Neko_shar1k",
           "killer": "NomerOdinNefor",
           "killer_type": "player",
@@ -10029,7 +10029,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:15:09",
+          "time": "17:15:09",
           "victim": "Neko_shar1k",
           "killer": "sraf",
           "killer_type": "player",
@@ -10049,7 +10049,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:19:22",
+          "time": "17:19:22",
           "victim": "Neko_shar1k",
           "killer": "sraf",
           "killer_type": "player",
@@ -10091,7 +10091,7 @@
       "team_kill_details": [],
       "death_details": [
         {
-          "time": "19:22:18",
+          "time": "17:22:18",
           "victim": "Raud_Vaim",
           "killer": "lasterothXIII",
           "killer_type": "player",
@@ -10111,7 +10111,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:22:43",
+          "time": "17:22:43",
           "victim": "Raud_Vaim",
           "killer": "lasterothXIII",
           "killer_type": "player",
@@ -10153,7 +10153,7 @@
       "team_kill_details": [],
       "death_details": [
         {
-          "time": "19:05:05",
+          "time": "17:05:05",
           "victim": "Romar323",
           "killer": "MeGaXoPoH",
           "killer_type": "player",
@@ -10173,7 +10173,7 @@
           "official_resistance_mult": 0.4
         },
         {
-          "time": "19:09:30",
+          "time": "17:09:30",
           "victim": "Romar323",
           "killer": "lasterothXIII",
           "killer_type": "player",
@@ -10193,7 +10193,7 @@
           "official_resistance_mult": 0.6768520890562623
         },
         {
-          "time": "19:12:55",
+          "time": "17:12:55",
           "victim": "Romar323",
           "killer": "DanteMenelay",
           "killer_type": "player",
@@ -10213,7 +10213,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:15:39",
+          "time": "17:15:39",
           "victim": "Romar323",
           "killer": "AKATOIII",
           "killer_type": "player",
@@ -10233,7 +10233,7 @@
           "official_resistance_mult": 0.7214335470215271
         },
         {
-          "time": "19:17:11",
+          "time": "17:17:11",
           "victim": "Romar323",
           "killer": "pianoblock94",
           "killer_type": "player",
@@ -10253,7 +10253,7 @@
           "official_resistance_mult": 0.7615967673435807
         },
         {
-          "time": "19:18:12",
+          "time": "17:18:12",
           "victim": "Romar323",
           "killer": "pulmenb",
           "killer_type": "player",
@@ -10273,7 +10273,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:19:30",
+          "time": "17:19:30",
           "victim": "Romar323",
           "killer": "AmIAngel",
           "killer_type": "player",
@@ -10293,7 +10293,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:21:04",
+          "time": "17:21:04",
           "victim": "Romar323",
           "killer": "hsyre",
           "killer_type": "player",
@@ -10313,7 +10313,7 @@
           "official_resistance_mult": 0.778140543639246
         },
         {
-          "time": "19:21:28",
+          "time": "17:21:28",
           "victim": "Romar323",
           "killer": "lasterothXIII",
           "killer_type": "player",
@@ -10333,7 +10333,7 @@
           "official_resistance_mult": 0.5959668431916962
         },
         {
-          "time": "19:21:55",
+          "time": "17:21:55",
           "victim": "Romar323",
           "killer": "lasterothXIII",
           "killer_type": "player",
@@ -10375,7 +10375,7 @@
       "team_kill_details": [],
       "death_details": [
         {
-          "time": "19:02:50",
+          "time": "17:02:50",
           "victim": "SOUPVisual",
           "killer": "errorrNull",
           "killer_type": "player",
@@ -10395,7 +10395,7 @@
           "official_resistance_mult": 0.4
         },
         {
-          "time": "19:03:50",
+          "time": "17:03:50",
           "victim": "SOUPVisual",
           "killer": "xzipu",
           "killer_type": "player",
@@ -10415,7 +10415,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:04:41",
+          "time": "17:04:41",
           "victim": "SOUPVisual",
           "killer": "xzipu",
           "killer_type": "player",
@@ -10435,7 +10435,7 @@
           "official_resistance_mult": 0.4
         },
         {
-          "time": "19:05:26",
+          "time": "17:05:26",
           "victim": "SOUPVisual",
           "killer": "GeLioS",
           "killer_type": "player",
@@ -10455,7 +10455,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:06:51",
+          "time": "17:06:51",
           "victim": "SOUPVisual",
           "killer": "Karnelss17",
           "killer_type": "player",
@@ -10475,7 +10475,7 @@
           "official_resistance_mult": 0.4
         },
         {
-          "time": "19:07:07",
+          "time": "17:07:07",
           "victim": "SOUPVisual",
           "killer": "MeGaXoPoH",
           "killer_type": "player",
@@ -10495,7 +10495,7 @@
           "official_resistance_mult": 0.4
         },
         {
-          "time": "19:09:22",
+          "time": "17:09:22",
           "victim": "SOUPVisual",
           "killer": "th3ddarkblade",
           "killer_type": "player",
@@ -10515,7 +10515,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:11:43",
+          "time": "17:11:43",
           "victim": "SOUPVisual",
           "killer": "lasterothXIII",
           "killer_type": "player",
@@ -10557,7 +10557,7 @@
       "team_kill_details": [],
       "death_details": [
         {
-          "time": "19:02:03",
+          "time": "17:02:03",
           "victim": "Sav_21",
           "killer": "errorrNull",
           "killer_type": "player",
@@ -10577,7 +10577,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:03:13",
+          "time": "17:03:13",
           "victim": "Sav_21",
           "killer": "Waffle_1337",
           "killer_type": "player",
@@ -10597,7 +10597,7 @@
           "official_resistance_mult": 0.4
         },
         {
-          "time": "19:05:13",
+          "time": "17:05:13",
           "victim": "Sav_21",
           "killer": "xzipu",
           "killer_type": "player",
@@ -10617,7 +10617,7 @@
           "official_resistance_mult": 0.5310119243959586
         },
         {
-          "time": "19:06:17",
+          "time": "17:06:17",
           "victim": "Sav_21",
           "killer": "Zarenit",
           "killer_type": "player",
@@ -10637,7 +10637,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:06:39",
+          "time": "17:06:39",
           "victim": "Sav_21",
           "killer": "Zarenit",
           "killer_type": "player",
@@ -10657,7 +10657,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:06:45",
+          "time": "17:06:45",
           "victim": "Sav_21",
           "killer": "Zarenit",
           "killer_type": "player",
@@ -10677,7 +10677,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:07:06",
+          "time": "17:07:06",
           "victim": "Sav_21",
           "killer": "Zarenit",
           "killer_type": "player",
@@ -10697,7 +10697,7 @@
           "official_resistance_mult": 0.975899997105201
         },
         {
-          "time": "19:07:15",
+          "time": "17:07:15",
           "victim": "Sav_21",
           "killer": "MeGaXoPoH",
           "killer_type": "player",
@@ -10717,7 +10717,7 @@
           "official_resistance_mult": 0.4
         },
         {
-          "time": "19:08:20",
+          "time": "17:08:20",
           "victim": "Sav_21",
           "killer": "xzipu",
           "killer_type": "player",
@@ -10737,7 +10737,7 @@
           "official_resistance_mult": 0.7437493563940127
         },
         {
-          "time": "19:08:52",
+          "time": "17:08:52",
           "victim": "Sav_21",
           "killer": "GeLioS",
           "killer_type": "player",
@@ -10779,7 +10779,7 @@
       "team_kill_details": [],
       "death_details": [
         {
-          "time": "19:05:17",
+          "time": "17:05:17",
           "victim": "Suenzon",
           "killer": "xzipu",
           "killer_type": "player",
@@ -10799,7 +10799,7 @@
           "official_resistance_mult": 0.5075375884771347
         },
         {
-          "time": "19:06:05",
+          "time": "17:06:05",
           "victim": "Suenzon",
           "killer": "TheBuilderHD",
           "killer_type": "player",
@@ -10819,7 +10819,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:11:33",
+          "time": "17:11:33",
           "victim": "Suenzon",
           "killer": "Waffle_1337",
           "killer_type": "player",
@@ -10839,7 +10839,7 @@
           "official_resistance_mult": 0.7950822970674684
         },
         {
-          "time": "19:13:49",
+          "time": "17:13:49",
           "victim": "Suenzon",
           "killer": "lasterothXIII",
           "killer_type": "player",
@@ -10859,7 +10859,7 @@
           "official_resistance_mult": 0.7518930680884256
         },
         {
-          "time": "19:15:03",
+          "time": "17:15:03",
           "victim": "Suenzon",
           "killer": "varpex",
           "killer_type": "player",
@@ -10901,7 +10901,7 @@
       "team_kill_details": [],
       "death_details": [
         {
-          "time": "19:04:05",
+          "time": "17:04:05",
           "victim": "WiredAsh067381",
           "killer": "lasterothXIII",
           "killer_type": "player",
@@ -10921,7 +10921,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:04:44",
+          "time": "17:04:44",
           "victim": "WiredAsh067381",
           "killer": "xzipu",
           "killer_type": "player",
@@ -10941,7 +10941,7 @@
           "official_resistance_mult": 0.4
         },
         {
-          "time": "19:05:19",
+          "time": "17:05:19",
           "victim": "WiredAsh067381",
           "killer": "GeLioS",
           "killer_type": "player",
@@ -10961,7 +10961,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:05:42",
+          "time": "17:05:42",
           "victim": "WiredAsh067381",
           "killer": "errorrNull",
           "killer_type": "player",
@@ -10981,7 +10981,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:07:04",
+          "time": "17:07:04",
           "victim": "WiredAsh067381",
           "killer": "lasterothXIII",
           "killer_type": "player",
@@ -11001,7 +11001,7 @@
           "official_resistance_mult": 0.8459833893179893
         },
         {
-          "time": "19:08:53",
+          "time": "17:08:53",
           "victim": "WiredAsh067381",
           "killer": "MeGaXoPoH",
           "killer_type": "player",
@@ -11021,7 +11021,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:09:24",
+          "time": "17:09:24",
           "victim": "WiredAsh067381",
           "killer": "MeGaXoPoH",
           "killer_type": "player",
@@ -11041,7 +11041,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:09:46",
+          "time": "17:09:46",
           "victim": "WiredAsh067381",
           "killer": "xzipu",
           "killer_type": "player",
@@ -11061,7 +11061,7 @@
           "official_resistance_mult": 0.5492855971679091
         },
         {
-          "time": "19:10:23",
+          "time": "17:10:23",
           "victim": "WiredAsh067381",
           "killer": "AKATOIII",
           "killer_type": "player",
@@ -11081,7 +11081,7 @@
           "official_resistance_mult": 0.4882538641492526
         },
         {
-          "time": "19:11:44",
+          "time": "17:11:44",
           "victim": "WiredAsh067381",
           "killer": "AKATOIII",
           "killer_type": "player",
@@ -11123,7 +11123,7 @@
       "team_kill_details": [],
       "death_details": [
         {
-          "time": "19:10:42",
+          "time": "17:10:42",
           "victim": "Xitek0",
           "killer": "errorrNull",
           "killer_type": "player",
@@ -11143,7 +11143,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:13:43",
+          "time": "17:13:43",
           "victim": "Xitek0",
           "killer": "Blazerlords",
           "killer_type": "player",
@@ -11163,7 +11163,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:13:46",
+          "time": "17:13:46",
           "victim": "Xitek0",
           "killer": "MeGaXoPoH",
           "killer_type": "player",
@@ -11183,7 +11183,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:15:57",
+          "time": "17:15:57",
           "victim": "Xitek0",
           "killer": "Waffle_1337",
           "killer_type": "player",
@@ -11203,7 +11203,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:21:11",
+          "time": "17:21:11",
           "victim": "Xitek0",
           "killer": "GeLioS",
           "killer_type": "player",
@@ -11245,7 +11245,7 @@
       "team_kill_details": [],
       "death_details": [
         {
-          "time": "19:03:26",
+          "time": "17:03:26",
           "victim": "Yaroslav526742",
           "killer": "errorrNull",
           "killer_type": "player",
@@ -11265,7 +11265,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:06:52",
+          "time": "17:06:52",
           "victim": "Yaroslav526742",
           "killer": "th3ddarkblade",
           "killer_type": "player",
@@ -11285,7 +11285,7 @@
           "official_resistance_mult": 0.4
         },
         {
-          "time": "19:07:51",
+          "time": "17:07:51",
           "victim": "Yaroslav526742",
           "killer": "errorrNull",
           "killer_type": "player",
@@ -11305,7 +11305,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:08:36",
+          "time": "17:08:36",
           "victim": "Yaroslav526742",
           "killer": "errorrNull",
           "killer_type": "player",
@@ -11325,7 +11325,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:09:44",
+          "time": "17:09:44",
           "victim": "Yaroslav526742",
           "killer": "lasterothXIII",
           "killer_type": "player",
@@ -11345,7 +11345,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:10:07",
+          "time": "17:10:07",
           "victim": "Yaroslav526742",
           "killer": "Zarenit",
           "killer_type": "player",
@@ -11365,7 +11365,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:10:23",
+          "time": "17:10:23",
           "victim": "Yaroslav526742",
           "killer": "Zarenit",
           "killer_type": "player",
@@ -11385,7 +11385,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:11:22",
+          "time": "17:11:22",
           "victim": "Yaroslav526742",
           "killer": "Zarenit",
           "killer_type": "player",
@@ -11427,7 +11427,7 @@
       "team_kill_details": [],
       "death_details": [
         {
-          "time": "19:01:19",
+          "time": "17:01:19",
           "victim": "ani_kaa",
           "killer": "Waffle_1337",
           "killer_type": "player",
@@ -11447,7 +11447,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:02:55",
+          "time": "17:02:55",
           "victim": "ani_kaa",
           "killer": "th3ddarkblade",
           "killer_type": "player",
@@ -11467,7 +11467,7 @@
           "official_resistance_mult": 0.4414062366510431
         },
         {
-          "time": "19:05:44",
+          "time": "17:05:44",
           "victim": "ani_kaa",
           "killer": "th3ddarkblade",
           "killer_type": "player",
@@ -11487,7 +11487,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:07:39",
+          "time": "17:07:39",
           "victim": "ani_kaa",
           "killer": "hsyre",
           "killer_type": "player",
@@ -11507,7 +11507,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:08:07",
+          "time": "17:08:07",
           "victim": "ani_kaa",
           "killer": "lasterothXIII",
           "killer_type": "player",
@@ -11527,7 +11527,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:11:01",
+          "time": "17:11:01",
           "victim": "ani_kaa",
           "killer": "th3ddarkblade",
           "killer_type": "player",
@@ -11547,7 +11547,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:11:38",
+          "time": "17:11:38",
           "victim": "ani_kaa",
           "killer": "th3ddarkblade",
           "killer_type": "player",
@@ -11567,7 +11567,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:12:30",
+          "time": "17:12:30",
           "victim": "ani_kaa",
           "killer": "th3ddarkblade",
           "killer_type": "player",
@@ -11587,7 +11587,7 @@
           "official_resistance_mult": 0.8715997100083365
         },
         {
-          "time": "19:13:18",
+          "time": "17:13:18",
           "victim": "ani_kaa",
           "killer": "xzipu",
           "killer_type": "player",
@@ -11607,7 +11607,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:13:50",
+          "time": "17:13:50",
           "victim": "ani_kaa",
           "killer": "hsyre",
           "killer_type": "player",
@@ -11649,7 +11649,7 @@
       "team_kill_details": [],
       "death_details": [
         {
-          "time": "19:08:33",
+          "time": "17:08:33",
           "victim": "dfkj",
           "killer": "MeGaXoPoH",
           "killer_type": "player",
@@ -11669,7 +11669,7 @@
           "official_resistance_mult": 0.4
         },
         {
-          "time": "19:10:04",
+          "time": "17:10:04",
           "victim": "dfkj",
           "killer": "xzipu",
           "killer_type": "player",
@@ -11689,7 +11689,7 @@
           "official_resistance_mult": 0.8819532130703782
         },
         {
-          "time": "19:11:06",
+          "time": "17:11:06",
           "victim": "dfkj",
           "killer": "AKATOIII",
           "killer_type": "player",
@@ -11709,7 +11709,7 @@
           "official_resistance_mult": 0.80845711198118
         },
         {
-          "time": "19:12:08",
+          "time": "17:12:08",
           "victim": "dfkj",
           "killer": "lasterothXIII",
           "killer_type": "player",
@@ -11729,7 +11729,7 @@
           "official_resistance_mult": 0.7095946830653009
         },
         {
-          "time": "19:12:46",
+          "time": "17:12:46",
           "victim": "dfkj",
           "killer": "Karnelss17",
           "killer_type": "player",
@@ -11749,7 +11749,7 @@
           "official_resistance_mult": 0.4
         },
         {
-          "time": "19:14:16",
+          "time": "17:14:16",
           "victim": "dfkj",
           "killer": "AKATOIII",
           "killer_type": "player",
@@ -11769,7 +11769,7 @@
           "official_resistance_mult": 0.7041583057566017
         },
         {
-          "time": "19:14:58",
+          "time": "17:14:58",
           "victim": "dfkj",
           "killer": "lasterothXIII",
           "killer_type": "player",
@@ -11789,7 +11789,7 @@
           "official_resistance_mult": 0.7514889828446839
         },
         {
-          "time": "19:15:54",
+          "time": "17:15:54",
           "victim": "dfkj",
           "killer": "errorrNull",
           "killer_type": "player",
@@ -11809,7 +11809,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:16:09",
+          "time": "17:16:09",
           "victim": "dfkj",
           "killer": "errorrNull",
           "killer_type": "player",
@@ -11829,7 +11829,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:16:53",
+          "time": "17:16:53",
           "victim": "dfkj",
           "killer": "errorrNull",
           "killer_type": "player",
@@ -11871,7 +11871,7 @@
       "team_kill_details": [],
       "death_details": [
         {
-          "time": "19:02:03",
+          "time": "17:02:03",
           "victim": "francyska00",
           "killer": "pianoblock94",
           "killer_type": "player",
@@ -11891,7 +11891,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:03:22",
+          "time": "17:03:22",
           "victim": "francyska00",
           "killer": "Zarenit",
           "killer_type": "player",
@@ -11911,7 +11911,7 @@
           "official_resistance_mult": 0.46647775090403026
         },
         {
-          "time": "19:06:19",
+          "time": "17:06:19",
           "victim": "francyska00",
           "killer": "MeGaXoPoH",
           "killer_type": "player",
@@ -11931,7 +11931,7 @@
           "official_resistance_mult": 0.4
         },
         {
-          "time": "19:11:47",
+          "time": "17:11:47",
           "victim": "francyska00",
           "killer": "MeGaXoPoH",
           "killer_type": "player",
@@ -11951,7 +11951,7 @@
           "official_resistance_mult": 0.4
         },
         {
-          "time": "19:15:18",
+          "time": "17:15:18",
           "victim": "francyska00",
           "killer": "Zarenit",
           "killer_type": "player",
@@ -11971,7 +11971,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:15:31",
+          "time": "17:15:31",
           "victim": "francyska00",
           "killer": "errorrNull",
           "killer_type": "player",
@@ -11991,7 +11991,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:17:56",
+          "time": "17:17:56",
           "victim": "francyska00",
           "killer": "lasterothXIII",
           "killer_type": "player",
@@ -12011,7 +12011,7 @@
           "official_resistance_mult": 0.6230562451549552
         },
         {
-          "time": "19:19:14",
+          "time": "17:19:14",
           "victim": "francyska00",
           "killer": "Zarenit",
           "killer_type": "player",
@@ -12031,7 +12031,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:21:33",
+          "time": "17:21:33",
           "victim": "francyska00",
           "killer": "MeGaXoPoH",
           "killer_type": "player",
@@ -12051,7 +12051,7 @@
           "official_resistance_mult": 0.4
         },
         {
-          "time": "19:22:22",
+          "time": "17:22:22",
           "victim": "francyska00",
           "killer": "MeGaXoPoH",
           "killer_type": "player",
@@ -12093,7 +12093,7 @@
       "team_kill_details": [],
       "death_details": [
         {
-          "time": "19:07:31",
+          "time": "17:07:31",
           "victim": "macintosh1",
           "killer": "th3ddarkblade",
           "killer_type": "player",
@@ -12113,7 +12113,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:10:59",
+          "time": "17:10:59",
           "victim": "macintosh1",
           "killer": "Waffle_1337",
           "killer_type": "player",
@@ -12133,7 +12133,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:15:57",
+          "time": "17:15:57",
           "victim": "macintosh1",
           "killer": "th3ddarkblade",
           "killer_type": "player",
@@ -12153,7 +12153,7 @@
           "official_resistance_mult": 0.9190209232461758
         },
         {
-          "time": "19:16:18",
+          "time": "17:16:18",
           "victim": "macintosh1",
           "killer": "AKATOIII",
           "killer_type": "player",
@@ -12195,7 +12195,7 @@
       "team_kill_details": [],
       "death_details": [
         {
-          "time": "19:05:50",
+          "time": "17:05:50",
           "victim": "tuhcakorol2010",
           "killer": "lasterothXIII",
           "killer_type": "player",
@@ -12215,7 +12215,7 @@
           "official_resistance_mult": 0.4
         },
         {
-          "time": "19:07:50",
+          "time": "17:07:50",
           "victim": "tuhcakorol2010",
           "killer": "lasterothXIII",
           "killer_type": "player",
@@ -12235,7 +12235,7 @@
           "official_resistance_mult": 0.7323807962238789
         },
         {
-          "time": "19:10:23",
+          "time": "17:10:23",
           "victim": "tuhcakorol2010",
           "killer": "th3ddarkblade",
           "killer_type": "player",
@@ -12255,7 +12255,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:11:00",
+          "time": "17:11:00",
           "victim": "tuhcakorol2010",
           "killer": "AKATOIII",
           "killer_type": "player",
@@ -12275,7 +12275,7 @@
           "official_resistance_mult": 0.4394284777343273
         },
         {
-          "time": "19:11:06",
+          "time": "17:11:06",
           "victim": "tuhcakorol2010",
           "killer": "MeGaXoPoH",
           "killer_type": "player",
@@ -12295,7 +12295,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:11:59",
+          "time": "17:11:59",
           "victim": "tuhcakorol2010",
           "killer": "lasterothXIII",
           "killer_type": "player",
@@ -12315,7 +12315,7 @@
           "official_resistance_mult": 0.4
         },
         {
-          "time": "19:15:27",
+          "time": "17:15:27",
           "victim": "tuhcakorol2010",
           "killer": "shadow_uzi",
           "killer_type": "player",
@@ -12335,7 +12335,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:16:23",
+          "time": "17:16:23",
           "victim": "tuhcakorol2010",
           "killer": "errorrNull",
           "killer_type": "player",
@@ -12355,7 +12355,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:16:28",
+          "time": "17:16:28",
           "victim": "tuhcakorol2010",
           "killer": "errorrNull",
           "killer_type": "player",
@@ -12375,7 +12375,7 @@
           "official_resistance_mult": 1
         },
         {
-          "time": "19:16:39",
+          "time": "17:16:39",
           "victim": "tuhcakorol2010",
           "killer": "Zarenit",
           "killer_type": "player",
