@@ -27,9 +27,10 @@ The updater reads:
 
 Those endpoints require an authenticated account that has access to the siege
 section. Do not commit passwords or cookies. Prefer the repository secrets
-`VANILLA_GAME_USERNAME` and `VANILLA_GAME_PASSWORD`; the updater will create a
-fresh session automatically. `VANILLA_GAME_COOKIE` is still supported as a
-manual fallback.
+`VANILLA_GAME_EMAIL` and `VANILLA_GAME_PASSWORD`; the updater will create a
+fresh session automatically. If the site account uses a nickname login, use
+`VANILLA_GAME_LOGIN` instead. `VANILLA_GAME_COOKIE` is still supported as a
+manual fallback, but should not be needed.
 
 Local Minecraft logs are still supported as a fallback:
 
@@ -47,7 +48,7 @@ GitHub Actions.
 For a local official refresh:
 
 ```bash
-set VANILLA_GAME_USERNAME=your_email_or_login
+set VANILLA_GAME_EMAIL=your_email
 set VANILLA_GAME_PASSWORD=your_password
 python scripts/update_from_vanilla.py
 ```

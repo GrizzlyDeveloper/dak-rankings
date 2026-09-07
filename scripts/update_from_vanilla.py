@@ -84,21 +84,58 @@ def session_request(opener, base_url, path, cookie_jar, method="GET", payload=No
         raise RuntimeError(f"{method} {url} failed with HTTP {error.code}: {body[:500]}") from error
 
 
-def login_cookie(base_url, username, password):
-    if not username or not password:
+def login_payloads(username, password, email=None, login=None):
+    identifiers = []
+    for value in (email, login, username):
+        if value and value not in identifiers:
+            identifiers.append(value)
+
+    payloads = []
+    for value in identifiers:
+        fields = ["email", "login", "username"]
+        if "@" not in value:
+            fields = ["login", "username", "email"]
+        for field in fields:
+            payload = {field: value, "password": password}
+            if payload not in payloads:
+                payloads.append(payload)
+    return payloads
+
+
+def login_cookie(base_url, username, password, email=None, login=None):
+    if not password:
         return ""
     cookie_jar = CookieJar()
     opener = build_opener(HTTPCookieProcessor(cookie_jar))
     try:
         session_request(opener, base_url, "/sanctum/csrf-cookie", cookie_jar)
-        session_request(
-            opener,
-            base_url,
-            "/login",
-            cookie_jar,
-            method="POST",
-            payload={"email": username, "password": password},
-        )
+        payloads = login_payloads(username, password, email, login)
+        if not payloads:
+            return ""
+        last_error = None
+        for index, payload in enumerate(payloads, start=1):
+            try:
+                session_request(
+                    opener,
+                    base_url,
+                    "/login",
+                    cookie_jar,
+                    method="POST",
+                    payload=payload,
+                )
+                if index > 1:
+                    print(f"Vanilla Game login succeeded on credential format #{index}.")
+                break
+            except RuntimeError as error:
+                if "POST " in str(error) and "/login failed with HTTP 422" in str(error):
+                    last_error = error
+                    continue
+                raise
+        else:
+            raise SystemExit(
+                "Vanilla Game login failed. Check the identifier/password secrets. "
+                "If you used a nickname, try the account email in VANILLA_GAME_EMAIL."
+            ) from last_error
     except RuntimeError as error:
         if "POST " in str(error) and "/login failed with HTTP 422" in str(error):
             raise SystemExit(
@@ -109,27 +146,28 @@ def login_cookie(base_url, username, password):
     cookie = cookie_header_from_jar(cookie_jar)
     if not cookie_value(cookie, "vanilla_gameru_session"):
         raise RuntimeError("Login succeeded but vanilla_gameru_session cookie was not received.")
-    print("Logged in to Vanilla Game with username/password secrets.")
+    print("Logged in to Vanilla Game with saved credentials.")
     return cookie
 
 
-def authenticated_cookie(base_url, cookie=None, username=None, password=None):
+def authenticated_cookie(base_url, cookie=None, username=None, password=None, email=None, login=None):
     if cookie:
         try:
             request_json(base_url, "/lk/sieges", cookie)
             return cookie
         except AccessDeniedError:
-            if not username or not password:
+            if not password or not (username or email or login):
                 raise SystemExit(
                     "Vanilla Game API denied access. Refresh VANILLA_GAME_COOKIE or set "
-                    "VANILLA_GAME_USERNAME and VANILLA_GAME_PASSWORD secrets for auto-login."
+                    "VANILLA_GAME_EMAIL/VANILLA_GAME_LOGIN and VANILLA_GAME_PASSWORD secrets "
+                    "for auto-login."
                 )
-            print("VANILLA_GAME_COOKIE was denied; trying username/password auto-login.")
-    fresh_cookie = login_cookie(base_url, username, password)
+            print("VANILLA_GAME_COOKIE was denied; trying saved credentials auto-login.", flush=True)
+    fresh_cookie = login_cookie(base_url, username, password, email, login)
     if fresh_cookie:
         return fresh_cookie
     raise SystemExit(
-        "Set either VANILLA_GAME_COOKIE or VANILLA_GAME_USERNAME + VANILLA_GAME_PASSWORD. "
+        "Set either VANILLA_GAME_COOKIE or VANILLA_GAME_EMAIL/VANILLA_GAME_LOGIN + VANILLA_GAME_PASSWORD. "
         "The account must be able to open /lk/gamer/sieges/."
     )
 
@@ -195,6 +233,8 @@ def parse_args(argv):
     )
     parser.add_argument("--base-url", default=os.getenv("VANILLA_GAME_BASE_URL", DEFAULT_BASE_URL))
     parser.add_argument("--cookie", default=os.getenv("VANILLA_GAME_COOKIE"))
+    parser.add_argument("--email", default=os.getenv("VANILLA_GAME_EMAIL"))
+    parser.add_argument("--login", default=os.getenv("VANILLA_GAME_LOGIN"))
     parser.add_argument(
         "--username",
         default=(
@@ -216,7 +256,23 @@ def main(argv=None):
     if args.input:
         payloads = load_fixture(args.input)
     else:
-        cookie = authenticated_cookie(args.base_url, args.cookie, args.username, args.password)
+        print(
+            "Auth inputs: "
+            f"cookie={'yes' if args.cookie else 'no'}, "
+            f"email={'yes' if args.email else 'no'}, "
+            f"login={'yes' if args.login else 'no'}, "
+            f"username={'yes' if args.username else 'no'}, "
+            f"password={'yes' if args.password else 'no'}",
+            flush=True,
+        )
+        cookie = authenticated_cookie(
+            args.base_url,
+            args.cookie,
+            args.username,
+            args.password,
+            args.email,
+            args.login,
+        )
         if args.check_auth:
             index = request_json(args.base_url, "/lk/sieges", cookie)
             sieges = index.get("sieges")
